@@ -4,17 +4,19 @@ a.
 
  2. $\mathcal{F} \subseteq \mathcal{A}$.
 
- 3. $\Omega_0 = \{X_0 = 0\}$.
+ 3. For every $t \in (0,\infty)$, $\{\tau_0 \leq t\} = \{X_0 = 0\}$.
 
- 4. $\Omega_0 \in \mathcal{F}$.
+ 4. $\Omega_0 = \{X_0 = 0\}$.
 
- 5. $P(\Omega_0) = 1$.
+ 5. $\tau_0$ is a $\Phi^{\sigma(\nu^*)}(X)$-stopping time.
 
- 6. $\mathcal{F}^{(0)} \subseteq \mathcal{F}$.
+ 5. $\Omega_0 \in \mathcal{F}$.
 
- 7. $\mathcal{F}^{(0)}$ is a $\sigma$-algebra on $\Omega_0$.
+ 6. $P(\Omega_0) = 1$.
 
- 8. $\tau_0$ is a $\Phi^{\sigma(\nu^*)}(X)$-stopping time.
+ 7. $\mathcal{F}^{(0)} \subseteq \mathcal{F}$.
+
+ 8. $\mathcal{F}^{(0)}$ is a $\sigma$-algebra on $\Omega_0$.
 
  9. $\tau_0$ is $\mathcal{F}/\overline{\mathcal{B}}$-measurable.
 
