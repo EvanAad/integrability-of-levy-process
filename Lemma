@@ -1,42 +1,44 @@
-a. 
+a.
 
  1. $\nu^{-1}\left((\gamma, \infty)\right) \in \nu^*$.
 
  2. $\mathcal{F} \subseteq \mathcal{A}$.
 
- 3. For every $t \in (0,\infty)$, $\{\tau_0 \leq t\} = \{X_0 = 0\}$.
+ 3. For every $t \in (0,\infty)$, $\{\tau_0 \leq t\} = \{X_0 = \mathbf{0}\}$.
 
- 4. $\Omega_0 = \{X_0 = 0\}$.
+ 4. $\Omega_0 = \{X_0 = \mathbf{0}\}$.
 
- 5. $\tau_0$ is a $\Phi^{\sigma(\nu^*)}(X)$-stopping time.
+ 5. $\Omega_0 = \{\tau_0 = 0\}$.
 
- 6. $\tau_0$ is $\mathcal{F}/\overline{\mathcal{B}}$-measurable.
+ 6. $\tau_0$ is a $\Phi^{\sigma(\nu^*)}(X)$-stopping time.
 
- 7. $\Omega_0 \in \mathcal{F}$.
+ 7. $\tau_0$ is $\mathcal{F}/\overline{\mathcal{B}}$-measurable.
 
- 8. $P(\Omega_0) = 1$.
+ 8. $\Omega_0 \in \mathcal{F}$.
 
- 9. $\mathcal{F}^{(0)} \subseteq \mathcal{F}$.
+ 9. $P(\Omega_0) = 1$.
 
- 10. $\mathcal{F}^{(0)}$ is a $\sigma$-algebra on $\Omega_0$.
+ 10. $\mathcal{F}^{(0)} \subseteq \mathcal{F}$.
 
- 11. $\tau_0^{(0)} = 0$.
+ 11. $\mathcal{F}^{(0)}$ is a $\sigma$-algebra on $\Omega_0$.
 
- 12. $X^{(0)}_{\tau_0^{(0)}} = 0$.
+ 12. $\tau_0^{(0)} = 0$.
 
- 13. $\tau_1$ is a weak $\Phi^{\sigma(\nu^*)}(X)$-stopping time.
+ 13. $X^{(0)}_{\tau_0^{(0)}} = \mathbf{0}$.
 
- 14. $\tau_1$ is $\mathcal{F}/\overline{\mathcal{B}}$-measurable.
+ 14. $\tau_1$ is a weak $\Phi^{\sigma(\nu^*)}(X)$-stopping time.
 
- 15. $\Omega_1 \in \mathcal{F}$.
+ 15. $\tau_1$ is $\mathcal{F}/\overline{\mathcal{B}}$-measurable.
 
- 16. $P(\Omega_1) = 1$.
+ 16. $\Omega_1 \in \mathcal{F}$.
 
- 17. $\tau_1^{(0)} - \tau_0^{(0)} = \inf \left\{t \in [0,\infty)\ |\!:\ \nu\left(X_t^{(0)}\right) > \gamma\right\}$.
+ 17. $P(\Omega_1) = 1$.
+
+ 18. $\tau_1^{(0)} - \tau_0^{(0)} = \inf \left\{t \in [0,\infty)\ |\!:\ \nu\left(X_t^{(0)}\right) > \gamma\right\}$.
 
 ***
 
-a. 
+a.
 
  1. By 12(a).
 
@@ -67,7 +69,7 @@ a.
  \end{align}
  $$
 
- 9. 
+ 9.
  $$
  \Omega_1 \overset{\eqref{Sergio}}{=} \{\tau_1 < \infty\} \in \sigma_{\overline{\mathcal{B}}}(\tau_1) \overset{23(c)}{\subseteq} \Phi^{\nu^*}_\infty(X) \overset{28(a.1)}{\subseteq} \mathcal{F}.
  $$
