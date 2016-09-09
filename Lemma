@@ -36,6 +36,14 @@ a.
 
  18. $\tau_1^{(0)} - \tau_0^{(0)} = \inf \left\{t \in [0,\infty)\ |\!:\ \nu\left(X_t^{(0)}\right) > \gamma\right\}$.
 
+ 19. For every $t \in [0,\infty)$, $X_t$ is $\mathcal{F}/\sigma(\nu^*)$-measurable.
+
+ 20. For every $s, t \in [0,\infty)$, $X_t - X_s$ is $\mathcal{F}/\sigma(\nu^*)$-measurable.
+
+ 21. For every $t \in [0,\infty)$, $\nu\circ X_t$ is $\mathcal{F}/\mathcal{B}$-measurable.
+
+ 22. For every $s, t \in [0,\infty)$, $\nu\circ(X_t - X_s)$ is $\mathcal{F}/\mathcal{B}$-measurable.
+
 ***
 
 a.
