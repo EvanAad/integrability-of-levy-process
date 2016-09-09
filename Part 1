@@ -380,15 +380,19 @@ $$
 
 ***11. Notations and Conventions***
 
-a. We denote a vector space with a bold-type capital Latin letter, e.g. $\mathbf{V}$. The set of vectors shall be denoted by the non-bold counterpart. Thus, $V$ is the set of vectors of the vector space $\mathbf{V}$.
+a. We denote a vector space with a bold-type capital Latin letter, e.g. $\mathbf{V}$.
 
-b. A complex vector space is a vector space, whose field is a sub-field of the field of complex numbers.
+b. Let $\mathbf{V}$ be a vector space. $\mathbf{V}$'s set of vectors shall be denoted by $V$ (the non-bold counterpart of $\mathbf{V}$).
 
-c. A normed space will be denoted by a pair $(\mathbf{V}, \nu)$, the first member of which, $\mathbf{V}$, is a complex vector space, and the second member, $\nu$, is a norm on $\mathbf{V}$.
+c. Let $\mathbf{V}$ be a vector space. $\mathbf{V}$'s zero vector shall be denoted by $\mathbf{0}_{\mathbf{V}}$.
 
-d. If $S$ is a non-empty set, and $d$ is a metric on $S$, the topology on $S$ induced by $d$ shall be denoted by $d^*$.
+d. A complex vector space is a vector space, whose field is a sub-field of the field of complex numbers.
 
-e. If $(\mathbf{V}, \nu)$ is a normed space, the topology on $V$ induced by $\nu$ shall be denoted by $\nu^*$.
+e. A normed space will be denoted by a pair $(\mathbf{V}, \nu)$, the first member of which, $\mathbf{V}$, is a complex vector space, and the second member, $\nu$, is a norm on $\mathbf{V}$.
+
+f. If $S$ is a non-empty set, and $d$ is a metric on $S$, the topology on $S$ induced by $d$ shall be denoted by $d^*$.
+
+g. If $(\mathbf{V}, \nu)$ is a normed space, the topology on $V$ induced by $\nu$ shall be denoted by $\nu^*$.
 
 ***12. Corollary***
 
@@ -682,7 +686,7 @@ d. If the following conditions hold:
 
 Let $\mathcal{F}$ be a filtration.
 
-a. A $\mathcal{F}$-stopping time is a function $\tau:\cup\mathcal{F}_\infty\rightarrow(0,\infty]$, such that, for every $t\in[0,\infty)$, $\{\tau\leq t\}\in\mathcal{F}_t$.
+a. A $\mathcal{F}$-stopping time is a function $\tau:\cup\mathcal{F}_\infty\rightarrow(0,\infty]$, such that, for every $t\in(0,\infty)$, $\{\tau\leq t\}\in\mathcal{F}_t$.
 
 b. A weak-$\mathcal{F}$-stopping time is a function $\tau:\cup\mathcal{F}_\infty\rightarrow(0,\infty]$, such that, for every $t\in(0,\infty)$, $\{\tau < t\}\in\mathcal{F}_t$.
 

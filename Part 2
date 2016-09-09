@@ -12,7 +12,10 @@ $$
 
 Set
 $$
-\mathcal{F}:=\Phi^{\sigma(\nu^*)}_\infty(X). \tag{2}\label{Hassan}
+\begin{align}
+\mathbf{0} &:= \mathbf{0}_{\mathbf{V}}, \tag{a}\label{Harry} \\
+\mathcal{F} &:= \Phi^{\sigma(\nu^*)}_\infty(X). \tag{2}\label{Hassan}
+\end{align}
 $$
 
 Define, by recursion, a sequence $(\tau_0,\tau_1,\tau_2,\dots)$ of functions $\tau_n:\Omega\rightarrow[0,\infty]$, as follows.
