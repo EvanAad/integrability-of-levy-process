@@ -28,3 +28,29 @@ a.
  12. $\tau_0^{(0)} = \tau_0\big|_{\Omega_0} \overset{33.1(a.5)}{=} \tau_0\big|_{\{\tau_0 = 0\}} = 0$.
 
  13. $X^{(0)}_{\tau_0^{(0)}} \overset{33.1(a.12)}{=} X_0^{(0)} = X_0\big|_{\Omega_0} \overset{33.1(a.4)}{=} X_0\big|_{\{X_0 = \mathbf{0}\}} = \mathbf{0}$.
+
+ 14. By \eqref{Tiny}.
+
+ 15. Let $t \in (0,\infty]$. Then $\{\tau_1 < t\} \overset{33.1(a.14)}{\subseteq} \{\tau_0 < t\} \overset{}{\subseteq} \{\tau_0 < \infty\} \overset{\eqref{Lajuana}}{=} \Omega_0$.
+
+ 16. Let $t \in (0,\infty]$. Then $\{\tau_1 < t\} \overset{33.1(a.15)}{=} \{\tau_1 < t\} \cap \Omega_0 = \{\tau_1 < t\}^{(0)} \overset{32(c.2)}{=} \{\tau_1^{(0)} < t\}$.
+
+ 17. The result follows from Definition 22(b) in light of the following calculations. Let $t\in(0,\infty)$. Then
+ $$
+ \begin{align}
+ \{\tau_1 < t\} &\overset{33.1(a.16)}{=} \{\tau_1^{(0)} < t\} \\
+ &\overset{\eqref{Tiny}}{=} \left\{\left(\inf\left\{s\in\left[\tau_0,\infty\right)\ \big|\!:\ \nu\left(X_s-X_{\tau_0}\right) > \gamma \right\}\right) < t \right\}^{(0)} \\
+ &\overset{29(c.2)}{=} \left\{\left(\inf\left\{s\in\left[\tau_0,\infty\right)\ \big|\!:\ \nu\left(X_s-X_{\tau_0}\right) > \gamma \right\}^{(0)}\right) < t \right\} \\
+ &\overset{29(k.4)}{=} \left\{\left(\inf\left\{s\in\left[\tau_0^{(0)},\infty\right)\ \big|\!:\ \nu\left(X_s-X_{\tau_0}\right)^{(0)} > \gamma \right\}\right) < t \right\} \\
+ &\overset{29(c.2)}{=} \left\{\left(\inf\left\{s\in\left[\tau_0^{(0)},\infty\right)\ \big|\!:\ \nu\left(\left(X_s-X_{\tau_0}\right)^{(0)}\right) > \gamma \right\}\right) < t \right\} \\
+ &\overset{29(f)}{=} \left\{\left(\inf\left\{s\in\left[\tau_0^{(0)},\infty\right)\ \big|\!:\ \nu\left(X_s^{(0)}-(X_{\tau_0})^{(0)}\right) > \gamma \right\}\right) < t \right\} \\
+ &\overset{29(k.1)}{=} \left\{\left(\inf\left\{s\in\left[\tau_0^{(0)},\infty\right)\ \big|\!:\ \nu\left(X_s^{(0)}-X_{\tau_0^{(0)}}^{\langle 0\rangle}\right) > \gamma \right\}\right) < t \right\} \\
+ &\overset{33.1(a.12)}{=} \left\{\left(\inf\left\{s\in\left[0,\infty\right)\ \big|\!:\ \nu\left(X_s^{(0)}-X_0^{\langle 0\rangle}\right) > \gamma \right\}\right) < t \right\} \\
+ &\overset{33.1(a.13)}{=} \left\{\left(\inf\left\{s\in\left[0,\infty\right)\ \big|\!:\ \nu\left(X_s^{(0)}\right) > \gamma \right\}\right) < t \right\} \\
+ &= \left\{\left(\inf\left\{s\in\left[0,\infty\right)\ \big|\!:\ X_s^{(0)} \in \nu^{-1}\left((\gamma, \infty)\right) \right\}\right) < t \right\} \\
+ &\overset{24}{=} \left\{\Xi_{\nu^*}^{\nu^{-1}\left((\gamma, \infty)\right)} \circ \left[X^{\langle 0\rangle}\right] < t\right\} \\
+ &\overset{25(d)}{\in} \Phi^{\sigma(\nu^*)}_t\left(X^{\langle 0\rangle}\right) \\
+ &\overset{32(j.1)}{=} \left(\Phi^{\sigma(\nu^*)}_t(X)\right)^{(0)} \\
+ &\overset{32(b.1)}{\subseteq} \Phi^{\sigma(\nu^*)}_t(X).
+ \end{align}
+ $$
