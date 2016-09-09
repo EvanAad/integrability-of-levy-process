@@ -682,7 +682,7 @@ d. If the following conditions hold:
 
 Let $\mathcal{F}$ be a filtration.
 
-a. A $\mathcal{F}$-stopping time is a function $\tau:\cup\mathcal{F}_\infty\rightarrow(0,\infty]$, such that, for every $t\in[0,\infty)$, $\{\tau\leq t\}\in\mathcal{F}_t$.
+a. A $\mathcal{F}$-stopping time is a function $\tau:\cup\mathcal{F}_\infty\rightarrow(0,\infty]$, such that, for every $t\in(0,\infty)$, $\{\tau\leq t\}\in\mathcal{F}_t$.
 
 b. A weak-$\mathcal{F}$-stopping time is a function $\tau:\cup\mathcal{F}_\infty\rightarrow(0,\infty]$, such that, for every $t\in(0,\infty)$, $\{\tau < t\}\in\mathcal{F}_t$.
 
