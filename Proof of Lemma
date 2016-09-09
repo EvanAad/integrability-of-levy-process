@@ -40,7 +40,7 @@ P(\tau_1 = \infty) &\leq P(\tau_1 \geq nT + 1) \\
 \end{align}
 $$
 
-Since, by \eqref{Maye}, $q\in[0,1)$, we infer that $P(\tau_1 = \infty) \leq \inf \{q^n\ :\!|\ n\in\mathbb{N}_1\} = 0$, which implies that
+We infer that $P(\tau_1 = \infty) \leq \inf \{q^n\ :\!|\ n\in\mathbb{N}_1\} \overset{\eqref{Tyesha}}{=} 0$, which implies that
 $$
 P(\Omega_1) \overset{\eqref{Glenda}}{=} P(\tau<\infty) = 1.
 $$
