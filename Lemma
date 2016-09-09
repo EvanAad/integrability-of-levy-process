@@ -2,53 +2,57 @@ a.
 
  1. $\nu^{-1}\left((\gamma, \infty)\right) \in \nu^*$.
 
- 2. $\mathcal{F} \subseteq \mathcal{A}$.
+ 2. $\{\mathbf{0}\} \in \sigma(\nu^*)$.
 
- 3. For every $t \in (0,\infty)$, $\{\tau_0 \leq t\} = \{X_0 = \mathbf{0}\}$.
+ 3. $\mathcal{F} \subseteq \mathcal{A}$.
 
- 4. $\Omega_0 = \{X_0 = \mathbf{0}\}$.
+ 4. For every $t \in (0,\infty)$, $\{\tau_0 \leq t\} = \{X_0 = \mathbf{0}\}$.
 
- 5. $\Omega_0 = \{\tau_0 = 0\}$.
+ 5. $\Omega_0 = \{X_0 = \mathbf{0}\}$.
 
- 6. $\tau_0$ is a $\Phi^{\sigma(\nu^*)}(X)$-stopping time.
+ 6. $\Omega_0 = \{\tau_0 = 0\}$.
 
- 7. $\tau_0$ is $\mathcal{F}/\overline{\mathcal{B}}$-measurable.
+ 7. $\tau_0$ is a $\Phi^{\sigma(\nu^*)}(X)$-stopping time.
 
- 8. $\Omega_0 \in \mathcal{F}$.
+ 8. $\tau_0$ is $\mathcal{F}/\overline{\mathcal{B}}$-measurable.
 
- 9. $P(\Omega_0) = 1$.
+ 9. For every $t \in [0,\infty)$, $\Omega_0 \in \Phi^{\sigma(\nu^*)}_t(X)$.
 
- 10. $\mathcal{F}^{\langle 0\rangle} \subseteq \mathcal{F}$.
+ 10. $P(\Omega_0) = 1$.
 
- 11. $\mathcal{F}^{\langle 0\rangle}$ is a $\sigma$-algebra on $\Omega_0$.
+ 11. $\mathcal{F}^{\langle 0\rangle} \subseteq \mathcal{F}$.
 
- 12. $\tau_0^{(0)} = 0$.
+ 12. $\mathcal{F}^{\langle 0\rangle}$ is a $\sigma$-algebra on $\Omega_0$.
 
- 13. $X^{\langle 0\rangle}_{\tau_0^{(0)}} = \mathbf{0}$.
+ 13. $\tau_0^{(0)} = 0$.
 
- 14. $\tau_0 \leq \tau_1$.
+ 14. $X^{\langle 0\rangle}_{\tau_0^{(0)}} = \mathbf{0}$.
 
- 15. For every $t \in (0,\infty]$, $\{\tau_1 < t\} \subseteq \Omega_0$.
+ 15. $\tau_0 \leq \tau_1$.
 
- 16. For every $t \in (0,\infty]$, $\{\tau_1 < t\} = \{\tau_1^{(0)} < t\}$.
+ 16. For every $t \in (0,\infty]$, $\{\tau_1 < t\} \subseteq \Omega_0$.
 
- 17. $\tau_1^{(0)} = \inf \left\{t \in [0,\infty)\ |\!:\ \nu\left(X_t^{(0)}\right) > \gamma\right\}$.
+ 17. For every $t \in (0,\infty]$, $\{\tau_1 < t\} = \{\tau_1^{(0)} < t\}$.
 
- 18. $\tau_1$ is a weak $\Phi^{\sigma(\nu^*)}(X)$-stopping time.
+ 18. $\tau_1^{(0)} = \inf \left\{t \in [0,\infty)\ |\!:\ \nu\left(X_t^{(0)}\right) > \gamma\right\}$.
 
- 19. $\tau_1$ is $\mathcal{F}/\overline{\mathcal{B}}$-measurable.
+ 19. $\Xi_{\nu^*}^{\nu^{-1}\left((\gamma, \infty)\right)} \circ \left[X^{\langle 0\rangle}\right]$ is a weak $\Phi^{\sigma(\nu^*)}\left(X^{\langle 0\rangle}\right)$-stopping time.
 
- 20. $\Omega_1 \in \mathcal{F}$.
+ 20. $\tau_1$ is a weak $\Phi^{\sigma(\nu^*)}(X)$-stopping time.
 
- 21. For every $t \in [0,\infty)$, $X_t$ is $\mathcal{F}/\sigma(\nu^*)$-measurable.
+ 21. $\tau_1$ is $\mathcal{F}/\overline{\mathcal{B}}$-measurable.
 
- 22. For every $s, t \in [0,\infty)$, $X_t - X_s$ is $\mathcal{F}/\sigma(\nu^*)$-measurable.
+ 22. $\Omega_1 \in \mathcal{F}$.
 
- 23. For every $t \in [0,\infty)$, $\nu\circ X_t$ is $\mathcal{F}/\mathcal{B}$-measurable.
+ 23. For every $t \in [0,\infty)$, $X_t$ is $\mathcal{F}/\sigma(\nu^*)$-measurable.
 
- 24. For every $s, t \in [0,\infty)$, $\nu\circ(X_t - X_s)$ is $\mathcal{F}/\mathcal{B}$-measurable.
+ 24. For every $s, t \in [0,\infty)$, $X_t - X_s$ is $\mathcal{F}/\sigma(\nu^*)$-measurable.
 
- 25. $P(\Omega_1) = 1$.
+ 25. For every $t \in [0,\infty)$, $\nu\circ X_t$ is $\mathcal{F}/\mathcal{B}$-measurable.
+
+ 26. For every $s, t \in [0,\infty)$, $\nu\circ(X_t - X_s)$ is $\mathcal{F}/\mathcal{B}$-measurable.
+
+ 27. $P(\Omega_1) = 1$.
 
 ***
 
