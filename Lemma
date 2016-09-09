@@ -32,23 +32,23 @@ a.
 
  16. For every $t \in (0,\infty]$, $\{\tau_1 < t\} = \{\tau_1^{(0)} < t\}$.
 
- 17. $\tau_1$ is a weak $\Phi^{\sigma(\nu^*)}(X)$-stopping time.
+ 17. $\tau_1^{(0)} = \inf \left\{t \in [0,\infty)\ |\!:\ \nu\left(X_t^{(0)}\right) > \gamma\right\}$.
 
- 18. $\tau_1$ is $\mathcal{F}/\overline{\mathcal{B}}$-measurable.
+ 18. $\tau_1$ is a weak $\Phi^{\sigma(\nu^*)}(X)$-stopping time.
 
- 19. $\Omega_1 \in \mathcal{F}$.
+ 19. $\tau_1$ is $\mathcal{F}/\overline{\mathcal{B}}$-measurable.
 
- 20. $P(\Omega_1) = 1$.
+ 20. $\Omega_1 \in \mathcal{F}$.
 
- 21. $\tau_1^{(0)} - \tau_0^{(0)} = \inf \left\{t \in [0,\infty)\ |\!:\ \nu\left(X_t^{(0)}\right) > \gamma\right\}$.
+ 21. For every $t \in [0,\infty)$, $X_t$ is $\mathcal{F}/\sigma(\nu^*)$-measurable.
 
- 22. For every $t \in [0,\infty)$, $X_t$ is $\mathcal{F}/\sigma(\nu^*)$-measurable.
+ 22. For every $s, t \in [0,\infty)$, $X_t - X_s$ is $\mathcal{F}/\sigma(\nu^*)$-measurable.
 
- 23. For every $s, t \in [0,\infty)$, $X_t - X_s$ is $\mathcal{F}/\sigma(\nu^*)$-measurable.
+ 23. For every $t \in [0,\infty)$, $\nu\circ X_t$ is $\mathcal{F}/\mathcal{B}$-measurable.
 
- 24. For every $t \in [0,\infty)$, $\nu\circ X_t$ is $\mathcal{F}/\mathcal{B}$-measurable.
+ 24. For every $s, t \in [0,\infty)$, $\nu\circ(X_t - X_s)$ is $\mathcal{F}/\mathcal{B}$-measurable.
 
- 25. For every $s, t \in [0,\infty)$, $\nu\circ(X_t - X_s)$ is $\mathcal{F}/\mathcal{B}$-measurable.
+ 25. $P(\Omega_1) = 1$.
 
 ***
 
