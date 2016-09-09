@@ -17,7 +17,7 @@ a.
  \{\tau_0 \leq t\} \overset{33.1(a.3)}{=} \{X_0 = 0\} = \left\{X_0 \in \{0\}\right\} \overset{12(b)}{\in} \sigma_{\sigma(\nu^*)}(X_0) \overset{19(c)}{\subseteq} \Phi^{\sigma(\nu^*)}_t(X).
  $$
 
- 8. Follows from Corollary 23(c) in light of Lemma 33.1(a.5).
+ 8. Since, in light of Lemma 33.1(a.7), Corollary 23(a) implies that $\tau_0$ is a weak $\Phi^{\sigma(\nu^*)}$-stopping time, the result follows from Corollary 23(c).
 
  9. Let $t \in [0,\infty)$. Then
  $$
@@ -68,3 +68,15 @@ a.
  &\overset{\substack{32(b.1),\\33.1(a.9)}}{\subseteq} \Phi^{\sigma(\nu^*)}_t(X).
  \end{align}
  $$
+
+ 21. Follows from Corollary 23(c) in light of Lemma 33.1(a.20).
+
+ 22. $\Omega_1 \overset{\eqref{Sergio}}{=} \{\tau_1 < \infty\} \overset{33.1(a.21)}{\in} \mathcal{F}$.
+
+ 23. Let $t \in [0,\infty)$. According to Definition 28(b), $X$ is a $\Phi^{\sigma(\nu^*)}(X)/S$-Lévy process, which, according to Definition 28(a), implies that $X$ is a $\Phi^{\sigma(\nu^*)}(X)/\sigma(\nu^*)$-stochastic process. The result now follows from Definition 19(b).
+
+ 24. Let $s, t \in [0,\infty)$. Since, by Lemma 33.1(a.23), both $X_s$ and $X_t$ are $\mathcal{F}/\sigma(\nu^*)$-measurable, the result follows from Corollary 12(h).
+
+ 25. The result follows from Lemma 33.1(a.23) together with Corollary 12(b).
+
+ 26. The result follows from Lemma 33.1(a.24) together with Corollary 12(b).
