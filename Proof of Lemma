@@ -10,7 +10,7 @@ a.
 
  5. Follows from Definition 22(a), since, for every $t \in (0,\infty)$,
  $$
- \{\tau_0 \leq t\} \overset{33.1(a.3)}{=} \{X_0 = 0\} = \left\{X_0 \in \{0\}\right\} \overset{}{\in} \sigma_{\sigma(\nu^*)}(X_0) \overset{19(c)}{\subseteq} \Phi^{\sigma(\nu^*)}_t(X).
+ \{\tau_0 \leq t\} \overset{33.1(a.3)}{=} \{X_0 = 0\} = \left\{X_0 \in \{0\}\right\} \overset{???}{\in} \sigma_{\sigma(\nu^*)}(X_0) \overset{19(c)}{\subseteq} \Phi^{\sigma(\nu^*)}_t(X).
  $$
 
  6. Follows from Corollary 23(c) in light of Lemma 33.1(a.5).
@@ -18,3 +18,7 @@ a.
  7. $\Omega_0 \overset{\eqref{Sergio}}{=} \{\tau_0 < \infty\} \overset{33.1(a.6)}{\in} \mathcal{F}$.
 
  8. $P(\Omega_0) \overset{33.1(a.4)}{=} P(X_0 = 0) \overset{29(a)}{=} 1$.
+
+ 9. Follows from Lemma 32(b.1) in light of Lemma 33.1(a.7).
+
+ 10. Follows from Lemma 32(b.2), since Lemma 33.1(a.8) implies that $\Omega_0 \neq \emptyset$.
