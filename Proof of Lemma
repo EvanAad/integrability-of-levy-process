@@ -1,4 +1,67 @@
-27. We will follow the argument posted [here](http://math.stackexchange.com/a/1872622/37058) by [m7e](http://math.stackexchange.com/users/345082/m7e). Set $q:=P\left(\nu\left(X_T - X_0\right)\leq 2\gamma\right)$ (recall that $T$ was introduced in \eqref{Maye}). Since, by ???,
+27. We will follow the argument posted [here](http://math.stackexchange.com/a/1872622/37058) by [m7e](http://math.stackexchange.com/users/345082/m7e). Recalling that $T$ was introduced in \eqref{Maye}, and that $\gamma$ was defined in the statement of theorem 33, set
+$$
+q := P\left(\nu\left(X_T - X_0\right)\leq 2\gamma\right). \tag{a}\label{Verda}
+$$
+
+We will show that
+$$
+q \in [0,1). \tag{b}\label{Tyesha}
+$$
+
+We start by showing that
+$$
+\left\{\nu(X_T^{(0)}-X_0^{(0)})\leq2\gamma\right\} \in \mathcal{F}. \tag{c}\label{Salome}
+$$
+
+Indeed, since
+$$
+\left\{\nu(X_T-X_0)\leq2\gamma\right\} \overset{33.1(a.26)}{\in} \mathcal{F}, \tag{d}\label{Felipe}
+$$
+we have
+$$
+\begin{align}
+\left\{\nu\circ\left(X_T^{(0)}-X_0^{(0)}\right) \leq 2\gamma\right\} &\overset{???}{=} \left\{\nu\circ\left((X_T-X_0)^{(0)}\right) \leq 2\gamma\right\} \\
+&\overset{???}{=} \left\{\left(\nu\circ(X_T-X_0)\right)^{(0)} \leq 2\gamma\right\} \\
+&\overset{???}{=} \left\{\nu\circ(X_T-X_0) \leq 2\gamma\right\}^{(0)} \\
+&\overset{???}{\subseteq} \mathcal{F}^{(0)} \\
+&\overset{???}{\subseteq} \mathcal{F}.
+\end{align}
+$$
+
+To show \eqref{Tyesha}, it suffices to show that $q < 1$. Indeed,
+$$
+\begin{align}
+q &\overset{???}{=} P\left(\nu\left(X_T - X_0\right)\leq 2\gamma\right) \\
+&= P\left(\left\{\nu\left(X_T - X_0\right)\leq 2\gamma\right\}^{(0)}\right) + P(\Omega\setminus\Omega_0) \\
+&= P\left(\left\{\nu(X_T - X_0)\leq 2\gamma\right\}^{(0)}\right) \\
+&= P\left(\left\{\left(\nu(X_T - X_0)\right)^{(0)}\leq 2\gamma\right\}\right) \\
+&= P\left(\left\{\nu\left((X_T - X_0)^{(0)}\right)\leq 2\gamma\right\}\right) \\
+&= P\left(\nu\left(X_T^{(0)} - X_0^{(0)}\right)\leq 2\gamma\right) \\
+&= P\left(\nu\left(X_T^{(0)}\right)\leq 2\gamma\right) \\
+&= P\left(\left(\nu(X_T)\right)^{(0)}\leq 2\gamma\right) \\
+&= P\left(\left\{\nu(X_T)\leq 2\gamma\right\}^{(0)}\right) \\
+&\leq P\left(\nu(X_T)\leq 2\gamma\right) \\
+&< 1.
+\end{align}
+$$
+
+$$
+\left\{\nu(X_T^{(0)}-X_0^{(0)})\leq2\gamma\right\} \in \mathcal{F}
+$$
+
+since, by Lemma 33.1(a.26), $\left\{\nu(X_T-X_0)\leq2\gamma\right\} \in \mathcal{F}$, we have
+$$
+\left\{\nu(X_T-X_0)\leq2\gamma\right\}^{(0)} \overset{32(d.1)}{\in} \mathcal{F}^{(0)} \overset{}{\subseteq} \mathcal{F}.
+$$
+
+Lemma  by Lemma 32(d.1),
+$$
+\begin{align}
+P\left(\nu\left(X_T - X_0\right)\leq 2\gamma\right) &= P\left(\right) \\
+\end{align}
+$$
+
+Since, by ???,
 $$
 \forall y \in [0,\infty),\ \{y < \tau_1\} \subseteq \left\{\nu(X_y)\leq\gamma\right\}, \tag{1.1}\label{Marisa}
 $$
