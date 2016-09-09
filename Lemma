@@ -10,29 +10,31 @@ a.
 
  5. $\tau_0$ is a $\Phi^{\sigma(\nu^*)}(X)$-stopping time.
 
- 5. $\Omega_0 \in \mathcal{F}$.
+ 6. $\tau_0$ is $\mathcal{F}/\overline{\mathcal{B}}$-measurable.
 
- 6. $P(\Omega_0) = 1$.
+ 7. $\Omega_0 \in \mathcal{F}$.
 
- 7. $\mathcal{F}^{(0)} \subseteq \mathcal{F}$.
+ 8. $P(\Omega_0) = 1$.
 
- 8. $\mathcal{F}^{(0)}$ is a $\sigma$-algebra on $\Omega_0$.
+ 9. $\mathcal{F}^{(0)} \subseteq \mathcal{F}$.
 
- 9. $\tau_0$ is $\mathcal{F}/\overline{\mathcal{B}}$-measurable.
+ 10. $\mathcal{F}^{(0)}$ is a $\sigma$-algebra on $\Omega_0$.
 
- 10. $\tau_1$ is a weak $\Phi^{\sigma(\nu^*)}(X)$-stopping time.
+ 11. $\tau_0$ is $\mathcal{F}/\overline{\mathcal{B}}$-measurable.
 
- 11. $\tau_1$ is $\mathcal{F}/\overline{\mathcal{B}}$-measurable.
+ 12. $\tau_1$ is a weak $\Phi^{\sigma(\nu^*)}(X)$-stopping time.
 
- 12. $\Omega_1 \in \mathcal{F}$.
+ 13. $\tau_1$ is $\mathcal{F}/\overline{\mathcal{B}}$-measurable.
 
- 13. $P(\Omega_1) = 1$.
+ 14. $\Omega_1 \in \mathcal{F}$.
 
- 14. $\tau_0^{(0)} = 0$.
+ 15. $P(\Omega_1) = 1$.
 
- 15. $X^{(0)}_{\tau_0^{(0)}} = 0$.
+ 16. $\tau_0^{(0)} = 0$.
 
- 16. $\tau_1^{(0)} - \tau_0^{(0)} = \inf \left\{t \in [0,\infty)\ |\!:\ \nu\left(X_t^{(0)}\right) > \gamma\right\}$.
+ 17. $X^{(0)}_{\tau_0^{(0)}} = 0$.
+
+ 18. $\tau_1^{(0)} - \tau_0^{(0)} = \inf \left\{t \in [0,\infty)\ |\!:\ \nu\left(X_t^{(0)}\right) > \gamma\right\}$.
 
 ***
 
