@@ -1,0 +1,25 @@
+Let $\Omega$ be a (possibly empty) set, let $\Gamma_1, \Gamma_2$ be non-empty sets, and let $f:\Omega\rightarrow\Gamma_1$ and $g:\Gamma_2\rightarrow\Gamma_2$. We define $\left<f,g\right>$ to be the functions $\left<f,g\right>:\Omega\rightarrow(\Gamma_1,\Gamma_2)$ defined as follows. For every $\omega \in \Omega$,
+$$
+\left<f,g\right>(\omega) := \left(f(\omega),g(\omega)\right).
+$$
+
+***
+
+Let $\mathcal{T}$ be a topology on the non-empty set $S$, and let $D\subseteq S$.
+
+1. We define a function $\Xi^D_{\mathcal{T}}:\left(\left([0,\infty)\rightarrow S\right)\times [0,\infty)\right)\rightarrow\overline{\mathbb{R}}$ as follows. For every $f:[0,\infty)\rightarrow S$, and for every $t \in S$ we set
+$$
+\hat\Xi^D_{\mathcal{T}}(f,t) := \inf \left\{s \in [t,\infty)\ |\!:\ f(s) \in D\right\}.
+$$
+
+2. We define a function $\hat\Xi^D_{\mathcal{T}}:\left([0,\infty)\rightarrow S\right)\rightarrow\overline{\mathbb{R}}$ as follows. For every $f:[0,\infty)\rightarrow S$ we set
+$$
+\hat\Xi^D_{\mathcal{T}}(f) := \Xi^D_{\mathcal{T}}(f, 0).
+$$
+
+***
+
+Let $\Omega$ be a (possibly empty) set, let $\mathcal{T}$ be a topology on the non-empty set $S$, let $D\subseteq S$, and let $X$ be a $\Omega/S$-stochastic process. Then
+$$
+\Xi^S_{\mathcal{T}}\circ\left<[X], 0\mathbb{1}^\Omega_\Omega\right> = \hat\Xi^S_{\mathcal{T}}\circ[X].
+$$

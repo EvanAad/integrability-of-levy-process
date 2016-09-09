@@ -1,0 +1,355 @@
+***Theorem 33 Notation***
+
+*Symbols*
+
+$\square^{(n)}$ (non-negative integer superscript, e.g. $\mathcal{A}^{(0)}$) ... proof, bullets following eq. (6)
+
+*Greek*
+
+$\gamma$ ... statement
+
+$\nu$ ... statement
+
+$\tau_0$ ... proof, eq. $(3)
+
+$\tau_1, \tau_2, \dots$ ... proof, eq. $(4)$
+
+$\Omega$ ... statement
+
+$\Omega_0, \Omega_1, \dots$ ... proof, eq. $(5)$
+
+$\Omega_\infty$ ... proof, eq. $(7)$
+
+*Latin*
+
+$\mathcal{A}$ ... statement
+
+$\mathcal{F}$ ... proof, eq. $(2)$
+
+$P$ ... statement
+
+$S$ ... statement
+
+$T$ ... proof, eq. $(1)$
+
+$\mathbf{V}$ ... statement
+
+$X$ ... statement
+
+$Y^{\left<\!\left<0\right>\!\right>}, Y^{\left<\!\left<1\right>\!\right>}, \dots$ ... proof, eq. (6)
+
+***
+
+***Notation***
+
+*Symbols*
+
+$\Omega\rightarrow\Gamma$ ... 2(c)
+
+$f:\Omega\rightarrow\Gamma$ ... 2(c)
+
+$\Gamma^\Omega$ ... 2(d)
+
+$g \circ\!\circ\ f$ ... 2(e)
+
+$s\wedge t,\ s\vee t$ ... 2(h)
+
+$f\wedge g,\ f\vee g$ ... 2(i)
+
+$f\wedge c,\ c\wedge f,\ f\vee c,\ c\vee f$ ... 2(j)
+
+$f + c$ ... 2(j)
+
+$f > c,\ f \geq c, f = c$ ... 2(k)
+
+$\mathcal{A}\otimes\mathcal{H}$ ... 7(e)
+
+$\otimes_{[0,\infty)}\mathcal{A}$ ... 7(f)
+
+$\mathbf{V}, V$ (vector space) ... 11(a)
+
+$(\mathbf{V}, \nu)$ (normed space) ... 11(c)
+
+$d^*$ ($d$ metric) ... 11(d)
+
+$\nu^*$ ($\nu$ norm) ... 11(e)
+
+$\mu^f_{\mathcal{H}}$ ... 15(a)
+
+$\mu(f)$ ... 15(c)
+
+$\mathcal{F} \perp_P \mathcal{H}$ ... 15(e)
+
+$\mathcal{F}_\infty$ ... 17(c)
+
+$\mathcal{F}^+$ ... 17(d)
+
+$X_\tau$ ... 19(e)
+
+$[X]$ ... 19(f)
+
+$\left<X\right>$ ... 19(h)
+
+$\mathcal{F}_{\tau}$ ... 23
+
+*Numbers*
+
+$\pm\infty\cdot0,\ 0\cdot\pm\infty$ ... 1(h)
+
+$\mathbb{1}^\Omega_S$ ... 2(f)
+
+*Greek*
+
+$\Delta^S$ ... 13(e)
+
+$\Delta^{(\mathbf{V},\nu)}$ ... 13(f)
+
+$\Theta^{\left(\Omega,\mathbf{V}\right)}(X,\tau)$ ... 19(k)
+
+$\Theta^{\left(\Omega,\mathbf{V}\right)}_t(X,\tau)$ ... 19(k)
+
+$\Lambda_{\Omega,c}(f)$ ... 31(a)
+
+$\Lambda_\Omega(f)$ ... 31(b), 31(c)
+
+$\Xi_{\mathcal{T}}^D$ ... 21
+
+$\pi^\Gamma_t$ ... 2(g)
+
+$\sigma_\Omega(\mathcal{S})$ ... 7(a)
+
+$\sigma(\mathcal{S})$ ... 7(b)
+
+$\sigma_{\mathcal{H}}(f)$ ... 7(c)
+
+$\Phi^{\mathcal{H}}(X)$ ... 19(c)
+
+$\Phi^{\mathcal{H}}_t(X)$ ... 19(c)
+
+$\Phi^{\mathcal{H}}_\infty(X)$ ... 19(d)
+
+*Latin*
+
+$\mathcal{B}$ ... 9(a)
+
+$\overline{\mathcal{B}}$ ... 9(b)
+
+$\mathcal{C}_{\mathcal{T}_1,\mathcal{T}_2}$ ... 2(i)
+
+$\mathcal{E}$ ... 1(f)
+
+$\mathcal{E}_+$ ... 1(g)
+
+$\mathcal{G}_{\mathcal{T}}$ ... 13(c)
+
+$\inf\emptyset$ ... 1(i)
+
+$\mathcal{L}_{\mathcal{T}}$ ... 13(b)
+
+$\mathcal{L}_1^*(\mu)$ ... 15(b)
+
+$\mathcal{L}_1(\mu)$ ... 15(d)
+
+$\mathrm{Lim}$ ... 3(a.1)
+
+$\overline{\mathrm{Lim}}$ ... 3(b.1)
+
+$\overset{\mathcal{T}_1/\mathcal{T}_2}{\underset{t}{\mathrm{Lim}}}$ ... 3(c.1)
+
+$\overset{\mathcal{T}}{\underset{\downarrow t}{\mathrm{Lim}}}$ ... 3(d.1)
+
+$\underset{\downarrow t}{\mathrm{Lim}}$ ... 3(e.1)
+
+$\overset{\mathcal{T}}{\underset{\uparrow t}{\mathrm{Lim}}}$ ... 3(f.1)
+
+$\underset{\uparrow t}{\mathrm{Lim}}$ ... 3(g.1)
+
+$\underset{{n \rightarrow \infty}}{\mathrm{Lim}}\ s_n = r$ ... 3(a.2)
+
+$\underset{{n \rightarrow \infty}}{\overline{\mathrm{Lim}}}\ s_n = r$ ... 3(b.2)
+
+$\overset{\mathcal{T}_1/\mathcal{T}_2}{\underset{{s \rightarrow t}}{\mathrm{Lim}}}\ f(s) = r$ ... 3(c.2)
+
+$\overset{\mathcal{T}}{\underset{{s \downarrow t}}{\mathrm{Lim}}}\ f(s) = r$ ... 3(d.2)
+
+$\underset{{s \downarrow t}}{\mathrm{Lim}}\ f(s) = r$ ... 3(e.2)
+
+$\overset{\mathcal{T}}{\underset{{s \uparrow t}}{\mathrm{Lim}}}\ f(s) = r$ ... 3(f.2)
+
+$\underset{{s \uparrow t}}{\mathrm{Lim}}\ f(s) = r$ ... 3(g.2)
+
+$\mathrm{Lim}^*$ ... 3(a.3)
+
+$\overline{\mathrm{Lim}}^*$ ... 3(b.3)
+
+$\overset{\mathcal{T}_1/\mathcal{T}_2}{\underset{t}{\mathrm{Lim}^*}}$ ... 3(c.3)
+
+$\overset{\mathcal{T}}{\underset{\downarrow t}{\mathrm{Lim}^*}}$ ... 3(d.3)
+
+$\underset{\downarrow t}{\mathrm{Lim}^*}$ ... 3(e.3)
+
+$\overset{\mathcal{T}}{\underset{\uparrow t}{\mathrm{Lim}^*}}$ ... 3(f.3)
+
+$\underset{\uparrow t}{\mathrm{Lim}^*}$ ... 3(g.3)
+
+$\lim$ ... 3(a.4)
+
+$\overline{\lim}$ ... 3(b.4)
+
+$\overset{\mathcal{T}_1/\mathcal{T}_2}{\underset{t}{\lim}}$ ... 3(c.4)
+
+$\overset{\mathcal{T}}{\underset{\downarrow t}{\lim}}$ ... 3(d.4)
+
+$\underset{\downarrow t}{\lim}$ ... 3(e.4)
+
+$\overset{\mathcal{T}}{\underset{\uparrow t}{\lim}}$ ... 3(f.4)
+
+$\underset{\uparrow t}{\lim}$ ... 3(g.4)
+
+$\lim_{n\rightarrow\infty} s_n$ ... 3(a.5)
+
+$\overline{\lim}_{n\rightarrow\infty}\ s_n$ ... 3(b.5)
+
+$\overset{\mathcal{T}_1/\mathcal{T}_2}{\underset{s\rightarrow t}{\lim}}\ f(s)$ ... 3(c.5)
+
+$\overset{\mathcal{T}}{\underset{s\downarrow t}{\lim}}\ f(s)$ ... 3(d.5)
+
+$\underset{s\downarrow t}{\lim}\ f(s)$ ... 3(e.5)
+
+$\overset{\mathcal{T}}{\underset{s\uparrow t}{\lim}}\ f(s)$ ... 3(f.5)
+
+$\underset{s\uparrow t}{\lim}\ f(s)$ ... 3(g.5)
+
+$\mathbb{N}_0$ ... 1(a)
+
+$\overline{\mathbb{N}}_0$ ... 1(b)
+
+$\mathbb{N}_1$ ... 1(c)
+
+$\overline{\mathbb{N}}_1$ ... 1(d)
+
+$\mathcal{P}\Omega$ ... 5(a)
+
+$\overline{\mathbb{R}}$ ... 1(e)
+
+$\mathcal{R}^*_{\mathcal{T}}$ ... 13(d)
+
+$\mathcal{R}_{\mathcal{T}}$ ... 13(a)
+
+$\sup\emptyset$ ... 1(i)
+
+***
+
+***Terminology***
+
+*Greek*
+
+*$\sigma$*
+
+* $\sigma$-algebra ... 5(b)
+
+  * on $\Omega$ ... 5(c)
+
+  * induced on $\Omega$ by $\mathcal{A}$ ... 5(d)
+
+  * generated by $f$ w.r.t. $\mathcal{H}$ ... 7(c)
+
+  * sub-$\sigma$-algebra of the $\sigma$-algebra $\mathcal{A}$ ... 5(e)
+
+*Latin*
+
+*B*
+
+* Borel field
+
+  * on $\mathbb{R}$ ... 9(a)
+
+  * on $\overline{\mathbb{R}}$ ... 9(b)
+
+*C*
+
+* càdlàg ... 13(c)
+
+* complex vector space ... see vector space
+
+*D*
+
+* the $\mu$-distribution of $f$ w.r.t. $\mathcal{H}$ ... 15(a)
+
+*F*
+
+* filtration ... 17(a)
+
+  * on a set $\Omega$ ... 17(b)
+
+  * the natural filtration generated by $X$ w.r.t. $\mathcal{H}$ ... 19(c)
+
+* first hitting time in $D$ ... see hitting time
+
+*H*
+
+* hitting time in $D$ (first) ... 21
+
+*I*
+
+* (Lebesgue-)integrable functions w.r.t. $\mu$ ... 15(d)
+
+  * semi-(Lebesgue-)integrable functions w.r.t. $\mu$ ... 15(b)
+
+*L*
+
+* Lebesgue-integrable functions w.r.t. $\mu$ ... see integrable functions
+
+* $\mathcal{F}/S$-Lévy process w.r.t. $P$ ... 28(a)
+
+  * $\cup\mathcal{A}/S$-Lévy process w.r.t. $P$ ... 28(b)
+
+*M*
+
+ * measure on a $\sigma$-algebra $\mathcal{A}$ ... 5(f)
+
+  * probability ... 5(g)
+
+ * $\mathcal{A}/\mathcal{H}$-measurable function ... 7(d)
+
+*N*
+
+* the natural filtration generated by $X$ w.r.t. $\mathcal{H}$ ... see filtration
+
+*P*
+
+* paths ... 19(g)
+
+* probability measure on a $\sigma$-algebra $\mathcal{A}$ ... see measure
+
+* the product-$\sigma$-algebra on $\cup\mathcal{A}\times\cup\mathcal{H}$ generated by the pair $\left(\mathcal{A}, \mathcal{H}\right)$ ... 7(e)
+
+  * the product $\sigma$-algebra on $\Omega^{[0,\infty)}$ ... 7(f)
+
+* $\mathcal{F}/\mathcal{H}$-progressively measurable ... 19(i)
+
+  * $\mathcal{H}$-progressively measurable ... 19(j)
+
+* projection function ... 2(g)
+
+*S*
+
+* semi-integrable functions w.r.t. $\mu$ ... see integrable functions
+
+* $\Omega_0/\Gamma$-stochastic process ... 19(a)
+
+  * $\mathcal{F}/\mathcal{H}$-stochastic process ... 19(b)
+
+* $\mathcal{F}$-stopping time ... 22(a)
+
+  * weak ... 22(b)
+
+* sub-$\sigma$-algebra of the $\sigma$-algebra $\mathcal{A}$ ... see $\sigma$-algebra
+
+*V*
+
+* vector space (complex) ... 11(b)
+
+*W*
+
+* weak-$\mathcal{F}$-stopping time ... see stopping time
