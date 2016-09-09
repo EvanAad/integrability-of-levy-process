@@ -26,12 +26,12 @@ $$
 
 Since, by ???,
 $$
-\forall y \in [0,\infty),\ \{y < \tau_1\} \subseteq \left\{\nu(X_y)\leq\gamma\right\}, \tag{1.1}\label{Marisa}
+\forall y \in [0,\infty),\ \{y \leq \tau_1\} \subseteq \left\{\nu(X_y)\leq\gamma\right\}, \tag{1.1}\label{Marisa}
 $$
 we have, for every $n \in \mathbb{N}_1$,
 $$
 \begin{align}
-P(\tau_1 = \infty) &\leq P(\tau_1 \geq nT + 1) \\
+P(\tau_1 = \infty) &\leq P(\tau_1 \geq nT) \\
 &\overset{\eqref{Marisa}}{\leq} P\left(\bigcap_{k=0}^n \{\nu(X_{kT}) \leq \gamma\}\right) \\
 &\leq P\left(\bigcap_{k=1}^n\{\nu(X_{kT}) + \nu(X_{(k-1)T}) \leq 2\gamma\}\right) \\
 &\overset{\text{triangle ineq.}}{\leq} P\left(\bigcap_{k = 1}^n \left\{\nu\left(X_{kT} - X_{(k-1)T}\right)\leq 2\gamma\right\}\right) \\
