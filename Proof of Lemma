@@ -100,8 +100,8 @@ a.
  q &\overset{\eqref{Verda}}{=} P\left(\nu\left(X_T - X_0\right)\leq 2\gamma\right) \\
  &= P\left(\left\{\nu\left(X_T - X_0\right)\leq 2\gamma\right\}^{(0)}\right) + P(\Omega\setminus\Omega_0) \\
  &\overset{33.1(a.10)}{=} P\left(\left\{\nu(X_T - X_0)\leq 2\gamma\right\}^{(0)}\right) \\
- &\overset{33.1(c.2)}{=} P\left(\left\{\left(\nu(X_T - X_0)\right)^{(0)}\leq 2\gamma\right\}\right) \\
- &\overset{33.1(c.3)}{=} P\left(\left\{\nu\left((X_T - X_0)^{(0)}\right)\leq 2\gamma\right\}\right) \\
+ &\overset{32(c.2)}{=} P\left(\left\{\left(\nu(X_T - X_0)\right)^{(0)}\leq 2\gamma\right\}\right) \\
+ &\overset{32(c.3)}{=} P\left(\left\{\nu\left((X_T - X_0)^{(0)}\right)\leq 2\gamma\right\}\right) \\
  &\overset{32(f)}{=} P\left(\nu\left(X_T^{(0)} - X_0^{(0)}\right)\leq 2\gamma\right) \\
  &\overset{33.1(a.14)}{=} P\left(\nu\left(X_T^{(0)}\right)\leq 2\gamma\right) \\
  &\overset{32(c.3)}{=} P\left(\left(\nu(X_T)\right)^{(0)}\leq 2\gamma\right) \\
@@ -121,24 +121,28 @@ a.
  \{t < \tau_1\} &= \Omega\setminus\{\tau_1 \leq t\} \\
  &\overset{33.1(a.17)}{=} \Omega\setminus\{\tau_1^{(0)} \leq t\} \\
  &= \{t < \tau_1^{(0)}\} \\
- &\overset{33.1(a.19)}{=} \left\{t < \left(\inf\left\{s \in [0,\infty)\ |\!:\ \nu(X_s) > \gamma\right\}\right)\right\} \\
- &\subseteq \left\{\nu(X_s) \leq \gamma\right\}.
+ &\overset{33.1(a.19)}{=} \left\{t < \left(\inf\left\{s \in [0,\infty)\ |\!:\ \nu\left(X_s^{(0)}\right) > \gamma\right\}\right)\right\} \\
+ &\subseteq \left\{\nu\left(X_t^{(0)}\right) \leq \gamma\right\} \\
+ &\overset{32(c.3)}{=} \left\{\left(\nu(X_t)\right)^{(0)}\leq 2\gamma\right\} \\
+ &\overset{32(c.2)}{=} \left\{\nu(X_t)\leq 2\gamma\right\}^{(0)} \\
+ &\overset{32(a.2)}{\subseteq} \left\{\nu(X_t)\leq 2\gamma\right\}.
  \end{align}
  $$
 
  Then, for every $n \in \mathbb{N}_1$,
  $$
  \begin{align}
- P(\tau_1 = \infty) &\leq P(\tau_1 > nT) \\
+ P(\tau_1 = \infty) &\leq P\left(\bigcap_{k=0}^n \{kT < \tau_1\}\right) \\
  &\overset{\eqref{Marisa}}{\leq} P\left(\bigcap_{k=0}^n \{\nu(X_{kT}) \leq \gamma\}\right) \\
  &\leq P\left(\bigcap_{k=1}^n\{\nu(X_{kT}) + \nu(X_{(k-1)T}) \leq 2\gamma\}\right) \\
  &\overset{\text{triangle ineq.}}{\leq} P\left(\bigcap_{k = 1}^n \left\{\nu\left(X_{kT} - X_{(k-1)T}\right)\leq 2\gamma\right\}\right) \\
- &\overset{29(e)}{=}\prod_{k=1}^n P\left(\nu\left(X_{kT}-X_{(k-1)T}\right)\leq 2\gamma\right) \\
- &\overset{28(a.3)}{=}q^n.
+ &\overset{29(e)}{=} \prod_{k=1}^n P\left(\nu\left(X_{kT}-X_{(k-1)T}\right)\leq 2\gamma\right) \\
+ &\overset{28(a.3)}{=} \left(P\left(\nu\left(X_T-X_0\right)\leq 2\gamma\right)\right)^n \\
+ &\overset{\eqref{Verda}}{=} q^n.
  \end{align}
  $$
 
  We infer that $P(\tau_1 = \infty) \leq \inf \{q^n\ :\!|\ n\in\mathbb{N}_1\} \overset{\eqref{Tyesha}}{=} 0$, which implies that
  $$
- P(\Omega_1) \overset{\eqref{Glenda}}{=} P(\tau<\infty) = 1.
+ P(\Omega_1) \overset{\eqref{Sergio}}{=} P(\tau_1<\infty) = 1.
  $$
