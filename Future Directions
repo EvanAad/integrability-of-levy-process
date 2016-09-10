@@ -7,19 +7,19 @@ $$
 
 Let $\mathcal{T}$ be a topology on the non-empty set $S$, and let $D\subseteq S$.
 
-1. We define a function $\Xi^D_{\mathcal{T}}:\left(\left([0,\infty)\rightarrow S\right)\times [0,\infty)\right)\rightarrow\overline{\mathbb{R}}$ as follows. For every $f:[0,\infty)\rightarrow S$, and for every $t \in S$ we set
+1. We define a function $\Xi_{\mathcal{T}}:\left(\left([0,\infty)\rightarrow S\right)\times [0,\infty)\right)\rightarrow\overline{\mathbb{R}}$ as follows. For every $f:[0,\infty)\rightarrow S$, and for every $t \in S$ we set
 $$
-\hat\Xi^D_{\mathcal{T}}(f,t) := \inf \left\{s \in [t,\infty)\ |\!:\ f(s) \in D\right\}.
+\hat\Xi_{\mathcal{T}}(f,t) := \inf \left\{s \in [t,\infty)\ |\!:\ f(s) \in D\right\}.
 $$
 
-2. We define a function $\hat\Xi^D_{\mathcal{T}}:\left([0,\infty)\rightarrow S\right)\rightarrow\overline{\mathbb{R}}$ as follows. For every $f:[0,\infty)\rightarrow S$ we set
+2. We define a function $\hat\Xi_{\mathcal{T}}:\left([0,\infty)\rightarrow S\right)\rightarrow\overline{\mathbb{R}}$ as follows. For every $f:[0,\infty)\rightarrow S$ we set
 $$
-\hat\Xi^D_{\mathcal{T}}(f) := \Xi^D_{\mathcal{T}}(f, 0).
+\hat\Xi_{\mathcal{T}}(f) := \Xi_{\mathcal{T}}(f, 0).
 $$
 
 ***
 
 Let $\Omega$ be a (possibly empty) set, let $\mathcal{T}$ be a topology on the non-empty set $S$, let $D\subseteq S$, and let $X$ be a $\Omega/S$-stochastic process. Then
 $$
-\Xi^S_{\mathcal{T}}\circ\left<[X], 0\mathbb{1}^\Omega_\Omega\right> = \hat\Xi^S_{\mathcal{T}}\circ[X].
+\Xi_{\mathcal{T}}\circ\left<[X], 0\mathbb{1}^\Omega_\Omega\right> = \hat\Xi_{\mathcal{T}}\circ[X].
 $$

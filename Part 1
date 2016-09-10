@@ -710,23 +710,23 @@ f. For all $a,b \in [0,\infty)$, if $\tau$ is a weak $\mathcal{F}$-stopping time
 
 ***24. Definition***
 
-Let $\Gamma$ be a non-empty set, let $f:[0,\infty)\rightarrow\Gamma$, and let $D\subseteq\Gamma$. The first hitting time in $D$, is the function $\Xi^D:\left([0,\infty)\rightarrow\Gamma\right)\rightarrow[0,\infty]$ defined as follows. For every $f:[0,\infty)\rightarrow\Gamma$,
+Let $\Gamma$ be a non-empty set, let $f:[0,\infty)\rightarrow\Gamma$, and let $D\subseteq\Gamma$. The first hitting time in $D$, is the function $\Xi_D:\left([0,\infty)\rightarrow\Gamma\right)\rightarrow[0,\infty]$ defined as follows. For every $f:[0,\infty)\rightarrow\Gamma$,
 $$
-\Xi^D(f) := \inf \left\{t\in[0,\infty)\ |\!:\ f(t) \in D\right\}.
+\Xi_D(f) := \inf \left\{t\in[0,\infty)\ |\!:\ f(t) \in D\right\}.
 $$
 
 ***25. Corollary***
 
-a. Let $\Gamma$ be a non-empty set, let $f:[0,\infty)\rightarrow\Gamma$, and let $D\subseteq\Gamma$. Then $\Xi^D(f) = \inf\ f^{-1}(D)$.
+a. Let $\Gamma$ be a non-empty set, let $f:[0,\infty)\rightarrow\Gamma$, and let $D\subseteq\Gamma$. Then $\Xi_D(f) = \inf\ f^{-1}(D)$.
 
 b. Let $S, T, U$ be non-empty sets, let $f:[0,\infty)\rightarrow S$, let $g:S\rightarrow U$, and let $D \in U$. Then
  $$
- \Xi^{g^{-1}(D)}(f)=\Xi^D(g\circ f).
+ \Xi_{g^{-1}(D)}(f)=\Xi_D(g\circ f).
  $$
 
-c. Let $\mathcal{T}$ be a topology on the non-empty set $\Gamma$, and let $D\in\mathcal{T}$. Then $\Xi^D\big|_{\mathcal{R}_{\mathcal{T}}}$ is $\mathcal{R}_{\mathcal{T}}^*/\overline{\mathcal{B}}$-measurable.
+c. Let $\mathcal{T}$ be a topology on the non-empty set $\Gamma$, and let $D\in\mathcal{T}$. Then $\Xi_D\big|_{\mathcal{R}_{\mathcal{T}}}$ is $\mathcal{R}_{\mathcal{T}}^*/\overline{\mathcal{B}}$-measurable.
 
-d. Let $\mathcal{T}$ be a topology on the non-empty set $\Gamma$, and let $X$ be a $\Omega/\Gamma$-stochastic process with $\mathcal{E}_+/\mathcal{T}$ right-continuous paths (i.e., $[X](\Omega)\subseteq\mathcal{R}_{\mathcal{T}}$). Then, for every $D\in\mathcal{T}$, $\Xi^D\circ [X]$ is a weak $\Phi^{\sigma(\mathcal{T})}(X)$-stopping time.
+d. Let $\mathcal{T}$ be a topology on the non-empty set $\Gamma$, and let $X$ be a $\Omega/\Gamma$-stochastic process with $\mathcal{E}_+/\mathcal{T}$ right-continuous paths (i.e., $[X](\Omega)\subseteq\mathcal{R}_{\mathcal{T}}$). Then, for every $D\in\mathcal{T}$, $\Xi_D\circ [X]$ is a weak $\Phi^{\sigma(\mathcal{T})}(X)$-stopping time.
 
 ***26. Definition***
 

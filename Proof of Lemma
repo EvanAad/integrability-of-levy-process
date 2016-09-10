@@ -59,12 +59,12 @@ a.
  \end{align}
  $$
 
- 20. Since, by Lemma 32(i.4), $[X](\Omega) \subseteq \mathcal{R}_{\nu^*}$, Lemma 32(a.) implies that $\left[X^{\langle 0\rangle}\right](\Omega_1) \subseteq \mathcal{R}_{\nu^*}$. Since, additionally, by Lemma 33.1(a.1), $\nu^{-1}\left((\gamma, \infty)\right) \in \nu^*$, Corollary 25(d) implies that $\Xi_{\nu^*}^{\nu^{-1}\left((\gamma, \infty)\right)} \circ \left[X^{\langle 0\rangle}\right]$ is a weak $\Phi^{\sigma(\nu^*)}\left(X^{\langle 0\rangle}\right)$-stopping time. It remains to observe that
+ 20. Since, by Lemma 32(i.4), $[X](\Omega) \subseteq \mathcal{R}_{\nu^*}$, Lemma 32(a.) implies that $\left[X^{\langle 0\rangle}\right](\Omega_1) \subseteq \mathcal{R}_{\nu^*}$. Since, additionally, by Lemma 33.1(a.1), $\nu^{-1}\left((\gamma, \infty)\right) \in \nu^*$, Corollary 25(d) implies that $\Xi_{\nu^{-1}\left((\gamma, \infty)\right)} \circ \left[X^{\langle 0\rangle}\right]$ is a weak $\Phi^{\sigma(\nu^*)}\left(X^{\langle 0\rangle}\right)$-stopping time. It remains to observe that
  $$
  \begin{align}
  \tau_1^{(0)} &\overset{33.1(a.19)}{=} \inf \left\{t \in [0,\infty)\ |\!:\ \nu\left(X_t^{(0)}\right) > \gamma\right\} \\
  &= \inf \left\{t \in [0,\infty)\ |\!:\ X_t^{(0)} \in \nu^{-1}\left((\gamma,\infty)\right)\right\} \\
- &\overset{24}{=} \Xi_{\nu^*}^{\nu^{-1}\left((\gamma, \infty)\right)} \circ \left[X^{\langle 0\rangle}\right].
+ &\overset{24}{=} \Xi_{\nu^{-1}\left((\gamma, \infty)\right)} \circ \left[X^{\langle 0\rangle}\right].
  \end{align}
  $$
 
