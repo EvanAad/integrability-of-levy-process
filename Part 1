@@ -769,7 +769,7 @@ b. $X$ is a $\Omega/S$-Lévy process w.r.t. $P$ iff $X$ is a $\Phi^{\sigma(\nu^*
 
 Let $\mathcal{A}$ be a $\sigma$-algebra on $\Omega$, let $\mathcal{F}$ be a filtration on $\Omega$, let $P$ be a probability measure on $\mathcal{A}$, let $S=(\mathbf{V}, \nu)$ be a separable normed space, and let $X$ be a $\Omega/V$-stochastic process.
 
-a. If $X$ is a $\Omega/S$-Lévy process w.r.t. $P$, then $P(X_0 = 0) = 1$.
+a. If $X$ is a $\Omega/S$-Lévy process w.r.t. $P$, then $P(X_0 = \mathbf{0}_{\mathbf{V}}) = 1$.
 
 b. If $X$ is a $\mathcal{F}/S$-Lévy process w.r.t. $P$, then $X$ is a $\Omega/S$-Lévy process w.r.t. $P$.
 

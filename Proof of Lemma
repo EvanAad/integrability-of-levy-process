@@ -24,15 +24,15 @@ a.
  \Omega_0 \overset{33.1(a.5)}{=} \{X_0 = \mathbf{0}\} = \left\{X_0 \in \{\mathbf{0}\}\right\} \overset{33.1(a.2)}{\in} \sigma_{\sigma(\nu^*)}(X_0) \overset{19(c)}{\subseteq} \Phi^{\sigma(\nu^*)}_t(X).
  $$
 
- 10. $P(\Omega_0) \overset{33.1(a.4)}{=} P(X_0 = 0) \overset{29(a)}{=} 1$.
+ 10. $P(\Omega_0) \overset{33.1(a.5)}{=} P(X_0 = \mathbf{0}) \overset{29(a)}{=} 1$.
 
- 11. Follows from Lemma 32(b.1) in light of Lemma 33.1(a.7).
+ 11. Follows from Lemma 32(b.1) in light of Lemma 33.1(a.9).
 
- 12. Follows from Lemma 32(b.2), since Lemma 33.1(a.8) implies that $\Omega_0 \neq \emptyset$.
+ 12. Follows from Lemma 32(b.2), since Lemma 33.1(a.10) implies that $\Omega_0 \neq \emptyset$.
 
- 13. $\tau_0^{(0)} = \tau_0\big|_{\Omega_0} \overset{33.1(a.5)}{=} \tau_0\big|_{\{\tau_0 = 0\}} = 0$.
+ 13. $\tau_0^{(0)} = \tau_0\big|_{\Omega_0} \overset{33.1(a.6)}{=} \tau_0\big|_{\{\tau_0 = 0\}} = 0$.
 
- 14. $X^{(0)}_{\tau_0^{(0)}} \overset{33.1(a.12)}{=} X_0^{(0)} = X_0\big|_{\Omega_0} \overset{33.1(a.4)}{=} X_0\big|_{\{X_0 = \mathbf{0}\}} = \mathbf{0}$.
+ 14. $X^{(0)}_{\tau_0^{(0)}} \overset{33.1(a.13)}{=} X_0^{(0)} = X_0\big|_{\Omega_0} \overset{33.1(a.5)}{=} X_0\big|_{\{X_0 = \mathbf{0}\}} = \mathbf{0}$.
 
  15. By \eqref{Tiny}.
 
