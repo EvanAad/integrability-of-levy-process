@@ -32,9 +32,9 @@ a.
 
  16. For every $t \in (0,\infty)$, $\{\tau_1 \leq t\} \subseteq \Omega_0$.
 
- 17. For every $t \in (0,\infty]$, $\{\tau_1 < t\} = \{\tau_1^{(0)} < t\}$.
+ 17. For every $t \in (0,\infty)$, $\{\tau_1 \leq t\} = \{\tau_1^{(0)} \leq t\}$.
 
- 18. For every $t \in (0,\infty)$, $\{\tau_1 \leq t\} = \{\tau_1^{(0)} \leq t\}$.
+ 18. For every $t \in (0,\infty]$, $\{\tau_1 < t\} = \{\tau_1^{(0)} < t\}$.
 
  19. $\tau_1^{(0)} = \inf \left\{t \in [0,\infty)\ |\!:\ \nu\left(X_t^{(0)}\right) > \gamma\right\}$.
 
