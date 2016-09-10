@@ -11,7 +11,7 @@ b.
  \tau_0^{(n)} &\overset{32(m.3)}{=} \left(\tau_0^{(0)}\right)^{(n)} \\
  &\overset{32(c.4)}{=} \left(\left(\Lambda_\Omega\left(\tau_0^{(0)}\right)\right)^{(0)}\right)^{(n)} \\
  &\overset{32(g.6)}{=} \left(\left(\tau_0\mathbb{1}^{\Omega}_{\Omega_0}\right)^{(0)}\right)^{(n)} \\
- &\overset{\substack{\eqref{Lajuana},\\33.1(a.2)}}{=} 0.
+ &\overset{\substack{\eqref{Lajuana},\\33.1(a.5)}}{=} 0.
 \end{align}
  $$
 
@@ -97,7 +97,7 @@ $$
 
  5. Let $n \in \overline{\mathbb{N}}_0$ be such that $\Omega_n \neq \emptyset$. Then
  $$
- X^{(n)}_{\tau_0^{(n)}} \overset{33.1(b.2)}{=} X_0^{(n)} \overset{32(m.3)}{=} \left(X_0^{(0)}\right)^{(n)} \overset{33.1(a.2)}{=} 0.
+ X^{(n)}_{\tau_0^{(n)}} \overset{33.1(b.2)}{=} X_0^{(n)} \overset{32(m.3)}{=} \left(X_0^{(0)}\right)^{(n)} \overset{33.1(a.5)}{=} 0.
  $$
 
  6. Follows from Lemma 32(j.3).
@@ -215,7 +215,7 @@ Then we will prove \eqref{Robbin}.
  \end{align}
  $$
 
- Lemma 33.1(a.7) together with Lemma 23(c) imply that $\tau_0$ is $\mathcal{F}/\overline{\mathcal{B}}$-measurable. Similarly, Lemma 33.1(a.8) together with Lemma 23(c) imply that $\tau_1$ is $\mathcal{F}/\overline{\mathcal{B}}$-measurable. \eqref{Geraldo} and \eqref{Leigha} now follow from Lemma 32(d.1), proving that $0 \in I$.
+ Lemma 33.1(a.7) together with Lemma 23(c) imply that $\tau_0$ is $\mathcal{F}/\overline{\mathcal{B}}$-measurable. Similarly, Lemma 33.1(a.21) together with Lemma 23(c) imply that $\tau_1$ is $\mathcal{F}/\overline{\mathcal{B}}$-measurable. \eqref{Geraldo} and \eqref{Leigha} now follow from Lemma 32(d.1), proving that $0 \in I$.
 
  Next, suppose that $n > 0$ and that $n-1 \in I$. We assume, w.l.g., that $\Omega_n \neq \emptyset$. Then Lemma 33.1(b.1) implies that $\Omega_{n-1} \neq \emptyset$. Therefore, since $n-1 \in I$,
  $$
@@ -326,7 +326,7 @@ d.
 
  3. Let $m, n \in \overline{\mathbb{N}}_0$ be such that $m \leq n$ and such that $\Omega_n \neq \emptyset$. Then
  $$
- \mathcal{F} \overset{33.1(a.5)}{\supseteq} \mathcal{F}^{(0)} \overset{32(b.1)}{\supseteq} \left(\mathcal{F}^{(0)}\right)^{(m)} \overset{32(m.2)}{\supseteq} \mathcal{F}^{(m)} \overset{32(b.1)}{\supseteq} \left(\mathcal{F}^{(m)}\right)^{(n)} \overset{32(m.2)}{\supseteq} \mathcal{F}^{(n)}.
+ \mathcal{F} \overset{33.1(a.11)}{\supseteq} \mathcal{F}^{(0)} \overset{32(b.1)}{\supseteq} \left(\mathcal{F}^{(0)}\right)^{(m)} \overset{32(m.2)}{\supseteq} \mathcal{F}^{(m)} \overset{32(b.1)}{\supseteq} \left(\mathcal{F}^{(m)}\right)^{(n)} \overset{32(m.2)}{\supseteq} \mathcal{F}^{(n)}.
  $$
 
 e.
@@ -405,7 +405,7 @@ For all $n\in\mathbb{N}_0$ and all $x\in\{'a', 'b', \dots, 'f'\}$, we denote by 
 
 Let $I$ be the set of numbers $n\in\mathbb{N}_0$ that satisfy assertions $33.2(a_n)-33.2(f_n)$. We need to prove that $I = \mathbb{N}_0$. We proceed by induction.
 
-Let $n \in \mathbb{N}_0$. Firstly, suppose that $n = 0$. Then $33.2(a_n)$ is Lemma 33.1(a.4). $33.2(b_n)$ follows from Lemma 32(i.1) in light of Lemma 33.1(c.1). $33.2(c_n)$ holds, since
+Let $n \in \mathbb{N}_0$. Firstly, suppose that $n = 0$. Then $33.2(a_n)$ is Lemma 33.1(a.10). $33.2(b_n)$ follows from Lemma 32(i.1) in light of Lemma 33.1(c.1). $33.2(c_n)$ holds, since
 $$
 \left(P^{(n)}\right)^{\left[Y^{\left<\!\left<n\right>\!\right>}\right]}_{\mathcal{R}_{\nu^*}^*} \overset{33.1(c.1)}{=} \left(P^{(n)}\right)^{\left[X^{(n)}\right]}_{\mathcal{R}_{\nu^*}^*} \overset{32(i.3)}{=} \left(P^{(n)}\right)^{[X]^{(n)}}_{\mathcal{R}_{\nu^*}^*} \overset{32(e.3)}{=} P^{[X]}_{\mathcal{R}_{\nu^*}^*}.
 $$
@@ -427,7 +427,7 @@ P\left(\Omega_n\right) &\overset{\eqref{Sergio}}{=} P\left(\tau_n < \infty\right
 &\overset{33.2(d_{n-1})}{=} P^{(0)}\left(\tau_1^{(0)} < \infty\right) \\
 &\overset{32(c.2)}{=} P^{(0)}\left(\left\{\tau_1 < \infty\right\}^{(0)}\right) \\
 &\overset{32(e.2)}{=} P\left(\tau_1 < \infty\right) \\
-&\overset{33.1(a.10)}{=} 1.
+&\overset{33.1(a.28)}{=} 1.
 \end{align}
 $$
 
