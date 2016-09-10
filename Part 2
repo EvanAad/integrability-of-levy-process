@@ -13,16 +13,16 @@ $$
 Set
 $$
 \begin{align}
-\mathbf{0} &:= \mathbf{0}_{\mathbf{V}}, \tag{a}\label{Harry} \\
-\mathcal{F} &:= \Phi^{\sigma(\nu^*)}_\infty(X). \tag{2}\label{Hassan}
+\mathbf{0} &:= \mathbf{0}_{\mathbf{V}}, \tag{2}\label{Harry} \\
+\mathcal{F} &:= \Phi^{\sigma(\nu^*)}_\infty(X). \tag{3}\label{Hassan}
 \end{align}
 $$
 
 Define, by recursion, a sequence $(\tau_0,\tau_1,\tau_2,\dots)$ of functions $\tau_n:\Omega\rightarrow[0,\infty]$, as follows.
 $$
 \begin{align}
-\tau_0 &:= \infty\mathbb{1}^\Omega_{\{X_0\neq \mathbf{0}\}}, \tag{3}\label{Lajuana} \\
-\tau_n &:= \inf\left\{t\in\left[\tau_{n-1},\infty\right)\ \big|\!:\ \nu\left(X_t-X_{\tau_{n-1}}\right) > \gamma \right\}.\hspace{1cm}n\in\mathbb{N}_1 \tag{4}\label{Tiny}
+\tau_0 &:= \infty\mathbb{1}^\Omega_{\{X_0\neq \mathbf{0}\}}, \tag{4}\label{Lajuana} \\
+\tau_n &:= \inf\left\{t\in\left[\tau_{n-1},\infty\right)\ \big|\!:\ \nu\left(X_t-X_{\tau_{n-1}}\right) > \gamma \right\}.\hspace{1cm}n\in\mathbb{N}_1 \tag{5}\label{Tiny}
 \end{align}
 $$
 
@@ -30,14 +30,14 @@ For every $n \in \mathbb{N}_0$ define
 
 $$
 \begin{align}
-\Omega_n &:= \{\tau_n<\infty\}, \tag{5}\label{Sergio} \\
-Y^{\left<\!\left<n\right>\!\right>}&:=\Theta^{\left(\Omega_n,\mathbf{V}\right)}(X^{(n)},\tau_n^{(n)}). \tag{6}\label{Glenda}
+\Omega_n &:= \{\tau_n<\infty\}, \tag{6}\label{Sergio} \\
+Y^{\left<\!\left<n\right>\!\right>}&:=\Theta^{\left(\Omega_n,\mathbf{V}\right)}(X^{(n)},\tau_n^{(n)}). \tag{7}\label{Glenda}
 \end{align}
 $$
 
 Finally, define
 $$
-\Omega_\infty := \bigcap_{n=0}^\infty \Omega_n. \tag{7}\label{Deloras}
+\Omega_\infty := \bigcap_{n=0}^\infty \Omega_n. \tag{8}\label{Deloras}
 $$
 
 We introduce the following notations, for $n\in\overline{\mathbb{N}}_0$.
