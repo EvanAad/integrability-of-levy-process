@@ -54,6 +54,8 @@ We introduce the following notations, for $n\in\overline{\mathbb{N}}_0$.
 
 * For every $D\subseteq\Omega$, for every non-empty set $\Gamma$, and for every $D/\Gamma$-stochastic process $Z$, set $Z^{\langle n\rangle}:=\left((Z_t)^{(n)}\right)_{t\in I}$.
 
+We make the convention that angular brackets superscript takes higher precedence than subscript, whereas parentheses superscript take lower precedence than subscript. Thus, if $X$ is a stochastic process and if $t \in [0,\infty)$, $X_t^{\langle n\rangle}$ means $(X^{\langle n\rangle})_t$, whereas $X_t^{(n)}$ means $(X_t)^{(n)}$.
+
 ***33.1 Lemma***
 
 [A preliminary note: In Lemma 33.1(a.4) and in Lemma 33.1(a.10) we will see that $\Omega_0, \Omega_1 \neq \emptyset$, respectively. Later, in Lemma 33.2(a) and in Lemma 33.3(a), we will see that, in fact, for all $n \in \overline{\mathbb{N}}_0$, $\Omega_n \neq \emptyset$. However, all things in due course, and throughout Lemma 33.1 we allow for the hypothetical possibility that, for some $n \in \{2, 3, \dots\}\cup\{\infty\}$, $\Omega_n = \emptyset$.]

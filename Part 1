@@ -20,13 +20,15 @@ i. We shall agree that $\inf\emptyset = \infty$, and that $\sup\emptyset = -\inf
 
 ***2. Notations and Conventions***
 
-a. A function's domain may be empty. Any two functions whose domains are empty, are equal to each other. A function whose domain is empty is not equal to a function whose domain is not empty.
+a. The following classes of meta-mathematical objects are pairwise non-intersecting: numbers, sets, sequences, functions. [This convention allows us to use some otherwise ambiguous notation unambiguously.]
 
-b. If $\Omega$ is a (possibly empty) set, and $\Gamma$ is a non-empty set, we denote by $\Omega\rightarrow\Gamma$ the set of all functions, whose domain is $\Omega$, and that take values in $\Gamma$. We write $f:\Omega\rightarrow\Gamma$ as a shorthand for $f\in\Omega\rightarrow\Gamma$.
+b. A function's domain may be empty. Any two functions whose domains are empty, are equal to each other. A function whose domain is empty is not equal to a function whose domain is not empty.
 
-c. If $\Omega$ is a (possibly empty) set, and $\Gamma$ is a non-empty set, we define $\Gamma^\Omega := \Omega\rightarrow\Gamma$.
+c. If $\Omega$ is a (possibly empty) set, and $\Gamma$ is a non-empty set, we denote by $\Omega\rightarrow\Gamma$ the set of all functions, whose domain is $\Omega$, and that take values in $\Gamma$. We write $f:\Omega\rightarrow\Gamma$ as a shorthand for $f\in\Omega\rightarrow\Gamma$.
 
-d. Let $\Omega_1, \Omega_2$ be (possibly empty) sets, let $\Omega_3, \Omega_4$ be non-empty sets, let $f:\Omega_1\rightarrow\left(\Omega_2\rightarrow\Omega_3\right)$, and let $g:\Omega_3\rightarrow\Omega_4$. We define $g\circ\!\circ\ f$ to be the function $g\circ\!\circ\ f:\Omega_1\rightarrow\left(\Omega_2\rightarrow\Omega_4\right)$ defined as follows. For every $\omega \in \Omega_1$ set
+d. If $\Omega$ is a (possibly empty) set, and $\Gamma$ is a non-empty set, we define $\Gamma^\Omega := \Omega\rightarrow\Gamma$.
+
+e. Let $\Omega_1, \Omega_2$ be (possibly empty) sets, let $\Omega_3, \Omega_4$ be non-empty sets, let $f:\Omega_1\rightarrow\left(\Omega_2\rightarrow\Omega_3\right)$, and let $g:\Omega_3\rightarrow\Omega_4$. We define $g\circ\!\circ\ f$ to be the function $g\circ\!\circ\ f:\Omega_1\rightarrow\left(\Omega_2\rightarrow\Omega_4\right)$ defined as follows. For every $\omega \in \Omega_1$ set
  $$
  \left(g\circ\circ\ f\right)(\omega) := g\circ\left(f(\omega)\right).
  $$
@@ -35,7 +37,7 @@ d. Let $\Omega_1, \Omega_2$ be (possibly empty) sets, let $\Omega_3, \Omega_4$ b
  \left(g\circ\!\circ\ f\right)(\omega_1)(\omega_2) = g\left(f(\omega_1)(\omega_2)\right).
  $$
 
-e. Let $\Omega$ be a (possibly empty) set, and let $S\subseteq\Omega$. Then $\mathbb{1}^\Omega_S$ is the function $\mathbb{1}^\Omega_S:\Omega\rightarrow\{0,1\}$ defined as follows. For every $\omega\in\Omega$,
+f. Let $\Omega$ be a (possibly empty) set, and let $S\subseteq\Omega$. Then $\mathbb{1}^\Omega_S$ is the function $\mathbb{1}^\Omega_S:\Omega\rightarrow\{0,1\}$ defined as follows. For every $\omega\in\Omega$,
 $$
 \mathbb{1}^\Omega_S(\omega):=\begin{cases}
 1, & \omega\in S \\
@@ -43,12 +45,12 @@ $$
 \end{cases}
 $$
 
-f. Let $\Gamma$ be a non-emptyset. For every $t\in[0,\infty)$ we define the projection function $\pi^\Gamma_t:\Gamma^{[0,\infty)}\rightarrow\Gamma$, as follows. For every $f:[0,\infty)\rightarrow\Gamma$,
+g. Let $\Gamma$ be a non-emptyset. For every $t\in[0,\infty)$ we define the projection function $\pi^\Gamma_t:\Gamma^{[0,\infty)}\rightarrow\Gamma$, as follows. For every $f:[0,\infty)\rightarrow\Gamma$,
 $$
 \pi^\Gamma_t(f) := f(t).
 $$
 
-g. Let $\mathcal{T}_1, \mathcal{T}_2$ be topologies on the non-empty sets $S_1, S_2$, respectively. We denote by $\mathcal{C}_{\mathcal{T}_1,\mathcal{T}_2}$ the set of $\mathcal{T}_1/\mathcal{T}_2$-continuous functions $f:S_1\rightarrow S_2$.
+h. Let $\mathcal{T}_1, \mathcal{T}_2$ be topologies on the non-empty sets $S_1, S_2$, respectively. We denote by $\mathcal{C}_{\mathcal{T}_1,\mathcal{T}_2}$ the set of $\mathcal{T}_1/\mathcal{T}_2$-continuous functions $f:S_1\rightarrow S_2$.
 
 ***3. Definition***
 
@@ -836,9 +838,11 @@ We introduce the following notation, for every $H \subseteq \Omega$.
 
 * For every non-empty set $\Gamma$, and every $\Omega/\Gamma$-stochastic process $X$, set $X^{\langle H\rangle}:=\left((X_t)^{(H)}\right)_{t\in [0,\infty)}$.
 
-* We use a circle superscript, $\square^\circ$, as an abbreviation for $\square^{\langle\Omega_1\rangle}$. For instance, if $X$ is a $\Omega/\Gamma$-stochastic process, for some non-empty set $\Gamma$, we write $X^\circ$ as an abbreviation for $X^{\langle\Omega_1\rangle}$.
+* We use a dagger superscript, $\square^\dagger$, as an abbreviation for $\square^{\langle\Omega_1\rangle}$. For instance, if $X$ is a $\Omega/\Gamma$-stochastic process, for some non-empty set $\Gamma$, we write $X^\dagger$ as an abbreviation for $X^{\langle\Omega_1\rangle}$.
 
-Then the following holds.
+We make the convention that dagger superscript ($\square^\dagger$) takes higher precedence than subscript, whereas tag ($\square'$) takes lower precedence than subscript. Thus, if $X$ is a stochastic process and if $t \in [0,\infty)$, $X_t^\dagger$ means $(X^\dagger)_t$, whereas $X_t'$ means $(X_t)'$.
+
+We move on to state the assertions of this theorem.
 
 a.
 
@@ -959,56 +963,56 @@ g. Let $f:\Omega\rightarrow\overline{\mathbb{R}}$.
 
 h. Let $\mathcal{F}$ be a filtration on $\Omega$, and suppose that $\Omega_1\neq\emptyset$.
 
- 1. For every $t \in I$, $(\mathcal{F}_t)' = (\mathcal{F}^\circ)_t$.
+ 1. For every $t \in I$, $\mathcal{F}_t' = \mathcal{F}^\dagger_t$.
 
- 2. $\mathcal{F}^\circ$ is a filtration on $\Omega_1$.
+ 2. $\mathcal{F}^\dagger$ is a filtration on $\Omega_1$.
 
- 3. $(\mathcal{F}_\infty)'= (\mathcal{F}^\circ)_\infty$.
+ 3. $\mathcal{F}_\infty'= \mathcal{F}^\dagger_\infty$.
 
- 4. $(\mathcal{F}^+)^\circ = (\mathcal{F}^\circ)^+$.
+ 4. $(\mathcal{F}^+)^\dagger = (\mathcal{F}^\dagger)^+$.
 
- 5. If $\tau$ is a $\mathcal{F}$-stopping time, $\tau'$ is a $\mathcal{F}^\circ$-stopping time.
+ 5. If $\tau$ is a $\mathcal{F}$-stopping time, $\tau'$ is a $\mathcal{F}^\dagger$-stopping time.
 
- 6. If $\tau$ be a weak $\mathcal{F}$-stopping time, $\tau'$ is a weak $\mathcal{F}^\circ$-stopping time.
+ 6. If $\tau$ be a weak $\mathcal{F}$-stopping time, $\tau'$ is a weak $\mathcal{F}^\dagger$-stopping time.
 
- 7. If $\tau$ is a $\mathcal{F}$-stopping time, $(\mathcal{F}_\tau)' = \mathcal{F}^\circ_{\tau'}$.
+ 7. If $\tau$ is a $\mathcal{F}$-stopping time, $\mathcal{F}_\tau' = \mathcal{F}^\dagger_{\tau'}$.
 
- 8. Let $\mathcal{H}$ be a $\sigma$-algebra on $\Gamma$, and let $X$ be a $\mathcal{F}/\mathcal{H}$-stochastic process. Then $X^\circ$ is a $\mathcal{F}^\circ/\mathcal{H}$-stochastic process.
+ 8. Let $\mathcal{H}$ be a $\sigma$-algebra on $\Gamma$, and let $X$ be a $\mathcal{F}/\mathcal{H}$-stochastic process. Then $X^\dagger$ is a $\mathcal{F}^\dagger/\mathcal{H}$-stochastic process.
 
 i. Let $\Gamma$ be a non-empty set, and let $X$ be a $\Omega/\Gamma$-stochastic process.
 
- 1. For every $t \in [0,\infty)$, $(X_t)' = (X^\circ)_t$.
+ 1. For every $t \in [0,\infty)$, $X_t' = X^\dagger_t$.
 
- 2. $X^\circ$ is a $\Omega_1/\Gamma$-stochastic process.
+ 2. $X^\dagger$ is a $\Omega_1/\Gamma$-stochastic process.
 
- 3. $[X]' = [X^\circ]$.
+ 3. $[X]' = [X^\dagger]$.
 
- 4. Let $\mathcal{T}$ be a topology on $\Gamma$. If $[X](\Omega) \subseteq \mathcal{R}_{\mathcal{T}}$, then $[X^\circ](\Omega_1) \subseteq \mathcal{R}_{\mathcal{T}}$.
+ 4. Let $\mathcal{T}$ be a topology on $\Gamma$. If $[X](\Omega) \subseteq \mathcal{R}_{\mathcal{T}}$, then $[X^\dagger](\Omega_1) \subseteq \mathcal{R}_{\mathcal{T}}$.
 
- 5. Let $\mathcal{T}$ be a topology on $\Gamma$. If $[X](\Omega) \subseteq \mathcal{L}_{\mathcal{T}}$, then $[X^\circ](\Omega_1) \subseteq \mathcal{L}_{\mathcal{T}}$.
+ 5. Let $\mathcal{T}$ be a topology on $\Gamma$. If $[X](\Omega) \subseteq \mathcal{L}_{\mathcal{T}}$, then $[X^\dagger](\Omega_1) \subseteq \mathcal{L}_{\mathcal{T}}$.
 
- 6. Let $\mathcal{T}$ be a topology on $\Gamma$. If $[X](\Omega) \subseteq \mathcal{G}_{\mathcal{T}}$, then $[X^\circ](\Omega_1) \subseteq \mathcal{G}_{\mathcal{T}}$.
+ 6. Let $\mathcal{T}$ be a topology on $\Gamma$. If $[X](\Omega) \subseteq \mathcal{G}_{\mathcal{T}}$, then $[X^\dagger](\Omega_1) \subseteq \mathcal{G}_{\mathcal{T}}$.
 
 j. Let $\Gamma$ be a non-empty set, let $X$ be a $\Omega/\Gamma$-stochastic process, let $\mathcal{H}$ be a $\sigma$-algebra on $\Gamma$, and suppose $\Omega_1\neq\emptyset$.
 
- 1. For every $t \in [0,\infty)$, $\left(\Phi^{\mathcal{H}}_t(X)\right)'= \Phi^{\mathcal{H}}_t(X^\circ)$.
+ 1. For every $t \in [0,\infty)$, $\left(\Phi^{\mathcal{H}}_t(X)\right)'= \Phi^{\mathcal{H}}_t(X^\dagger)$.
 
- 2. $\left(\Phi^{\mathcal{H}}(X)\right)^\circ = \Phi^{\mathcal{H}}(X^\circ)$.
+ 2. $\left(\Phi^{\mathcal{H}}(X)\right)^\dagger = \Phi^{\mathcal{H}}(X^\dagger)$.
 
- 3. $\left(\Phi^{\mathcal{H}}_\infty(X)\right)' = \Phi^{\mathcal{H}}_\infty(X^\circ)$.
+ 3. $\left(\Phi^{\mathcal{H}}_\infty(X)\right)' = \Phi^{\mathcal{H}}_\infty(X^\dagger)$.
 
 k. Let $\Gamma$ be a non-empty set, let $X$ be a $\Omega/\Gamma$-stochastic process and let $\tau:\Omega\rightarrow[0,\infty)$.
 
- 1. $\left(X_\tau\right)'=X^\circ_{\tau'}$.
+ 1. $X_\tau'=X^\dagger_{\tau'}$.
 
  2. Suppose $\Gamma$ is the set of vectors, $V$, of some vector space $\mathbf{V}$. Then, for every $t \in [0,\infty)$,
  $$
- \left(\Theta^{\left(\Omega,\mathbf{V}\right)}_t(X,\tau)\right)' = \Theta^{\left(\Omega_1,\mathbf{V}\right)}_t(X^\circ,\tau').
+ \left(\Theta^{\left(\Omega,\mathbf{V}\right)}_t(X,\tau)\right)' = \Theta^{\left(\Omega_1,\mathbf{V}\right)}_t(X^\dagger,\tau').
  $$
 
  3. Suppose $\Gamma$ is the set of vectors, $V$, of some vector space $\mathbf{V}$. Then
  $$
- \left(\Theta^{\left(\Omega,\mathbf{V}\right)}(X,\tau)\right)^\circ = \Theta^{\left(\Omega_1,\mathbf{V}\right)}(X^\circ,\tau').
+ \left(\Theta^{\left(\Omega,\mathbf{V}\right)}(X,\tau)\right)^\dagger = \Theta^{\left(\Omega_1,\mathbf{V}\right)}(X^\dagger,\tau').
  $$
 
  4. Let $D\subseteq\Gamma$. Then
@@ -1032,9 +1036,9 @@ k. Let $\Gamma$ be a non-empty set, let $X$ be a $\Omega/\Gamma$-stochastic proc
 
 l. Let $\mathcal{A}$ be a $\sigma$-algebra on $\Omega$, let $P$ be a probability measure on $\mathcal{A}$, let $S=(\mathbf{V}, \nu)$ be a separable normed space, let $X$ be a $\Omega/V$-stochastic process, and suppose that $\Omega_1 \in \mathcal{A}$, and that $P(\Omega_1) = 1$.
 
- 1. Let $\mathcal{F}$ be a filtration on $\Omega$, and suppose $X$ is a $\mathcal{F}/S$-Lévy process w.r.t. $P$. Then $X^\circ$ is a $\mathcal{F}^\circ/S$-Lévy process w.r.t. $P'$.
+ 1. Let $\mathcal{F}$ be a filtration on $\Omega$, and suppose $X$ is a $\mathcal{F}/S$-Lévy process w.r.t. $P$. Then $X^\dagger$ is a $\mathcal{F}^\dagger/S$-Lévy process w.r.t. $P'$.
 
- 2. If $X$ is a $\Omega/S$-Lévy process w.r.t. $P$, then $X^\circ$ is a $\Omega_1/S$-Lévy process w.r.t. $P'$.
+ 2. If $X$ is a $\Omega/S$-Lévy process w.r.t. $P$, then $X^\dagger$ is a $\Omega_1/S$-Lévy process w.r.t. $P'$.
 
 m. Let $\Omega_2\subseteq\Omega_1$.
 
@@ -1046,6 +1050,6 @@ m. Let $\Omega_2\subseteq\Omega_1$.
 
  4. Let $\mathcal{A} \subseteq \mathcal{P}\Omega$ be such that $\mathcal{A}^{(\Omega_2)} \subseteq \mathcal{A}' \subseteq \mathcal{A}$, let $\Gamma$ be a non-empty set, and let $P:{\mathcal{A}}\rightarrow\Gamma$. Then $(P')^{(\Omega_2)}=P^{(\Omega_2)}$.
 
- 5. Let $\mathcal{F}:[0,\infty)\rightarrow\mathcal{P}\Omega$, $\mathcal{F} = (\mathcal{F}_t)_{t\in[0,\infty)}$. Then $(\mathcal{F}^\circ)^{\langle\Omega_2\rangle}=\mathcal{F}^{\langle\Omega_2\rangle}$.
+ 5. Let $\mathcal{F}:[0,\infty)\rightarrow\mathcal{P}\Omega$, $\mathcal{F} = (\mathcal{F}_t)_{t\in[0,\infty)}$. Then $(\mathcal{F}^\dagger)^{\langle\Omega_2\rangle}=\mathcal{F}^{\langle\Omega_2\rangle}$.
 
- 6. Let $\Gamma$ be a non-empty set, and let $X$ be a $\Omega/\Gamma$-stochastic process. Then $(X^\circ)^{\langle\Omega_2\rangle}=X^{\langle\Omega_2\rangle}$.
+ 6. Let $\Gamma$ be a non-empty set, and let $X$ be a $\Omega/\Gamma$-stochastic process. Then $(X^\dagger)^{\langle\Omega_2\rangle}=X^{\langle\Omega_2\rangle}$.
