@@ -64,25 +64,59 @@ a.
 
  1. $\nu^{-1}\left((\gamma, \infty)\right) \in \nu^*$.
 
- 2. $\Omega_0 = \{X_0 = 0\}$.
+ 2. $\{\mathbf{0}\} \in \sigma(\nu^*)$.
 
- 3. $\Omega_0 \in \mathcal{F}$.
+ 3. $\mathcal{F} \subseteq \mathcal{A}$.
 
- 4. $P(\Omega_0) = 1$.
+ 4. For every $t \in (0,\infty)$, $\{\tau_0 \leq t\} = \{X_0 = \mathbf{0}\}$.
 
- 5. $\mathcal{F}^{(0)} \subseteq \mathcal{F}$.
+ 5. $\Omega_0 = \{X_0 = \mathbf{0}\}$.
 
- 6. $\mathcal{F}^{(0)}$ is a $\sigma$-algebra on $\Omega_0$.
+ 6. $\Omega_0 = \{\tau_0 = 0\}$.
 
- 7. $\tau_0$ is a weak $\Phi^{\sigma(\nu^*)}(X)$-stopping time.
+ 7. $\tau_0$ is a $\Phi^{\sigma(\nu^*)}(X)$-stopping time.
 
- [$\tau_0$ is actually a regular (non-weak) stopping time, but the weaker version suffices for our purposes.]
+ 8. $\tau_0$ is $\mathcal{F}/\overline{\mathcal{B}}$-measurable.
 
- 8. $\tau_1$ is a weak $\Phi^{\sigma(\nu^*)}(X)$-stopping time.
+ 9. For every $t \in [0,\infty)$, $\Omega_0 \in \Phi^{\sigma(\nu^*)}_t(X)$.
 
- 9. $\Omega_1 \in \mathcal{F}$.
+ 10. $P(\Omega_0) = 1$.
 
- 10. $P(\Omega_1) = 1$.
+ 11. $\mathcal{F}^{\langle 0\rangle} \subseteq \mathcal{F}$.
+
+ 12. $\mathcal{F}^{\langle 0\rangle}$ is a $\sigma$-algebra on $\Omega_0$.
+
+ 13. $\tau_0^{(0)} = 0$.
+
+ 14. $X^{\langle 0\rangle}_{\tau_0^{(0)}} = X_0^{(0)} = \mathbf{0}$.
+
+ 15. $\tau_0 \leq \tau_1$.
+
+ 16. For every $t \in (0,\infty)$, $\{\tau_1 \leq t\} \subseteq \Omega_0$.
+
+ 17. For every $t \in (0,\infty)$, $\{\tau_1 \leq t\} = \{\tau_1^{(0)} \leq t\}$.
+
+ 18. For every $t \in (0,\infty]$, $\{\tau_1 < t\} = \{\tau_1^{(0)} < t\}$.
+
+ 19. $\tau_1^{(0)} = \inf \left\{t \in [0,\infty)\ |\!:\ \nu\left(X_t^{(0)}\right) > \gamma\right\}$.
+
+ 20. $\tau_1^{(0)}$ is a weak $\Phi^{\sigma(\nu^*)}\left(X^{\langle 0\rangle}\right)$-stopping time.
+
+ 21. $\tau_1$ is a weak $\Phi^{\sigma(\nu^*)}(X)$-stopping time.
+
+ 22. $\tau_1$ is $\mathcal{F}/\overline{\mathcal{B}}$-measurable.
+
+ 23. $\Omega_1 \in \mathcal{F}$.
+
+ 24. For every $t \in [0,\infty)$, $X_t$ is $\mathcal{F}/\sigma(\nu^*)$-measurable.
+
+ 25. For every $s, t \in [0,\infty)$, $X_t - X_s$ is $\mathcal{F}/\sigma(\nu^*)$-measurable.
+
+ 26. For every $t \in [0,\infty)$, $\nu\circ X_t$ is $\mathcal{F}/\mathcal{B}$-measurable.
+
+ 27. For every $s, t \in [0,\infty)$, $\nu\circ(X_t - X_s)$ is $\mathcal{F}/\mathcal{B}$-measurable.
+
+ 28. $P(\Omega_1) = 1$.
 
 b.
 
@@ -217,59 +251,151 @@ e.
 
 a.
 
- 1. By 12(a).
+ 1. By Corollary 12(a).
 
- 2. By \eqref{Sergio} and \eqref{Lajuana}.
+ 2. $\{\mathbf{0}\} = \nu^{-1}(\{0\}) \overset{12(b)}{\in} \sigma(\nu^*)$.
 
- 3. By \eqref{Hassan}.
+ 3. Since, by Definition 28(b), $X$ is is a $\Phi^{\sigma(\nu^*)}(X)/S$-Lévy process w.r.t. $P$, the result follows from Definition 28(a.1).
 
- 4. By Lemma 29(a).
+ 4. Let $t \in (0,\infty)$. Then $\{\tau_0 \leq t\} \overset{\eqref{Lajuana}}{=} \left\{\infty\mathbb{1}^\Omega_{\{X_0\neq\mathbf{0}\}} \leq t\right\} = \{X_0 = \mathbf{0}\}$.
 
- 5. By Lemma 32(b.1).
+ 5. $\Omega_0 \overset{\eqref{Sergio}}{=} \{\tau_0 < \infty\} = \bigcup_{t \in (0,\infty)} \{\tau_0 \leq t\} \overset{33.1(a.4)}{=} \bigcup_{t \in (0,\infty)} \{X_0 = \mathbf{0}\} = \{X_0 = \mathbf{0}\}$.
 
- 6. By Lemma 32(b.2).
+ 6. $\Omega_0 \overset{33.1(a.5)}{=} \{X_0 = \mathbf{0}\} = \left\{\infty\mathbb{1}^\Omega_{\{X_0 \neq \mathbf{0}\}} = 0\right\} \overset{\eqref{Lajuana}}{=} \{\tau_0 = 0\}$.
 
- 7. By Definition 22(b).
+ 7. The result follows from Definition 22(a), since, for every $t \in (0,\infty)$,
+ $$
+ \{\tau_0 \leq t\} \overset{33.1(a.4)}{=} \{X_0 = \mathbf{0}\} = \left\{X_0 \in \{\mathbf{0}\}\right\} \overset{33.1(a.2)}{\in} \sigma_{\sigma(\nu^*)}(X_0) \overset{19(c)}{\subseteq} \Phi^{\sigma(\nu^*)}_t(X).
+ $$
 
- 8. By Definition 22(b), in light of the following calculations. Let $t\in(0,\infty)$. Then
+ 8. Since, in light of Lemma 33.1(a.7), Corollary 23(a) implies that $\tau_0$ is a weak $\Phi^{\sigma(\nu^*)}$-stopping time, the result follows from Corollary 23(c).
+
+ 9. Let $t \in [0,\infty)$. Then
+ $$
+ \Omega_0 \overset{33.1(a.5)}{=} \{X_0 = \mathbf{0}\} = \left\{X_0 \in \{\mathbf{0}\}\right\} \overset{33.1(a.2)}{\in} \sigma_{\sigma(\nu^*)}(X_0) \overset{19(c)}{\subseteq} \Phi^{\sigma(\nu^*)}_t(X).
+ $$
+
+ 10. $P(\Omega_0) \overset{33.1(a.5)}{=} P(X_0 = \mathbf{0}) \overset{29(a)}{=} 1$.
+
+ 11. Follows from Lemma 32(b.1) in light of Lemma 33.1(a.9).
+
+ 12. Follows from Lemma 32(b.2), since Lemma 33.1(a.10) implies that $\Omega_0 \neq \emptyset$.
+
+ 13. $\tau_0^{(0)} = \tau_0\big|_{\Omega_0} \overset{33.1(a.6)}{=} \tau_0\big|_{\{\tau_0 = 0\}} = 0$.
+
+ 14. $X^{(0)}_{\tau_0^{(0)}} \overset{33.1(a.13)}{=} X_0^{(0)} = X_0\big|_{\Omega_0} \overset{33.1(a.5)}{=} X_0\big|_{\{X_0 = \mathbf{0}\}} = \mathbf{0}$.
+
+ 15. By \eqref{Tiny}.
+
+ 16. Let $t \in (0,\infty)$. Then $\{\tau_1 \leq t\} \overset{33.1(a.14)}{\subseteq} \{\tau_0 \leq t\} \overset{???}{\subseteq} \{\tau_0 < \infty\} \overset{\eqref{Lajuana}}{=} \Omega_0$.
+
+ 17. Let $t \in (0,\infty)$. Then $\{\tau_1 \leq t\} \overset{33.1(a.15)}{=} \{\tau_1 \leq t\} \cap \Omega_0 = \{\tau_1 \leq t\}^{(0)} \overset{32(c.2)}{=} \{\tau_1^{(0)} \leq t\}$.
+
+ 18. Let $t \in (0,\infty]$. Then
+ $$
+ \{\tau_1 < t\} = \bigcup_{s \in (0,t)} \{\tau_1 \leq s\} \overset{33.1(a.17)}{=} \bigcup_{s \in (0,t)} \{\tau_1^{(0)} \leq s\} = \{\tau_1^{(0)} < t\}.
+ $$
+
+ 19. We have
+  $$
+  \begin{align}
+  \tau_1^{(0)} &\overset{\eqref{Tiny}}{=} \left(\inf\left\{t\in\left[\tau_0,\infty\right)\ \big|\!:\ \nu\left(X_t-X_{\tau_0}\right) > \gamma \right\}\right)^{(0)} \\
+  &\overset{32(c.3)}{=} \inf\left\{t\in\left[\tau_0,\infty\right)\ \big|\!:\ \nu\left(X_t-X_{\tau_0}\right) > \gamma \right\}^{(0)} \\
+  &\overset{32(k.4)}{=} \inf\left\{t\in\left[\tau_0^{(0)},\infty\right)\ \big|\!:\ \left(\nu\left(X_t-X_{\tau_0}\right)\right)^{(0)} > \gamma \right\} \\
+  &\overset{32(c.3)}{=} \inf\left\{t\in\left[\tau_0^{(0)},\infty\right)\ \big|\!:\ \nu\left(\left(X_t-X_{\tau_0}\right)^{(0)}\right) > \gamma \right\} \\
+  &\overset{32(f)}{=} \inf\left\{t\in\left[\tau_0^{(0)},\infty\right)\ \big|\!:\ \nu\left(X_t^{(0)}-X_{\tau_0}^{(0)}\right) > \gamma \right\} \\
+  &\overset{32(k.1)}{=} \inf\left\{t\in\left[\tau_0^{(0)},\infty\right)\ \big|\!:\ \nu\left(X_t^{(0)}-X_{\tau_0^{(0)}}^{\langle 0\rangle}\right) > \gamma \right\} \\
+  &\overset{33.1(a.13)}{=} \inf\left\{t\in\left[0,\infty\right)\ \big|\!:\ \nu\left(X_t^{(0)}-X_0^{\langle 0\rangle}\right) > \gamma \right\} \\
+  &\overset{33.1(a.14)}{=} \inf\left\{t\in\left[0,\infty\right)\ \big|\!:\ \nu\left(X_t^{(0)}\right) > \gamma \right\}.
+  \end{align}
+  $$
+
+ 20. Since, by Definition 28(b), $X$ is a $\Phi^{\sigma(\nu^*)}(X)/S$-Lévy process w.r.t. $P$, Definition 28(a) implies that $[X](\Omega)\subseteq\mathcal{R}_{\nu^*}$. Hence, Lemma 32(i.4) implies that $\left[X^{\langle 0\rangle}\right](\Omega_0) \subseteq \mathcal{R}_{\nu^*}$. Since, additionally, by Lemma 33.1(a.1), $\nu^{-1}\left((\gamma, \infty)\right) \in \nu^*$, Corollary 25(d) implies that $\Xi_{\nu^{-1}\left((\gamma, \infty)\right)} \circ \left[X^{\langle 0\rangle}\right]$ is a weak $\Phi^{\sigma(\nu^*)}\left(X^{\langle 0\rangle}\right)$-stopping time. It remains to observe that
  $$
  \begin{align}
- \{\tau_1 < t\} &\overset{\eqref{Tiny}}{=} \{\tau_1^{(0)} < t\} \\
- &\overset{\eqref{Tiny}}{=} \left\{\left(\inf\left\{s\in\left[\tau_0^{(0)},\infty\right)\ \big|\!:\ \nu\left(X_s^{(0)}-X_{\tau_0^{(0)}}^{(0)}\right) > \gamma \right\}\right) < t \right\} \\
- &\overset{\eqref{Lajuana}}{=} \left\{\left(\inf\left\{s\in\left[0,\infty\right)\ \big|\!:\ \nu\left(X_s^{(0)}-X_0^{(0)}\right) > \gamma \right\}\right) < t \right\} \\
- &\overset{33.1(a.2)}{=} \left\{\left(\inf\left\{s\in\left[0,\infty\right)\ \big|\!:\ \nu\left(X_s^{(0)}\right) > \gamma \right\}\right) < t \right\} \\
- &= \left\{\left(\inf\left\{s\in\left[0,\infty\right)\ \big|\!:\ X_s^{(0)} \in \nu^{-1}\left((\gamma, \infty)\right) \right\}\right) < t \right\} \\
- &\overset{24}{=} \left\{\Xi_{\nu^{-1}\left((\gamma, \infty)\right)} \circ \left[X^{(0)}\right] < t\right\} \\
- &\overset{25(d)}{\in} \Phi^{\sigma(\nu^*)}_t\left(X^{(0)}\right) \\
- &\overset{32(j.1)}{=} \left(\Phi^{\sigma(\nu^*)}_t(X)\right)^{(0)} \\
- &\overset{32(b.1)}{\subseteq} \Phi^{\sigma(\nu^*)}_t(X).
+ \tau_1^{(0)} &\overset{33.1(a.19)}{=} \inf \left\{t \in [0,\infty)\ |\!:\ \nu\left(X_t^{(0)}\right) > \gamma\right\} \\
+ &= \inf \left\{t \in [0,\infty)\ |\!:\ X_t^{(0)} \in \nu^{-1}\left((\gamma,\infty)\right)\right\} \\
+ &\overset{24}{=} \Xi_{\nu^{-1}\left((\gamma, \infty)\right)} \circ \left[X^{\langle 0\rangle}\right].
  \end{align}
  $$
 
- 9.
+ 21. The result follows from Definition 22(b) in light of the following calculations. Let $t\in(0,\infty)$. Then
  $$
- \Omega_1 \overset{\eqref{Sergio}}{=} \{\tau_1 < \infty\} \in \sigma_{\overline{\mathcal{B}}}(\tau_1) \overset{23(c)}{\subseteq} \Phi^{\nu^*}_\infty(X) \overset{28(a.1)}{\subseteq} \mathcal{F}.
+ \{\tau_1 < t\} \overset{33.1(a.18)}{=} \{\tau_1^{(0)} < t\} \overset{33.1(a.20)}{\in} \Phi^{\sigma(\nu^*)}_t\left(X^{\langle 0\rangle}\right) \overset{32(j.1)}{=} \left(\Phi^{\sigma(\nu^*)}_t(X)\right)^{(0)} \overset{\substack{32(b.1),\\33.1(a.9)}}{\subseteq} \Phi^{\sigma(\nu^*)}_t(X).
  $$
 
- 10. We will follow the argument posted [here](http://math.stackexchange.com/a/1872622/37058) by [m7e](http://math.stackexchange.com/users/345082/m7e). Set $q:=P\left(\nu\left(X_T - X_0\right)\leq 2\gamma\right)$ (recall that $T$ was introduced in \eqref{Maye}). Since, by ???,
+ 22. Follows from Corollary 23(c) in light of Lemma 33.1(a.21).
+
+ 23. $\Omega_1 \overset{\eqref{Sergio}}{=} \{\tau_1 < \infty\} \overset{33.1(a.22)}{\in} \mathcal{F}$.
+
+ 24. Let $t \in [0,\infty)$. According to Definition 28(b), $X$ is a $\Phi^{\sigma(\nu^*)}(X)/S$-Lévy process w.r.t. $P$, which, according to Definition 28(a), implies that $X$ is a $\Phi^{\sigma(\nu^*)}(X)/\sigma(\nu^*)$-stochastic process. The result now follows from Definition 19(b).
+
+ 25. Let $s, t \in [0,\infty)$. Since, by Lemma 33.1(a.24), both $X_s$ and $X_t$ are $\mathcal{F}/\sigma(\nu^*)$-measurable, the result follows from Corollary 12(h).
+
+ 26. The result follows from Lemma 33.1(a.24) together with Corollary 12(b).
+
+ 27. The result follows from Lemma 33.1(a.25) together with Corollary 12(b).
+
+ 28. We will follow the argument posted [here](http://math.stackexchange.com/a/1872622/37058) by [m7e](http://math.stackexchange.com/users/345082/m7e). Recalling that $T$ was introduced in \eqref{Maye}, and that $\gamma$ was defined in the statement of theorem 33, set
  $$
- \forall y \in [0,\infty),\ \{y < \tau_1\} \subseteq \left\{\nu(X_y)\leq\gamma\right\}, \tag{1.1}\label{Marisa}
+ q := P\left(\nu\left(X_T - X_0\right)\leq 2\gamma\right). \tag{a}\label{Verda}
  $$
- we have, for every $n \in \mathbb{N}_1$,
+
+ We will show that
+ $$
+ q \in [0,1). \tag{b}\label{Tyesha}
+ $$
+ Indeed,
  $$
  \begin{align}
- P(\tau_1 = \infty) &\leq P(\tau_1 \geq nT + 1) \\
+ q &\overset{\eqref{Verda}}{=} P\left(\nu\left(X_T - X_0\right)\leq 2\gamma\right) \\
+ &= P\left(\left\{\nu\left(X_T - X_0\right)\leq 2\gamma\right\}^{(0)}\right) + P(\Omega\setminus\Omega_0) \\
+ &\overset{33.1(a.10)}{=} P\left(\left\{\nu(X_T - X_0)\leq 2\gamma\right\}^{(0)}\right) \\
+ &\overset{32(c.2)}{=} P\left(\left\{\left(\nu(X_T - X_0)\right)^{(0)}\leq 2\gamma\right\}\right) \\
+ &\overset{32(c.3)}{=} P\left(\left\{\nu\left((X_T - X_0)^{(0)}\right)\leq 2\gamma\right\}\right) \\
+ &\overset{32(f)}{=} P\left(\nu\left(X_T^{(0)} - X_0^{(0)}\right)\leq 2\gamma\right) \\
+ &\overset{33.1(a.14)}{=} P\left(\nu\left(X_T^{(0)}\right)\leq 2\gamma\right) \\
+ &\overset{32(c.3)}{=} P\left(\left(\nu(X_T)\right)^{(0)}\leq 2\gamma\right) \\
+ &\overset{32(c.2)}{=} P\left(\left\{\nu(X_T)\leq 2\gamma\right\}^{(0)}\right) \\
+ &\overset{32(a.2)}{\leq} P\left(\nu(X_T)\leq 2\gamma\right) \\
+ &\overset{\eqref{Maye}}{<} 1.
+ \end{align}
+ $$
+
+ We will show:
+ $$
+ \forall t \in [0,\infty),\ \{t < \tau_1\} \subseteq \left\{\nu(X_t)\leq\gamma\right\}. \tag{1.1}\label{Marisa}
+ $$
+ Indeed, let $t \in [0,\infty)$. Then
+ $$
+ \begin{align}
+ \{t < \tau_1\} &= \Omega\setminus\{\tau_1 \leq t\} \\
+ &\overset{33.1(a.17)}{=} \Omega\setminus\{\tau_1^{(0)} \leq t\} \\
+ &= \{t < \tau_1^{(0)}\} \\
+ &\overset{33.1(a.19)}{=} \left\{t < \left(\inf\left\{s \in [0,\infty)\ |\!:\ \nu\left(X_s^{(0)}\right) > \gamma\right\}\right)\right\} \\
+ &\subseteq \left\{\nu\left(X_t^{(0)}\right) \leq \gamma\right\} \\
+ &\overset{32(c.3)}{=} \left\{\left(\nu(X_t)\right)^{(0)}\leq 2\gamma\right\} \\
+ &\overset{32(c.2)}{=} \left\{\nu(X_t)\leq 2\gamma\right\}^{(0)} \\
+ &\overset{32(a.2)}{\subseteq} \left\{\nu(X_t)\leq 2\gamma\right\}.
+ \end{align}
+ $$
+
+ Then, for every $n \in \mathbb{N}_1$,
+ $$
+ \begin{align}
+ P(\tau_1 = \infty) &\leq P\left(\bigcap_{k=0}^n \{kT < \tau_1\}\right) \\
  &\overset{\eqref{Marisa}}{\leq} P\left(\bigcap_{k=0}^n \{\nu(X_{kT}) \leq \gamma\}\right) \\
  &\leq P\left(\bigcap_{k=1}^n\{\nu(X_{kT}) + \nu(X_{(k-1)T}) \leq 2\gamma\}\right) \\
  &\overset{\text{triangle ineq.}}{\leq} P\left(\bigcap_{k = 1}^n \left\{\nu\left(X_{kT} - X_{(k-1)T}\right)\leq 2\gamma\right\}\right) \\
- &\overset{29(e)}{=}\prod_{k=1}^n P\left(\nu\left(X_{kT}-X_{(k-1)T}\right)\leq 2\gamma\right) \\
- &\overset{28(a.3)}{=}q^n.
+ &\overset{29(e)}{=} \prod_{k=1}^n P\left(\nu\left(X_{kT}-X_{(k-1)T}\right)\leq 2\gamma\right) \\
+ &\overset{28(a.3)}{=} \left(P\left(\nu\left(X_T-X_0\right)\leq 2\gamma\right)\right)^n \\
+ &\overset{\eqref{Verda}}{=} q^n.
  \end{align}
  $$
 
- Since, by \eqref{Maye}, $q\in[0,1)$, we infer that $P(\tau_1 = \infty) \leq \inf \{q^n\ :\!|\ n\in\mathbb{N}_1\} = 0$, which implies that
+ We infer that $P(\tau_1 = \infty) \leq \inf \{q^n\ :\!|\ n\in\mathbb{N}_1\} \overset{\eqref{Tyesha}}{=} 0$, which implies that
  $$
- P(\Omega_1) \overset{\eqref{Glenda}}{=} P(\tau<\infty) = 1.
+ P(\Omega_1) \overset{\eqref{Sergio}}{=} P(\tau_1<\infty) = 1.
  $$
 
 b.
