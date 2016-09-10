@@ -46,20 +46,20 @@ a.
  $$
 
  19. We have
- $$
- \begin{align}
- \tau_1^{(0)} &\overset{\eqref{Tiny}}{=} \left(\inf\left\{t\in\left[\tau_0,\infty\right)\ \big|\!:\ \nu\left(X_t-X_{\tau_0}\right) > \gamma \right\}\right)^{(0)} \\
- &\overset{32(c.2)}{=} \inf\left\{t\in\left[\tau_0,\infty\right)\ \big|\!:\ \nu\left(X_t-X_{\tau_0}\right) > \gamma \right\}^{(0)} \\
- &\overset{32(k.4)}{=} \inf\left\{t\in\left[\tau_0^{(0)},\infty\right)\ \big|\!:\ \nu\left(X_t-X_{\tau_0}\right)^{(0)} > \gamma \right\} \\
- &\overset{32(c.2)}{=} \inf\left\{t\in\left[\tau_0^{(0)},\infty\right)\ \big|\!:\ \nu\left(\left(X_t-X_{\tau_0}\right)^{(0)}\right) > \gamma \right\} \\
- &\overset{32(f)}{=} \inf\left\{t\in\left[\tau_0^{(0)},\infty\right)\ \big|\!:\ \nu\left(X_t^{(0)}-(X_{\tau_0})^{(0)}\right) > \gamma \right\} \\
- &\overset{32(k.1)}{=} \inf\left\{t\in\left[\tau_0^{(0)},\infty\right)\ \big|\!:\ \nu\left(X_t^{(0)}-X_{\tau_0^{(0)}}^{\langle 0\rangle}\right) > \gamma \right\} \\
- &\overset{33.1(a.12)}{=} \inf\left\{t\in\left[0,\infty\right)\ \big|\!:\ \nu\left(X_t^{(0)}-X_0^{\langle 0\rangle}\right) > \gamma \right\} \\
- &\overset{33.1(a.13)}{=} \inf\left\{t\in\left[0,\infty\right)\ \big|\!:\ \nu\left(X_t^{(0)}\right) > \gamma \right\}.
- \end{align}
- $$
+  $$
+  \begin{align}
+  \tau_1^{(0)} &\overset{\eqref{Tiny}}{=} \left(\inf\left\{t\in\left[\tau_0,\infty\right)\ \big|\!:\ \nu\left(X_t-X_{\tau_0}\right) > \gamma \right\}\right)^{(0)} \\
+  &\overset{32(c.3)}{=} \inf\left\{t\in\left[\tau_0,\infty\right)\ \big|\!:\ \nu\left(X_t-X_{\tau_0}\right) > \gamma \right\}^{(0)} \\
+  &\overset{32(k.4)}{=} \inf\left\{t\in\left[\tau_0^{(0)},\infty\right)\ \big|\!:\ \left(\nu\left(X_t-X_{\tau_0}\right)\right)^{(0)} > \gamma \right\} \\
+  &\overset{32(c.3)}{=} \inf\left\{t\in\left[\tau_0^{(0)},\infty\right)\ \big|\!:\ \nu\left(\left(X_t-X_{\tau_0}\right)^{(0)}\right) > \gamma \right\} \\
+  &\overset{32(f)}{=} \inf\left\{t\in\left[\tau_0^{(0)},\infty\right)\ \big|\!:\ \nu\left(X_t^{(0)}-X_{\tau_0}^{(0)}\right) > \gamma \right\} \\
+  &\overset{32(k.1)}{=} \inf\left\{t\in\left[\tau_0^{(0)},\infty\right)\ \big|\!:\ \nu\left(X_t^{(0)}-X_{\tau_0^{(0)}}^{\langle 0\rangle}\right) > \gamma \right\} \\
+  &\overset{33.1(a.13)}{=} \inf\left\{t\in\left[0,\infty\right)\ \big|\!:\ \nu\left(X_t^{(0)}-X_0^{\langle 0\rangle}\right) > \gamma \right\} \\
+  &\overset{33.1(a.14)}{=} \inf\left\{t\in\left[0,\infty\right)\ \big|\!:\ \nu\left(X_t^{(0)}\right) > \gamma \right\}.
+  \end{align}
+  $$
 
- 20. Since, by Lemma 32(i.4), $[X](\Omega) \subseteq \mathcal{R}_{\nu^*}$, Lemma 32(a.) implies that $\left[X^{\langle 0\rangle}\right](\Omega_1) \subseteq \mathcal{R}_{\nu^*}$. Since, additionally, by Lemma 33.1(a.1), $\nu^{-1}\left((\gamma, \infty)\right) \in \nu^*$, Corollary 25(d) implies that $\Xi_{\nu^{-1}\left((\gamma, \infty)\right)} \circ \left[X^{\langle 0\rangle}\right]$ is a weak $\Phi^{\sigma(\nu^*)}\left(X^{\langle 0\rangle}\right)$-stopping time. It remains to observe that
+ 20. Since, by Definition 28(b), $X$ is a $\Phi^{\sigma(\nu^*)}(X)/S$-Lévy process w.r.t. $P$, Definition 28(a) implies that $[X](\Omega)\subseteq\mathcal{R}_{\nu^*}$. Hence, Lemma 32(i.4) implies that $\left[X^{\langle 0\rangle}\right](\Omega_0) \subseteq \mathcal{R}_{\nu^*}$. Since, additionally, by Lemma 33.1(a.1), $\nu^{-1}\left((\gamma, \infty)\right) \in \nu^*$, Corollary 25(d) implies that $\Xi_{\nu^{-1}\left((\gamma, \infty)\right)} \circ \left[X^{\langle 0\rangle}\right]$ is a weak $\Phi^{\sigma(\nu^*)}\left(X^{\langle 0\rangle}\right)$-stopping time. It remains to observe that
  $$
  \begin{align}
  \tau_1^{(0)} &\overset{33.1(a.19)}{=} \inf \left\{t \in [0,\infty)\ |\!:\ \nu\left(X_t^{(0)}\right) > \gamma\right\} \\
@@ -70,20 +70,20 @@ a.
 
  21. The result follows from Definition 22(b) in light of the following calculations. Let $t\in(0,\infty)$. Then
  $$
- \{\tau_1 < t\} \overset{33.1(a.20)}{\in} \Phi^{\sigma(\nu^*)}_t\left(X^{\langle 0\rangle}\right) \overset{32(j.1)}{=} \left(\Phi^{\sigma(\nu^*)}_t(X)\right)^{(0)} \overset{\substack{32(b.1),\\33.1(a.9)}}{\subseteq} \Phi^{\sigma(\nu^*)}_t(X).
+ \{\tau_1 < t\} \overset{33.1(a.18)}{=} \{\tau_1^{(0)} < t\} \overset{33.1(a.20)}{\in} \Phi^{\sigma(\nu^*)}_t\left(X^{\langle 0\rangle}\right) \overset{32(j.1)}{=} \left(\Phi^{\sigma(\nu^*)}_t(X)\right)^{(0)} \overset{\substack{32(b.1),\\33.1(a.9)}}{\subseteq} \Phi^{\sigma(\nu^*)}_t(X).
  $$
 
- 22. Follows from Corollary 23(c) in light of Lemma 33.1(a.20).
+ 22. Follows from Corollary 23(c) in light of Lemma 33.1(a.21).
 
- 23. $\Omega_1 \overset{\eqref{Sergio}}{=} \{\tau_1 < \infty\} \overset{33.1(a.21)}{\in} \mathcal{F}$.
+ 23. $\Omega_1 \overset{\eqref{Sergio}}{=} \{\tau_1 < \infty\} \overset{33.1(a.22)}{\in} \mathcal{F}$.
 
- 24. Let $t \in [0,\infty)$. According to Definition 28(b), $X$ is a $\Phi^{\sigma(\nu^*)}(X)/S$-Lévy process, which, according to Definition 28(a), implies that $X$ is a $\Phi^{\sigma(\nu^*)}(X)/\sigma(\nu^*)$-stochastic process. The result now follows from Definition 19(b).
+ 24. Let $t \in [0,\infty)$. According to Definition 28(b), $X$ is a $\Phi^{\sigma(\nu^*)}(X)/S$-Lévy process w.r.t. $P$, which, according to Definition 28(a), implies that $X$ is a $\Phi^{\sigma(\nu^*)}(X)/\sigma(\nu^*)$-stochastic process. The result now follows from Definition 19(b).
 
- 25. Let $s, t \in [0,\infty)$. Since, by Lemma 33.1(a.23), both $X_s$ and $X_t$ are $\mathcal{F}/\sigma(\nu^*)$-measurable, the result follows from Corollary 12(h).
+ 25. Let $s, t \in [0,\infty)$. Since, by Lemma 33.1(a.24), both $X_s$ and $X_t$ are $\mathcal{F}/\sigma(\nu^*)$-measurable, the result follows from Corollary 12(h).
 
- 26. The result follows from Lemma 33.1(a.23) together with Corollary 12(b).
+ 26. The result follows from Lemma 33.1(a.24) together with Corollary 12(b).
 
- 27. The result follows from Lemma 33.1(a.24) together with Corollary 12(b).
+ 27. The result follows from Lemma 33.1(a.25) together with Corollary 12(b).
 
  28. We will follow the argument posted [here](http://math.stackexchange.com/a/1872622/37058) by [m7e](http://math.stackexchange.com/users/345082/m7e). Recalling that $T$ was introduced in \eqref{Maye}, and that $\gamma$ was defined in the statement of theorem 33, set
  $$
