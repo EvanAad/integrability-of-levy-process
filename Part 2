@@ -120,32 +120,19 @@ a.
 
 b.
 
- 1. For every $m, n\in\overline{\mathbb{N}}_0$ such that $m < n$,
- $$
- \Omega\supseteq\Omega_m\supseteq\Omega_n.
- $$
+ 1. For every $m, n \in \mathbb{N}_0$ such that $m < n$, $\tau_m \leq \tau_n$.
 
- 2. For every $n\in\overline{\mathbb{N}}_0$ such that $\Omega_n \neq \emptyset$,
- $$
- \tau_0^{(n)} = 0.
- $$
+ 2. For every $m, n\in\overline{\mathbb{N}}_0$ such that $m < n$, $\Omega\supseteq\Omega_m\supseteq\Omega_n$.
 
- 3. For every $m\in\mathbb{N}_0$ and every $n\in\overline{\mathbb{N}}_0$, such that $m\leq n$ and such that $\Omega_n\neq\emptyset$,
- $$
- \tau_m^{(n)}<\infty.
- $$
+ 3. For every $n\in\overline{\mathbb{N}}_0$, $\tau_0^{(n)} = 0$.
 
- 4. For every $k, m\in\mathbb{N}_0$ such that $k < m$, and for every $n\in\overline{\mathbb{N}}_1$, such that $m\leq n$ and such that $\Omega_n\neq\emptyset$,
- $$
- \tau_k^{(n)}<\tau_m^{(n)}.
- $$
+ 4. For every $m\in\mathbb{N}_0$ and every $n\in\overline{\mathbb{N}}_0$, such that $m\leq n$, $\tau_m^{(n)}<\infty$.
 
- 5. For every $n \in \overline{\mathbb{N}}_0$ such that $\Omega_n \neq \emptyset$,
-$$
-X^{(n)}_{\tau_0^{(n)}} = 0.
-$$
+ 5. For every $k, m\in\mathbb{N}_0$ such that $k < m$, and for every $n\in\overline{\mathbb{N}}_1$ such that $m\leq n$, $\tau_k^{(n)}<\tau_m^{(n)}$.
 
- 6. For all $n \in \overline{\mathbb{N}}_0$ such that $\Omega_n \neq \emptyset$, $\mathcal{F}^{(n)} = \Phi^{\sigma(\nu^*)}_\infty(X^{(n)})$.
+ 6. For every $n \in \overline{\mathbb{N}}_0$, $X^{\langle n\rangle}_{\tau_0^{(n)}} = \mathbf{0}$.
+
+ 7. For all $n \in \overline{\mathbb{N}}_0$ such that $\Omega_n \neq \emptyset$, $\mathcal{F}^{\langle n\rangle} = \Phi^{\sigma(\nu^*)}_\infty(X^{\langle n\rangle})$.
 
 c.
 
@@ -287,7 +274,7 @@ a.
 
  15. By \eqref{Tiny}.
 
- 16. Let $t \in (0,\infty)$. Then $\{\tau_1 \leq t\} \overset{33.1(a.14)}{\subseteq} \{\tau_0 \leq t\} \overset{???}{\subseteq} \{\tau_0 < \infty\} \overset{\eqref{Lajuana}}{=} \Omega_0$.
+ 16. Let $t \in (0,\infty)$. Then $\{\tau_1 \leq t\} \overset{33.1(a.14)}{\subseteq} \{\tau_0 \leq t\} \subseteq \{\tau_0 < \infty\} \overset{\eqref{Lajuana}}{=} \Omega_0$.
 
  17. Let $t \in (0,\infty)$. Then $\{\tau_1 \leq t\} \overset{33.1(a.15)}{=} \{\tau_1 \leq t\} \cap \Omega_0 = \{\tau_1 \leq t\}^{(0)} \overset{32(c.2)}{=} \{\tau_1^{(0)} \leq t\}$.
 
@@ -400,33 +387,31 @@ a.
 
  b.
 
-  1. Let $m \in \mathbb{N}_0$. Since $\tau_m$'s domain is $\Omega$,  \eqref{Sergio} yields $\Omega \supseteq \Omega_m$. Now let $n\in\overline{\mathbb{N}}_0$ be such that $m < n$. If $n = \infty$, then the result follows from \eqref{Deloras}. So suppose $n \in \mathbb{N}_0$, and define $I$ to be the set of all $k \in \mathbb{N}_0$, such that $\Omega_m \supseteq \Omega_{m+k}$. It is more than enough to show that $I = \mathbb{N}_0$. We will proceed by induction. Let $k \in \mathbb{N}_0$. If $k = 0$, then, trivially, $k\in I$. So suppose $k > 0$, and assume that $k - 1 \in I$. Then
+  1. Let $m, n \in \mathbb{N}_0$ be such that $m < n$. Denote by $I$ the set of all $k \in \mathbb{N}_0$ such that $\tau_m \leq \tau_{m+k}$. It suffices to show that $I = \mathbb{N}_0$. We shall proceed by induction.
+
+  Let $k \in \mathbb{N}_0$. If $k = 0$, then $k \in I$ trivially, so suppose that $k > 0$ and that $k - 1 \in I$. Then
+  $$
+  \tau_m \overset{k-1 \in I}{\leq} \tau_{m + k - 1} \overset{\eqref{Tiny}}{\leq} \tau_{m+k}.
+  $$
+
+  2. Let $m \in \mathbb{N}_0$. Since $\tau_m$'s domain is $\Omega$,  \eqref{Sergio} yields $\Omega \supseteq \Omega_m$. Now let $n\in\overline{\mathbb{N}}_0$ be such that $m < n$. If $n = \infty$, then the result follows from \eqref{Deloras}. So suppose $n \in \mathbb{N}_0$, and define $I$ to be the set of all $k \in \mathbb{N}_0$, such that $\Omega_m \supseteq \Omega_{m+k}$. It is more than enough to show that $I = \mathbb{N}_0$. We will proceed by induction. Let $k \in \mathbb{N}_0$. If $k = 0$, then, trivially, $k\in I$. So suppose $k > 0$, and assume that $k - 1 \in I$. Then
    $$
-   \Omega_m \overset{k-1 \in I}{\supseteq} \Omega_{m+k-1} \overset{\substack{\eqref{Tiny},\\\eqref{Sergio}}}{\supseteq} \Omega_{m+k}.
+   \Omega_{m+k} \overset{\eqref{Sergio}}{=} \{\tau_{m+k} < \infty\} \overset{33.1(b.1)}{\subseteq} \{\tau_{(m+k)-1} < \infty\} \overset{\eqref{Sergio}}{=} \Omega_{m+(k-1)} \overset{k-1 \in I}{\subseteq} \Omega_m.
    $$
 
-  2. Let $n\in\overline{\mathbb{N}}_0$ be such that $\Omega_n\neq\emptyset$. Then
+  3. Let $n\in\overline{\mathbb{N}}_0$. Then
   $$
-  \begin{align}
-  \tau_0^{(n)} &\overset{32(m.3)}{=} \left(\tau_0^{(0)}\right)^{(n)} \\
-  &\overset{32(c.4)}{=} \left(\left(\Lambda_\Omega\left(\tau_0^{(0)}\right)\right)^{(0)}\right)^{(n)} \\
-  &\overset{32(g.6)}{=} \left(\left(\tau_0\mathbb{1}^{\Omega}_{\Omega_0}\right)^{(0)}\right)^{(n)} \\
-  &\overset{\substack{\eqref{Lajuana},\\33.1(a.5)}}{=} 0.
- \end{align}
+  \tau_0^{(n)} \overset{32(m.3)}{=} \left(\tau_0^{(0)}\right)^{(n)} \overset{33.1(a.13)}{=} 0.
   $$
 
-  3. Define $I$ to be the set of $m \in \mathbb{N}_0$ such that, for all $n \in \{m, m+1, m+2, \dots\}\cup\{\infty\}$, such that $\Omega_n\neq\infty$,
-  $$
-  \tau_m^{(n)} < \infty.
-  $$
-  We need to show that $I = \mathbb{N}_0$. We will proceed by induction.
+  4. Define $I$ to be the set of $m \in \mathbb{N}_0$ such that, for all $n \in \{m, m+1, m+2, \dots\}\cup\{\infty\}$, $\tau_m^{(n)} < \infty$. We need to show that $I = \mathbb{N}_0$. We will proceed by induction.
 
-  Let $m \in \mathbb{N}_0$. If $m = 0$, the result follows from Lemma 33.1(b.2). So suppose that $m > 0$ and that $m-1 \in I$. Then
+  Let $m \in \mathbb{N}_0$. If $m = 0$, the result follows from Lemma 33.1(b.3). So suppose that $m > 0$ and that $m-1 \in I$. Then
   $$
-  \tau_{m-1}^{(n)}\overset{\eqref{Tiny}}{\leq} \tau_m^{(n)}\overset{32(m.3)}{=} \left(\tau_m^{(m)}\right)^{(n)} \overset{\eqref{Sergio}}{<} \infty.
+  \tau_m^{(n)}\overset{32(m.3)}{=} \left(\tau_m^{(m)}\right)^{(n)} = \left(\tau_m\big|_{\Omega_m}\right)^{(n)} \overset{\eqref{Sergio}}{=} \left(\tau_m\big|_{\{\tau_m < \infty\}}\right)^{(n)} < \infty.
   $$
 
-  4. Let $k,m\in\mathbb{N}_0$ be such that $k < m$, and let $n\in\overline{\mathbb{N}}_1$ be such that $m\leq n$ and $\Omega_n\neq\emptyset$. Denote by $I$ the set of all $i \in \mathbb{N}_0$, such that, if $\Omega_{k+i} \neq \emptyset$,
+  5. Let $k,m\in\mathbb{N}_0$ be such that $k < m$, and let $n\in\overline{\mathbb{N}}_1$ be such that $m\leq n$. Denote by $I$ the set of all $i \in \mathbb{N}_0$, such that, if $\Omega_{k+i} \neq \emptyset$,
   $$
   \begin{align}
   &\tau_k^{(k+i)} \leq \tau_{k+i}^{(k+i)}, \tag{1.4}\label{Yoko} \\
@@ -480,33 +465,34 @@ a.
   Hence, in light of the choice of $\omega$,
   $$
   \begin{align}
-  \tau_{k+i}^{(k+i)}(\omega) &\overset{32(m.3)}{=} \left(\tau_{k+i}^{(k+i-1)}\right)^{(k+i)}(\omega) \\
-  &= \tau_{k+i}^{(k+i-1)}(\omega) \\
-  &\overset{33.1(b.3)}{=} \tau_{k+i-1}^{(k+i-1)}(\omega) + \left(\tau_{k+i}^{(k+i-1)}(\omega) - \tau_{k+i-1}^{(k+i-1)}(\omega)\right) \\
-  &\overset{33.1(c.5)}{=} \tau_{k+i-1}^{(k+i-1)}(\omega) + \inf\ \left(\left(\nu\circ\!\circ\ \left[Y^{\left<\!\left<k+i-1\right>\!\right>}\right]\right)(\omega)\right)^{-1}\left((\gamma,\infty)\right) \\
-  &\overset{\eqref{Maxima}}{=} \tau_{k+i-1}^{(k+i-1)}(\omega) + \inf\ \left(f(\omega)\right)^{-1}\left((\gamma,\infty)\right) \\
-  &\overset{\eqref{Ena}}{\geq} \tau_{k+i-1}^{(k+i-1)}(\omega) + \inf\ \left(f(\omega)\right)^{-1}(S) \\
-  &\overset{\eqref{Hoyt}}{=} \tau_{k+i-1}^{(k+i-1)}(\omega) + \inf T \\
-  &\overset{\eqref{Lael}}{=} \tau_{k+i-1}^{(k+i-1)}(\omega) + t^* \\
-  &\overset{\eqref{Hong}}{>} \tau_{k+i-1}^{(k+i-1)}(\omega) \\
-  &\overset{i-1\in I}{\geq} \tau_k^{(k+i-1)}(\omega) \\
-  &\overset{\omega \in \Omega_{k+i}}{=} \left(\tau_k^{(k+i-1)}\right)^{(k+i)}(\omega) \\
-  &\overset{32(m.3)}{=} \tau_k^{(k+i)}(\omega).
+  \tau_{j+i}^{(j+i)}(\omega) &= \tau_{j+1}^{(j+1)}(\omega) \\
+  &\overset{32(m.3)}{=} \left(\tau_{j+1}^{(j)}\right)^{(j+1)}(\omega) \\
+  &= \tau_{j+1}^{(j)}(\omega) \\
+  &\overset{33.1(b.4)}{=} \tau_{j}^{(j)}(\omega) + \left(\tau_{j+1}^{(j)}(\omega) - \tau_{j}^{(j)}(\omega)\right) \\
+  &\overset{33.1(c.5)}{=} \tau_{j}^{(j)}(\omega) + \inf\ \left(\left(\nu\circ\!\circ\ \left[Y^{\left<\!\left<j\right>\!\right>}\right]\right)(\omega)\right)^{-1}\left((\gamma,\infty)\right) \\
+  &\overset{\eqref{Maxima}}{=} \tau_{j}^{(j)}(\omega) + \inf\ \left(f(\omega)\right)^{-1}\left((\gamma,\infty)\right) \\
+  &\overset{\eqref{Ena}}{\geq} \tau_{j}^{(j)}(\omega) + \inf\ \left(f(\omega)\right)^{-1}(S) \\
+  &\overset{\eqref{Hoyt}}{=} \tau_{j}^{(j)}(\omega) + \inf T \\
+  &\overset{\eqref{Lael}}{=} \tau_{j}^{(j)}(\omega) + t^* \\
+  &\overset{\eqref{Hong}}{>} \tau_{j}^{(j)}(\omega) \\
+  &\overset{i-1\in I}{\geq} \tau_j^{(j)}(\omega) \\
+  &\overset{\omega \in \Omega_{j+1}}{=} \left(\tau_j^{(j)}\right)^{(j+1)}(\omega) \\
+  &\overset{32(m.3)}{=} \tau_j^{(j+1)}(\omega).
   \end{align}
   $$
 
-  5. Let $n \in \overline{\mathbb{N}}_0$ be such that $\Omega_n \neq \emptyset$. Then
+  6. Let $n \in \overline{\mathbb{N}}_0$. Then
   $$
-  X^{(n)}_{\tau_0^{(n)}} \overset{33.1(b.2)}{=} X_0^{(n)} \overset{32(m.3)}{=} \left(X_0^{(0)}\right)^{(n)} \overset{33.1(a.5)}{=} 0.
+  X^{\langle n\rangle}_{\tau_0^{(n)}} \overset{32(m.3)}{=} X^{\langle n\rangle}_{\left(\tau_0^{(0)}\right)^{(n)}} \overset{32(m.6)}{=} \left(X^{\langle 0\rangle}\right)^{\langle n\rangle}_{\left(\tau_0^{(0)}\right)^{(n)}} \overset{32(k.1)}{=} \left(X^{\langle 0\rangle}_{\tau_0^{(0)}}\right)^{(n)} \overset{33.1(a.14)}{=} \mathbf{0}.
   $$
 
-  6. Follows from Lemma 32(j.3).
+  7. Follows from Lemma 32(j.3).
 
  c.
 
   1. Let $t \in [0,\infty)$. Then
   $$
-  Y^{\left<\!\left<0\right>\!\right>}_t \overset{\eqref{Glenda}}{=} \Theta^{(\Omega_0,V)}_t(X^{(0)},\tau_0^{(0)}) \overset{19(k)}{=} X^{(0)}_{\tau_0^{(0)}+t} - X^{(0)}_{\tau_0^{(0)}} \overset{33.1(b.2)}{=} X^{(0)}_t - X^{(0)}_{\tau_0^{(0)}} \overset{33.1(b.5)}{=} X^{(0)}_t.
+  Y^{\left<\!\left<0\right>\!\right>}_t \overset{\eqref{Glenda}}{=} \Theta^{(\Omega_0,V)}_t(X^{(0)},\tau_0^{(0)}) \overset{19(k)}{=} X^{(0)}_{\tau_0^{(0)}+t} - X^{(0)}_{\tau_0^{(0)}} \overset{33.1(b.3)}{=} X^{(0)}_t - X^{(0)}_{\tau_0^{(0)}} \overset{33.1(b.6)}{=} X^{(0)}_t.
   $$
 
   2. Let $n \in \mathbb{N}_0$. Then
@@ -517,7 +503,7 @@ a.
   3. Let $m\in\mathbb{N}_0$ and let $n\in\overline{\mathbb{N}}_0$ be such that $m \leq n$ and such that $\Omega_n\neq\emptyset$. Then, for every $\omega \in \Omega_n$,
   $$
   \begin{align}
-  \tau_{m+1}(\omega) - \tau_m(\omega) &\overset{\substack{\eqref{Tiny},\\33.1(b.3)}}{=} \left(\inf\left\{t\in\left[\tau_m(\omega),\infty\right)\ \big|\!:\ \nu\left(X_t(\omega)-X_{\tau_m(\omega)}(\omega)\right) > \gamma \right\}\right) -\tau_m(\omega) \\
+  \tau_{m+1}(\omega) - \tau_m(\omega) &\overset{\substack{\eqref{Tiny},\\33.1(b.4)}}{=} \left(\inf\left\{t\in\left[\tau_m(\omega),\infty\right)\ \big|\!:\ \nu\left(X_t(\omega)-X_{\tau_m(\omega)}(\omega)\right) > \gamma \right\}\right) -\tau_m(\omega) \\
   &\overset{4(b)}{=} \inf\left\{t\in\left[0,\infty\right)\ \big|\!:\ \nu\left(X_{\tau_m(\omega)+t}(\omega)-X_{\tau_m(\omega)}(\omega)\right) > \gamma \right\} \\
   &\overset{19(k)}{=} \inf\left\{t\in\left[0,\infty\right)\ \big|\!:\ \nu\left(\left(\Theta^{(\Omega,V)}_t(X,\tau_m)\right)(\omega)\right) > \gamma \right\} \\
   &\overset{\omega \in \Omega_n}{=} \inf\left\{t\in\left[0,\infty\right)\ \big|\!:\ \nu\left(\left(\Theta^{(\Omega,V)}_t(X,\tau_m)\right)^{(m)}(\omega)\right) > \gamma \right\} \\
@@ -531,7 +517,7 @@ a.
   4. Let $n \in \overline{\mathbb{N}}_0$ be such that $\Omega_n\neq\emptyset$. Then
   $$
   \begin{align}
-  \tau_1^{(n)} &\overset{33.1(b.2)}{=} \tau_1^{(n)} - \tau_0^{(n)} \\
+  \tau_1^{(n)} &\overset{33.1(b.3)}{=} \tau_1^{(n)} - \tau_0^{(n)} \\
   &\overset{33.1(c.3)}{=} \Xi_{\nu^{-1}\left((\gamma,\infty)\right)} \circ \left[\left(Y^{\left<\!\left<0\right>\!\right>}\right)^{(n)}\right] \\
   &\overset{32(i.3)}{=} \Xi_{\nu^{-1}\left((\gamma,\infty)\right)} \circ \left[Y^{\left<\!\left<0\right>\!\right>}\right]^{(n)} \\
   &\overset{32(c.3)}{=} \left(\Xi_{\nu^{-1}\left((\gamma,\infty)\right)} \circ \left[Y^{\left<\!\left<0\right>\!\right>}\right]\right)^{(n)} \\
@@ -581,7 +567,7 @@ a.
 
   So, supposing \eqref{Robbin} holds, we see that
   $$
- \Phi^{\sigma(\nu^*)}_\infty\left(Y^{\left<\!\left<n\right>\!\right>}\right) \overset{\eqref{Glenda}}{=} \Phi^{\sigma(\nu^*)}_\infty\left(\Theta^{\left(\Omega_n,\mathbf{V}\right)}\left(X^{(n)},\tau_n^{(n)}\right)\right) \overset{\eqref{Robbin}}{\subseteq}\Phi^{\sigma(\nu^*)}_\infty\left(X^{(n)}\right) \overset{33.1(b.6)}{=} \mathcal{F}^{(n)},
+ \Phi^{\sigma(\nu^*)}_\infty\left(Y^{\left<\!\left<n\right>\!\right>}\right) \overset{\eqref{Glenda}}{=} \Phi^{\sigma(\nu^*)}_\infty\left(\Theta^{\left(\Omega_n,\mathbf{V}\right)}\left(X^{(n)},\tau_n^{(n)}\right)\right) \overset{\eqref{Robbin}}{\subseteq}\Phi^{\sigma(\nu^*)}_\infty\left(X^{(n)}\right) \overset{33.1(b.7)}{=} \mathcal{F}^{(n)},
   $$
   as desired.
 
@@ -596,7 +582,7 @@ a.
   \eqref{Jeremy} holds, since
   $$
   \sigma_{\mathcal{B}}\left(\tau_n^{(n)}\right) \overset{8(f)}{=} \sigma_{\overline{\mathcal{B}}}\left(\tau_n^{(n)}\right)  \overset{
- \eqref{Kurt}}{\subseteq} \mathcal{F}^{(n)} \overset{33.1(b.6)}{=} \Phi^{\sigma(\nu^*)}\left(X^{(n)}\right).
+ \eqref{Kurt}}{\subseteq} \mathcal{F}^{(n)} \overset{33.1(b.7)}{=} \Phi^{\sigma(\nu^*)}\left(X^{(n)}\right).
   $$
 
   \eqref{Korey} follows from Corollary 20(i), since, by Corollary 20(h), $X^{(n)}$ is $\Phi^{\sigma(\nu^*)}\left(X^{(n)}\right)/\sigma(\nu^*)$-progressively measurable.
@@ -617,7 +603,7 @@ a.
 
   Lemma 33.1(a.7) together with Lemma 23(c) imply that $\tau_0$ is $\mathcal{F}/\overline{\mathcal{B}}$-measurable. Similarly, Lemma 33.1(a.21) together with Lemma 23(c) imply that $\tau_1$ is $\mathcal{F}/\overline{\mathcal{B}}$-measurable. \eqref{Geraldo} and \eqref{Leigha} now follow from Lemma 32(d.1), proving that $0 \in I$.
 
-  Next, suppose that $n > 0$ and that $n-1 \in I$. We assume, w.l.g., that $\Omega_n \neq \emptyset$. Then Lemma 33.1(b.1) implies that $\Omega_{n-1} \neq \emptyset$. Therefore, since $n-1 \in I$,
+  Next, suppose that $n > 0$ and that $n-1 \in I$. We assume, w.l.g., that $\Omega_n \neq \emptyset$. Then Lemma 33.1(b.2) implies that $\Omega_{n-1} \neq \emptyset$. Therefore, since $n-1 \in I$,
   $$
   \forall m \in \{0, 1, 2, \dots, n\},\ \tau_m^{(n-1)}\text{ is }\mathcal{F}^{(n-1)}/\overline{\mathcal{B}}\text{-measurable}. 	ag{1.19}\label{Joaquin}
   $$
@@ -631,7 +617,7 @@ a.
   \sigma_{\overline{\mathcal{B}}}\left(\tau_{n+1}^{(n)}\right) = \sigma_{\overline{\mathcal{B}}}\left(\left(\tau_{n+1}^{(n)} - \tau_n^{(n)}\right) + \tau_n^{(n)}\right) \overset{12(h)}{\subseteq} \mathcal{F}^{(n)}.
   $$
 
-  We have now shown that $\mathbb{N}_0\subseteq I$. It remains to show that $\infty \in I$. We assume, w.l.g., that $\Omega_\infty \neq \emptyset$. Let $m \in \mathbb{N}_0$. Then, by Lemma 33.1(b.1), $\Omega_m \neq \emptyset$, so
+  We have now shown that $\mathbb{N}_0\subseteq I$. It remains to show that $\infty \in I$. We assume, w.l.g., that $\Omega_\infty \neq \emptyset$. Let $m \in \mathbb{N}_0$. Then, by Lemma 33.1(b.2), $\Omega_m \neq \emptyset$, so
   $$
   \begin{align}
   \sigma_{\overline{\mathcal{B}}}\left(\tau_m^{(\infty)}\right) &\overset{32(m.3)}{=} \sigma_{\overline{\mathcal{B}}}\left(\left(\tau_m^{(m)}\right)^{(\infty)}\right) \\
@@ -642,7 +628,7 @@ a.
   $$
   proving that $\infty \in I$.
 
-  Finally, let $m \in \mathbb{N}_0$ and let $n \in \overline{\mathbb{N}}_0$ be such that $m \leq n$ and such that $\Omega_n \neq \emptyset$. We have shown that $\tau_m^{(n)}$ is $\mathcal{F}^{(n)}/\overline{\mathcal{B}}$-measurable. Therefore, in light of Lemma 33.1(b.3), Corollary 8(f) implies that $\tau_m^{(n)}$ is $\mathcal{F}^{(n)}/\mathcal{B}$-measurable.
+  Finally, let $m \in \mathbb{N}_0$ and let $n \in \overline{\mathbb{N}}_0$ be such that $m \leq n$ and such that $\Omega_n \neq \emptyset$. We have shown that $\tau_m^{(n)}$ is $\mathcal{F}^{(n)}/\overline{\mathcal{B}}$-measurable. Therefore, in light of Lemma 33.1(b.4), Corollary 8(f) implies that $\tau_m^{(n)}$ is $\mathcal{F}^{(n)}/\mathcal{B}$-measurable.
 
   11. Follows from Lemma 33.2(c.6) together with Lemma 33.2(c.7).
 
@@ -696,7 +682,7 @@ a.
 
  d.
 
-  1. Follows from Lemma 33.1(b.6).
+  1. Follows from Lemma 33.1(b.7).
 
   2. Let $m, n \in \overline{\mathbb{N}}_0$ be such that $m \leq n$ and such that $\Omega_m \neq \emptyset$. If $m = \infty$, then $n = \infty$, and the result follows from Lemma 33.1(d.1). So assume that $m < \infty$, and define
   $$
@@ -721,7 +707,7 @@ a.
 
   We showed that $\mathbb{N}_0 \subseteq I$. It remains to show that $\infty \in I$. Indeed,
   $$
-  \Omega_\infty \overset{\eqref{Deloras}}{=} \bigcap_{n = 0}^\infty \Omega_n \overset{33.1(b.1)}{=} \bigcap_{n = m}^\infty \Omega_n \overset{\mathbb{N}_0 \subseteq I}{\in} \mathcal{F}^{(m)}.
+  \Omega_\infty \overset{\eqref{Deloras}}{=} \bigcap_{n = 0}^\infty \Omega_n \overset{33.1(b.2)}{=} \bigcap_{n = m}^\infty \Omega_n \overset{\mathbb{N}_0 \subseteq I}{\in} \mathcal{F}^{(m)}.
   $$
 
   3. Let $m, n \in \overline{\mathbb{N}}_0$ be such that $m \leq n$ and such that $\Omega_n \neq \emptyset$. Then
@@ -737,7 +723,7 @@ a.
   $$
   all we need to show is the converse containment. Since
   $$
-  \{\tau_n < t\} \subseteq \{\tau_n < \infty\} \overset{\eqref{Sergio}}{=} \Omega_n \overset{33.1(b.1)}{\subseteq} \Omega_{n-1},
+  \{\tau_n < t\} \subseteq \{\tau_n < \infty\} \overset{\eqref{Sergio}}{=} \Omega_n \overset{33.1(b.2)}{\subseteq} \Omega_{n-1},
   $$
   we have
   $$
@@ -809,7 +795,7 @@ a.
  $$
  \left(P^{(n)}\right)^{\left[Y^{\left<\!\left<n\right>\!\right>}\right]}_{\mathcal{R}_{\nu^*}^*} \overset{33.1(c.1)}{=} \left(P^{(n)}\right)^{\left[X^{(n)}\right]}_{\mathcal{R}_{\nu^*}^*} \overset{32(i.3)}{=} \left(P^{(n)}\right)^{[X]^{(n)}}_{\mathcal{R}_{\nu^*}^*} \overset{32(e.3)}{=} P^{[X]}_{\mathcal{R}_{\nu^*}^*}.
  $$
- $33.2(d_n)$ follows from Lemma 33.1(b.2). $33.2(e_n)$ follows from Corollary 16(g), since
+ $33.2(d_n)$ follows from Lemma 33.1(b.3). $33.2(e_n)$ follows from Corollary 16(g), since
  $$
  \sigma_{\Omega_n}\left(\bigcup_{k = 1}^n \sigma_{\mathcal{B}}\left(\tau^{(n)}_k - \tau^{(n)}_{k - 1}\right)\right) = \sigma_{\Omega_n}(\emptyset) = \{\emptyset, \Omega_n\}.
  $$
@@ -823,7 +809,7 @@ a.
  P\left(\Omega_n\right) &\overset{\eqref{Sergio}}{=} P\left(\tau_n < \infty\right) \\
  &\overset{33.1(e.1)}{=} P\left(\tau_n^{(n-1)} < \infty\right) \\
  &\overset{33.1(c.10)}{=} P^{(n-1)}\left(\tau_n^{(n-1)} < \infty\right) \\
- &\overset{33.1(b.3)}{=} P^{(n-1)}\left(\tau_n^{(n-1)} - \tau_{n-1}^{(n-1)} < \infty\right) \\
+ &\overset{33.1(b.4)}{=} P^{(n-1)}\left(\tau_n^{(n-1)} - \tau_{n-1}^{(n-1)} < \infty\right) \\
  &\overset{33.2(d_{n-1})}{=} P^{(0)}\left(\tau_1^{(0)} < \infty\right) \\
  &\overset{32(c.2)}{=} P^{(0)}\left(\left\{\tau_1 < \infty\right\}^{(0)}\right) \\
  &\overset{32(e.2)}{=} P\left(\tau_1 < \infty\right) \\
@@ -948,7 +934,7 @@ a.
 
  a.
  $$
- P\left(\Omega_\infty\right) \overset{\eqref{Deloras}}{=} P\left(\bigcap_{n = 0}^\infty \Omega_n\right) \overset{33.1(b.1)}{=} \lim_{n \rightarrow \infty} P\left(\Omega_n\right) \overset{33.2(a)}{=} 1.
+ P\left(\Omega_\infty\right) \overset{\eqref{Deloras}}{=} P\left(\bigcap_{n = 0}^\infty \Omega_n\right) \overset{33.1(b.2)}{=} \lim_{n \rightarrow \infty} P\left(\Omega_n\right) \overset{33.2(a)}{=} 1.
  $$
 
  b. Let $n \in \mathbb{N}_1$. Then
@@ -1082,14 +1068,14 @@ a.
 
  Observe that, since, by Definition 28(a.4), $X(\Omega)\subseteq\mathcal{C}_{\nu^*}$, Lemma 32(i.5) implies that $X^{(k)}(\Omega_k)\subseteq\mathcal{C}_{\nu^*}$, which implies, by Definition 13(c), that $X^{(k)}(\Omega_k)\subseteq\mathcal{L}_{\nu^*}$. Therefore, since,
  $$
- 0 \overset{33.1(b.2)}{=} \tau_0^{(\infty)}(\omega) \overset{33.1(b.4)}{<} \tau_k^{(\infty)}(\omega) \overset{33.1(b.3)}{<} \infty,
+ 0 \overset{33.1(b.3)}{=} \tau_0^{(\infty)}(\omega) \overset{33.1(b.5)}{<} \tau_k^{(\infty)}(\omega) \overset{33.1(b.4)}{<} \infty,
  $$
  we have $\left[X^{(\infty)}\right](\omega) \in \overset{\hspace{.25cm}\nu^*}{\underset{\uparrow\tau_k^{(\infty)}(\omega)}{\mathrm{Lim}^*}}$. Hence
  $$
  \begin{align}
  \nu\left(\left(\lim_{s\uparrow\tau^{(\infty)}_k(\omega)} ^{\hspace{.25cm}\nu^*}X^{(\infty)}_s(\omega)\right)-X^{(\infty)}_{\tau^{(\infty)}_{k-1}(\omega)}(\omega)\right) &= \nu\left(\lim_{s\uparrow\tau^{(\infty)}_k(\omega)}^{\hspace{.25cm}\nu^*} \left(X^{(\infty)}_s(\omega)-X^{(\infty)}_{\tau^{(\infty)}_{k-1}(\omega)}(\omega)\right)\right) \\
  &\overset{12(a)}{=} \lim_{s\uparrow\tau^{(\infty)}_k(\omega)}\nu\left(X^{(\infty)}_s(\omega)-X^{(\infty)}_{\tau^{(\infty)}_{k-1}(\omega)}(\omega)\right) \\
- &\overset{33.1(b.3)}{=} \lim_{s\uparrow \tau_{k-1}^{(\infty)}(\omega) + \left(\tau_k^{(\infty)}(\omega) - \tau_{k-1}^{(\infty)}(\omega)\right)}\nu\left(X^{(\infty)}_s(\omega)-X^{(\infty)}_{\tau^{(\infty)}_{k-1}(\omega)}(\omega)\right) \\
+ &\overset{33.1(b.4)}{=} \lim_{s\uparrow \tau_{k-1}^{(\infty)}(\omega) + \left(\tau_k^{(\infty)}(\omega) - \tau_{k-1}^{(\infty)}(\omega)\right)}\nu\left(X^{(\infty)}_s(\omega)-X^{(\infty)}_{\tau^{(\infty)}_{k-1}(\omega)}(\omega)\right) \\
  &\overset{4(a)}{=} \lim_{s\uparrow\tau^{(\infty)}_k(\omega)-\tau^{(\infty)}_{k-1}(\omega)}\nu\left(X^{(\infty)}_{\tau_{k-1}^{(\infty)}(\omega) + s}(\omega)-X^{(\infty)}_{\tau^{(\infty)}_{k-1}(\omega)}(\omega)\right) \\
  &\overset{\eqref{Rey}}{=} \lim_{s\uparrow\tau^{(\infty)}_k(\omega)-\tau^{(\infty)}_{k-1}(\omega)} f(\omega)(s).
  \end{align}
@@ -1112,7 +1098,7 @@ a.
  \end{align}
  $$
 
- d. Let $t\in[0,\infty)$, let $n\in\mathbb{N}_0$, and let $\omega\in \Omega_\infty$. Firstly suppose that either $t=0$ or $n=0$. Then, by Lemma 33.1(b.2),
+ d. Let $t\in[0,\infty)$, let $n\in\mathbb{N}_0$, and let $\omega\in \Omega_\infty$. Firstly suppose that either $t=0$ or $n=0$. Then, by Lemma 33.1(b.3),
  $$
  t\wedge\tau^{(\infty)}_n(\omega) = 0 = \tau^{(\infty)}_0(\omega),
  $$
@@ -1120,7 +1106,7 @@ a.
  $$
  \begin{align}
  \nu\left(X_{t\wedge\tau^{(\infty)}_n(\omega)}^{(\infty)}(\omega)\right) &= \nu\left(X_{\tau_0^{(\infty)}(\omega)}^{(\infty)}(\omega)\right) \\\
- &\overset{33.1(b.5)}{=} \nu(0) \\
+ &\overset{33.1(b.6)}{=} \nu(0) \\
  &= 0 \\
  &\leq \sum_{k=1}^n \nu\left(X_{\tau_k^{(\infty)}(\omega)}^{(\infty)}(\omega)-X_{\tau_{k-1}^{(\infty)}(\omega)}^{(\infty)}(\omega)\right),
  \end{align}
@@ -1129,14 +1115,14 @@ a.
 
  Next, suppose $n, t > 0$. Observe that
  $$
- 0\overset{33.1(b.2)}{=}\tau^{(\infty)}_0(\omega)\overset{33.1(b.4)}{<}\tau^{(\infty)}_1(\omega)\overset{33.1(b.4)}{<}\cdots\overset{33.1(b.4)}{<}\tau^{(\infty)}_n(\omega). \tag{4.7}\label{Catriana}
+ 0\overset{33.1(b.3)}{=}\tau^{(\infty)}_0(\omega)\overset{33.1(b.5)}{<}\tau^{(\infty)}_1(\omega)\overset{33.1(b.5)}{<}\cdots\overset{33.1(b.5)}{<}\tau^{(\infty)}_n(\omega). \tag{4.7}\label{Catriana}
  $$
 
  If $t\geq\tau^{(\infty)}_n(\omega)$, then $t\wedge\tau^{(\infty)}_n(\omega)=\tau^{(\infty)}_n(\omega)$, and therefore
  $$
  \begin{align}
  \nu\left(X^{(\infty)}_{t\wedge\tau^{(\infty)}_n(\omega)}(\omega)\right) &= \nu\left(X^{(\infty)}_{\tau^{(\infty)}_n(\omega)}(\omega)\right) \\
- &\overset{33.1(b.5)}{=} \nu\left(\sum_{k=1}^n\left(X^{(\infty)}_{\tau^{(\infty)}_k(\omega)}(\omega)-X_{\tau^{(\infty)}_{k-1}(\omega)}(\omega)\right)\right) \\
+ &\overset{33.1(b.6)}{=} \nu\left(\sum_{k=1}^n\left(X^{(\infty)}_{\tau^{(\infty)}_k(\omega)}(\omega)-X_{\tau^{(\infty)}_{k-1}(\omega)}(\omega)\right)\right) \\
  & \leq \sum_{k=1}^n\nu\left(X^{(\infty)}_{\tau^{(\infty)}_k(\omega)}(\omega)-X^{(\infty)}_{\tau^{(\infty)}_{k-1}(\omega)}(\omega)\right),
  \end{align}
  $$
@@ -1146,7 +1132,7 @@ a.
  $$
  \begin{align}
  \nu\left(X_{t\wedge\tau^{(\infty)}_n(\omega)}^{(\infty)}(\omega)\right) &= \nu\left(X_t^{(\infty)}(\omega)\right) \\
- &\overset{33.1(b.5)}{=} \nu\left(\left(X^{(\infty)}_t(\omega)-X^{(\infty)}_{\tau^{(\infty)}_{k^* - 1}(\omega)}(\omega)\right) + \sum_{k=1}^{k^*-1} \left(X^{(\infty)}_{\tau^{(\infty)}_k(\omega)}(\omega)-X^{(\infty)}_{\tau^{(\infty)}_{k-1}(\omega)}(\omega)\right)\right) \\
+ &\overset{33.1(b.6)}{=} \nu\left(\left(X^{(\infty)}_t(\omega)-X^{(\infty)}_{\tau^{(\infty)}_{k^* - 1}(\omega)}(\omega)\right) + \sum_{k=1}^{k^*-1} \left(X^{(\infty)}_{\tau^{(\infty)}_k(\omega)}(\omega)-X^{(\infty)}_{\tau^{(\infty)}_{k-1}(\omega)}(\omega)\right)\right) \\
  & \leq \nu\left(X^{(\infty)}_t(\omega)-X^{(\infty)}_{\tau^{(\infty)}_{k^*-1}(\omega)}(\omega)\right) + \sum_{k=1}^{k^*-1} \nu\left(X^{(\infty)}_{\tau^{(\infty)}_k(\omega)}(\omega)-X^{(\infty)}_{\tau^{(\infty)}_{k-1}(\omega)}(\omega)\right) \\
  & \overset{\substack{33.6(b),\\33.6(a)}}{\leq} \nu\left(X^{(\infty)}_{\tau^{(\infty)}_{k^*}(\omega)}(\omega)-X^{(\infty)}_{\tau^{(\infty)}_{k^*-1}(\omega)}(\omega)\right) + \sum_{k=1}^{k^*-1} \nu\left(X^{(\infty)}_{\tau^{(\infty)}_k(\omega)}(\omega)-X^{(\infty)}_{\tau^{(\infty)}_{k-1}(\omega)}(\omega)\right) \\
  & \leq \sum_{k=1}^n \nu\left(X^{(\infty)}_{\tau^{(\infty)}_k(\omega)}(\omega)-X^{(\infty)}_{\tau^{(\infty)}_{k-1}(\omega)}(\omega)\right).
@@ -1155,7 +1141,7 @@ a.
 
  e. [The following proof is essentially Schilling's proof of Lemma 8.2 on p. 50.] Let $t, r \in [0,\infty)$. Observe that, for every $n\in\mathbb{N}_1$,
  $$
- \tau^{(\infty)}_n \overset{33.1(b.2)}{=} \sum_{k = 1}^n \left(\tau^{(\infty)}_k-\tau^{(\infty)}_{k-1}\right) . \tag{4.8}\label{Clementine}
+ \tau^{(\infty)}_n \overset{33.1(b.3)}{=} \sum_{k = 1}^n \left(\tau^{(\infty)}_k-\tau^{(\infty)}_{k-1}\right) . \tag{4.8}\label{Clementine}
  $$
 
  Consider the expected value
@@ -1168,8 +1154,8 @@ a.
  \begin{align}
  0 &= P^{(\infty)}\left(0\mathbb{1}^{\Omega_\infty}_{\Omega_\infty}\right) \\
  &< P^{(\infty)}\left(e^{-\tau^{(\infty)}_1}\right) \\
- &\overset{33.1(b.4)}{<} P^{(\infty)}\left(e^{-\tau_0^{(\infty)}}\right) \\
- &\overset{33.1(b.2)}{<} P^{(\infty)}\left(e^0\mathbb{1}^{\Omega_\infty}_{\Omega_\infty}\right) \\
+ &\overset{33.1(b.5)}{<} P^{(\infty)}\left(e^{-\tau_0^{(\infty)}}\right) \\
+ &\overset{33.1(b.3)}{<} P^{(\infty)}\left(e^0\mathbb{1}^{\Omega_\infty}_{\Omega_\infty}\right) \\
  &= 1,
  \end{align}
  $$
