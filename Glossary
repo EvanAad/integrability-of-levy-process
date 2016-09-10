@@ -4,6 +4,10 @@
 
 $\square^{(n)}$ (non-negative integer superscript, e.g. $\mathcal{A}^{(0)}$) ... proof, bullets following eq. (6)
 
+*Numbers*
+
+$\mathbf{0}$ ... proof, eq. (a)
+
 *Greek*
 
 $\gamma$ ... statement
@@ -66,7 +70,7 @@ $\mathcal{A}\otimes\mathcal{H}$ ... 7(e)
 
 $\otimes_{[0,\infty)}\mathcal{A}$ ... 7(f)
 
-$\mathbf{V}, V$ (vector space) ... 11(a)
+$\mathbf{V}, V$ (vector space) ... 11(a), 11(b)
 
 $(\mathbf{V}, \nu)$ (normed space) ... 11(c)
 
@@ -94,6 +98,8 @@ $\mathcal{F}_{\tau}$ ... 23
 
 *Numbers*
 
+$\mathbf{0}_{\mathbf{V}}$ ... 11(c)
+
 $\pm\infty\cdot0,\ 0\cdot\pm\infty$ ... 1(h)
 
 $\mathbb{1}^\Omega_S$ ... 2(f)
@@ -112,7 +118,7 @@ $\Lambda_{\Omega,c}(f)$ ... 31(a)
 
 $\Lambda_\Omega(f)$ ... 31(b), 31(c)
 
-$\Xi_{\mathcal{T}}^D$ ... 21
+$\Xi_D$ ... 21
 
 $\pi^\Gamma_t$ ... 2(g)
 
