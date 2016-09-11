@@ -45,12 +45,14 @@ $$
 \end{cases}
 $$
 
-g. Let $\Gamma$ be a non-emptyset. For every $t\in[0,\infty)$ we define the projection function $\pi^\Gamma_t:\Gamma^{[0,\infty)}\rightarrow\Gamma$, as follows. For every $f:[0,\infty)\rightarrow\Gamma$,
+g. Let $\Omega$ be a (possibly empty) set, and let $c$ be any object, not necessarily $\in \Omega$. If there is no other unambiguous interpretation for the subscript notation $c_\Omega$, we shall intend it to mean the following (in other words, we decree that the following interpretation shall have lowest precedence of all other possible interpretations). $c_\Omega$ is the constant function $c_\Omega:\Omega \rightarrow \{c\}$, which, for every $\omega \in \Omega$, assigns $c_\Omega(\omega) := c$. In particular, if $c \in \overline{\mathbb{R}}$, then $c_\Omega = c\mathbb{1}^\Omega_\Omega$.
+
+h. Let $\Gamma$ be a non-emptyset. For every $t\in[0,\infty)$ we define the projection function $\pi^\Gamma_t:\Gamma^{[0,\infty)}\rightarrow\Gamma$, as follows. For every $f:[0,\infty)\rightarrow\Gamma$,
 $$
 \pi^\Gamma_t(f) := f(t).
 $$
 
-h. Let $\mathcal{T}_1, \mathcal{T}_2$ be topologies on the non-empty sets $S_1, S_2$, respectively. We denote by $\mathcal{C}_{\mathcal{T}_1,\mathcal{T}_2}$ the set of $\mathcal{T}_1/\mathcal{T}_2$-continuous functions $f:S_1\rightarrow S_2$.
+i. Let $\mathcal{T}_1, \mathcal{T}_2$ be topologies on the non-empty sets $S_1, S_2$, respectively. We denote by $\mathcal{C}_{\mathcal{T}_1,\mathcal{T}_2}$ the set of $\mathcal{T}_1/\mathcal{T}_2$-continuous functions $f:S_1\rightarrow S_2$.
 
 ***3. Definition***
 
@@ -629,15 +631,15 @@ i. If $X$ is $\mathcal{F}/\mathcal{H}$-progressively measurable, then $\left<X\r
 
 j. Let $\tau$ be a non-negative $\mathcal{A}/\mathcal{B}$-measurable function, for some $\sigma$-algebra $\mathcal{A}$ on $\Omega$. If $\left<X\right>$ is $\mathcal{A}\otimes\sigma\left(\mathcal{E}_+\right)/\mathcal{H}$-measurable, then $X_\tau$ is $\mathcal{A}/\mathcal{H}$-measurable.
 
-k. Let $\tau$ be a real-valued $\mathcal{F}$-stopping time, and let $X$ be $\mathcal{F}/\mathcal{H}$-progressively measurable. Then $X_\tau$ is $\mathcal{F}_\tau/\mathcal{H}$-measurable.
+k. Let $\Omega$ be a (possibly empty) set, let $\Gamma$ be a non-empty set, and let $X$ be a $\Omega/\Gamma$-stochastic process. Then, for every $t \in [0,\infty)$, $X_{t_\Omega} = X_t$.
 
-l. Let $\Omega$ be a non-empty set, let $\mathbf{V}$ be a vector space, let $\mathcal{T}$ be a topology on $V$, let $X$ be a $\Omega/V$ stochastic process, and let $\tau:\Omega\rightarrow[0,\infty)$. Then
+l. Let $\Omega$ be a (possibly empty) set, let $\mathbf{V}$ be a vector space, let $\mathcal{T}$ be a topology on $V$, let $X$ be a $\Omega/V$ stochastic process, and let $\tau:\Omega\rightarrow[0,\infty)$. Then
 
- 1. If $[X](\Omega) \in \mathcal{R}_{\mathcal{T}}$, then $\left[\Theta^{(\Omega,\mathbf{V})}(X,\tau)\right](\Omega) \in \mathcal{R}_{\mathcal{T}}$.
+ 1. If $[X](\Omega) \in \mathcal{R}_{\mathcal{T}}$, then $\left[\Theta^{(\Omega,\mathbf{V})}(X,\tau)\right](\Omega) \subseteq \mathcal{R}_{\mathcal{T}}$.
 
- 2. If $[X](\Omega) \in \mathcal{L}_{\mathcal{T}}$, then $\left[\Theta^{(\Omega,\mathbf{V})}(X,\tau)\right](\Omega) \in \mathcal{L}_{\mathcal{T}}$.
+ 2. If $[X](\Omega) \in \mathcal{L}_{\mathcal{T}}$, then $\left[\Theta^{(\Omega,\mathbf{V})}(X,\tau)\right](\Omega) \subseteq \mathcal{L}_{\mathcal{T}}$.
 
- 3. If $[X](\Omega) \in \mathcal{G}_{\mathcal{T}}$, then $\left[\Theta^{(\Omega,\mathbf{V})}(X,\tau)\right](\Omega) \in \mathcal{G}_{\mathcal{T}}$.
+ 3. If $[X](\Omega) \in \mathcal{G}_{\mathcal{T}}$, then $\left[\Theta^{(\Omega,\mathbf{V})}(X,\tau)\right](\Omega) \subseteq \mathcal{G}_{\mathcal{T}}$.
 
 m. Let $\Omega$ be a non-empty set, let $(\mathbf{V},\nu)$ be a normed space, let $X$ be a $\Omega/V$-stochastic process, and let $\tau:\Omega\rightarrow[0,\infty)$ be $\Phi^{\sigma(\nu^*)}_\infty(X)/\mathcal{B}$-measurable. If $\left<X\right>$ is $\Phi^{\sigma(\nu^*)}_\infty(X)\otimes\sigma\left(\mathcal{E}_+\right)/\sigma(\nu^*)$-measurable, then
  $$
@@ -708,6 +710,8 @@ e. For all $a,b \in [0,\infty)$, if $\tau$ is a $\mathcal{F}$-stopping time, $a\
 
 f. For all $a,b \in [0,\infty)$, if $\tau$ is a weak $\mathcal{F}$-stopping time, $a\tau+b$ is a weak $\mathcal{F}$-stopping time.
 
+g. Let $\tau$ be a real-valued $\mathcal{F}$-stopping time, and let $X$ be $\mathcal{F}/\mathcal{H}$-progressively measurable. Then $X_\tau$ is $\mathcal{F}_\tau/\mathcal{H}$-measurable.
+
 ***24. Definition***
 
 Let $\Gamma$ be a non-empty set, let $f:[0,\infty)\rightarrow\Gamma$, and let $D\subseteq\Gamma$. The first hitting time in $D$, is the function $\Xi_D:\left([0,\infty)\rightarrow\Gamma\right)\rightarrow[0,\infty]$ defined as follows. For every $f:[0,\infty)\rightarrow\Gamma$,
@@ -741,11 +745,13 @@ Let $\tau$ be a $\mathcal{F}$-stopping time for some filtration $\mathcal{F}$.
 
 a. $\mathcal{F}_\tau$ is a sub-$\sigma$-algebra of $\mathcal{F}_\infty$.
 
-b. If $\tau'$ is a $\mathcal{F}$-stopping time such that $\tau' < \tau$, then $\mathcal{F}_{\tau'}\subseteq\mathcal{F}^+_{\tau'}\subseteq\mathcal{F}_\tau$.
+b. If, for some $t \in [0,\infty]$, $\tau = t_{\cup\mathcal{F}}$, then $\mathcal{F}_\tau = \mathcal{F}_t$.
 
-c. $\tau$ is $\mathcal{F}_\tau/\overline{\mathcal{B}}$-measurable.
+c. If $\tau'$ is a $\mathcal{F}$-stopping time such that $\tau' < \tau$, then $\mathcal{F}_{\tau'}\subseteq\mathcal{F}^+_{\tau'}\subseteq\mathcal{F}_\tau$.
 
-d. Suppose $\tau < \infty$, and let $\mathcal{T}$ be a topology on some non-empty set. Then, if $X$ is a $\mathcal{F}/\sigma(\mathcal{T})$-stochastic process with $\mathcal{E}_+/\mathcal{T}$-right-continuous paths, $X_\tau$ is $\mathcal{F}_\tau/\sigma(\mathcal{T})$-measurable.
+d. $\tau$ is $\mathcal{F}_\tau/\overline{\mathcal{B}}$-measurable.
+
+e. Suppose $\tau < \infty$, and let $\mathcal{T}$ be a topology on some non-empty set. Then, if $X$ is a $\mathcal{F}/\sigma(\mathcal{T})$-stochastic process with $\mathcal{E}_+/\mathcal{T}$-right-continuous paths, $X_\tau$ is $\mathcal{F}_\tau/\sigma(\mathcal{T})$-measurable.
 
 ***28. Definition***
 
@@ -912,7 +918,10 @@ e. Let $\mathcal{A}$ be a $\sigma$-algebra on $\Omega$, let $\mu$ be a measure o
  \mathcal{A}\perp_P\mathcal{H} \iff \mathcal{A}'\perp_{P'}\mathcal{H}'.
  $$
 
-f. Let $\mathbf{V}$ be a vector space, denote $\mathbf{V}$'s field by $\mathbf{F}$, and denote $\mathbf{F}$'s set of scalars by $F$, let $f, g:\Omega\rightarrow V$, and let $a, b\in F$. Then
+f.
+ 1. Let $c$ be an arbitrary object. Then $c_\Omega' = c_{\Omega_1}$.
+
+ 2. Let $\mathbf{V}$ be a vector space, denote $\mathbf{V}$'s field by $\mathbf{F}$, and denote $\mathbf{F}$'s set of scalars by $F$, let $f, g:\Omega\rightarrow V$, and let $a, b\in F$. Then
  $$
  (af + bg)' = af' + bg'.
  $$

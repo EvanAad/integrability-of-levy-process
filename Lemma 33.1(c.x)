@@ -1,0 +1,71 @@
+c.
+
+ 1. $Y^{\left<\!\left<0\right>\!\right>} = X^{\langle 0\rangle}$.
+
+ 2. For every $n \in \mathbb{N}_0$, $Y^{\left<\!\left<n\right>\!\right>}_0 = 0$.
+
+ 3. For every $m\in\mathbb{N}_0$ and for every $n\in\overline{\mathbb{N}}_0$ such that $m \leq n$ and such that $\Omega_n\neq\emptyset$,
+ $$
+ \tau_{m+1}^{(n)} - \tau_m^{(n)} = \Xi_{\nu^{-1}\left((\gamma,\infty)\right)} \circ \left[\left(Y^{\left<\!\left<m\right>\!\right>}\right)^{(n)}\right].
+ $$
+
+ In particular, if $n = m$,
+ $$
+ \tau_{m+1}^{(n)} - \tau_m^{(n)} = \Xi_{\nu^{-1}\left((\gamma,\infty)\right)} \circ \left[Y^{\left<\!\left<n\right>\!\right>}\right].
+ $$
+
+ 4. For every $n \in \overline{\mathbb{N}}_0$ such that $\Omega_n\neq\emptyset$,
+ $$
+ \tau_1^{(n)} = \Xi_{\nu^{-1}\left((\gamma,\infty)\right)} \circ \left[X^{\langle n\rangle}\right].
+ $$
+
+ 5. Let $m \in \mathbb{N}_0$, let $n\in\overline{\mathbb{N}}_0$ be such that $m \leq n$, and such that $\Omega_n \neq \emptyset$. Then, for every $\omega \in \Omega_n$,
+ $$
+ \tau_{m+1}^{(n)}(\omega)-\tau_m^{(n)}(\omega) = \inf\ \left(\left(\nu\circ\!\circ \left[\left(Y^{\left<\!\left<m\right>\!\right>}\right)^{(n)}\right]\right)(\omega)\right)^{-1}((\gamma,\infty)).
+ $$
+
+ In particular, if $m = n$,
+ $$
+ \tau_{n+1}^{(n)}(\omega)-\tau_n^{(n)}(\omega) = \inf\ \left(\left(\nu\circ\!\circ\left[Y^{\left<\!\left<n\right>\!\right>}\right]c\right)(\omega)\right)^{-1}((\gamma,\infty)).
+ $$
+
+ 6. For every $n \in \mathbb{N}_0$,
+ $$
+ \left[Y^{\left<\!\left<n\right>\!\right>}\right](\Omega_n) \subseteq \mathcal{G}_{\nu^*}.
+ $$
+
+ 7. For every $n \in \mathbb{N}_0$,
+ $$
+ \left(\nu\circ\circ\ \left[Y^{\left<\!\left<n\right>\!\right>}\right]\right)(\Omega_n) \subseteq \mathcal{G}_{\mathcal{E}}.
+ $$
+
+ 8. For every $m\in\mathbb{N}_1$ and for every $n\in\overline{\mathbb{N}}_1$ such that $m \leq n$ and such that $\Omega_n\neq\emptyset$, $\tau_m^{(n)} - \tau_{m-1}^{(n)}$ is a weak stopping-time of $\left(Y^{\left<\!\left<m-1\right>\!\right>}\right)^{(n)}$.
+
+ 9. For every $n\in\mathbb{N}_0$ such that $\Omega_n\neq\emptyset$ and such that $\tau_n^{(n)}$ is $\mathcal{F}^{(n)}/\overline{\mathcal{B}}$-measurable,
+ $$
+ \Phi^{\sigma(\nu^*)}_\infty\left(Y^{\left<\!\left<n\right>\!\right>}\right) \subseteq \mathcal{F}^{(n)}.
+$$
+
+ 10. For all $n \in \overline{\mathbb{N}}_0$ such that $\Omega_n \neq \emptyset$, and for all $m \in \mathbb{N}_0$ such that $m \leq n+1$, $\tau_m^{(n)}$ is $\mathcal{F}^{(n)}/\overline{\mathcal{B}}$-measurable. Moreover, if $m \leq n$, then $\tau_m^{(n)}$ is $\mathcal{F}^{(n)}/\mathcal{B}$-measurable.
+
+ 11. For every $n\in\mathbb{N}_0$ such that $\Omega_n\neq\emptyset$,
+ $$
+ \Phi^{\sigma(\nu^*)}_\infty\left(Y^{\left<\!\left<n\right>\!\right>}\right) \subseteq \mathcal{F}^{(n)}.
+$$
+
+ 12. For every $n\in\mathbb{N}_0$ such that $\Omega_n\neq\emptyset$, $\left[Y^{\left<\!\left<n\right>\!\right>}\right]$ is $\mathcal{F}^{(n)}/\mathcal{R}_{\nu^*}^*$-measurable.
+
+ 13. For all $m \in \mathbb{N}_1$, for all $n \in \overline{\mathbb{N}}_1$ such that $m \leq n$ and such that $\Omega_n \neq \emptyset$, and for all $t \in [0,\infty)$,
+ $$
+ \left(X^{(m-1)}_{\tau_m^{(m-1)}\mathbb{1}^{\Omega_{m-1}}_{\Omega_m} + t}\right)^{(n)} = X^{(n)}_{\tau_m^{(n)} + t}.
+ $$
+
+ 14. For all $m \in \mathbb{N}_1$, for all $n \in \overline{\mathbb{N}}_1$ such that $m \leq n$ and such that $\Omega_n \neq \emptyset$, and for all $t \in [0,\infty)$,
+ $$
+ \left(Y^{\left<\!\left<m-1\right>\!\right>}_{\left(\tau^{(m-1)}_m\mathbb{1}^{\Omega_{m-1}}_{\Omega_m} - \tau^{(m-1)}_{m-1}\right) + t}\right)^{(n)} = \left(Y^{\left<\!\left<m-1\right>\!\right>}\right)^{(n)}_{\left(\tau^{(n)}_m-\tau^{(n)}_{m-1}\right) + t}.
+ $$
+
+ 15. For every $n \in \mathbb{N}_1$ such that $\Omega_n\neq\emptyset$,
+ $$
+ Y^{\left<\!\left<n\right>\!\right>} = \Theta^{\left(\Omega_n,\mathbf{V}\right)}\left(\left(Y^{\left<\!\left<n-1\right>\!\right>}\right)^{\langle n\rangle},\tau^{(n)}_n-\tau^{(n)}_{n-1}\right).
+ $$

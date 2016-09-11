@@ -2,7 +2,9 @@
 
 *Symbols*
 
-$\square^{(n)}$ (non-negative integer superscript, e.g. $\mathcal{A}^{(0)}$) ... proof, bullets following eq. (8)
+$\square^{(n)}$ (non-negative integer superscript, e.g. $\mathcal{A}^{(0)}$) ... proof, bullets following eq. (7)
+
+$\square^{\langle n\rangle}$ (non-negative integer superscript, e.g. $X^{\langle 0\rangle}$) ... proof, bullets following eq. (7)
 
 *Numbers*
 
@@ -56,7 +58,9 @@ $\Gamma^\Omega$ ... 2(d)
 
 $g \circ\!\circ\ f$ ... 2(e)
 
-$s\wedge t,\ s\vee t$ ... 2(h)
+$c_\Omega$ ... 2(g)
+
+$s\wedge t,\ s\vee t$ ... 2(i)
 
 $f\wedge g,\ f\vee g$ ... 2(i)
 
@@ -120,7 +124,7 @@ $\Lambda_\Omega(f)$ ... 31(b), 31(c)
 
 $\Xi_D$ ... 21
 
-$\pi^\Gamma_t$ ... 2(g)
+$\pi^\Gamma_t$ ... 2(h)
 
 $\sigma_\Omega(\mathcal{S})$ ... 7(a)
 
@@ -336,7 +340,7 @@ $\sup\emptyset$ ... 1(i)
 
   * $\mathcal{H}$-progressively measurable ... 19(j)
 
-* projection function ... 2(g)
+* projection function ... 2(h)
 
 *S*
 
