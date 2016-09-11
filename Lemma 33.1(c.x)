@@ -2,9 +2,9 @@ c.
 
  1. $Y^{\left<\!\left<0\right>\!\right>} = X^{\langle 0\rangle}$.
 
- 2. For every $n \in \mathbb{N}_0$, $Y^{\left<\!\left<n\right>\!\right>}_0 = 0$.
+ 2. For every $n \in \mathbb{N}_0$, $Y^{\left<\!\left<n\right>\!\right>}_0 = \mathbf{0}_{\Omega_n}$.
 
- 3. For every $m\in\mathbb{N}_0$ and for every $n\in\overline{\mathbb{N}}_0$ such that $m \leq n$ and such that $\Omega_n\neq\emptyset$,
+ 3. For every $m\in\mathbb{N}_0$ and for every $n\in\overline{\mathbb{N}}_0$ such that $m \leq n$,
  $$
  \tau_{m+1}^{(n)} - \tau_m^{(n)} = \Xi_{\nu^{-1}\left((\gamma,\infty)\right)} \circ \left[\left(Y^{\left<\!\left<m\right>\!\right>}\right)^{(n)}\right].
  $$
@@ -57,7 +57,7 @@ $$
 
  13. For all $m \in \mathbb{N}_1$, for all $n \in \overline{\mathbb{N}}_1$ such that $m \leq n$ and such that $\Omega_n \neq \emptyset$, and for all $t \in [0,\infty)$,
  $$
- \left(X^{(m-1)}_{\tau_m^{(m-1)}\mathbb{1}^{\Omega_{m-1}}_{\Omega_m} + t}\right)^{(n)} = X^{(n)}_{\tau_m^{(n)} + t}.
+ \left(X^{\langle m-1\rangle}_{\tau_m^{(m-1)}\mathbb{1}^{\Omega_{m-1}}_{\Omega_m} + t}\right)^{(n)} = X^{\langle n\rangle}_{\tau_m^{(n)} + t}.
  $$
 
  14. For all $m \in \mathbb{N}_1$, for all $n \in \overline{\mathbb{N}}_1$ such that $m \leq n$ and such that $\Omega_n \neq \emptyset$, and for all $t \in [0,\infty)$,
