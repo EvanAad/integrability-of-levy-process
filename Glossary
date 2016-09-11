@@ -2,7 +2,7 @@
 
 *Symbols*
 
-$\square^{(n)}$ (non-negative integer superscript, e.g. $\mathcal{A}^{(0)}$) ... proof, bullets following eq. (7)
+$\square^{(n)}$ (non-negative integer superscript, e.g. $\mathcal{A}^{(0)}$) ... proof, bullets following eq. (8)
 
 *Numbers*
 
@@ -22,7 +22,7 @@ $\Omega$ ... statement
 
 $\Omega_0, \Omega_1, \dots$ ... proof, eq. $(6)$
 
-$\Omega_\infty$ ... proof, eq. $(8)$
+$\Omega_\infty$ ... proof, eq. $(7)$
 
 *Latin*
 
@@ -40,7 +40,7 @@ $\mathbf{V}$ ... statement
 
 $X$ ... statement
 
-$Y^{\left<\!\left<0\right>\!\right>}, Y^{\left<\!\left<1\right>\!\right>}, \dots$ ... proof, eq. (7)
+$Y^{\left<\!\left<0\right>\!\right>}, Y^{\left<\!\left<1\right>\!\right>}, \dots$ ... proof, eq. (8)
 
 ***
 

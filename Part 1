@@ -596,7 +596,7 @@ j. Let $X$ be a $\Omega/\Gamma$-stochastic process. $X$ is $\mathcal{H}$-progres
 
 k. Let $\Omega$ be a (possibly empty) set, and let $\mathbf{V}$ be a vector space. Then, for every $\Omega/V$-stochastic process $X$, and for every function $\tau:\Omega\rightarrow[0,\infty)$, we define a $\Omega/V$-stochastic process $\Theta^{\left(\Omega,\mathbf{V}\right)}(X,\tau) = \left(\Theta^{\left(\Omega,\mathbf{V}\right)}_t(X,\tau)\right)_{t\in[0,\infty)}$ as follows. For every $t \in [0,\infty)$,
 $$
-\Theta^{\left(\Omega,\mathbf{V}\right)}(X,\tau)_t := X_{\tau+t} - X_\tau.
+\Theta^{\left(\Omega,\mathbf{V}\right)}_t(X,\tau) := X_{\tau+t} - X_\tau.
 $$
 
 ***20. Corollary***

@@ -29,15 +29,11 @@ $$
 For every $n \in \mathbb{N}_0$ define
 
 $$
-\begin{align}
-\Omega_n &:= \{\tau_n<\infty\}, \tag{6}\label{Sergio} \\
-Y^{\left<\!\left<n\right>\!\right>}&:=\Theta^{\left(\Omega_n,\mathbf{V}\right)}(X^{(n)},\tau_n^{(n)}). \tag{7}\label{Glenda}
-\end{align}
+\Omega_n := \{\tau_n<\infty\}, \tag{6}\label{Sergio}
 $$
-
-Finally, define
+and we set
 $$
-\Omega_\infty := \bigcap_{n=0}^\infty \Omega_n. \tag{8}\label{Deloras}
+\Omega_\infty := \bigcap_{n=0}^\infty \Omega_n. \tag{7}\label{Deloras}
 $$
 
 We introduce the following notations, for $n\in\overline{\mathbb{N}}_0$.
@@ -54,7 +50,12 @@ We introduce the following notations, for $n\in\overline{\mathbb{N}}_0$.
 
 * For every $D\subseteq\Omega$, for every non-empty set $\Gamma$, and for every $D/\Gamma$-stochastic process $Z$, set $Z^{\langle n\rangle}:=\left((Z_t)^{(n)}\right)_{t\in I}$.
 
-We make the convention that angular brackets superscript takes higher precedence than subscript, whereas parentheses superscript take lower precedence than subscript. Thus, if $X$ is a stochastic process and if $t \in [0,\infty)$, $X_t^{\langle n\rangle}$ means $(X^{\langle n\rangle})_t$, whereas $X_t^{(n)}$ means $(X_t)^{(n)}$.
+* We make the convention that angular brackets superscript takes higher precedence than subscript, whereas parentheses superscript take lower precedence than subscript. Thus, if $X$ is a stochastic process and if $t \in [0,\infty)$, $X_t^{\langle n\rangle}$ means $(X^{\langle n\rangle})_t$, whereas $X_t^{(n)}$ means $(X_t)^{(n)}$.
+
+Finally, we define, for every $n \in \mathbb{N}_0$,
+$$
+Y^{\left<\!\left<n\right>\!\right>}:=\Theta^{\left(\Omega_n,\mathbf{V}\right)}(X^{\langle n\rangle},\tau_n^{(n)}). \tag{8}\label{Glenda}
+$$
 
 ***33.1 Lemma***
 
