@@ -473,10 +473,10 @@ a.
   $$
   \begin{align}
   \tau_1^{(n)} &\overset{33.1(b.3)}{=} \tau_1^{(n)} - \tau_0^{(n)} \\
-  &\overset{33.1(c.3)}{=} \Xi_{\nu^{-1}\left((\gamma,\infty)\right)} \circ \left[\left(Y^{\left<\!\left<0\right>\!\right>}\right)^{\langle n\rangle}\right] \\
+  &\overset{33.1(c.6)}{=} \Xi_{\nu^{-1}\left((\gamma,\infty)\right)} \circ \left[\left(Y^{\left<\!\left<0\right>\!\right>}\right)^{\langle n\rangle}\right] \\
   &\overset{32(i.3)}{=} \Xi_{\nu^{-1}\left((\gamma,\infty)\right)} \circ \left[Y^{\left<\!\left<0\right>\!\right>}\right]^{(n)} \\
   &\overset{32(c.3)}{=} \left(\Xi_{\nu^{-1}\left((\gamma,\infty)\right)} \circ \left[Y^{\left<\!\left<0\right>\!\right>}\right]\right)^{(n)} \\
-  &\overset{33.1(c.1)}{=} \left(\Xi_{\nu^{-1}\left((\gamma,\infty)\right)} \circ \left[X^{\langle 0\rangle}\right]\right)^{(n)} \\
+  &\overset{33.1(c.4)}{=} \left(\Xi_{\nu^{-1}\left((\gamma,\infty)\right)} \circ \left[X^{\langle 0\rangle}\right]\right)^{(n)} \\
   &\overset{32(c.3)}{=} \Xi_{\nu^{-1}\left((\gamma,\infty)\right)} \circ \left[X^{\langle 0\rangle}\right]^{(n)} \\
   &\overset{32(i.3)}{=} \Xi_{\nu^{-1}\left((\gamma,\infty)\right)} \circ \left[\left(X^{\langle 0\rangle}\right)^{\langle n\rangle}\right] \\
   &\overset{32(n.6)}{=} \Xi_{\nu^{-1}\left((\gamma,\infty)\right)} \circ \left[X^{\langle n\rangle}\right].
@@ -487,7 +487,7 @@ a.
   $$
   \begin{align}
   \tau_{m+1}^{(n)}(\omega)-\tau_m^{(n)}(\omega) &= \left(\tau_{m+1}^{(n)}-\tau_m^{(n)}\right)(\omega) \\
-  &\overset{33.1(c.3)}{=} \left(\Xi_{\nu^{-1}\left((\gamma,\infty)\right)} \circ \left[\left(Y^{\left<\!\left<m\right>\!\right>}\right)^{\langle n\rangle}\right]\right)(\omega) \\
+  &\overset{33.1(c.6)}{=} \left(\Xi_{\nu^{-1}\left((\gamma,\infty)\right)} \circ \left[\left(Y^{\left<\!\left<m\right>\!\right>}\right)^{\langle n\rangle}\right]\right)(\omega) \\
   &= \Xi_{\nu^{-1}\left((\gamma,\infty)\right)}\left(\left[\left(Y^{\left<\!\left<m\right>\!\right>}\right)^{\langle n\rangle}\right](\omega)\right) \\
   &\overset{25(b)}{=} \Xi_{(\gamma,\infty)}\left(\nu\circ\left(\left[\left(Y^{\left<\!\left<m\right>\!\right>}\right)^{\langle n\rangle}\right](\omega)\right)\right) \\
   &\overset{20(o)}{=} \Xi_{(\gamma,\infty)}\left(\left(\nu\circ\!\circ \left[\left(Y^{\left<\!\left<m\right>\!\right>}\right)^{\langle n\rangle}\right]\right)(\omega)\right) \\
@@ -536,7 +536,7 @@ a.
   f(\omega)(t^*) &\overset{\eqref{Jared}}{\geq} \gamma \\
   &> 0 \\
   &= \nu(0) \\
-  &\overset{33.1(c.2)}{=} \nu\left(Y^{\left<\!\left<k+i-1\right>\!\right>}_0(\omega)\right) \\
+  &\overset{33.1(c.5)}{=} \nu\left(Y^{\left<\!\left<k+i-1\right>\!\right>}_0(\omega)\right) \\
   &\overset{20(o)}{=} \left(\nu\circ\!\circ\ \left[Y^{\left<\!\left<k+i-1\right>\!\right>}\right]\right)(\omega)(0) \\
   &\overset{\eqref{Maxima}}{=} f(\omega)(0),
   \end{align}
@@ -553,7 +553,7 @@ a.
   &\overset{32(n.3)}{=} \left(\tau_{j+1}^{(j)}\right)^{(j+1)}(\omega) \\
   &= \tau_{j+1}^{(j)}(\omega) \\
   &\overset{33.1(b.4)}{=} \tau_{j}^{(j)}(\omega) + \left(\tau_{j+1}^{(j)}(\omega) - \tau_{j}^{(j)}(\omega)\right) \\
-  &\overset{33.1(c.5)}{=} \tau_{j}^{(j)}(\omega) + \inf\ \left(\left(\nu\circ\!\circ\ \left[Y^{\left<\!\left<j\right>\!\right>}\right]\right)(\omega)\right)^{-1}\left((\gamma,\infty)\right) \\
+  &\overset{33.1(c.8)}{=} \tau_{j}^{(j)}(\omega) + \inf\ \left(\left(\nu\circ\!\circ\ \left[Y^{\left<\!\left<j\right>\!\right>}\right]\right)(\omega)\right)^{-1}\left((\gamma,\infty)\right) \\
   &\overset{\eqref{Maxima}}{=} \tau_{j}^{(j)}(\omega) + \inf\ \left(f(\omega)\right)^{-1}\left((\gamma,\infty)\right) \\
   &\overset{\eqref{Ena}}{\geq} \tau_{j}^{(j)}(\omega) + \inf\ \left(f(\omega)\right)^{-1}(S) \\
   &\overset{\eqref{Hoyt}}{=} \tau_{j}^{(j)}(\omega) + \inf T \\
@@ -577,7 +577,7 @@ a.
   \nu\circ\left(\left[Y^{\left<\!\left<n\right>\!\right>}\right](\omega)\right) \in \mathcal{G}_{\mathcal{E}}.
   $$
 
-  9. Follows from Corollary 25(d) in light of Lemma 33.1(c.3), Lemma 33.1(c.7), and the fact that, by Corollary 12(a), $\nu^{-1}\left((\gamma,\infty)\right) \in \nu^*$.
+  9. Follows from Corollary 25(d) in light of Lemma 33.1(c.6), Lemma 33.1(c.2), and the fact that, by Corollary 12(a), $\nu^{-1}\left((\gamma,\infty)\right) \in \nu^*$.
 
   10. Let $n\in\mathbb{N}_0$ be such that $\Omega_n\neq\emptyset$ and such that
   $$
@@ -635,7 +635,7 @@ a.
 
   Let $m \in \{0, 1, 2, \dots, n+1\}$. We need to show that $\tau_m^{(n)}$  is $\mathcal{F}^{(n)}/\overline{\mathcal{B}}$-measurable. If $m \leq n$, this follows from \eqref{Joaquin} together with Lemma 32(d.1). So suppose that $m = n+1$. Then
   $$
-  \sigma_{\overline{\mathcal{B}}}\left(\tau_{n+1}^{(n)} - \tau_n^{(n)}\right) \overset{33.1(c.3)}{=} \sigma_{\overline{\mathcal{B}}}\left(\Xi_{\nu^{-1}\left((\gamma,\infty)\right)} \circ \left[Y^{\left<\!\left<n\right>\!\right>}\right]\right) \overset{\substack{25(d),\\23(c)}}{\subseteq} \Phi^{\sigma(\nu^*)}_\infty\left(Y^{\left<\!\left<n\right>\!\right>}\right) \overset{33.1(c.10)}{\subseteq} \mathcal{F}^{(n)},
+  \sigma_{\overline{\mathcal{B}}}\left(\tau_{n+1}^{(n)} - \tau_n^{(n)}\right) \overset{33.1(c.6)}{=} \sigma_{\overline{\mathcal{B}}}\left(\Xi_{\nu^{-1}\left((\gamma,\infty)\right)} \circ \left[Y^{\left<\!\left<n\right>\!\right>}\right]\right) \overset{\substack{25(d),\\23(c)}}{\subseteq} \Phi^{\sigma(\nu^*)}_\infty\left(Y^{\left<\!\left<n\right>\!\right>}\right) \overset{33.1(c.11)}{\subseteq} \mathcal{F}^{(n)},
   $$
   so that
   $$
@@ -694,13 +694,13 @@ a.
   \begin{align}
   Y^{\left<\!\left<n\right>\!\right>}_t &\overset{\eqref{Glenda}}{=} \Theta^{(\Omega_n,V)}_t(X^{\langle n\rangle},\tau_n^{(n)}) \\
   &\overset{19(k)}{=} X^{\langle n\rangle}_{\tau^{(n)}_n + t} - X^{\langle n\rangle}_{\tau^{(n)}_n} \\
-  &\overset{33.1(c.14)}{=} \left(X^{\langle n-1\rangle}_{\tau_n^{(n-1)}\mathbb{1}^{\Omega_{n-1}}_{\Omega_n}+t}\right)^{(n)} - \left(X^{\langle n-1\rangle}_{\tau^{(n-1)}_n\mathbb{1}^{\Omega_{n-1}}_{\Omega_n}}\right)^{(n)} \\
+  &\overset{33.1(c.15)}{=} \left(X^{\langle n-1\rangle}_{\tau_n^{(n-1)}\mathbb{1}^{\Omega_{n-1}}_{\Omega_n}+t}\right)^{(n)} - \left(X^{\langle n-1\rangle}_{\tau^{(n-1)}_n\mathbb{1}^{\Omega_{n-1}}_{\Omega_n}}\right)^{(n)} \\
   &\overset{32(f.2)}{=} \left(X^{\langle n-1\rangle}_{\tau_n^{(n-1)}\mathbb{1}^{\Omega_{n-1}}_{\Omega_n}+t} - X^{\langle n-1\rangle}_{\tau^{(n-1)}_n\mathbb{1}^{\Omega_{n-1}}_{\Omega_n}}\right)^{(n)} \\
   &= \left(\left(X^{\langle n-1\rangle}_{\tau_{n-1}^{(n-1)} + \left(\left(\tau_n^{(n-1)}\mathbb{1}^{\Omega_{n-1}}_{\Omega_n}-\tau_{n-1}^{(n-1)}\right)+t\right)} - X_{\tau_{n-1}^{(n-1)}}^{\langle n-1\rangle}\right) - \left(X^{\langle n-1\rangle}_{\tau_{(n-1)}^{(n-1)}+\left(\tau^{(n-1)}_n\mathbb{1}^{\Omega_{n-1}}_{\Omega_n}-\tau_{n-1}^{(n-1)}\right)}-X_{\tau_{n-1}^{(n-1)}}^{\langle n-1\rangle}\right)\right)^{(n)} \\
   &\overset{19(k)}{=} \left(\Theta_{\left(\tau^{(n-1)}_n\mathbb{1}^{\Omega_{n-1}}_{\Omega_n} - \tau^{(n-1)}_{n-1}\right) + t}^{(\Omega_{n-1},\mathbf{V})}\left(X^{\langle n-1\rangle},\tau_{n-1}^{(n-1)}\right) - \Theta_{\tau^{(n-1)}_n\mathbb{1}^{\Omega_{n-1}}_{\Omega_n} - \tau^{(n-1)}_{n-1}}^{(\Omega_{n-1},\mathbf{V})}\left(X^{\langle n-1\rangle},\tau_{n-1}^{(n-1)}\right)\right)^{(n)} \\
   &\overset{\eqref{Glenda}}{=} \left(Y^{\left<\!\left<n-1\right>\!\right>}_{\left(\tau^{(n-1)}_n\mathbb{1}^{\Omega_{n-1}}_{\Omega_n} - \tau^{(n-1)}_{n-1}\right) + t} - Y^{\left<\!\left<n-1\right>\!\right>}_{\tau^{(n-1)}_n\mathbb{1}^{\Omega_{n-1}}_{\Omega_n} - \tau^{(n-1)}_{n-1}}\right)^{(n)} \\
   &\overset{32(f.2)}{=} \left(Y^{\left<\!\left<n-1\right>\!\right>}_{\left(\tau^{(n-1)}_n\mathbb{1}^{\Omega_{n-1}}_{\Omega_n} - \tau^{(n-1)}_{n-1}\right) + t}\right)^{(n)} - \left(Y^{\left<\!\left<n-1\right>\!\right>}_{\tau^{(n-1)}_n\mathbb{1}^{\Omega_{n-1}}_{\Omega_n} - \tau^{(n-1)}_{n-1}}\right)^{(n)} \\
-  &\overset{33.1(c.15)}{=} \left(Y^{\left<\!\left<n-1\right>\!\right>}\right)^{(n)}_{\left(\tau^{(n)}_n-\tau^{(n)}_{n-1}\right) + t} - \left(Y^{\left<\!\left<n-1\right>\!\right>}\right)^{(n)}_{\tau^{(n)}_n-\tau^{(n)}_{n-1}} \\
+  &\overset{33.1(c.16)}{=} \left(Y^{\left<\!\left<n-1\right>\!\right>}\right)^{(n)}_{\left(\tau^{(n)}_n-\tau^{(n)}_{n-1}\right) + t} - \left(Y^{\left<\!\left<n-1\right>\!\right>}\right)^{(n)}_{\tau^{(n)}_n-\tau^{(n)}_{n-1}} \\
   &\overset{19(k)}{=} \Theta_t^{\left(\Omega_n,\mathbf{V}\right)}\left(\left(Y^{\left<\!\left<n-1\right>\!\right>}\right)^{\langle n\rangle},\tau^{(n)}_n-\tau^{(n)}_{n-1}\right).
   \end{align}
   $$
@@ -723,7 +723,7 @@ a.
   \Omega_{m + k} &\overset{32(a.3)}{=} \Omega_{m + k}^{(m+k-1)} \\
   &\overset{\eqref{Sergio}}{=} \{\tau_{m+k} < \infty\}^{(m+k-1)} \\
   &\overset{32(c.2)}{=} \{\tau_{m+k}^{(m+k-1)} < \infty\} \\
-  &\overset{33.1(c.11)}{\in} \mathcal{F}^{(m+k-1)} \\
+  &\overset{33.1(c.12)}{\in} \mathcal{F}^{(m+k-1)} \\
   &\overset{\substack{32(b.1),\\k-1 \in I}}{\subseteq} \left(\mathcal{F}^{(m)}\right)^{(m+k-1)}, \\
   &\overset{32(n.2)}{=} \mathcal{F}^{(m)},
   \end{align}
@@ -816,9 +816,9 @@ a.
 
  Let $I$ be the set of numbers $n\in\mathbb{N}_0$ that satisfy assertions $33.2(a_n)-33.2(f_n)$. We need to prove that $I = \mathbb{N}_0$. We proceed by induction.
 
- Let $n \in \mathbb{N}_0$. Firstly, suppose that $n = 0$. Then $33.2(a_n)$ is Lemma 33.1(a.10). $33.2(b_n)$ follows from Lemma 32(i.1) in light of Lemma 33.1(c.1). $33.2(c_n)$ holds, since
+ Let $n \in \mathbb{N}_0$. Firstly, suppose that $n = 0$. Then $33.2(a_n)$ is Lemma 33.1(a.10). $33.2(b_n)$ follows from Lemma 32(i.1) in light of Lemma 33.1(c.4). $33.2(c_n)$ holds, since
  $$
- \left(P^{(n)}\right)^{\left[Y^{\left<\!\left<n\right>\!\right>}\right]}_{\mathcal{R}_{\nu^*}^*} \overset{33.1(c.1)}{=} \left(P^{(n)}\right)^{\left[X^{\langle n\rangle}\right]}_{\mathcal{R}_{\nu^*}^*} \overset{32(i.3)}{=} \left(P^{(n)}\right)^{[X]^{(n)}}_{\mathcal{R}_{\nu^*}^*} \overset{32(e.3)}{=} P^{[X]}_{\mathcal{R}_{\nu^*}^*}.
+ \left(P^{(n)}\right)^{\left[Y^{\left<\!\left<n\right>\!\right>}\right]}_{\mathcal{R}_{\nu^*}^*} \overset{33.1(c.4)}{=} \left(P^{(n)}\right)^{\left[X^{\langle n\rangle}\right]}_{\mathcal{R}_{\nu^*}^*} \overset{32(i.3)}{=} \left(P^{(n)}\right)^{[X]^{(n)}}_{\mathcal{R}_{\nu^*}^*} \overset{32(e.3)}{=} P^{[X]}_{\mathcal{R}_{\nu^*}^*}.
  $$
  $33.2(d_n)$ follows from Lemma 33.1(b.3). $33.2(e_n)$ follows from Corollary 16(g), since
  $$
@@ -833,7 +833,7 @@ a.
  \begin{align}
  P\left(\Omega_n\right) &\overset{\eqref{Sergio}}{=} P\left(\tau_n < \infty\right) \\
  &\overset{33.1(e.1)}{=} P\left(\tau_n^{(n-1)} < \infty\right) \\
- &\overset{33.1(c.11)}{=} P^{(n-1)}\left(\tau_n^{(n-1)} < \infty\right) \\
+ &\overset{33.1(c.12)}{=} P^{(n-1)}\left(\tau_n^{(n-1)} < \infty\right) \\
  &\overset{33.1(b.4)}{=} P^{(n-1)}\left(\tau_n^{(n-1)} - \tau_{n-1}^{(n-1)} < \infty\right) \\
  &\overset{33.2(d_{n-1})}{=} P^{(0)}\left(\tau_1^{(0)} < \infty\right) \\
  &\overset{32(c.2)}{=} P^{(0)}\left(\left\{\tau_1 < \infty\right\}^{(0)}\right) \\
@@ -866,11 +866,11 @@ a.
  \end{align}
  $$
 
- To see that $33.2(d_n)$ holds, firstly observe that, in light of Lemma 33.1(c.13) and of Corollary 25(c), Corollary 16(d) implies that
+ To see that $33.2(d_n)$ holds, firstly observe that, in light of Lemma 33.1(c.14) and of Corollary 25(c), Corollary 16(d) implies that
  $$
  \forall k \in \mathbb{N}_0,\ \left(P^{(k)}\right)^{\Xi_{\nu^{-1}\left((\gamma,\infty)\right)}\big|_{\mathcal{R}_{\nu^*}} \circ \left[Y^{\left<\!\left<k\right>\!\right>}\right]}_{\overline{\mathcal{B}}} = \left(\left(P^{(k)}\right)^{\left[Y^{\left<\!\left<k\right>\!\right>}\right]}_{\mathcal{R}_{\nu^*}^*}\right)^{\Xi_{\nu^{-1}\left((\gamma,\infty)\right)}\big|_{\mathcal{R}_{\nu^*}}}_{\overline{\mathcal{B}}}. \tag{2.5}\label{Lyman}
  $$
- In particular, in light of Lemma 33.1(c.1),
+ In particular, in light of Lemma 33.1(c.4),
  $$
  \left(P^{(k)}\right)^{\Xi_{\nu^{-1}\left((\gamma,\infty)\right)}\big|_{\mathcal{R}_{\nu^*}} \circ \left[X^{\langle 0\rangle}\right]}_{\overline{\mathcal{B}}} = \left(\left(P^{(0)}\right)^{\left[X^{\langle 0\rangle}\right]}_{\mathcal{R}_{\nu^*}^*}\right)^{\Xi_{\nu^{-1}\left((\gamma,\infty)\right)}\big|_{\mathcal{R}_{\nu^*}}}_{\overline{\mathcal{B}}}. \tag{2.6}\label{Joane}
  $$
@@ -878,15 +878,15 @@ a.
  Therefore,
  $$
  \begin{align}
- \left(P^{(n)}\right)^{\tau_{n+1}^{(n)} - \tau_n^{(n)}}_{\overline{\mathcal{B}}} &\overset{33.1(c.3)}{=} \left(P^{(n)}\right)^{\Xi_{\nu^{-1}\left((\gamma,\infty)\right)} \circ \left[Y^{\left<\!\left<n\right>\!\right>}\right]}_{\overline{\mathcal{B}}} \\
- &\overset{33.1(c.7)}{=} \left(P^{(n)}\right)^{\Xi_{\nu^{-1}\left((\gamma,\infty)\right)}\big|_{\mathcal{R}_{\nu^*}} \circ \left[Y^{\left<\!\left<n\right>\!\right>}\right]}_{\overline{\mathcal{B}}} \\
+ \left(P^{(n)}\right)^{\tau_{n+1}^{(n)} - \tau_n^{(n)}}_{\overline{\mathcal{B}}} &\overset{33.1(c.6)}{=} \left(P^{(n)}\right)^{\Xi_{\nu^{-1}\left((\gamma,\infty)\right)} \circ \left[Y^{\left<\!\left<n\right>\!\right>}\right]}_{\overline{\mathcal{B}}} \\
+ &\overset{33.1(c.2)}{=} \left(P^{(n)}\right)^{\Xi_{\nu^{-1}\left((\gamma,\infty)\right)}\big|_{\mathcal{R}_{\nu^*}} \circ \left[Y^{\left<\!\left<n\right>\!\right>}\right]}_{\overline{\mathcal{B}}} \\
  &\overset{\eqref{Lyman}}{=} \left(\left(P^{(n)}\right)^{\left[Y^{\left<\!\left<n\right>\!\right>}\right]}_{\mathcal{R}_{\nu^*}^*}\right)^{\Xi_{\nu^{-1}\left((\gamma,\infty)\right)}\big|_{\mathcal{R}_{\nu^*}}}_{\overline{\mathcal{B}}} \\
  &\overset{33.2(c_n)}{=} \left(P^{[X]}_{\mathcal{R}_{\nu^*}^*}\right)^{\Xi_{\nu^{-1}\left((\gamma,\infty)\right)}\big|_{\mathcal{R}_{\nu^*}}}_{\overline{\mathcal{B}}} \\
  &\overset{32(e.3)}{=} \left(\left(P^{(0)}\right)^{[X]^{(0)}}_{\mathcal{R}_{\nu^*}^*}\right)^{\Xi_{\nu^{-1}\left((\gamma,\infty)\right)}\big|_{\mathcal{R}_{\nu^*}}}_{\overline{\mathcal{B}}} \\
  &\overset{32(i.3)}{=} \left(\left(P^{(0)}\right)^{\left[X^{\langle 0\rangle}\right]}_{\mathcal{R}_{\nu^*}^*}\right)^{\Xi_{\nu^{-1}\left((\gamma,\infty)\right)}\big|_{\mathcal{R}_{\nu^*}}}_{\overline{\mathcal{B}}} \\
  &\overset{\eqref{Joane}}{=} \left(P^{(0)}\right)^{\Xi_{\nu^{-1}\left((\gamma,\infty)\right)}\big|_{\mathcal{R}_{\nu^*}} \circ \left[X^{\langle 0\rangle}\right]}_{\overline{\mathcal{B}}} \\
  &= \left(P^{(0)}\right)^{\Xi_{\nu^{-1}\left((\gamma,\infty)\right)} \circ \left[X^{\langle 0\rangle}\right]}_{\overline{\mathcal{B}}} \\
- &\overset{33.1(c.4)}{=} \left(P^{(0)}\right)^{\tau_1^{(0)}}_{\overline{\mathcal{B}}}.
+ &\overset{33.1(c.7)}{=} \left(P^{(0)}\right)^{\tau_1^{(0)}}_{\overline{\mathcal{B}}}.
  \end{align}
  $$
 
@@ -903,7 +903,7 @@ a.
  $$
  is $P^{(n)}$-independent, which, by Theorem 21(b), implies $33.2(e_n)$.
 
- To see that \eqref{Ossie} holds, firstly observe that Lemma 33.1(c.9) together with Corollary 23(b) imply that $\tau^{(n)}_n - \tau^{(n)}_{n - 1}$ is a $\left(\Phi^{\sigma(\nu^*)}\left(\left(Y^{\left<\!\left<n-1\right>\!\right>}\right)^{(n)}\right)\right)^+$-stopping time. This, in turn, implies that
+ To see that \eqref{Ossie} holds, firstly observe that Lemma 33.1(c.10) together with Corollary 23(b) imply that $\tau^{(n)}_n - \tau^{(n)}_{n - 1}$ is a $\left(\Phi^{\sigma(\nu^*)}\left(\left(Y^{\left<\!\left<n-1\right>\!\right>}\right)^{(n)}\right)\right)^+$-stopping time. This, in turn, implies that
  $$
  \begin{align}
  \sigma_{\mathcal{B}}\left(\tau^{(n)}_n - \tau^{(n)}_{n - 1}\right) &\overset{8(f)}{=} \sigma_{\overline{\mathcal{B}}}\left(\tau^{(n)}_n - \tau^{(n)}_{n - 1}\right) \\
@@ -912,7 +912,7 @@ a.
  $$
  which yields \eqref{Ossie}, by \eqref{Matilda}.
 
- To see that \eqref{Tessa} holds, observe that Lemma 33.1(c.9) implies that
+ To see that \eqref{Tessa} holds, observe that Lemma 33.1(c.10) implies that
  $$
  \sigma_{\mathcal{B}}\left(\tau^{(n)}_n - \tau^{(n)}_{n - 1}\right) \overset{8(f)}{=} \sigma_{\overline{\mathcal{B}}}\left(\tau^{(n)}_n - \tau^{(n)}_{n - 1}\right) \overset{23(c)}{\subseteq} \Phi^{\sigma(\nu^*)}_\infty\left(\left(Y^{\left<\!\left<n-1\right>\!\right>}\right)^{(n)}\right). \tag{2.10}\label{Robbie}
  $$
@@ -1032,7 +1032,7 @@ a.
  \tau_k^{(\infty)}(\omega)-\tau_{k-1}^{(\infty)}(\omega) &\overset{32(n.3)}{=}
  \left(\tau_k^{(k-1)}\right)^{(\infty)}(\omega)-\left(\tau_{k-1}^{(k-1)}\right)^{(\infty)}(\omega) \\
  &= \tau_k^{(k-1)}(\omega)-\tau_{k-1}^{(k-1)}(\omega) \\
- &\overset{33.1(c.3)}{=} \left(\Xi_{\nu^{-1}\left((\gamma,\infty)\right)} \circ \left[Y^{\left<\!\left<k-1\right>\!\right>}\right]\right)(\omega) \\
+ &\overset{33.1(c.6)}{=} \left(\Xi_{\nu^{-1}\left((\gamma,\infty)\right)} \circ \left[Y^{\left<\!\left<k-1\right>\!\right>}\right]\right)(\omega) \\
   &=\Xi_{\nu^{-1}\left((\gamma,\infty)\right)}\left(\left[Y^{\left<\!\left<k-1\right>\!\right>}\right](\omega)\right) \\
  &\overset{25(b)}{=}\Xi_{(\gamma,\infty)}\left(\nu\circ\left(\left[Y^{\left<\!\left<k-1\right>\!\right>}\right](\omega)\right)\right) \\
  &\overset{2(d)}{=}\Xi_{(\gamma,\infty)}\left(\left(\nu\circ\!\circ\ \left[Y^{\left<\!\left<k-1\right>\!\right>}\right]\right)(\omega)\right) \\
