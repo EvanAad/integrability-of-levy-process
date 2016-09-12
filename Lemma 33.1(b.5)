@@ -12,8 +12,9 @@
   $$
   we obtain
   $$
-  \tau_k^{(n)} \overset{32(n.3)}{=} \left(\tau_k^{(m)}\right)^{(n)}\overset{\eqref{Yoko}}{<}\left(\tau_m^{(m)}\right)^{(n)}\overset{32(n.3)}{=}\tau_m^{(n)}.
+  \tau_k^{(n)} \overset{32(n.3)}{=} \left(\tau_k^{(m)}\right)^{(n)}\overset{\eqref{Yoko}}{<}\left(\tau_m^{(m)}\right)^{(n)}\overset{32(n.3)}{=}\tau_m^{(n)},
   $$
+  as desired.
 
   We shall proceed by induction. Let $i \in \mathbb{N}_1$. Firstly, suppose that $i = 1$. Let $j \in \mathbb{N}_0$. Define
  $$
@@ -22,26 +23,22 @@
 
   Now let $\omega \in \Omega_{j+i}$, and define
   $$
-  \begin{align}
-  S &:= [\gamma, \infty), \tag{1.7}\label{Ena} \\
-  T &:= \left(f(\omega)\right)^{-1}(S), \tag{1.8}\label{Hoyt}
-  \end{align}
+  T := \left(f(\omega)\right)^{-1}\left([\gamma, \infty)\right). \tag{1.8}\label{Hoyt}
   $$
 
   We claim that
   $$
-  \inf\ T \leq \left(\tau_{j+1}^{(j+1)} - \tau_{j}^{(j)}\right)(\omega). \tag{1.9}\label{Lael}
+  \inf\ T \leq \tau_{j+1}^{(j+1)}(\omega) - \tau_{j}^{(j)}(\omega). \tag{1.9}\label{Lael}
   $$
   Indeed,
   $$
   \begin{align}
-  \inf T &\overset{\eqref{Hoyt}}{=} \inf\ \left(f(\omega)\right)^{-1}(S) \\
+  \inf T &\overset{\eqref{Hoyt}}{=} \inf\ \left(f(\omega)\right)^{-1}\left([\gamma, \infty)\right) \\
   &\overset{\eqref{Ena}}{\leq} \inf\ \left(f(\omega)\right)^{-1}\left((\gamma,\infty)\right) \\
   &\overset{\eqref{Maxima}}{=} \inf\ \left(\left(\nu\circ\!\circ\ \left[Y^{\left<\!\left<j\right>\!\right>}\right]\right)(\omega)\right)^{-1}\left((\gamma,\infty)\right) \\
   &\overset{33.1(c.5)}{=} \tau_{j+1}^{(j)}(\omega) - \tau_{j}^{(j)}(\omega) \\
-  &= \left(\tau_{j+1}^{(j)}\right)^{(j+1)}(\omega) - \tau_{j}^{(j)}(\omega) \\
-  &\overset{32(n.3)}{=} \tau_{j+1}^{(j+1)}(\omega) - \tau_{j}^{(j)}(\omega) \\
-  &= \left(\tau_{j+1}^{(j+1)} - \tau_{j}^{(j)}\right)(\omega).
+  &\overset{\omega \in \Omega_{j+i}}{=} \left(\tau_{j+1}^{(j)}\right)^{(j+1)}(\omega) - \tau_{j}^{(j)}(\omega) \\
+  &\overset{32(n.3)}{=} \tau_{j+1}^{(j+1)}(\omega) - \tau_{j}^{(j)}(\omega).
   \end{align}
   $$
 
@@ -55,12 +52,13 @@
   f(\omega)(\inf\ T) &\overset{\eqref{Jared}}{\geq} \gamma \\
   &> 0 \\
   &= \nu(\mathbf{0}) \\
+  &= \nu\left(\mathbf{0}_{\Omega_j}(\omega)\right) \\
   &\overset{33.1(c.2)}{=} \nu\left(Y^{\left<\!\left<j\right>\!\right>}_0(\omega)\right) \\
   &\overset{20(o)}{=} \left(\nu\circ\!\circ\ \left[Y^{\left<\!\left<j\right>\!\right>}\right]\right)(\omega)(0) \\
-  &\overset{\eqref{Maxima}}{=} f(\omega)(0),
+  &\overset{\eqref{Maxima}}{=} f(\omega)(0).
   \end{align}
   $$
-  which, since $f$'s domain is $[0,\infty)$, implies that
+  Since $f(\omega)$'s domain is $[0,\infty)$, this implies that
   $$
   \inf\ T > 0. \tag{1.11}\label{Hong}
   $$
@@ -72,9 +70,17 @@
   &= \tau_{j}^{(j)}(\omega) \\
   &\overset{\eqref{Hong}}{<} \tau_{j}^{(j)}(\omega) + \inf T \\
   &\overset{\eqref{Lael}}{\leq} \tau_j^{(j)}(\omega) + \left(\tau_{j+1}^{(j+i)}(\omega) - \tau_j^{(j)}(\omega)\right) \\
-  &= \tau_{j+1}^{(j+i)}(\omega),
+  &= \tau_{j+1}^{(j+i)}(\omega).
   \end{align}
   $$
-  which proves that $i = 1 \in I$.
+  Since $\omega$ was chosen arbitrarily from $\Omega_{j+i}$, this proves that $\tau_j^{(j+i)} < \tau_{j+i}^{(j+i)}$. Since $j$ was chosen arbitrarily from $\mathbb{N}_0$, this proves \eqref{Yoko}, which shows that $i\in I$.
 
-  Next, suppose that
+  Next, suppose that $i > 1$, and that $i - 1 \in I$. Let $j \in \mathbb{N}_0$. Then
+  $$
+  \begin{align}
+  \tau_j^{(j+i)} &\overset{32(n.3)}{=} \left(\tau_j^{\left(j+(i-1)\right)}\right)^{(j+i)} \\
+  &\overset{i-1 \in I}{<} \left(\tau_{j+(i-1)}^{\left(j+(i-1)\right)}\right)^{(j+i)} \\
+  &\overset{32(n.3)}{<} \tau_{j+(i-1)}^{(j+i)} \\
+  &\overset{1 \in I}{<} \tau_{j+i}^{(j+i)}.
+  \end{align}
+  $$
