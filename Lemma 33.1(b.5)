@@ -1,4 +1,4 @@
-6. Let $k,m\in\mathbb{N}_0$ be such that $k < m$, and let $n\in\overline{\mathbb{N}}_1$ be such that $m\leq n$. Denote by $I$ the set of all $i \in \mathbb{N}_1$, such that
+8. Let $k,m\in\mathbb{N}_0$ be such that $k < m$, and let $n\in\overline{\mathbb{N}}_1$ be such that $m\leq n$. Denote by $I$ the set of all $i \in \mathbb{N}_1$, such that
   $$
   \forall j \in \mathbb{N}_0,\ \tau_j^{(j+i)} < \tau_{j+i}^{(j+i)}. \tag{1.4}\label{Yoko}
   $$
@@ -21,6 +21,11 @@
  f := \nu\circ\!\circ\ \left[Y^{\left<\!\left<j\right>\!\right>}\right]. \tag{1.6}\label{Maxima}
  $$
 
+  We observe that, by Lemma 33.1(c.8),
+  $$
+  f \in \Omega_j \rightarrow \mathcal{G}_{\mathcal{E}}. \tag{1.7}\label{Ena}
+  $$
+
   Now let $\omega \in \Omega_{j+i}$, and define
   $$
   T := \left(f(\omega)\right)^{-1}\left([\gamma, \infty)\right). \tag{1.8}\label{Hoyt}
@@ -34,7 +39,7 @@
   $$
   \begin{align}
   \inf T &\overset{\eqref{Hoyt}}{=} \inf\ \left(f(\omega)\right)^{-1}\left([\gamma, \infty)\right) \\
-  &\overset{\eqref{Ena}}{\leq} \inf\ \left(f(\omega)\right)^{-1}\left((\gamma,\infty)\right) \\
+  &\leq \inf\ \left(f(\omega)\right)^{-1}\left((\gamma,\infty)\right) \\
   &\overset{\eqref{Maxima}}{=} \inf\ \left(\left(\nu\circ\!\circ\ \left[Y^{\left<\!\left<j\right>\!\right>}\right]\right)(\omega)\right)^{-1}\left((\gamma,\infty)\right) \\
   &\overset{33.1(c.5)}{=} \tau_{j+1}^{(j)}(\omega) - \tau_{j}^{(j)}(\omega) \\
   &\overset{\omega \in \Omega_{j+i}}{=} \left(\tau_{j+1}^{(j)}\right)^{(j+1)}(\omega) - \tau_{j}^{(j)}(\omega) \\
@@ -42,7 +47,7 @@
   \end{align}
   $$
 
-  This implies, by Lemma 33.1(b.4), that $\inf T < \infty$, and hence, by Notation 1(i), that $T \neq \emptyset$, which yields, by Lemma 14(a),
+  This implies, by Lemma 33.1(b.4), that $\inf T < \infty$, and hence, by Notation 1(i), that $T \neq \emptyset$. In light of this and of \eqref{Ena}, Lemma 14(a) yields that
   $$
   \inf\ T \in T. \tag{1.10}\label{Jared}
   $$
@@ -58,7 +63,7 @@
   &\overset{\eqref{Maxima}}{=} f(\omega)(0).
   \end{align}
   $$
-  Since $f(\omega)$'s domain is $[0,\infty)$, this implies that
+  Therefore $\inf\ T \neq 0$, which, since \eqref{Ena} implies that $f(\omega)$ is a function with domain $[0,\infty)$, translates to
   $$
   \inf\ T > 0. \tag{1.11}\label{Hong}
   $$

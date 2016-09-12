@@ -1,10 +1,22 @@
 c.
 
- 1. $Y^{\left<\!\left<0\right>\!\right>} = X^{\langle 0\rangle}$.
+ 0. For every $n \in \mathbb{N}_0$, $Y^{\left<\!\left<n\right>\!\right>}$ is a $\Omega_n/V$-stochastic process.
 
- 2. For every $n \in \mathbb{N}_0$, $Y^{\left<\!\left<n\right>\!\right>}_0 = \mathbf{0}_{\Omega_n}$.
+ 1. For every $n \in \mathbb{N}_0$,
+ $$
+ \left[Y^{\left<\!\left<n\right>\!\right>}\right] \in \Omega_n \rightarrow \mathcal{G}_{\nu^*}.
+ $$
 
- 3. For every $m\in\mathbb{N}_0$ and for every $n\in\overline{\mathbb{N}}_0$ such that $m \leq n$,
+ 2. For every $n \in \mathbb{N}_0$,
+ $$
+ \nu\circ\circ\ \left[Y^{\left<\!\left<n\right>\!\right>}\right] \in \Omega_n \rightarrow \mathcal{G}_{\mathcal{E}}.
+ $$
+
+ 3. $Y^{\left<\!\left<0\right>\!\right>} = X^{\langle 0\rangle}$.
+
+ 4. For every $n \in \mathbb{N}_0$, $Y^{\left<\!\left<n\right>\!\right>}_0 = \mathbf{0}_{\Omega_n}$.
+
+ 5. For every $m\in\mathbb{N}_0$ and for every $n\in\overline{\mathbb{N}}_0$ such that $m \leq n$,
  $$
  \tau_{m+1}^{(n)} - \tau_m^{(n)} = \Xi_{\nu^{-1}\left((\gamma,\infty)\right)} \circ \left[\left(Y^{\left<\!\left<m\right>\!\right>}\right)^{\langle n\rangle}\right].
  $$
@@ -14,12 +26,12 @@ c.
  \tau_{m+1}^{(n)} - \tau_m^{(n)} = \Xi_{\nu^{-1}\left((\gamma,\infty)\right)} \circ \left[Y^{\left<\!\left<n\right>\!\right>}\right].
  $$
 
- 4. For every $n \in \overline{\mathbb{N}}_0$,
+ 6. For every $n \in \overline{\mathbb{N}}_0$,
  $$
  \tau_1^{(n)} = \Xi_{\nu^{-1}\left((\gamma,\infty)\right)} \circ \left[X^{\langle n\rangle}\right].
  $$
 
- 5. Let $m \in \mathbb{N}_0$, let $n\in\overline{\mathbb{N}}_0$ be such that $m \leq n$. Then, for every $\omega \in \Omega_n$,
+ 7. Let $m \in \mathbb{N}_0$, let $n\in\overline{\mathbb{N}}_0$ be such that $m \leq n$. Then, for every $\omega \in \Omega_n$,
  $$
  \tau_{m+1}^{(n)}(\omega)-\tau_m^{(n)}(\omega) = \inf\ \left(\left(\nu\circ\!\circ \left[\left(Y^{\left<\!\left<m\right>\!\right>}\right)^{\langle n\rangle}\right]\right)(\omega)\right)^{-1}((\gamma,\infty)).
  $$
@@ -29,17 +41,7 @@ c.
  \tau_{n+1}^{(n)}(\omega)-\tau_n^{(n)}(\omega) = \inf\ \left(\left(\nu\circ\!\circ\left[Y^{\left<\!\left<n\right>\!\right>}\right]c\right)(\omega)\right)^{-1}((\gamma,\infty)).
  $$
 
- 6. For every $k, m\in\mathbb{N}_0$ such that $k < m$, and for every $n\in\overline{\mathbb{N}}_1$ such that $m\leq n$, $\tau_k^{(n)}<\tau_m^{(n)}$.
-
- 7. For every $n \in \mathbb{N}_0$,
- $$
- \left[Y^{\left<\!\left<n\right>\!\right>}\right](\Omega_n) \subseteq \mathcal{G}_{\nu^*}.
- $$
-
- 8. For every $n \in \mathbb{N}_0$,
- $$
- \left(\nu\circ\circ\ \left[Y^{\left<\!\left<n\right>\!\right>}\right]\right)(\Omega_n) \subseteq \mathcal{G}_{\mathcal{E}}.
- $$
+ 8. For every $k, m\in\mathbb{N}_0$ such that $k < m$, and for every $n\in\overline{\mathbb{N}}_1$ such that $m\leq n$, $\tau_k^{(n)}<\tau_m^{(n)}$.
 
  9. For every $m\in\mathbb{N}_1$ and for every $n\in\overline{\mathbb{N}}_1$ such that $m \leq n$ and such that $\Omega_n\neq\emptyset$, $\tau_m^{(n)} - \tau_{m-1}^{(n)}$ is a weak stopping-time of $\left(Y^{\left<\!\left<m-1\right>\!\right>}\right)^{(n)}$.
 

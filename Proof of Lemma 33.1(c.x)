@@ -33,17 +33,31 @@ $$
 
  c.
 
-  1. Let $t \in [0,\infty)$. Then
+  0. ???
+
+  1. Follows from Corollary 20(l.1).
+
+  2. Let $n \in \mathbb{N}_0$. Then, for every $\omega \in \Omega_n$,
+  $$
+  \left(\nu\circ\circ\ \left[Y^{\left<\!\left<n\right>\!\right>}\right]\right)(\omega) \overset{20(o)}{=} \nu\circ\left(\left[Y^{\left<\!\left<n\right>\!\right>}\right](\omega)\right).
+  $$
+
+  Since, by Lemma 33.0(c.6), $\left[Y^{\left<\!\left<n\right>\!\right>}\right](\omega) \in \mathcal{G}_{\nu^*}$, and since, by lemma 12(a), $\nu\in\mathcal{C}_{\nu^*,\mathcal{E}}$, Lemma 14(d) yields that
+  $$
+  \nu\circ\left(\left[Y^{\left<\!\left<n\right>\!\right>}\right](\omega)\right) \in \mathcal{G}_{\mathcal{E}}.
+  $$
+
+  3. Let $t \in [0,\infty)$. Then
   $$
   Y^{\left<\!\left<0\right>\!\right>}_t \overset{\eqref{Glenda}}{=} \Theta^{(\Omega_0,V)}_t(X^{\langle 0\rangle},\tau_0^{(0)}) \overset{19(k)}{=} X^{\langle 0\rangle}_{\tau_0^{(0)}+t} - X^{\langle 0\rangle}_{\tau_0^{(0)}} \overset{33.1(a.13)}{=} X^{\langle 0\rangle}_{t_{\Omega_0}} - X^{\langle 0\rangle}_{0_{\Omega_0}} \overset{33.1(a.14)}{=} X^{\langle 0\rangle}_{t_{\Omega_0}} \overset{20(k)}{=} X^{\langle 0\rangle}_t.
   $$
 
-  2. Let $n \in \mathbb{N}_0$. Then
+  4. Let $n \in \mathbb{N}_0$. Then
   $$
   Y^{\left<\!\left<n\right>\!\right>}_0 \overset{\eqref{Glenda}}{=} \Theta^{\left(\Omega_n,\mathbf{V}\right)}_0\left(X^{\langle n\rangle}, \tau_n^{(n)}\right) \overset{19(k)}{=} X_{\tau_n^{(n)}+0}^{\langle n\rangle}- X_{\tau_n^{(n)}}^{\langle n\rangle} = \mathbf{0}_{\Omega_n}.
   $$
 
-  3. Let $m\in\mathbb{N}_0$ and let $n\in\overline{\mathbb{N}}_0$ be such that $m \leq n$. Then
+  5. Let $m\in\mathbb{N}_0$ and let $n\in\overline{\mathbb{N}}_0$ be such that $m \leq n$. Then
   $$
   \begin{align}
   \tau_{m+1}^{(n)} - \tau_m^{(n)} &\overset{32(f.2)}{=} \left(\tau_{m+1}^{(m)} - \tau_m^{(m)}\right)^{(n)} \\
@@ -58,7 +72,7 @@ $$
   \end{align}
   $$
 
-  4. Let $n \in \overline{\mathbb{N}}_0$. Then
+  6. Let $n \in \overline{\mathbb{N}}_0$. Then
   $$
   \begin{align}
   \tau_1^{(n)} &\overset{33.1(b.3)}{=} \tau_1^{(n)} - \tau_0^{(n)} \\
@@ -72,7 +86,7 @@ $$
   \end{align}
   $$
 
-  5. Let $m \in \mathbb{N}_0$, let $n \in \overline{\mathbb{N}}_0$ be such that $m \leq n$, and let $\omega \in \Omega_n$. Then
+  7. Let $m \in \mathbb{N}_0$, let $n \in \overline{\mathbb{N}}_0$ be such that $m \leq n$, and let $\omega \in \Omega_n$. Then
   $$
   \begin{align}
   \tau_{m+1}^{(n)}(\omega)-\tau_m^{(n)}(\omega) &= \left(\tau_{m+1}^{(n)}-\tau_m^{(n)}\right)(\omega) \\
@@ -84,7 +98,7 @@ $$
   \end{align}
   $$
 
-  6. Let $k,m\in\mathbb{N}_0$ be such that $k < m$, and let $n\in\overline{\mathbb{N}}_1$ be such that $m\leq n$. Denote by $I$ the set of all $i \in \mathbb{N}_0$, such that, if $\Omega_{k+i} \neq \emptyset$,
+  8. Let $k,m\in\mathbb{N}_0$ be such that $k < m$, and let $n\in\overline{\mathbb{N}}_1$ be such that $m\leq n$. Denote by $I$ the set of all $i \in \mathbb{N}_0$, such that, if $\Omega_{k+i} \neq \emptyset$,
   $$
   \begin{align}
   &\tau_k^{(k+i)} \leq \tau_{k+i}^{(k+i)}, \tag{1.4}\label{Yoko} \\
@@ -152,18 +166,6 @@ $$
   &\overset{\omega \in \Omega_{j+1}}{=} \left(\tau_j^{(j)}\right)^{(j+1)}(\omega) \\
   &\overset{32(n.3)}{=} \tau_j^{(j+1)}(\omega).
   \end{align}
-  $$
-
-  7. Follows from Corollary 20(l.1).
-
-  8. Let $n \in \mathbb{N}_0$. Then, for every $\omega \in \Omega_n$,
-  $$
-  \left(\nu\circ\circ\ \left[Y^{\left<\!\left<n\right>\!\right>}\right]\right)(\omega) \overset{20(o)}{=} \nu\circ\left(\left[Y^{\left<\!\left<n\right>\!\right>}\right](\omega)\right).
-  $$
-
-  Since, by Lemma 33.0(c.6), $\left[Y^{\left<\!\left<n\right>\!\right>}\right](\omega) \in \mathcal{G}_{\nu^*}$, and since, by lemma 12(a), $\nu\in\mathcal{C}_{\nu^*,\mathcal{E}}$, Lemma 14(d) yields that
-  $$
-  \nu\circ\left(\left[Y^{\left<\!\left<n\right>\!\right>}\right](\omega)\right) \in \mathcal{G}_{\mathcal{E}}.
   $$
 
   9. Follows from Corollary 25(d) in light of Lemma 33.1(c.3), Lemma 33.1(c.7), and the fact that, by Corollary 12(a), $\nu^{-1}\left((\gamma,\infty)\right) \in \nu^*$.
