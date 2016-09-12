@@ -862,19 +862,17 @@ a.
 
  2. Let $S\subseteq \Omega$. Then $S' \subseteq S$.
 
- 3. Let $S\subseteq \Omega_1$. Then $S' = S$.
+ 3. $(\mathcal{P}\Omega)' = \mathcal{P}\Omega_1$.
 
- 4. $(\mathcal{P}\Omega)' = \mathcal{P}\Omega_1$.
+ 4. Let $S,T\subseteq\Omega$. If $S\subseteq T$, then $S'\subseteq T'$.
 
- 5. Let $S,T\subseteq\Omega$. If $S\subseteq T$, then $S'\subseteq T'$.
+ 5. Let $\mathcal{S}, \mathcal{T}\subseteq \mathcal{P}\Omega$. If $\mathcal{S} \subseteq \mathcal{T}$, then $\mathcal{S}' \subseteq \mathcal{T}'$.
 
- 6. Let $\mathcal{S}, \mathcal{T}\subseteq \mathcal{P}\Omega$. If $\mathcal{S} \subseteq \mathcal{T}$, then $\mathcal{S}' \subseteq \mathcal{T}'$.
+ 6. Let $\mathcal{A}\subseteq\mathcal{P}\mathcal{P}\Omega$. Then $(\cup\mathcal{A})' = \cup(\mathcal{A}')$.
 
- 7. Let $\mathcal{A}\subseteq\mathcal{P}\mathcal{P}\Omega$. Then $(\cup\mathcal{A})' = \cup(\mathcal{A}')$.
+ 7. Let $\mathcal{A}\subseteq\mathcal{P}\mathcal{P}\Omega$. Then $(\cap\mathcal{A})' = \cap(\mathcal{A}')$.
 
- 8. Let $\mathcal{A}\subseteq\mathcal{P}\mathcal{P}\Omega$. Then $(\cap\mathcal{A})' = \cap(\mathcal{A}')$.
-
- 9. Let $S, T \subseteq \Omega$. Then $(S\setminus T)' = (S')\setminus (T')$.
+ 8. Let $S, T \subseteq \Omega$. Then $(S\setminus T)' = (S')\setminus (T')$.
 
 b.
 
@@ -1055,7 +1053,21 @@ l. Let $\mathcal{A}$ be a $\sigma$-algebra on $\Omega$, let $P$ be a probability
 
  2. If $X$ is a $\Omega/S$-Lévy process w.r.t. $P$, then $X^\dagger$ is a $\Omega_1/S$-Lévy process w.r.t. $P'$.
 
-m. Let $\Omega_2\subseteq\Omega_1$.
+m.
+
+ 1. Let $S\subseteq\Omega_1$. Then $S'= S$.
+
+ 2. Let $\mathcal{A}\subseteq\mathcal{P}\Omega_1$. Then $\mathcal{A}'=\mathcal{A}$.
+
+ 3. Let $\Gamma$ be a non-empty set, and let $f:\Omega_1\rightarrow\Gamma$. Then $f'=f$.
+
+ 4. Let $\mathcal{A} \subseteq \mathcal{P}\Omega_1$, let $\Gamma$ be a non-empty set, and let $P:{\mathcal{A}}\rightarrow\Gamma$. Then $P'=P$.
+
+ 5. Let $\mathcal{F}:[0,\infty)\rightarrow\mathcal{P}\Omega_1$, $\mathcal{F} = (\mathcal{F}_t)_{t\in[0,\infty)}$. Then $\mathcal{F}^\dagger=\mathcal{F}$.
+
+ 6. Let $\Gamma$ be a non-empty set, and let $X$ be a $\Omega_1/\Gamma$-stochastic process. Then $X^\dagger=X$.
+
+n. Let $\Omega_2\subseteq\Omega_1$.
 
  1. Let $S\subseteq\Omega$. Then $(S')^{(\Omega_2)}= S^{(\Omega_2)}$.
 

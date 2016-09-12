@@ -6,7 +6,7 @@ c.
 
  3. For every $m\in\mathbb{N}_0$ and for every $n\in\overline{\mathbb{N}}_0$ such that $m \leq n$,
  $$
- \tau_{m+1}^{(n)} - \tau_m^{(n)} = \Xi_{\nu^{-1}\left((\gamma,\infty)\right)} \circ \left[\left(Y^{\left<\!\left<m\right>\!\right>}\right)^{(n)}\right].
+ \tau_{m+1}^{(n)} - \tau_m^{(n)} = \Xi_{\nu^{-1}\left((\gamma,\infty)\right)} \circ \left[\left(Y^{\left<\!\left<m\right>\!\right>}\right)^{\langle n\rangle}\right].
  $$
 
  In particular, if $n = m$,
@@ -14,14 +14,14 @@ c.
  \tau_{m+1}^{(n)} - \tau_m^{(n)} = \Xi_{\nu^{-1}\left((\gamma,\infty)\right)} \circ \left[Y^{\left<\!\left<n\right>\!\right>}\right].
  $$
 
- 4. For every $n \in \overline{\mathbb{N}}_0$ such that $\Omega_n\neq\emptyset$,
+ 4. For every $n \in \overline{\mathbb{N}}_0$,
  $$
  \tau_1^{(n)} = \Xi_{\nu^{-1}\left((\gamma,\infty)\right)} \circ \left[X^{\langle n\rangle}\right].
  $$
 
- 5. Let $m \in \mathbb{N}_0$, let $n\in\overline{\mathbb{N}}_0$ be such that $m \leq n$, and such that $\Omega_n \neq \emptyset$. Then, for every $\omega \in \Omega_n$,
+ 5. Let $m \in \mathbb{N}_0$, let $n\in\overline{\mathbb{N}}_0$ be such that $m \leq n$. Then, for every $\omega \in \Omega_n$,
  $$
- \tau_{m+1}^{(n)}(\omega)-\tau_m^{(n)}(\omega) = \inf\ \left(\left(\nu\circ\!\circ \left[\left(Y^{\left<\!\left<m\right>\!\right>}\right)^{(n)}\right]\right)(\omega)\right)^{-1}((\gamma,\infty)).
+ \tau_{m+1}^{(n)}(\omega)-\tau_m^{(n)}(\omega) = \inf\ \left(\left(\nu\circ\!\circ \left[\left(Y^{\left<\!\left<m\right>\!\right>}\right)^{\langle n\rangle}\right]\right)(\omega)\right)^{-1}((\gamma,\infty)).
  $$
 
  In particular, if $m = n$,
