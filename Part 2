@@ -22,7 +22,7 @@ Define, by recursion, a sequence $(\tau_0,\tau_1,\tau_2,\dots)$ of functions $\t
 $$
 \begin{align}
 \tau_0 &:= \infty\mathbb{1}^\Omega_{\{X_0\neq \mathbf{0}\}}, \tag{4}\label{Lajuana} \\
-\tau_n &:= \inf\left\{t\in\left[\tau_{n-1},\infty\right)\ \big|\!:\ \nu\left(X_t-X_{\tau_{n-1}}\right) > \gamma \right\},\hspace{1cm}n\in\mathbb{N}_1. \tag{5}\label{Tiny}
+\tau_n &:= \inf\left\{t\in\left[\tau_{n-1},\infty\right)\ \big|\!:\ \nu\left(X_t-X_{\veebar\circ\tau_{n-1}}\right) > \gamma \right\},\hspace{1cm}n\in\mathbb{N}_1. \tag{5}\label{Tiny}
 \end{align}
 $$
 

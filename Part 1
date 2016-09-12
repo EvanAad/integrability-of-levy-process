@@ -18,9 +18,9 @@ h. We shall agree that $\pm\infty\cdot0=0\cdot\pm\infty=0$.
 
 i. We shall agree that $\inf\emptyset = \infty$, and that $\sup\emptyset = -\infty$.
 
-j. We define the function $\lozenge:\overline{\mathbb{R}}\rightarrow\mathbb{R}$ as follows. For every $x \in \overline{\mathbb{R}}$,
+j. We define the function $\veebar:\overline{\mathbb{R}}\rightarrow\mathbb{R}$ as follows. For every $x \in \overline{\mathbb{R}}$,
  $$
- \lozenge(x) := \begin{cases}
+ \veebar(x) := \begin{cases}
  x, &x \in \mathbb{R},\\
  0, &x \in \{\pm\infty\}.
  \end{cases}
