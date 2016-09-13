@@ -738,7 +738,7 @@ b. Let $S, T, U$ be non-empty sets, let $f:[0,\infty)\rightarrow S$, let $g:S\ri
 
 c. Let $\mathcal{T}$ be a topology on the non-empty set $\Gamma$, and let $D\in\mathcal{T}$. Then $\Xi_D\big|_{\mathcal{R}_{\mathcal{T}}}$ is $\mathcal{R}_{\mathcal{T}}^*/\overline{\mathcal{B}}$-measurable.
 
-d. Let $\mathcal{T}$ be a topology on the non-empty set $\Gamma$, and let $X$ be a $\Omega/\Gamma$-stochastic process with $\mathcal{E}_+/\mathcal{T}$ right-continuous paths (i.e., $[X](\Omega)\subseteq\mathcal{R}_{\mathcal{T}}$). Then, for every $D\in\mathcal{T}$, $\Xi_D\circ [X]$ is a weak $\Phi^{\sigma(\mathcal{T})}(X)$-stopping time.
+d. Let $\Omega$ be a non-empty set, let $\mathcal{T}$ be a topology on the non-empty set $\Gamma$, and let $X$ be a $\Omega/\Gamma$-stochastic process with $\mathcal{E}_+/\mathcal{T}$ right-continuous paths (i.e., $[X](\Omega)\subseteq\mathcal{R}_{\mathcal{T}}$). Then, for every $D\in\mathcal{T}$, $\Xi_D\circ [X]$ is a weak $\Phi^{\sigma(\mathcal{T})}(X)$-stopping time.
 
 ***26. Definition***
 
