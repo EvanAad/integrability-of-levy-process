@@ -860,19 +860,21 @@ a.
 
  1. Let $S\subseteq \Omega$. Then $S' \subseteq \Omega_1$.
 
- 2. Let $S\subseteq \Omega$. Then $S' \subseteq S$.
+ 2. Let $S\subseteq \Omega$ be such that $\Omega_1 \subseteq S$. Then $S' = \Omega_1$.
 
- 3. $(\mathcal{P}\Omega)' = \mathcal{P}\Omega_1$.
+ 3. Let $S\subseteq \Omega$. Then $S' \subseteq S$.
 
- 4. Let $S,T\subseteq\Omega$. If $S\subseteq T$, then $S'\subseteq T'$.
+ 4. $(\mathcal{P}\Omega)' = \mathcal{P}\Omega_1$.
 
- 5. Let $\mathcal{S}, \mathcal{T}\subseteq \mathcal{P}\Omega$. If $\mathcal{S} \subseteq \mathcal{T}$, then $\mathcal{S}' \subseteq \mathcal{T}'$.
+ 5. Let $S,T\subseteq\Omega$. If $S\subseteq T$, then $S'\subseteq T'$.
 
- 6. Let $\mathcal{A}\subseteq\mathcal{P}\mathcal{P}\Omega$. Then $(\cup\mathcal{A})' = \cup(\mathcal{A}')$.
+ 6. Let $\mathcal{S}, \mathcal{T}\subseteq \mathcal{P}\Omega$. If $\mathcal{S} \subseteq \mathcal{T}$, then $\mathcal{S}' \subseteq \mathcal{T}'$.
 
- 7. Let $\mathcal{A}\subseteq\mathcal{P}\mathcal{P}\Omega$. Then $(\cap\mathcal{A})' = \cap(\mathcal{A}')$.
+ 7. Let $\mathcal{A}\subseteq\mathcal{P}\mathcal{P}\Omega$. Then $(\cup\mathcal{A})' = \cup(\mathcal{A}')$.
 
- 8. Let $S, T \subseteq \Omega$. Then $(S\setminus T)' = (S')\setminus (T')$.
+ 8. Let $\mathcal{A}\subseteq\mathcal{P}\mathcal{P}\Omega$. Then $(\cap\mathcal{A})' = \cap(\mathcal{A}')$.
+
+ 9. Let $S, T \subseteq \Omega$. Then $(S\setminus T)' = (S')\setminus (T')$.
 
 b.
 
@@ -964,7 +966,7 @@ g. Let $f:\Omega\rightarrow\overline{\mathbb{R}}$.
 
  12. Let $f:\Omega_1\rightarrow\overline{\mathbb{R}}$, and let $f_1, f_2, \dots:\Omega_1\rightarrow\mathbb{R}$ be such that, for every $\omega \in \Omega_1$, $\overline{\mathrm{Lim}}_{n\rightarrow\infty}\left|f(\omega)-f_n(\omega)\right| = 0$. Then, for every $c \in \mathbb{R}$, and for every $\omega \in \Omega$, $\overline{\mathrm{Lim}}_{n\rightarrow\infty}\left|\left(\Lambda_{\Omega,c}(f')\right)(\omega)-\left(\Lambda_{\Omega,c}(f_n')\right)(\omega)\right| = 0$.
 
- 13. 
+ 13.
  $$
  \begin{align}
  \left(\max(f,0)\right)' &= \max(f',0) \\
