@@ -2,11 +2,13 @@
 
 *Symbols*
 
-$\square^{(n)}$ (non-negative integer superscript, e.g. $\mathcal{A}^{(0)}$) ... proof, bullets following eq. (6)
+$\square^{(n)}$ (non-negative integer superscript, e.g. $\mathcal{A}^{(0)}$) ... proof, bullets following eq. (7)
+
+$\square^{\langle n\rangle}$ (non-negative integer superscript, e.g. $X^{\langle 0\rangle}$) ... proof, bullets following eq. (7)
 
 *Numbers*
 
-$\mathbf{0}$ ... proof, eq. (a)
+$\mathbf{0}$ ... proof, eq. (2)
 
 *Greek*
 
@@ -14,13 +16,13 @@ $\gamma$ ... statement
 
 $\nu$ ... statement
 
-$\tau_0$ ... proof, eq. $(3)
+$\tau_0$ ... proof, eq. $(4)
 
-$\tau_1, \tau_2, \dots$ ... proof, eq. $(4)$
+$\tau_1, \tau_2, \dots$ ... proof, eq. $(5)$
 
 $\Omega$ ... statement
 
-$\Omega_0, \Omega_1, \dots$ ... proof, eq. $(5)$
+$\Omega_0, \Omega_1, \dots$ ... proof, eq. $(6)$
 
 $\Omega_\infty$ ... proof, eq. $(7)$
 
@@ -28,7 +30,7 @@ $\Omega_\infty$ ... proof, eq. $(7)$
 
 $\mathcal{A}$ ... statement
 
-$\mathcal{F}$ ... proof, eq. $(2)$
+$\mathcal{F}$ ... proof, eq. $(3)$
 
 $P$ ... statement
 
@@ -40,7 +42,7 @@ $\mathbf{V}$ ... statement
 
 $X$ ... statement
 
-$Y^{\left<\!\left<0\right>\!\right>}, Y^{\left<\!\left<1\right>\!\right>}, \dots$ ... proof, eq. (6)
+$Y^{\left<\!\left<0\right>\!\right>}, Y^{\left<\!\left<1\right>\!\right>}, \dots$ ... proof, eq. (8)
 
 ***
 
@@ -56,15 +58,13 @@ $\Gamma^\Omega$ ... 2(d)
 
 $g \circ\!\circ\ f$ ... 2(e)
 
-$s\wedge t,\ s\vee t$ ... 2(h)
+$c_\Omega$ ... 2(g)
+
+$s\wedge t,\ s\vee t$ ... 2(i)
 
 $f\wedge g,\ f\vee g$ ... 2(i)
 
-$f\wedge c,\ c\wedge f,\ f\vee c,\ c\vee f$ ... 2(j)
-
-$f + c$ ... 2(j)
-
-$f > c,\ f \geq c, f = c$ ... 2(k)
+$\veebar$ ... 2(j)
 
 $\mathcal{A}\otimes\mathcal{H}$ ... 7(e)
 
@@ -120,7 +120,7 @@ $\Lambda_\Omega(f)$ ... 31(b), 31(c)
 
 $\Xi_D$ ... 21
 
-$\pi^\Gamma_t$ ... 2(g)
+$\pi^\Gamma_t$ ... 2(h)
 
 $\sigma_\Omega(\mathcal{S})$ ... 7(a)
 
@@ -336,7 +336,7 @@ $\sup\emptyset$ ... 1(i)
 
   * $\mathcal{H}$-progressively measurable ... 19(j)
 
-* projection function ... 2(g)
+* projection function ... 2(h)
 
 *S*
 

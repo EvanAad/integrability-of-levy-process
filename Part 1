@@ -18,6 +18,14 @@ h. We shall agree that $\pm\infty\cdot0=0\cdot\pm\infty=0$.
 
 i. We shall agree that $\inf\emptyset = \infty$, and that $\sup\emptyset = -\infty$.
 
+j. We define the function $\veebar:\overline{\mathbb{R}}\rightarrow\mathbb{R}$ as follows. For every $x \in \overline{\mathbb{R}}$,
+ $$
+ \veebar(x) := \begin{cases}
+ x, &x \in \mathbb{R},\\
+ 0, &x \in \{\pm\infty\}.
+ \end{cases}
+ $$
+
 ***2. Notations and Conventions***
 
 a. The following classes of meta-mathematical objects are pairwise non-intersecting: numbers, sets, sequences, functions. [This convention allows us to use some otherwise ambiguous notation unambiguously.]
@@ -45,12 +53,14 @@ $$
 \end{cases}
 $$
 
-g. Let $\Gamma$ be a non-emptyset. For every $t\in[0,\infty)$ we define the projection function $\pi^\Gamma_t:\Gamma^{[0,\infty)}\rightarrow\Gamma$, as follows. For every $f:[0,\infty)\rightarrow\Gamma$,
+g. Let $\Omega$ be a (possibly empty) set, and let $c$ be any object, not necessarily $\in \Omega$. If there is no other unambiguous interpretation for the subscript notation $c_\Omega$, we shall intend it to mean the following (in other words, we decree that the following interpretation shall have lowest precedence of all other possible interpretations). $c_\Omega$ is the constant function $c_\Omega:\Omega \rightarrow \{c\}$, which, for every $\omega \in \Omega$, assigns $c_\Omega(\omega) := c$. In particular, if $c \in \overline{\mathbb{R}}$, then $c_\Omega = c\mathbb{1}^\Omega_\Omega$.
+
+h. Let $\Gamma$ be a non-emptyset. For every $t\in[0,\infty)$ we define the projection function $\pi^\Gamma_t:\Gamma^{[0,\infty)}\rightarrow\Gamma$, as follows. For every $f:[0,\infty)\rightarrow\Gamma$,
 $$
 \pi^\Gamma_t(f) := f(t).
 $$
 
-h. Let $\mathcal{T}_1, \mathcal{T}_2$ be topologies on the non-empty sets $S_1, S_2$, respectively. We denote by $\mathcal{C}_{\mathcal{T}_1,\mathcal{T}_2}$ the set of $\mathcal{T}_1/\mathcal{T}_2$-continuous functions $f:S_1\rightarrow S_2$.
+i. Let $\mathcal{T}_1, \mathcal{T}_2$ be topologies on the non-empty sets $S_1, S_2$, respectively. We denote by $\mathcal{C}_{\mathcal{T}_1,\mathcal{T}_2}$ the set of $\mathcal{T}_1/\mathcal{T}_2$-continuous functions $f:S_1\rightarrow S_2$.
 
 ***3. Definition***
 
@@ -596,7 +606,7 @@ j. Let $X$ be a $\Omega/\Gamma$-stochastic process. $X$ is $\mathcal{H}$-progres
 
 k. Let $\Omega$ be a (possibly empty) set, and let $\mathbf{V}$ be a vector space. Then, for every $\Omega/V$-stochastic process $X$, and for every function $\tau:\Omega\rightarrow[0,\infty)$, we define a $\Omega/V$-stochastic process $\Theta^{\left(\Omega,\mathbf{V}\right)}(X,\tau) = \left(\Theta^{\left(\Omega,\mathbf{V}\right)}_t(X,\tau)\right)_{t\in[0,\infty)}$ as follows. For every $t \in [0,\infty)$,
 $$
-\Theta^{\left(\Omega,\mathbf{V}\right)}(X,\tau)_t := X_{\tau+t} - X_\tau.
+\Theta^{\left(\Omega,\mathbf{V}\right)}_t(X,\tau) := X_{\tau+t} - X_\tau.
 $$
 
 ***20. Corollary***
@@ -629,15 +639,15 @@ i. If $X$ is $\mathcal{F}/\mathcal{H}$-progressively measurable, then $\left<X\r
 
 j. Let $\tau$ be a non-negative $\mathcal{A}/\mathcal{B}$-measurable function, for some $\sigma$-algebra $\mathcal{A}$ on $\Omega$. If $\left<X\right>$ is $\mathcal{A}\otimes\sigma\left(\mathcal{E}_+\right)/\mathcal{H}$-measurable, then $X_\tau$ is $\mathcal{A}/\mathcal{H}$-measurable.
 
-k. Let $\tau$ be a real-valued $\mathcal{F}$-stopping time, and let $X$ be $\mathcal{F}/\mathcal{H}$-progressively measurable. Then $X_\tau$ is $\mathcal{F}_\tau/\mathcal{H}$-measurable.
+k. Let $\Omega$ be a (possibly empty) set, let $\Gamma$ be a non-empty set, and let $X$ be a $\Omega/\Gamma$-stochastic process. Then, for every $t \in [0,\infty)$, $X_{t_\Omega} = X_t$.
 
-l. Let $\Omega$ be a non-empty set, let $\mathbf{V}$ be a vector space, let $\mathcal{T}$ be a topology on $V$, let $X$ be a $\Omega/V$ stochastic process, and let $\tau:\Omega\rightarrow[0,\infty)$. Then
+l. Let $\Omega$ be a (possibly empty) set, let $\mathbf{V}$ be a vector space, let $\mathcal{T}$ be a topology on $V$, let $X$ be a $\Omega/V$ stochastic process, and let $\tau:\Omega\rightarrow[0,\infty)$. Then
 
- 1. If $[X](\Omega) \in \mathcal{R}_{\mathcal{T}}$, then $\left[\Theta^{(\Omega,\mathbf{V})}(X,\tau)\right](\Omega) \in \mathcal{R}_{\mathcal{T}}$.
+ 1. If $[X](\Omega) \in \mathcal{R}_{\mathcal{T}}$, then $\left[\Theta^{(\Omega,\mathbf{V})}(X,\tau)\right](\Omega) \subseteq \mathcal{R}_{\mathcal{T}}$.
 
- 2. If $[X](\Omega) \in \mathcal{L}_{\mathcal{T}}$, then $\left[\Theta^{(\Omega,\mathbf{V})}(X,\tau)\right](\Omega) \in \mathcal{L}_{\mathcal{T}}$.
+ 2. If $[X](\Omega) \in \mathcal{L}_{\mathcal{T}}$, then $\left[\Theta^{(\Omega,\mathbf{V})}(X,\tau)\right](\Omega) \subseteq \mathcal{L}_{\mathcal{T}}$.
 
- 3. If $[X](\Omega) \in \mathcal{G}_{\mathcal{T}}$, then $\left[\Theta^{(\Omega,\mathbf{V})}(X,\tau)\right](\Omega) \in \mathcal{G}_{\mathcal{T}}$.
+ 3. If $[X](\Omega) \in \mathcal{G}_{\mathcal{T}}$, then $\left[\Theta^{(\Omega,\mathbf{V})}(X,\tau)\right](\Omega) \subseteq \mathcal{G}_{\mathcal{T}}$.
 
 m. Let $\Omega$ be a non-empty set, let $(\mathbf{V},\nu)$ be a normed space, let $X$ be a $\Omega/V$-stochastic process, and let $\tau:\Omega\rightarrow[0,\infty)$ be $\Phi^{\sigma(\nu^*)}_\infty(X)/\mathcal{B}$-measurable. If $\left<X\right>$ is $\Phi^{\sigma(\nu^*)}_\infty(X)\otimes\sigma\left(\mathcal{E}_+\right)/\sigma(\nu^*)$-measurable, then
  $$
@@ -708,6 +718,8 @@ e. For all $a,b \in [0,\infty)$, if $\tau$ is a $\mathcal{F}$-stopping time, $a\
 
 f. For all $a,b \in [0,\infty)$, if $\tau$ is a weak $\mathcal{F}$-stopping time, $a\tau+b$ is a weak $\mathcal{F}$-stopping time.
 
+g. Let $\tau$ be a real-valued $\mathcal{F}$-stopping time, and let $X$ be $\mathcal{F}/\mathcal{H}$-progressively measurable. Then $X_\tau$ is $\mathcal{F}_\tau/\mathcal{H}$-measurable.
+
 ***24. Definition***
 
 Let $\Gamma$ be a non-empty set, let $f:[0,\infty)\rightarrow\Gamma$, and let $D\subseteq\Gamma$. The first hitting time in $D$, is the function $\Xi_D:\left([0,\infty)\rightarrow\Gamma\right)\rightarrow[0,\infty]$ defined as follows. For every $f:[0,\infty)\rightarrow\Gamma$,
@@ -726,7 +738,7 @@ b. Let $S, T, U$ be non-empty sets, let $f:[0,\infty)\rightarrow S$, let $g:S\ri
 
 c. Let $\mathcal{T}$ be a topology on the non-empty set $\Gamma$, and let $D\in\mathcal{T}$. Then $\Xi_D\big|_{\mathcal{R}_{\mathcal{T}}}$ is $\mathcal{R}_{\mathcal{T}}^*/\overline{\mathcal{B}}$-measurable.
 
-d. Let $\mathcal{T}$ be a topology on the non-empty set $\Gamma$, and let $X$ be a $\Omega/\Gamma$-stochastic process with $\mathcal{E}_+/\mathcal{T}$ right-continuous paths (i.e., $[X](\Omega)\subseteq\mathcal{R}_{\mathcal{T}}$). Then, for every $D\in\mathcal{T}$, $\Xi_D\circ [X]$ is a weak $\Phi^{\sigma(\mathcal{T})}(X)$-stopping time.
+d. Let $\Omega$ be a non-empty set, let $\mathcal{T}$ be a topology on the non-empty set $\Gamma$, and let $X$ be a $\Omega/\Gamma$-stochastic process with $\mathcal{E}_+/\mathcal{T}$ right-continuous paths (i.e., $[X](\Omega)\subseteq\mathcal{R}_{\mathcal{T}}$). Then, for every $D\in\mathcal{T}$, $\Xi_D\circ [X]$ is a weak $\Phi^{\sigma(\mathcal{T})}(X)$-stopping time.
 
 ***26. Definition***
 
@@ -741,11 +753,13 @@ Let $\tau$ be a $\mathcal{F}$-stopping time for some filtration $\mathcal{F}$.
 
 a. $\mathcal{F}_\tau$ is a sub-$\sigma$-algebra of $\mathcal{F}_\infty$.
 
-b. If $\tau'$ is a $\mathcal{F}$-stopping time such that $\tau' < \tau$, then $\mathcal{F}_{\tau'}\subseteq\mathcal{F}^+_{\tau'}\subseteq\mathcal{F}_\tau$.
+b. If, for some $t \in [0,\infty]$, $\tau = t_{\cup\mathcal{F}}$, then $\mathcal{F}_\tau = \mathcal{F}_t$.
 
-c. $\tau$ is $\mathcal{F}_\tau/\overline{\mathcal{B}}$-measurable.
+c. If $\tau'$ is a $\mathcal{F}$-stopping time such that $\tau' < \tau$, then $\mathcal{F}_{\tau'}\subseteq\mathcal{F}^+_{\tau'}\subseteq\mathcal{F}_\tau$.
 
-d. Suppose $\tau < \infty$, and let $\mathcal{T}$ be a topology on some non-empty set. Then, if $X$ is a $\mathcal{F}/\sigma(\mathcal{T})$-stochastic process with $\mathcal{E}_+/\mathcal{T}$-right-continuous paths, $X_\tau$ is $\mathcal{F}_\tau/\sigma(\mathcal{T})$-measurable.
+d. $\tau$ is $\mathcal{F}_\tau/\overline{\mathcal{B}}$-measurable.
+
+e. Suppose $\tau < \infty$, and let $\mathcal{T}$ be a topology on some non-empty set. Then, if $X$ is a $\mathcal{F}/\sigma(\mathcal{T})$-stochastic process with $\mathcal{E}_+/\mathcal{T}$-right-continuous paths, $X_\tau$ is $\mathcal{F}_\tau/\sigma(\mathcal{T})$-measurable.
 
 ***28. Definition***
 
@@ -848,19 +862,17 @@ a.
 
  2. Let $S\subseteq \Omega$. Then $S' \subseteq S$.
 
- 3. Let $S\subseteq \Omega_1$. Then $S' = S$.
+ 3. $(\mathcal{P}\Omega)' = \mathcal{P}\Omega_1$.
 
- 4. $(\mathcal{P}\Omega)' = \mathcal{P}\Omega_1$.
+ 4. Let $S,T\subseteq\Omega$. If $S\subseteq T$, then $S'\subseteq T'$.
 
- 5. Let $S,T\subseteq\Omega$. If $S\subseteq T$, then $S'\subseteq T'$.
+ 5. Let $\mathcal{S}, \mathcal{T}\subseteq \mathcal{P}\Omega$. If $\mathcal{S} \subseteq \mathcal{T}$, then $\mathcal{S}' \subseteq \mathcal{T}'$.
 
- 6. Let $\mathcal{S}, \mathcal{T}\subseteq \mathcal{P}\Omega$. If $\mathcal{S} \subseteq \mathcal{T}$, then $\mathcal{S}' \subseteq \mathcal{T}'$.
+ 6. Let $\mathcal{A}\subseteq\mathcal{P}\mathcal{P}\Omega$. Then $(\cup\mathcal{A})' = \cup(\mathcal{A}')$.
 
- 7. Let $\mathcal{A}\subseteq\mathcal{P}\mathcal{P}\Omega$. Then $(\cup\mathcal{A})' = \cup(\mathcal{A}')$.
+ 7. Let $\mathcal{A}\subseteq\mathcal{P}\mathcal{P}\Omega$. Then $(\cap\mathcal{A})' = \cap(\mathcal{A}')$.
 
- 8. Let $\mathcal{A}\subseteq\mathcal{P}\mathcal{P}\Omega$. Then $(\cap\mathcal{A})' = \cap(\mathcal{A}')$.
-
- 9. Let $S, T \subseteq \Omega$. Then $(S\setminus T)' = (S')\setminus (T')$.
+ 8. Let $S, T \subseteq \Omega$. Then $(S\setminus T)' = (S')\setminus (T')$.
 
 b.
 
@@ -912,7 +924,10 @@ e. Let $\mathcal{A}$ be a $\sigma$-algebra on $\Omega$, let $\mu$ be a measure o
  \mathcal{A}\perp_P\mathcal{H} \iff \mathcal{A}'\perp_{P'}\mathcal{H}'.
  $$
 
-f. Let $\mathbf{V}$ be a vector space, denote $\mathbf{V}$'s field by $\mathbf{F}$, and denote $\mathbf{F}$'s set of scalars by $F$, let $f, g:\Omega\rightarrow V$, and let $a, b\in F$. Then
+f.
+ 1. Let $c$ be an arbitrary object. Then $c_\Omega' = c_{\Omega_1}$.
+
+ 2. Let $\mathbf{V}$ be a vector space, denote $\mathbf{V}$'s field by $\mathbf{F}$, and denote $\mathbf{F}$'s set of scalars by $F$, let $f, g:\Omega\rightarrow V$, and let $a, b\in F$. Then
  $$
  (af + bg)' = af' + bg'.
  $$
@@ -949,7 +964,7 @@ g. Let $f:\Omega\rightarrow\overline{\mathbb{R}}$.
 
  12. Let $f:\Omega_1\rightarrow\overline{\mathbb{R}}$, and let $f_1, f_2, \dots:\Omega_1\rightarrow\mathbb{R}$ be such that, for every $\omega \in \Omega_1$, $\overline{\mathrm{Lim}}_{n\rightarrow\infty}\left|f(\omega)-f_n(\omega)\right| = 0$. Then, for every $c \in \mathbb{R}$, and for every $\omega \in \Omega$, $\overline{\mathrm{Lim}}_{n\rightarrow\infty}\left|\left(\Lambda_{\Omega,c}(f')\right)(\omega)-\left(\Lambda_{\Omega,c}(f_n')\right)(\omega)\right| = 0$.
 
- 13.
+ 13. 
  $$
  \begin{align}
  \left(\max(f,0)\right)' &= \max(f',0) \\
@@ -1038,7 +1053,21 @@ l. Let $\mathcal{A}$ be a $\sigma$-algebra on $\Omega$, let $P$ be a probability
 
  2. If $X$ is a $\Omega/S$-Lévy process w.r.t. $P$, then $X^\dagger$ is a $\Omega_1/S$-Lévy process w.r.t. $P'$.
 
-m. Let $\Omega_2\subseteq\Omega_1$.
+m.
+
+ 1. Let $S\subseteq\Omega_1$. Then $S'= S$.
+
+ 2. Let $\mathcal{A}\subseteq\mathcal{P}\Omega_1$. Then $\mathcal{A}'=\mathcal{A}$.
+
+ 3. Let $\Gamma$ be a non-empty set, and let $f:\Omega_1\rightarrow\Gamma$. Then $f'=f$.
+
+ 4. Let $\mathcal{A} \subseteq \mathcal{P}\Omega_1$, let $\Gamma$ be a non-empty set, and let $P:{\mathcal{A}}\rightarrow\Gamma$. Then $P'=P$.
+
+ 5. Let $\mathcal{F}:[0,\infty)\rightarrow\mathcal{P}\Omega_1$, $\mathcal{F} = (\mathcal{F}_t)_{t\in[0,\infty)}$. Then $\mathcal{F}^\dagger=\mathcal{F}$.
+
+ 6. Let $\Gamma$ be a non-empty set, and let $X$ be a $\Omega_1/\Gamma$-stochastic process. Then $X^\dagger=X$.
+
+n. Let $\Omega_2\subseteq\Omega_1$.
 
  1. Let $S\subseteq\Omega$. Then $(S')^{(\Omega_2)}= S^{(\Omega_2)}$.
 
