@@ -62,17 +62,17 @@ $$
 
  14. For every $n\in\mathbb{N}_0$ such that $\Omega_n\neq\emptyset$, $\left[Y^{\left<\!\left<n\right>\!\right>}\right]$ is $\mathcal{F}^{(n)}/\mathcal{R}_{\nu^*}^*$-measurable.
 
- 15. For all $m \in \mathbb{N}_1$, for all $n \in \overline{\mathbb{N}}_1$ such that $m \leq n$ and such that $\Omega_n \neq \emptyset$, and for all $t \in [0,\infty)$,
+ 15. For all $m \in \mathbb{N}_1$, for all $n \in \overline{\mathbb{N}}_1$ such that $m \leq n$, and for all $t \in [0,\infty)$,
  $$
  \left(X^{\langle m-1\rangle}_{\tau_m^{(m-1)}\mathbb{1}^{\Omega_{m-1}}_{\Omega_m} + t}\right)^{(n)} = X^{\langle n\rangle}_{\tau_m^{(n)} + t}.
  $$
 
- 16. For all $m \in \mathbb{N}_1$, for all $n \in \overline{\mathbb{N}}_1$ such that $m \leq n$ and such that $\Omega_n \neq \emptyset$, and for all $t \in [0,\infty)$,
+ 16. For all $m \in \mathbb{N}_1$, for all $n \in \overline{\mathbb{N}}_1$ such that $m \leq n$, and for all $t \in [0,\infty)$,
  $$
  \left(Y^{\left<\!\left<m-1\right>\!\right>}_{\left(\tau^{(m-1)}_m\mathbb{1}^{\Omega_{m-1}}_{\Omega_m} - \tau^{(m-1)}_{m-1}\right) + t}\right)^{(n)} = \left(Y^{\left<\!\left<m-1\right>\!\right>}\right)^{\langle n\rangle}_{\left(\tau^{(n)}_m-\tau^{(n)}_{m-1}\right) + t}.
  $$
 
- 17. For every $n \in \mathbb{N}_1$ such that $\Omega_n\neq\emptyset$,
+ 17. For every $n \in \mathbb{N}_1$,
  $$
  Y^{\left<\!\left<n\right>\!\right>} = \Theta^{\left(\Omega_n,\mathbf{V}\right)}\left(\left(Y^{\left<\!\left<n-1\right>\!\right>}\right)^{\langle n\rangle},\tau^{(n)}_n-\tau^{(n)}_{n-1}\right).
  $$

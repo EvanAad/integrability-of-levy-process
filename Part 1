@@ -964,7 +964,7 @@ g. Let $f:\Omega\rightarrow\overline{\mathbb{R}}$.
 
  12. Let $f:\Omega_1\rightarrow\overline{\mathbb{R}}$, and let $f_1, f_2, \dots:\Omega_1\rightarrow\mathbb{R}$ be such that, for every $\omega \in \Omega_1$, $\overline{\mathrm{Lim}}_{n\rightarrow\infty}\left|f(\omega)-f_n(\omega)\right| = 0$. Then, for every $c \in \mathbb{R}$, and for every $\omega \in \Omega$, $\overline{\mathrm{Lim}}_{n\rightarrow\infty}\left|\left(\Lambda_{\Omega,c}(f')\right)(\omega)-\left(\Lambda_{\Omega,c}(f_n')\right)(\omega)\right| = 0$.
 
- 13.
+ 13. 
  $$
  \begin{align}
  \left(\max(f,0)\right)' &= \max(f',0) \\
