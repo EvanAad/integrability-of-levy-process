@@ -884,7 +884,7 @@ d.
 
  Let $I$ be the set of numbers $n\in\mathbb{N}_0$ that satisfy assertions $33.2(a_n)-33.2(f_n)$. We need to prove that $I = \mathbb{N}_0$. We proceed by induction.
 
- Let $n \in \mathbb{N}_0$. Firstly, suppose that $n = 0$. Then $33.2(a_n)$ is Lemma 33.1(b.7). $33.2(b_n)$ follows from Lemma 32(i.1) in light of Lemma 33.1(d.4). $33.2(c_n)$ holds, since
+ Let $n \in \mathbb{N}_0$. Firstly, suppose that $n = 0$. Then $33.2(a_n)$ is Lemma 33.1(b.7). $33.2(b_n)$ follows from Lemma 32(i.1) in light of Lemma 33.1(d.4). To see that $33.2(c_n)$ holds, firstly observe that Lemma 33.1(a.3) together with Lemma 33.1(a.4) imply that the right hand side of the equation is well-defined, whereas Lemma 33.1(e.3) together with Lemma 33.1(d.14) imply that the left-hand side of the equation is well-defined. The equality of the sides is justified by the following calculations:
  $$
  \left(P^{(n)}\right)^{\left[Y^{\left<\!\left<n\right>\!\right>}\right]}_{\mathcal{R}_{\nu^*}^*} \overset{33.1(d.4)}{=} \left(P^{(n)}\right)^{\left[X^{\langle n\rangle}\right]}_{\mathcal{R}_{\nu^*}^*} \overset{32(i.3)}{=} \left(P^{(n)}\right)^{[X]^{(n)}}_{\mathcal{R}_{\nu^*}^*} \overset{32(e.3)}{=} P^{[X]}_{\mathcal{R}_{\nu^*}^*}.
  $$
@@ -923,7 +923,7 @@ d.
 
  $33.2(b_n)$ is now merely a restatement of \eqref{Coletta}.
 
- $33.2(c_n)$ follows from \eqref{Adria}, since
+ To see that $33.2(c_n)$ holds, firstly observe that Lemma 33.1(a.3) together with Lemma 33.1(a.4) imply that the right hand side of the equation is well-defined, whereas Lemma 33.1(e.3) together with Lemma 33.1(d.14) imply that the left-hand side of the equation is well-defined. The equality of the sides follows from \eqref{Adria}, since
  $$
  \begin{align}
  \left(P^{(n)}\right)^{\left[\left(Y^{\left<\!\left<n-1\right>\!\right>}\right)^{(n)}\right]}_{\mathcal{R}^*_{\nu^*}}
