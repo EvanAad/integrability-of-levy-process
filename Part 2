@@ -172,9 +172,9 @@ d.
  \tau_{m+1}^{(n)} - \tau_m^{(n)} = \Xi_{\nu^{-1}\left((\gamma,\infty)\right)} \circ \left[\left(Y^{\left<\!\left<m\right>\!\right>}\right)^{\langle n\rangle}\right].
  $$
 
- In particular, if $n = m$,
+ In particular,
  $$
- \tau_{m+1}^{(n)} - \tau_m^{(n)} = \Xi_{\nu^{-1}\left((\gamma,\infty)\right)} \circ \left[Y^{\left<\!\left<n\right>\!\right>}\right].
+ \tau_{m+1}^{(m)} - \tau_m^{(m)} = \Xi_{\nu^{-1}\left((\gamma,\infty)\right)} \circ \left[Y^{\left<\!\left<m\right>\!\right>}\right].
  $$
 
  7. For every $n \in \overline{\mathbb{N}}_0$,
@@ -884,19 +884,23 @@ d.
 
  Let $I$ be the set of numbers $n\in\mathbb{N}_0$ that satisfy assertions $33.2(a_n)-33.2(f_n)$. We need to prove that $I = \mathbb{N}_0$. We proceed by induction.
 
- Let $n \in \mathbb{N}_0$. Firstly, suppose that $n = 0$. Then $33.2(a_n)$ is Lemma 33.1(b.7). $33.2(b_n)$ follows from Lemma 32(i.1) in light of Lemma 33.1(d.4). To see that $33.2(c_n)$ holds, firstly observe that Lemma 33.1(a.3) together with Lemma 33.1(a.4) imply that the right hand side of the equation is well-defined, whereas Lemma 33.1(e.3) together with Lemma 33.1(d.14) imply that the left-hand side of the equation is well-defined. The equality of the sides is justified by the following calculations:
+ Let $n \in \mathbb{N}_0$. Firstly, suppose that $n = 0$. Then $33.2(a_n)$ is Lemma 33.1(b.7). $33.2(b_n)$ follows from Lemma 32(i.1) in light of Lemma 33.1(d.4). To see that $33.2(c_n)$ holds, firstly observe that Lemma 33.1(a.3) together with Lemma 33.1(a.4) imply that the right hand side of the equation is well-defined, whereas Lemma 33.1(d.14) implies that the left-hand side of the equation is well-defined. The equality of the sides is justified by the following calculations:
  $$
  \left(P^{(n)}\right)^{\left[Y^{\left<\!\left<n\right>\!\right>}\right]}_{\mathcal{R}_{\nu^*}^*} \overset{33.1(d.4)}{=} \left(P^{(n)}\right)^{\left[X^{\langle n\rangle}\right]}_{\mathcal{R}_{\nu^*}^*} \overset{32(i.3)}{=} \left(P^{(n)}\right)^{[X]^{(n)}}_{\mathcal{R}_{\nu^*}^*} \overset{32(e.3)}{=} P^{[X]}_{\mathcal{R}_{\nu^*}^*}.
  $$
- $33.2(d_n)$ follows from Lemma 33.1(c.3). $33.2(e_n)$ follows from Corollary 16(g), since
+ To see that $33.2(d_n)$ holds, firstly observe that Lemma 33.1(d.12) implies that both sides of the equation are well-defined. The equality of the sides follows from Lemma 33.1(c.3). To see that $33.2(e_n)$ holds, firstly observe that Lemma 33.1(d.12) and 33.1(d.13) ensure that the statement is meaningful. Its validity follows from Corollary 16(g), since
  $$
  \sigma_{\Omega_n}\left(\bigcup_{k = 1}^n \sigma_{\mathcal{B}}\left(\tau^{(n)}_k - \tau^{(n)}_{k - 1}\right)\right) = \sigma_{\Omega_n}(\emptyset) = \{\emptyset, \Omega_n\}.
  $$
  $33.2(f_n)$ holds vacuously.
 
- We have now shown that $0 \in I$. Next, suppose that $n > 0$ and that $n-1\in I$.
+ We have now shown that $n = 0 \in I$. Next, suppose that $n > 0$ and that $n-1\in I$.
 
- $33.2(a_n)$ holds since
+ To see that $33.2(a_n)$ holds, firstly note that, since
+ $$
+ \Omega_0 \overset{33.1(e.2)}{\in} \mathcal{F}^{(0)} \overset{33.1(e.3)}{\subseteq} \mathcal{F} \overset{33.1(a.3)}{\subseteq} \mathcal{A},
+ $$
+ the left hand side of the equation is well-defined. The equality of the two sides obtains as follows.
  $$
  \begin{align}
  P\left(\Omega_n\right) &\overset{\eqref{Sergio}}{=} P\left(\tau_n < \infty\right) \\
@@ -905,42 +909,43 @@ d.
  &\overset{33.1(c.4)}{=} P^{(n-1)}\left(\tau_n^{(n-1)} - \tau_{n-1}^{(n-1)} < \infty\right) \\
  &\overset{33.2(d_{n-1})}{=} P^{(0)}\left(\tau_1^{(0)} < \infty\right) \\
  &\overset{32(c.2)}{=} P^{(0)}\left(\left\{\tau_1 < \infty\right\}^{(0)}\right) \\
- &\overset{32(e.2)}{=} P\left(\tau_1 < \infty\right) \\
+ &\overset{\substack{32(e.2),\\33.1(b.19)}}{=} P\left(\tau_1 < \infty\right) \\
+ &\overset{\eqref{Sergio}}{=} P(\Omega_1) \\
  &\overset{33.1(b.25)}{=} 1.
  \end{align}
  $$
 
- Before proceeding, we stop to point out that, in light of $33.2(b_{n-1})$, Lemma 32(i.1) implies that $\left(Y^{\left<\!\left<n-1\right>\!\right>}\right)^{(n)}$ is a $\Omega_n/S$-Lévy process w.r.t. $P^{(n)}$, and therefore, in light of Lemma 33.1(f.10) and of Lemma 33.1(f.5), Theorem 30 yields:
+ Before proceeding, we stop to point out that, in light of Lemma $33.2(b_{n-1})$, Lemma 32(l.2) implies that $\left(Y^{\left<\!\left<n-1\right>\!\right>}\right)^{\langle n\rangle}$ is a $\Omega_n/S$-Lévy process w.r.t. $P^{(n)}$, and therefore, in light of Lemma 33.1(d.17) and of Lemma 33.1(d.10), Theorem 30 yields:
  $$
  \begin{align}
  Y^{\left<\!\left<n\right>\!\right>}&\text{ is a }\Omega_n/S\text{-Lévy process w.r.t. }P^{(n)}, \tag{2.1}\label{Coletta} \\
- \Phi^{\sigma(\nu^*)}_\infty\left(Y^{\left<\!\left<n\right>\!\right>}\right) &\subseteq \Phi^{\sigma(\nu^*)}_\infty\left(\left(Y^{\left<\!\left<n-1\right>\!\right>}\right)^{(n)}\right), \tag{2.2}\label{Suanne} \\
- \left(P^{(n)}\right)^{[Y^{\left<\!\left<n\right>\!\right>}]}_{\mathcal{R}^*_{\nu^*}} &= \left(P^{(n)}\right)^{\left[\left(Y^{\left<\!\left<n-1\right>\!\right>}\right)^{(n)}\right]}_{\mathcal{R}^*_{\nu^*}}, \tag{2.3}\label{Adria} \\
- \Phi^{\sigma(\nu^*)}_\infty(Y^{\left<\!\left<n\right>\!\right>}) &\perp_{P^{(n)}} \left(\Phi^{\sigma(\nu^*)}\left(\left(Y^{\left<\!\left<n-1\right>\!\right>}\right)^{(n)}\right)^+\right)_{\tau_n^{(n)} - \tau_{n-1}^{(n)}}. \tag{2.4}\label{Matilda}
+ \Phi^{\sigma(\nu^*)}_\infty\left(Y^{\left<\!\left<n\right>\!\right>}\right) &\subseteq \Phi^{\sigma(\nu^*)}_\infty\left(\left(Y^{\left<\!\left<n-1\right>\!\right>}\right)^{\langle n\rangle}\right), \tag{2.2}\label{Suanne} \\
+ \left(P^{(n)}\right)^{\left[Y^{\left<\!\left<n\right>\!\right>}\right]}_{\mathcal{R}^*_{\nu^*}} &= \left(P^{(n)}\right)^{\left[\left(Y^{\left<\!\left<n-1\right>\!\right>}\right)^{\langle n\rangle}\right]}_{\mathcal{R}^*_{\nu^*}}, \tag{2.3}\label{Adria} \\
+ \Phi^{\sigma(\nu^*)}_\infty(Y^{\left<\!\left<n\right>\!\right>}) &\perp_{P^{(n)}} \left(\Phi^{\sigma(\nu^*)}\left(\left(Y^{\left<\!\left<n-1\right>\!\right>}\right)^{\langle n\rangle}\right)^+\right)_{\tau_n^{(n)} - \tau_{n-1}^{(n)}}. \tag{2.4}\label{Matilda}
  \end{align}
  $$
- With these facts under our belt, we proceed with the proof.
+ With these facts in our bag, we proceed with the proof.
 
  $33.2(b_n)$ is now merely a restatement of \eqref{Coletta}.
 
- To see that $33.2(c_n)$ holds, firstly observe that Lemma 33.1(a.3) together with Lemma 33.1(a.4) imply that the right hand side of the equation is well-defined, whereas Lemma 33.1(e.3) together with Lemma 33.1(d.14) imply that the left-hand side of the equation is well-defined. The equality of the sides follows from \eqref{Adria}, since
+ To see that $33.2(c_n)$ holds, firstly observe that Lemma 33.1(a.3) together with Lemma 33.1(a.4) imply that the right hand side of the equation is well-defined, whereas Lemma 33.1(d.14) implies that the left-hand side of the equation is well-defined. The equality of the sides follows from \eqref{Adria}, since
  $$
  \begin{align}
- \left(P^{(n)}\right)^{\left[\left(Y^{\left<\!\left<n-1\right>\!\right>}\right)^{(n)}\right]}_{\mathcal{R}^*_{\nu^*}}
- &\overset{32(n.4)}{=} \left(\left(P^{(n-1)}\right)^{(n)}\right)^{\left[\left(Y^{\left<\!\left<n-1\right>\!\right>}\right)^{(n)}\right]}_{\mathcal{R}^*_{\nu^*}} \\
+ \left(P^{(n)}\right)^{\left[\left(Y^{\left<\!\left<n-1\right>\!\right>}\right)^{\langle n\rangle}\right]}_{\mathcal{R}^*_{\nu^*}}
+ &\overset{32(n.4)}{=} \left(\left(P^{(n-1)}\right)^{(n)}\right)^{\left[\left(Y^{\left<\!\left<n-1\right>\!\right>}\right)^{\langle n\rangle}\right]}_{\mathcal{R}^*_{\nu^*}} \\
  &\overset{32(i.3)}{=} \left(\left(P^{(n-1)}\right)^{(n)}\right)^{\left[Y^{\left<\!\left<n-1\right>\!\right>}\right]^{(n)}}_{\mathcal{R}^*_{\nu^*}} \\
  &\overset{32(e.3)}{=} \left(P^{(n-1)}\right)^{\left[Y^{\left<\!\left<n-1\right>\!\right>}\right]}_{\mathcal{R}^*_{\nu^*}} \\
  &\overset{33.2(c_{n-1})}{=} P^{[X]}_{\mathcal{R}^*_{\nu^*}}.
  \end{align}
  $$
 
- To see that $33.2(d_n)$ holds, firstly observe that, in light of Lemma 33.1(d.14) and of Corollary 25(c), Corollary 16(d) implies that
+ To see that $33.2(d_n)$ holds, firstly observe that Lemma 33.1(d.12) implies that both sides of the equation are well-defined. To see that the equation's sides are equal, firstly observe that, in light of Lemma 33.1(d.14) and of Corollary 25(c), Corollary 16(d) implies that
  $$
  \forall k \in \mathbb{N}_0,\ \left(P^{(k)}\right)^{\Xi_{\nu^{-1}\left((\gamma,\infty)\right)}\big|_{\mathcal{R}_{\nu^*}} \circ \left[Y^{\left<\!\left<k\right>\!\right>}\right]}_{\overline{\mathcal{B}}} = \left(\left(P^{(k)}\right)^{\left[Y^{\left<\!\left<k\right>\!\right>}\right]}_{\mathcal{R}_{\nu^*}^*}\right)^{\Xi_{\nu^{-1}\left((\gamma,\infty)\right)}\big|_{\mathcal{R}_{\nu^*}}}_{\overline{\mathcal{B}}}. \tag{2.5}\label{Lyman}
  $$
  In particular, in light of Lemma 33.1(d.4),
  $$
- \left(P^{(k)}\right)^{\Xi_{\nu^{-1}\left((\gamma,\infty)\right)}\big|_{\mathcal{R}_{\nu^*}} \circ \left[X^{\langle 0\rangle}\right]}_{\overline{\mathcal{B}}} = \left(\left(P^{(0)}\right)^{\left[X^{\langle 0\rangle}\right]}_{\mathcal{R}_{\nu^*}^*}\right)^{\Xi_{\nu^{-1}\left((\gamma,\infty)\right)}\big|_{\mathcal{R}_{\nu^*}}}_{\overline{\mathcal{B}}}. \tag{2.6}\label{Joane}
+ \left(P^{(0)}\right)^{\Xi_{\nu^{-1}\left((\gamma,\infty)\right)}\big|_{\mathcal{R}_{\nu^*}} \circ \left[X^{\langle 0\rangle}\right]}_{\overline{\mathcal{B}}} = \left(\left(P^{(0)}\right)^{\left[X^{\langle 0\rangle}\right]}_{\mathcal{R}_{\nu^*}^*}\right)^{\Xi_{\nu^{-1}\left((\gamma,\infty)\right)}\big|_{\mathcal{R}_{\nu^*}}}_{\overline{\mathcal{B}}}. \tag{2.6}\label{Joane}
  $$
 
  Therefore,
@@ -958,60 +963,44 @@ d.
  \end{align}
  $$
 
- We now turn our attention to $33.2(e_n)$. It suffices to show:
+ We now turn our attention to $33.2(e_n)$. To see that $33.2(e_n)$ holds, firstly observe that Lemma 33.1(d.12) and 33.1(d.13) ensure that the statement is meaningful. We claim that, in order to see its validity, it suffices to show:
  $$
  \begin{align}
  \sigma_{\mathcal{B}}\left(\tau^{(n)}_n - \tau^{(n)}_{n - 1}\right) &\perp_{P^{(n)}} \Phi^{\sigma(\nu^*)}_\infty\left(Y^{\left<\!\left<n\right>\!\right>}\right), \tag{2.7}\label{Ossie} \\
  \sigma_{\mathcal{B}}\left(\tau^{(n)}_n - \tau^{(n)}_{n - 1}\right) \cup \Phi^{\sigma(\nu^*)}_\infty\left(Y^{\left<\!\left<n\right>\!\right>}\right) &\perp_{P^{(n)}} \sigma_{\Omega_n}\left(\bigcup_{k = 1}^{n-1} \sigma_{\mathcal{B}}\left(\tau^{(n)}_k - \tau^{(n)}_{k - 1}\right)\right), \tag{2.8}\label{Tessa}
  \end{align}
  $$
- since then we can conclude from Theorem 21(d) that the triple
+ because then we can conclude from Theorem 21(d) that the triple
  $$
  \left(\sigma_{\Omega_n}\left(\bigcup_{k = 1}^{n-1} \sigma_{\mathcal{B}}\left(\tau^{(n)}_k - \tau^{(n)}_{k - 1}\right)\right), \sigma_{\mathcal{B}}\left(\tau^{(n)}_n - \tau^{(n)}_{n - 1}\right), \Phi^{\sigma(\nu^*)}_\infty\left(Y^{\left<\!\left<n\right>\!\right>}\right)\right)
  $$
  is $P^{(n)}$-independent, which, by Theorem 21(b), implies $33.2(e_n)$.
 
- To see that \eqref{Ossie} holds, firstly observe that Lemma 33.1(d.10) together with Corollary 23(b) imply that $\tau^{(n)}_n - \tau^{(n)}_{n - 1}$ is a $\left(\Phi^{\sigma(\nu^*)}\left(\left(Y^{\left<\!\left<n-1\right>\!\right>}\right)^{(n)}\right)\right)^+$-stopping time. This, in turn, implies that
+ To see that \eqref{Ossie} holds, firstly observe that Lemma 33.1(d.10) together with Corollary 23(b) imply that $\tau^{(n)}_n - \tau^{(n)}_{n - 1}$ is a $\left(\Phi^{\sigma(\nu^*)}\left(\left(Y^{\left<\!\left<n-1\right>\!\right>}\right)^{\langle n\rangle}\right)\right)^+$-stopping time. This, in turn, implies that
  $$
  \begin{align}
  \sigma_{\mathcal{B}}\left(\tau^{(n)}_n - \tau^{(n)}_{n - 1}\right) &\overset{8(f)}{=} \sigma_{\overline{\mathcal{B}}}\left(\tau^{(n)}_n - \tau^{(n)}_{n - 1}\right) \\
- &\overset{27(d)}{\subseteq} \left(\left(\Phi^{\sigma(\nu^*)}\left(\left(Y^{\left<\!\left<n-1\right>\!\right>}\right)^{(n)}\right)\right)^+\right)_{\tau^{(n)}_n - \tau^{(n)}_{n - 1}}, \tag{2.9}\label{Noella}
+ &\overset{27(d)}{\subseteq} \left(\left(\Phi^{\sigma(\nu^*)}\left(\left(Y^{\left<\!\left<n-1\right>\!\right>}\right)^{\langle n\rangle}\right)\right)^+\right)_{\tau^{(n)}_n - \tau^{(n)}_{n - 1}}, \tag{2.9}\label{Noella}
  \end{align}
  $$
  which yields \eqref{Ossie}, by \eqref{Matilda}.
 
  To see that \eqref{Tessa} holds, observe that Lemma 33.1(d.10) implies that
  $$
- \sigma_{\mathcal{B}}\left(\tau^{(n)}_n - \tau^{(n)}_{n - 1}\right) \overset{8(f)}{=} \sigma_{\overline{\mathcal{B}}}\left(\tau^{(n)}_n - \tau^{(n)}_{n - 1}\right) \overset{23(c)}{\subseteq} \Phi^{\sigma(\nu^*)}_\infty\left(\left(Y^{\left<\!\left<n-1\right>\!\right>}\right)^{(n)}\right). \tag{2.10}\label{Robbie}
+ \sigma_{\mathcal{B}}\left(\tau^{(n)}_n - \tau^{(n)}_{n - 1}\right) \overset{8(f)}{=} \sigma_{\overline{\mathcal{B}}}\left(\tau^{(n)}_n - \tau^{(n)}_{n - 1}\right) \overset{23(c)}{\subseteq} \Phi^{\sigma(\nu^*)}_\infty\left(\left(Y^{\left<\!\left<n-1\right>\!\right>}\right)^{\langle n\rangle}\right). \tag{2.10}\label{Robbie}
  $$
 
  Hence
  $$
  \begin{align}
- \sigma_{\mathcal{B}}\left(\tau^{(n)}_n - \tau^{(n)}_{n - 1}\right) \cup \Phi^{\sigma(\nu^*)}_\infty\left(Y^{\left<\!\left<n\right>\!\right>}\right) &\overset{\substack{\eqref{Robbie},\\\eqref{Suanne}}}{\subseteq} \Phi^{\sigma(\nu^*)}_\infty\left(\left(Y^{\left<\!\left<n-1\right>\!\right>}\right)^{(n)}\right) \\
+ \sigma_{\mathcal{B}}\left(\tau^{(n)}_n - \tau^{(n)}_{n - 1}\right) \cup \Phi^{\sigma(\nu^*)}_\infty\left(Y^{\left<\!\left<n\right>\!\right>}\right) &\overset{\substack{\eqref{Robbie},\\\eqref{Suanne}}}{\subseteq} \Phi^{\sigma(\nu^*)}_\infty\left(\left(Y^{\left<\!\left<n-1\right>\!\right>}\right)^{\langle n\rangle}\right) \\
  &\overset{32(j.3)}{=} \left(\Phi^{\sigma(\nu^*)}_\infty\left(Y^{\left<\!\left<n-1\right>\!\right>}\right)\right)^{(n)} \\
  &\overset{\hspace{-1.2cm}\substack{33.2(e_{n-1}),\\32(e.5)}}{\perp_{\left(P^{(n-1)}\right)^{(n)}}} \left(\sigma_{\Omega_{n-1}}\left(\bigcup_{k = 1}^{n-1} \sigma_{\mathcal{B}}\left(\tau^{(n-1)}_k - \tau^{(n-1)}_{k - 1}\right)\right)\right)^{(n)} \\
  &\overset{33.1(f.3)}{=} \sigma_{\Omega_n}\left(\bigcup_{k = 1}^{n-1} \sigma_{\mathcal{B}}\left(\tau^{(n)}_k - \tau^{(n)}_{k - 1}\right)\right).
  \end{align}
  $$
 
- Finally to prove $33.2(f_n)$ we assume, w.l.g., that $n \geq 1$. If $n = 1$, $33.2(f_n)$ follows from Corollary 16(g), since
- $$
- \sigma_{\Omega_n}\left(\bigcup_{k = 1}^{n-1} \sigma_{\mathcal{B}}\left(\tau^{(n)}_k - \tau^{(n)}_{k - 1}\right)\right) = \sigma_{\Omega_n}(\emptyset) = \{\emptyset, \Omega_n\}.
- $$
-
- So suppose that $n > 1$. Then
-
-  $$
-  \begin{align}
- \sigma_{\mathcal{B}}\left(\tau^{(n)}_n-\tau^{(n)}_{n-1}\right)&\overset{\eqref{Noella}}{\subseteq} \left(\left(\Phi^{\sigma(\nu^*)}\left(\left(Y^{\left<\!\left<n-1\right>\!\right>}\right)^{(n)}\right)\right)^+\right)_{\tau^{(n)}_n - \tau^{(n)}_{n - 1}} \\
-  &\overset{27(a)}{=} \Phi^{\sigma(\nu^*)}_\infty\left(\left(Y^{\left<\!\left<n-1\right>\!\right>}\right)^{(n)}\right)^+ \\
-  &\overset{18(d)}{=} \Phi^{\sigma(\nu^*)}_\infty\left(\left(Y^{\left<\!\left<n-1\right>\!\right>}\right)^{(n)}\right) \\
-  &\overset{32(j.3)}{=} \left(\Phi^{\sigma(\nu^*)}_\infty\left(Y^{\left<\!\left<n-1\right>\!\right>}\right)\right)^{(n)} \\
-  &\overset{\hspace{-1.2cm}\substack{33.2(e_{n-1}),\\32(e.5)}}{\perp_{\left(P^{(n-1)}\right)^{(n)}}} \left(\sigma_{\Omega_{n-1}}\left(\bigcup_{k=1}^{n-1}\sigma_{\mathcal{B}}\left(\tau^{(n-1)}_k-\tau^{(n-1)}_{k-1}\right)\right)\right)^{(n)} \\
-  &\overset{33.1(f.3)}{=} \sigma_{\Omega_n}\left(\bigcup_{k=1}^{n-1} \sigma_{\mathcal{B}}\left(\tau^{(n)}_k-\tau^{(n)}_{k-1}\right)\right).
-  \end{align}
-  $$
+ Finally $33.2(f_n)$ follows from \eqref{Tessa}.
 
  ***End of Proof of Lemma 33.2***
 
