@@ -666,6 +666,7 @@ d.
   \left<X^{\langle n\rangle}\right>&\text{ is }\Phi^{\sigma(\nu^*)}_\infty\left(X^{\langle n\rangle}\right)\otimes\sigma\left(\mathcal{E}_+\right)/\sigma(\nu^*)\text{-measurable}. \tag{1.15}\label{Korey}
   \end{align}
   $$
+  (Note that the outer angular brackets in the expression $\left<X^{\langle n\rangle}\right>$ appearing in eq. \eqref{Korey} are the ones introduced in Definition 19(h).)
 
   \eqref{Jeremy} holds, since
   $$
@@ -1014,17 +1015,21 @@ d.
 
  ***Proof of Lemma 33.3***
 
- a.
+ a. Firstly observe that, since
+ $$
+ \Omega_\infty \overset{33.1(e.2)}{\in} \mathcal{F}^{(\infty)} \overset{33.1(e.3)}{\subseteq} \mathcal{F} \overset{33.1(a.3)}{\subseteq} \mathcal{A},
+ $$
+ the left-hand side of the equation is well-defined. Now,
  $$
  P\left(\Omega_\infty\right) \overset{\eqref{Deloras}}{=} P\left(\bigcap_{n = 0}^\infty \Omega_n\right) \overset{33.1(c.2)}{=} \lim_{n \rightarrow \infty} P\left(\Omega_n\right) \overset{33.2(a)}{=} 1.
  $$
 
- b. Let $n \in \mathbb{N}_1$. Then
+ b. Let $n \in \mathbb{N}_1$. Firstly note that Lemma 33.1(d.12) ensures both sides of the equation are well-defined. Now,
  $$
  \begin{align}
  \left(P^{(\infty)}\right)^{\tau^{(\infty)}_n-\tau^{(\infty)}_{n-1}}_{\mathcal{B}} &\overset{16(c)}{=} \left(P^{(\infty)}\right)^{\tau^{(\infty)}_n-\tau^{(\infty)}_{n-1}}_{\overline{\mathcal{B}}}\\
  &\overset{32(n.4)}{=} \left(\left(P^{(n-1)}\right)^{(\infty)}\right)^{\tau^{(\infty)}_n-\tau^{(\infty)}_{n-1}}_{\overline{\mathcal{B}}} \\
- &\overset{33.1(e.2)}{=} \left(\left(P^{(n-1)}\right)^{(\infty)}\right)^{\left(\tau^{(n-1)}_n-\tau^{(n-1)}_{n-1}\right)^{(\infty)}}_{\overline{\mathcal{B}}} \\
+ &\overset{33.1(f.2)}{=} \left(\left(P^{(n-1)}\right)^{(\infty)}\right)^{\left(\tau^{(n-1)}_n-\tau^{(n-1)}_{n-1}\right)^{(\infty)}}_{\overline{\mathcal{B}}} \\
  &\overset{32(e.3)}{=} \left(P^{(n-1)}\right)^{\left(\tau^{(n-1)}_n-\tau^{(n-1)}_{n-1}\right)}_{\overline{\mathcal{B}}} \\
  &\overset{33.2(d)}{=} \left(P^{(0)}\right)^{\tau_1^{(0)}}_{\overline{\mathcal{B}}} \\
  &\overset{32(e.3)}{=} \left(\left(P^{(0)}\right)^{(\infty)}\right)^{\left(\tau_1^{(0)}\right)^{(\infty)}}_{\overline{\mathcal{B}}} \\
@@ -1034,7 +1039,7 @@ d.
  \end{align}
  $$
 
- c. Let $n \in \{2, 3, \dots\}$. Then
+ c. Firstly note that Lemma 33.1(d.12) ensures that the statement is meaningful. Let $n \in \{2, 3, \dots\}$. Then
  $$
  \begin{align}
  \sigma_{\mathcal{B}}\left(\tau^{(\infty)}_n-\tau^{(\infty)}_{n-1}\right) &\overset{33.1(f.2)}{=} \sigma_{\mathcal{B}}\left(\left(\tau^{(n)}_n-\tau^{(n)}_{n-1}\right)^{(\infty)}\right) \\
