@@ -141,9 +141,9 @@ c.
   $$
   \tau_m^{(n)} = \inf\left\{t\in\left[\tau_m^{(n)},\infty\right)\ \big|\!:\ \nu\left(X^{\langle n\rangle}_t-X^{\langle n\rangle}_{\veebar\circ\tau_m^{(n)}}\right) > \gamma \right\}.
   $$
-  In particular, if $m\leq n$,
+  In particular,
   $$
-  \tau_m^{(n)} = \inf\left\{t\in\left[\tau_m^{(n)},\infty\right)\ \big|\!:\ \nu\left(X^{\langle n\rangle}_t-X^{\langle n\rangle}_{\tau_m^{(n)}}\right) > \gamma \right\}.
+  \tau_m^{(m)} = \inf\left\{t\in\left[\tau_m^{(m)},\infty\right)\ \big|\!:\ \nu\left(X^{\langle m\rangle}_t-X^{\langle m\rangle}_{\tau_m^{(m)}}\right) > \gamma \right\}.
   $$
 
 d.
@@ -182,45 +182,50 @@ d.
  \tau_1^{(n)} = \Xi_{\nu^{-1}\left((\gamma,\infty)\right)} \circ \left[X^{\langle n\rangle}\right].
  $$
 
- 8. Let $m \in \mathbb{N}_0$, let $n\in\overline{\mathbb{N}}_0$ be such that $m \leq n$. Then, for every $\omega \in \Omega_n$,
+ 8. Let $m \in \mathbb{N}_0$, and let $n\in\overline{\mathbb{N}}_0$ be such that $m \leq n$. Then, for every $\omega \in \Omega_n$,
  $$
  \tau_{m+1}^{(n)}(\omega)-\tau_m^{(n)}(\omega) = \inf\ \left(\left(\nu\circ\!\circ \left[\left(Y^{\overline{m}}\right)^{\langle n\rangle}\right]\right)(\omega)\right)^{-1}((\gamma,\infty)).
  $$
 
- In particular, if $m = n$,
+ In particular,
  $$
- \tau_{n+1}^{(n)}(\omega)-\tau_n^{(n)}(\omega) = \inf\ \left(\left(\nu\circ\!\circ\left[Y^{\overline{n}}\right]\right)(\omega)\right)^{-1}((\gamma,\infty)).
+ \tau_{m+1}^{(m)}(\omega)-\tau_m^{(m)}(\omega) = \inf\ \left(\left(\nu\circ\!\circ\left[Y^{\overline{m}}\right]\right)(\omega)\right)^{-1}((\gamma,\infty)).
  $$
 
- 9. For every $k, m\in\mathbb{N}_0$ such that $k < m$, and for every $n\in\overline{\mathbb{N}}_1$ such that $m\leq n$, $\tau_k^{(n)}<\tau_m^{(n)}$.
-
- 10. For every $m\in\mathbb{N}_1$, and for every $n\in\overline{\mathbb{N}}_1$ such that $m \leq n$, and such that $\Omega_n\neq\emptyset$, $\tau_{m+1}^{(n)} - \tau_m^{(n)}$ is a weak $\Phi^{\sigma(\nu^*)}\left(\left(Y^{\overline{m}}\right)^{\langle n\rangle}\right)$-stopping-time. In particular, $\tau_{m+1}^{(m)} - \tau_m^{(m)}$ is a weak $\Phi^{\sigma(\nu^*)}\left(Y^{\overline{m}}\right)$-stopping-time.
-
- 11. For every $n\in\mathbb{N}_0$ such that $\Omega_n\neq\emptyset$ and such that $\tau_n^{(n)}$ is $\mathcal{F}^{(n)}/\overline{\mathcal{B}}$-measurable,
+ 9. Let $m \in \mathbb{N}_0$, and let $n \in \overline{\mathbb{N}}_1$ be such that $m < n$. Then, for every $\omega \in \Omega_n$,
  $$
- \Phi^{\sigma(\nu^*)}_\infty\left(Y^{\overline{n}}\right) \subseteq \mathcal{F}^{(n)}.
-$$
+ \left(\nu\circ\!\circ\left[\left(Y^m\right)^{\langle n\rangle}\right]\right)(\omega)\left(\tau_{m+1}^{(n)}(\omega)-\tau_m^{(n)}(\omega)\right) \geq \gamma.
+ $$
 
- 12. For all $n \in \overline{\mathbb{N}}_0$ such that $\Omega_n \neq \emptyset$, and for all $m \in \mathbb{N}_0$ such that $m \leq n+1$, $\tau_m^{(n)}$ is $\mathcal{F}^{(n)}/\overline{\mathcal{B}}$-measurable. Moreover, if $m \leq n$, then $\tau_m^{(n)}$ is $\mathcal{F}^{(n)}/\mathcal{B}$-measurable.
+ 10. For every $k, m\in\mathbb{N}_0$ such that $k < m$, and for every $n\in\overline{\mathbb{N}}_1$ such that $m\leq n$, $\tau_k^{(n)}<\tau_m^{(n)}$.
 
- 13. For every $n\in\mathbb{N}_0$ such that $\Omega_n\neq\emptyset$,
+ 11. For every $m\in\mathbb{N}_1$, and for every $n\in\overline{\mathbb{N}}_1$ such that $m \leq n$, and such that $\Omega_n\neq\emptyset$, $\tau_{m+1}^{(n)} - \tau_m^{(n)}$ is a weak $\Phi^{\sigma(\nu^*)}\left(\left(Y^{\overline{m}}\right)^{\langle n\rangle}\right)$-stopping-time. In particular, $\tau_{m+1}^{(m)} - \tau_m^{(m)}$ is a weak $\Phi^{\sigma(\nu^*)}\left(Y^{\overline{m}}\right)$-stopping-time.
+
+ 12. For every $n\in\mathbb{N}_0$ such that $\Omega_n\neq\emptyset$ and such that $\tau_n^{(n)}$ is $\mathcal{F}^{(n)}/\overline{\mathcal{B}}$-measurable,
  $$
  \Phi^{\sigma(\nu^*)}_\infty\left(Y^{\overline{n}}\right) \subseteq \mathcal{F}^{(n)}.
-$$
+ $$
 
- 14. For every $n\in\mathbb{N}_0$ such that $\Omega_n\neq\emptyset$, $\left[Y^{\overline{n}}\right]$ is $\mathcal{F}^{(n)}/\mathcal{R}_{\nu^*}^*$-measurable.
+ 13. For all $n \in \overline{\mathbb{N}}_0$ such that $\Omega_n \neq \emptyset$, and for all $m \in \mathbb{N}_0$ such that $m \leq n+1$, $\tau_m^{(n)}$ is $\mathcal{F}^{(n)}/\overline{\mathcal{B}}$-measurable. Moreover, if $m \leq n$, then $\tau_m^{(n)}$ is $\mathcal{F}^{(n)}/\mathcal{B}$-measurable.
 
- 15. For all $m \in \mathbb{N}_1$, for all $n \in \overline{\mathbb{N}}_1$ such that $m \leq n$, and for all $t \in [0,\infty)$,
+ 14. For every $n\in\mathbb{N}_0$ such that $\Omega_n\neq\emptyset$,
+ $$
+ \Phi^{\sigma(\nu^*)}_\infty\left(Y^{\overline{n}}\right) \subseteq \mathcal{F}^{(n)}.
+ $$
+
+ 15. For every $n\in\mathbb{N}_0$ such that $\Omega_n\neq\emptyset$, $\left[Y^{\overline{n}}\right]$ is $\mathcal{F}^{(n)}/\mathcal{R}_{\nu^*}^*$-measurable.
+
+ 16. For all $m \in \mathbb{N}_1$, for all $n \in \overline{\mathbb{N}}_1$ such that $m \leq n$, and for all $t \in [0,\infty)$,
  $$
  \left(X^{\langle m-1\rangle}_{\tau_m^{(m-1)}\mathbb{1}^{\Omega_{m-1}}_{\Omega_m} + t}\right)^{(n)} = X^{\langle n\rangle}_{\tau_m^{(n)} + t}.
  $$
 
- 16. For all $m \in \mathbb{N}_1$, for all $n \in \overline{\mathbb{N}}_1$ such that $m \leq n$, and for all $t \in [0,\infty)$,
+ 17. For all $m \in \mathbb{N}_1$, for all $n \in \overline{\mathbb{N}}_1$ such that $m \leq n$, and for all $t \in [0,\infty)$,
  $$
  \left(Y^{\overline{m-1}}_{\left(\tau^{(m-1)}_m\mathbb{1}^{\Omega_{m-1}}_{\Omega_m} - \tau^{(m-1)}_{m-1}\right) + t}\right)^{(n)} = \left(Y^{\overline{m-1}}\right)^{\langle n\rangle}_{\left(\tau^{(n)}_m-\tau^{(n)}_{m-1}\right) + t}.
  $$
 
- 17. For every $n \in \mathbb{N}_1$,
+ 18. For every $n \in \mathbb{N}_1$,
  $$
  Y^{\overline{n}} = \Theta^{\left(\Omega_n,\mathbf{V}\right)}\left(\left(Y^{\overline{n-1}}\right)^{\langle n\rangle},\tau^{(n)}_n-\tau^{(n)}_{n-1}\right).
  $$
@@ -548,101 +553,79 @@ d.
   \end{align}
   $$
 
- 9. Let $k,m\in\mathbb{N}_0$ be such that $k < m$, and let $n\in\overline{\mathbb{N}}_1$ be such that $m\leq n$. Denote by $I$ the set of all $i \in \mathbb{N}_1$, such that
-    $$
-    \forall j \in \mathbb{N}_0,\ \tau_j^{(j+i)} < \tau_{j+i}^{(j+i)}. \tag{1.4}\label{Yoko}
-    $$
+ 9. Let $m \in \mathbb{N}_0$, let $n \in \overline{\mathbb{N}}_1$ be such that $m < n$, and let $\omega \in \Omega_n$. Since
+ $$
+ \inf\ \left(\left(\nu\circ\!\circ\ \left[Y^{\overline{m}}\right]\right)(\omega)\right)^{-1}((\gamma,\infty)) \overset{33.1(d.8)}{=} \tau_{m+1}^{(n)}(\omega)-\tau_m^{(n)}(\omega)\overset{33.1(c.4)}{<} \infty,
+ $$
+ we have
+ $$
+ \left(\left(\nu\circ\!\circ\ \left[Y^{\overline{m}}\right]\right)(\omega)\right)^{-1}((\gamma,\infty)) \overset{1(i)}{\neq} \emptyset.
+ $$
+ Since also
+ $$
+ \mathrm{Im}\left(\nu\circ\!\circ\ [Y^{\overline{m}}]\right) \overset{33.1(d.3)}{\subseteq} \mathcal{G}_{\mathcal{E}} \overset{13(c)}{\subseteq} \mathcal{R}_{\mathcal{E}},
+ $$
+ Corollary 14(a) implies that
+ $$
+ \inf\ \left(\left(\nu\circ\!\circ\ \left[Y^{\overline{m}}\right]\right)(\omega)\right)^{-1}((\gamma,\infty)) \in \left(\left(\nu\circ\!\circ\ \left[Y^{\overline{m}}\right]\right)(\omega)\right)^{-1}([\gamma,\infty)). \tag{1.a}\label{Candis}
+ $$
+ Therefore,
+ $$
+ \begin{align}
+ \left(\nu\circ\!\circ\ \left[Y^{\overline{m}}\right]\right)(\omega)\left(\tau_{m+1}^{(n)}(\omega)-\tau_m^{(n)}(\omega)\right) &\overset{33.1(d.8)}{=} \left(\nu\circ\!\circ\ \left[Y^{\overline{m}}\right]\right)(\omega)\left(\inf\ \left(\left(\nu\circ\!\circ\ \left[Y^{\overline{m}}\right]\right)(\omega)\right)^{-1}((\gamma,\infty))\right) \\
+ &\overset{\eqref{Candis}}{\geq} \gamma.
+ \end{align}
+ $$
 
-    It suffices to show that $I = \mathbb{N}_1$, since then, in particular, for
-    $$
-    \begin{align}
-    j &:= k, \\
-    i &:= m-k
-    \end{align}
-    $$
-    we obtain
-    $$
-    \tau_k^{(n)} \overset{32(n.3)}{=} \left(\tau_k^{(m)}\right)^{(n)}\overset{\eqref{Yoko}}{<}\left(\tau_m^{(m)}\right)^{(n)}\overset{32(n.3)}{=}\tau_m^{(n)},
-    $$
-    as desired.
+ 10. Let $k,m\in\mathbb{N}_0$ be such that $k < m$, and let $n\in\overline{\mathbb{N}}_1$ be such that $m\leq n$. Denote by $I$ the set of all $i \in \mathbb{N}_1$, such that
+  $$
+  \forall j \in \mathbb{N}_0,\ \tau_j^{(j+i)} < \tau_{j+i}^{(j+i)}. \tag{1.4}\label{Yoko}
+  $$
 
-    We shall proceed by induction. Let $i \in \mathbb{N}_1$. Firstly, suppose that $i = 1$. Let $j \in \mathbb{N}_0$. Define
-   $$
-   f := \nu\circ\!\circ\ \left[Y^{\overline{j}}\right]. \tag{1.6}\label{Maxima}
-   $$
+  It suffices to show that $I = \mathbb{N}_1$, since then, in particular, for
+  $$
+  \begin{align}
+  j &:= k, \\
+  i &:= m-k
+  \end{align}
+  $$
+  we obtain
+  $$
+  \tau_k^{(n)} \overset{32(n.3)}{=} \left(\tau_k^{(m)}\right)^{(n)}\overset{\eqref{Yoko}}{<}\left(\tau_m^{(m)}\right)^{(n)}\overset{32(n.3)}{=}\tau_m^{(n)},
+  $$
+  as desired.
 
-    We observe that, by Lemma 33.1(d.3),
-    $$
-    \mathrm{Im}(f) \subseteq \mathcal{G}_{\mathcal{E}}. \tag{1.7}\label{Ena}
-    $$
+  We shall proceed by induction. Let $i \in \mathbb{N}_1$. Firstly, suppose that $i = 1$. Let $j \in \mathbb{N}_0$. In light of Lemma 33.1(c.1), it suffices to show that
+  $$
+  \tau_j^{(j+i)} \neq \tau_{j+i}^{(j+i)}. \tag{1.a}\label{Belinda}
+  $$
 
-    Now let $\omega \in \Omega_{j+i}$, and define
-    $$
-    T := \left(f(\omega)\right)^{-1}\left([\gamma, \infty)\right). \tag{1.8}\label{Hoyt}
-    $$
+  Let $\omega \in \Omega_{j+i}$. Then
+  $$
+  \begin{align}
+  \left(\nu\circ\!\circ\ \left[Y^{\overline{j}}\right]\right)(\omega)\left(\tau_{j+i}^{(j+i)}(\omega) - \tau_j^{(j+i)}(\omega)\right) &\overset{33.1(d.9)}{\geq} \gamma \\
+  &> 0 \\
+  &= \nu(\mathbf{0}) \\
+  &= \nu\left(\mathbf{0}_{\Omega_j}(\omega)\right) \\
+  &\overset{33.1(d.5)}{=} \nu\left(Y^{\overline{j}}_0(\omega)\right) \\
+  &\overset{20(o)}{=} \left(\nu\circ\!\circ\ \left[Y^{\overline{j}}\right]\right)(\omega)(0),
+  \end{align}
+  $$
+  whence $\tau_{j+i}^{(j+i)}(\omega) - \tau_j^{(j+i)}(\omega) \neq 0$, as desired.
 
-    We claim that
-    $$
-    \inf\ T \leq \tau_{j+1}^{(j+1)}(\omega) - \tau_{j}^{(j)}(\omega). \tag{1.9}\label{Lael}
-    $$
-    Indeed,
-    $$
-    \begin{align}
-    \inf T &\overset{\eqref{Hoyt}}{=} \inf\ \left(f(\omega)\right)^{-1}\left([\gamma, \infty)\right) \\
-    &\leq \inf\ \left(f(\omega)\right)^{-1}\left((\gamma,\infty)\right) \\
-    &\overset{\eqref{Maxima}}{=} \inf\ \left(\left(\nu\circ\!\circ\ \left[Y^{\overline{j}}\right]\right)(\omega)\right)^{-1}\left((\gamma,\infty)\right) \\
-    &\overset{33.1(d.8)}{=} \tau_{j+1}^{(j)}(\omega) - \tau_{j}^{(j)}(\omega) \\
-    &\overset{\omega \in \Omega_{j+i}}{=} \left(\tau_{j+1}^{(j)}\right)^{(j+1)}(\omega) - \tau_{j}^{(j)}(\omega) \\
-    &\overset{32(n.3)}{=} \tau_{j+1}^{(j+1)}(\omega) - \tau_{j}^{(j)}(\omega).
-    \end{align}
-    $$
+  Next, suppose that $i > 1$ and that $i - 1 \in I$, and let $j \in \mathbb{N}_0$. Then
+  $$
+  \begin{align}
+  \tau_j^{(j+i)} &\overset{32(n.3)}{=} \left(\tau_j^{\left(j+(i-1)\right)}\right)^{(j+i)} \\
+  &\overset{i-1 \in I}{<} \left(\tau_{j+(i-1)}^{\left(j+(i-1)\right)}\right)^{(j+i)} \\
+  &\overset{32(n.3)}{<} \tau_{j+(i-1)}^{(j+i)} \\
+  &\overset{1 \in I}{<} \tau_{j+i}^{(j+i)}.
+  \end{align}
+  $$
 
-    This implies, by Lemma 33.1(c.4), that $\inf T < \infty$, and hence, by Notation 1(i), that $T \neq \emptyset$. In light of this and of \eqref{Ena}, Lemma 14(a) yields that
-    $$
-    \inf\ T \in T. \tag{1.10}\label{Jared}
-    $$
-    Therefore
-    $$
-    \begin{align}
-    f(\omega)(\inf\ T) &\overset{\eqref{Jared}}{\geq} \gamma \\
-    &> 0 \\
-    &= \nu(\mathbf{0}) \\
-    &= \nu\left(\mathbf{0}_{\Omega_j}(\omega)\right) \\
-    &\overset{33.1(d.5)}{=} \nu\left(Y^{\overline{j}}_0(\omega)\right) \\
-    &\overset{20(o)}{=} \left(\nu\circ\!\circ\ \left[Y^{\overline{j}}\right]\right)(\omega)(0) \\
-    &\overset{\eqref{Maxima}}{=} f(\omega)(0).
-    \end{align}
-    $$
-    Therefore $\inf\ T \neq 0$, which, since \eqref{Ena} implies that $f(\omega)$ is a function with domain $[0,\infty)$, translates to
-    $$
-    \inf\ T > 0. \tag{1.11}\label{Hong}
-    $$
+ 11. Follows from Corollary 25(d) in light of Lemma 33.1(d.6), Lemma 33.1(d.2), and the fact that, by Corollary 12(a), $\nu^{-1}\left((\gamma,\infty)\right) \in \nu^*$.
 
-    Hence,
-    $$
-    \begin{align}
-    \tau_j^{(j+i)}(\omega) &\overset{32(n.3)}{=} \left(\tau_j^{(j)}\right)^{(j+1)}(\omega) \\
-    &= \tau_{j}^{(j)}(\omega) \\
-    &\overset{\eqref{Hong}}{<} \tau_{j}^{(j)}(\omega) + \inf T \\
-    &\overset{\eqref{Lael}}{\leq} \tau_j^{(j)}(\omega) + \left(\tau_{j+1}^{(j+i)}(\omega) - \tau_j^{(j)}(\omega)\right) \\
-    &= \tau_{j+1}^{(j+i)}(\omega).
-    \end{align}
-    $$
-    Since $\omega$ was chosen arbitrarily from $\Omega_{j+i}$, this proves that $\tau_j^{(j+i)} < \tau_{j+i}^{(j+i)}$. Since $j$ was chosen arbitrarily from $\mathbb{N}_0$, this proves \eqref{Yoko}, which shows that $i\in I$.
-
-    Next, suppose that $i > 1$, and that $i - 1 \in I$. Let $j \in \mathbb{N}_0$. Then
-    $$
-    \begin{align}
-    \tau_j^{(j+i)} &\overset{32(n.3)}{=} \left(\tau_j^{\left(j+(i-1)\right)}\right)^{(j+i)} \\
-    &\overset{i-1 \in I}{<} \left(\tau_{j+(i-1)}^{\left(j+(i-1)\right)}\right)^{(j+i)} \\
-    &\overset{32(n.3)}{<} \tau_{j+(i-1)}^{(j+i)} \\
-    &\overset{1 \in I}{<} \tau_{j+i}^{(j+i)}.
-    \end{align}
-    $$
-
- 10. Follows from Corollary 25(d) in light of Lemma 33.1(d.6), Lemma 33.1(d.2), and the fact that, by Corollary 12(a), $\nu^{-1}\left((\gamma,\infty)\right) \in \nu^*$.
-
- 11. Let $n\in\mathbb{N}_0$ be such that $\Omega_n\neq\emptyset$ and such that
+ 12. Let $n\in\mathbb{N}_0$ be such that $\Omega_n\neq\emptyset$ and such that
   $$
   \tau_n^{(n)}\text{ is }\mathcal{F}^{(n)}/\overline{\mathcal{B}}\text{-measurable}. \tag{1.12}\label{Kurt}
   $$
@@ -676,7 +659,7 @@ d.
 
   \eqref{Korey} follows from Corollary 20(i), since, by Corollary 20(h), $X^{\langle n\rangle}$ is $\Phi^{\sigma(\nu^*)}\left(X^{\langle n\rangle}\right)/\sigma(\nu^*)$-progressively measurable.
 
- 12. Denote by $I$ the set of all $n \in \overline{\mathbb{N}}_0$ such that, if $\Omega_n \neq \emptyset$, then,
+ 13. Denote by $I$ the set of all $n \in \overline{\mathbb{N}}_0$ such that, if $\Omega_n \neq \emptyset$, then,
   $$
   \forall m \in \mathbb{N}_0,\ m\leq n+1 \implies\ \tau_m^{(n)}\text{ is }\mathcal{F}^{(n)}/\overline{\mathcal{B}}\text{-measurable}. \tag{1.16}\label{Ozella}
   $$
@@ -698,12 +681,12 @@ d.
   $$
 
   Let $m \in \{0, 1, 2, \dots, n+1\}$. We need to show that $\tau_m^{(n)}$  is $\mathcal{F}^{(n)}/\overline{\mathcal{B}}$-measurable. If $m \leq n$, we have
- $$
- \sigma_{\overline{\mathcal{B}}}\left(\tau_m^{(n)}\right) \overset{32(n.3)}{=} \sigma_{\overline{\mathcal{B}}}\left(\left(\tau_m^{(n-1)}\right)^{(n)}\right) \overset{33.1(d.5)}{=} \left(\sigma_{\overline{\mathcal{B}}}\left(\tau_m^{(n-1)}\right)\right)^{(n)} \overset{\substack{\eqref{Joaquin},\\32(a.6)}}{\subseteq} \left(\mathcal{F}^{(n-1)}\right)^{(n)} \overset{32(n.2)}{=} \mathcal{F}^{(n)},
- $$
- as desired. So suppose that $m = n+1$. Then
   $$
-  \sigma_{\overline{\mathcal{B}}}\left(\tau_{n+1}^{(n)} - \tau_n^{(n)}\right) \overset{\substack{33.1(d.10),\\23(c)}}{\subseteq} \Phi^{\sigma(\nu^*)}_\infty\left(Y^{\overline{n}}\right) \overset{33.1(d.11)}{\subseteq} \mathcal{F}^{(n)},
+  \sigma_{\overline{\mathcal{B}}}\left(\tau_m^{(n)}\right) \overset{32(n.3)}{=} \sigma_{\overline{\mathcal{B}}}\left(\left(\tau_m^{(n-1)}\right)^{(n)}\right) \overset{33.1(d.5)}{=} \left(\sigma_{\overline{\mathcal{B}}}\left(\tau_m^{(n-1)}\right)\right)^{(n)} \overset{\substack{\eqref{Joaquin},\\32(a.6)}}{\subseteq} \left(\mathcal{F}^{(n-1)}\right)^{(n)} \overset{32(n.2)}{=} \mathcal{F}^{(n)},
+  $$
+  as desired. So suppose that $m = n+1$. Then
+  $$
+  \sigma_{\overline{\mathcal{B}}}\left(\tau_{n+1}^{(n)} - \tau_n^{(n)}\right) \overset{\substack{33.1(d.11),\\23(c)}}{\subseteq} \Phi^{\sigma(\nu^*)}_\infty\left(Y^{\overline{n}}\right) \overset{33.1(d.12)}{\subseteq} \mathcal{F}^{(n)},
   $$
   so that
   $$
@@ -723,11 +706,11 @@ d.
 
   Finally, let $m \in \mathbb{N}_0$ and let $n \in \overline{\mathbb{N}}_0$ be such that $m \leq n$ and such that $\Omega_n \neq \emptyset$. We have shown that $\tau_m^{(n)}$ is $\mathcal{F}^{(n)}/\overline{\mathcal{B}}$-measurable. Therefore, in light of Lemma 33.1(c.4), Corollary 8(f) implies that $\tau_m^{(n)}$ is $\mathcal{F}^{(n)}/\mathcal{B}$-measurable.
 
- 13. Follows from Lemma 33.2(c.6) together with Lemma 33.2(c.7).
+ 14. Follows from Lemma 33.2(c.6) together with Lemma 33.2(c.7).
 
- 14. Let $n \in \mathbb{N}_0$ be such that $\Omega_n \neq \emptyset$. In light of Lemma 33.1(d.13), Corollary 20(e) implies that $\left[Y^{\overline{n}}\right]$ is $\mathcal{F}^{(n)}/\otimes_{[0,\infty)}\sigma(\nu^*)$-measurable. The result now follows from Corollary 8(f), in light of Lemma 33.1(d.2) and of Notation 13(d).
+ 15. Let $n \in \mathbb{N}_0$ be such that $\Omega_n \neq \emptyset$. In light of Lemma 33.1(d.14), Corollary 20(e) implies that $\left[Y^{\overline{n}}\right]$ is $\mathcal{F}^{(n)}/\otimes_{[0,\infty)}\sigma(\nu^*)$-measurable. The result now follows from Corollary 8(f), in light of Lemma 33.1(d.2) and of Notation 13(d).
 
- 15. Let $m \in \mathbb{N}_1$, let $n \in \overline{\mathbb{N}}_1$ be such that $m \leq n$, and let $t \in [0,\infty)$. Then
+ 16. Let $m \in \mathbb{N}_1$, let $n \in \overline{\mathbb{N}}_1$ be such that $m \leq n$, and let $t \in [0,\infty)$. Then
    $$
   \begin{align}
   \left(X^{\langle m-1\rangle}_{\tau_m^{(m-1)}\mathbb{1}^{\Omega_{m-1}}_{\Omega_m}+t}\right)^{(n)} &= \left(X^{\langle m-1\rangle}_{\left(\tau_m^{(m-1)}+t\right)\mathbb{1}^{\Omega_{m-1}}_{\Omega_m}}\right)^{(n)} \\
@@ -743,7 +726,7 @@ d.
   \end{align}
   $$
 
- 16. Let $m \in \mathbb{N}_1$, let $n \in \overline{\mathbb{N}}_1$ be such that $m \leq n$, and let $t \in [0,\infty)$. Then
+ 17. Let $m \in \mathbb{N}_1$, let $n \in \overline{\mathbb{N}}_1$ be such that $m \leq n$, and let $t \in [0,\infty)$. Then
   $$
   \begin{align}
   \left(Y^{\overline{m-1}}_{\left(\tau^{(m-1)}_m\mathbb{1}^{\Omega_{m-1}}_{\Omega_m} - \tau^{(m-1)}_{m-1}\right) + t}\right)^{(n)} &\overset{32(k.1)}{=} \left(Y^{\overline{m-1}}\right)^{\langle n\rangle}_{\left(\left(\tau^{(m-1)}_n\mathbb{1}^{\Omega_{m-1}}_{\Omega_m} - \tau^{(m-1)}_{m-1}\right) + t\right)^{(n)}} \\
@@ -757,18 +740,18 @@ d.
   \end{align}
   $$
 
- 17. Let $n \in \mathbb{N}_1$ and let $t\in[0,\infty)$. Then
+ 18. Let $n \in \mathbb{N}_1$ and let $t\in[0,\infty)$. Then
   $$
   \begin{align}
   Y^{\overline{n}}_t &\overset{33.1(d.1)}{=} \Theta^{(\Omega_n,V)}_t(X^{\langle n\rangle},\tau_n^{(n)}) \\
   &\overset{19(k)}{=} X^{\langle n\rangle}_{\tau^{(n)}_n + t} - X^{\langle n\rangle}_{\tau^{(n)}_n} \\
-  &\overset{33.1(d.15)}{=} \left(X^{\langle n-1\rangle}_{\tau_n^{(n-1)}\mathbb{1}^{\Omega_{n-1}}_{\Omega_n}+t}\right)^{(n)} - \left(X^{\langle n-1\rangle}_{\tau^{(n-1)}_n\mathbb{1}^{\Omega_{n-1}}_{\Omega_n}}\right)^{(n)} \\
+  &\overset{33.1(d.16)}{=} \left(X^{\langle n-1\rangle}_{\tau_n^{(n-1)}\mathbb{1}^{\Omega_{n-1}}_{\Omega_n}+t}\right)^{(n)} - \left(X^{\langle n-1\rangle}_{\tau^{(n-1)}_n\mathbb{1}^{\Omega_{n-1}}_{\Omega_n}}\right)^{(n)} \\
   &\overset{32(f.2)}{=} \left(X^{\langle n-1\rangle}_{\tau_n^{(n-1)}\mathbb{1}^{\Omega_{n-1}}_{\Omega_n}+t} - X^{\langle n-1\rangle}_{\tau^{(n-1)}_n\mathbb{1}^{\Omega_{n-1}}_{\Omega_n}}\right)^{(n)} \\
   &= \left(\left(X^{\langle n-1\rangle}_{\tau_{n-1}^{(n-1)} + \left(\left(\tau_n^{(n-1)}\mathbb{1}^{\Omega_{n-1}}_{\Omega_n}-\tau_{n-1}^{(n-1)}\right)+t\right)} - X_{\tau_{n-1}^{(n-1)}}^{\langle n-1\rangle}\right) - \left(X^{\langle n-1\rangle}_{\tau_{(n-1)}^{(n-1)}+\left(\tau^{(n-1)}_n\mathbb{1}^{\Omega_{n-1}}_{\Omega_n}-\tau_{n-1}^{(n-1)}\right)}-X_{\tau_{n-1}^{(n-1)}}^{\langle n-1\rangle}\right)\right)^{(n)}\\
   &\overset{19(k)}{=} \left(\Theta_{\left(\tau^{(n-1)}_n\mathbb{1}^{\Omega_{n-1}}_{\Omega_n} - \tau^{(n-1)}_{n-1}\right) + t}^{(\Omega_{n-1},\mathbf{V})}\left(X^{\langle n-1\rangle},\tau_{n-1}^{(n-1)}\right) - \Theta_{\tau^{(n-1)}_n\mathbb{1}^{\Omega_{n-1}}_{\Omega_n} - \tau^{(n-1)}_{n-1}}^{(\Omega_{n-1},\mathbf{V})}\left(X^{\langle n-1\rangle},\tau_{n-1}^{(n-1)}\right)\right)^{(n)} \\
   &\overset{33.1(d.1)}{=} \left(Y^{\overline{n-1}}_{\left(\tau^{(n-1)}_n\mathbb{1}^{\Omega_{n-1}}_{\Omega_n} - \tau^{(n-1)}_{n-1}\right) + t} - Y^{\overline{n-1}}_{\tau^{(n-1)}_n\mathbb{1}^{\Omega_{n-1}}_{\Omega_n} - \tau^{(n-1)}_{n-1}}\right)^{(n)} \\
   &\overset{32(f.2)}{=} \left(Y^{\overline{n-1}}_{\left(\tau^{(n-1)}_n\mathbb{1}^{\Omega_{n-1}}_{\Omega_n} - \tau^{(n-1)}_{n-1}\right) + t}\right)^{(n)} - \left(Y^{\overline{n-1}}_{\tau^{(n-1)}_n\mathbb{1}^{\Omega_{n-1}}_{\Omega_n} - \tau^{(n-1)}_{n-1}}\right)^{(n)} \\
-  &\overset{33.1(d.16)}{=} \left(Y^{\overline{n-1}}\right)^{\langle n\rangle}_{\left(\tau^{(n)}_n-\tau^{(n)}_{n-1}\right) + t} - \left(Y^{\overline{n-1}}\right)^{\langle n\rangle}_{\tau^{(n)}_n-\tau^{(n)}_{n-1}} \\
+  &\overset{33.1(d.17)}{=} \left(Y^{\overline{n-1}}\right)^{\langle n\rangle}_{\left(\tau^{(n)}_n-\tau^{(n)}_{n-1}\right) + t} - \left(Y^{\overline{n-1}}\right)^{\langle n\rangle}_{\tau^{(n)}_n-\tau^{(n)}_{n-1}} \\
   &\overset{19(k)}{=} \Theta_t^{\left(\Omega_n,\mathbf{V}\right)}\left(\left(Y^{\overline{n-1}}\right)^{\langle n\rangle},\tau^{(n)}_n-\tau^{(n)}_{n-1}\right).
   \end{align}
   $$
@@ -791,7 +774,7 @@ d.
   \Omega_{m + k} &\overset{32(n.1)}{=} \Omega_{m + k}^{(m+k-1)} \\
   &\overset{\eqref{Sergio}}{=} \{\tau_{m+k} < \infty\}^{(m+k-1)} \\
   &\overset{32(c.2)}{=} \{\tau_{m+k}^{(m+k-1)} < \infty\} \\
-  &\overset{33.1(d.12)}{\in} \mathcal{F}^{(m+k-1)} \\
+  &\overset{33.1(d.13)}{\in} \mathcal{F}^{(m+k-1)} \\
   &\overset{32(n.2)}{\subseteq} \left(\mathcal{F}^{(m)}\right)^{(m+k-1)} \\
   &\overset{\substack{32(b.1),\\k-1 \in I}}{=} \mathcal{F}^{(m)},
   \end{align}
@@ -885,11 +868,11 @@ d.
 
  Let $I$ be the set of numbers $n\in\mathbb{N}_0$ that satisfy assertions $33.2(a_n)-33.2(f_n)$. We need to prove that $I = \mathbb{N}_0$. We proceed by induction.
 
- Let $n \in \mathbb{N}_0$. Firstly, suppose that $n = 0$. Then $33.2(a_n)$ is Lemma 33.1(b.7). $33.2(b_n)$ follows from Lemma 32(i.1) in light of Lemma 33.1(d.4). To see that $33.2(c_n)$ holds, firstly observe that Lemma 33.1(a.3) together with Lemma 33.1(a.4) imply that the right hand side of the equation is well-defined, whereas Lemma 33.1(d.14) implies that the left-hand side of the equation is well-defined. The equality of the sides is justified by the following calculations:
+ Let $n \in \mathbb{N}_0$. Firstly, suppose that $n = 0$. Then $33.2(a_n)$ is Lemma 33.1(b.7). $33.2(b_n)$ follows from Lemma 32(i.1) in light of Lemma 33.1(d.4). To see that $33.2(c_n)$ holds, firstly observe that Lemma 33.1(a.3) together with Lemma 33.1(a.4) imply that the right hand side of the equation is well-defined, whereas Lemma 33.1(d.15) implies that the left-hand side of the equation is well-defined. The equality of the sides is justified by the following calculations:
  $$
  \left(P^{(n)}\right)^{\left[Y^{\overline{n}}\right]}_{\mathcal{R}_{\nu^*}^*} \overset{33.1(d.4)}{=} \left(P^{(n)}\right)^{\left[X^{\langle n\rangle}\right]}_{\mathcal{R}_{\nu^*}^*} \overset{32(i.3)}{=} \left(P^{(n)}\right)^{[X]^{(n)}}_{\mathcal{R}_{\nu^*}^*} \overset{32(e.3)}{=} P^{[X]}_{\mathcal{R}_{\nu^*}^*}.
  $$
- To see that $33.2(d_n)$ holds, firstly observe that Lemma 33.1(d.12) implies that both sides of the equation are well-defined. The equality of the sides follows from Lemma 33.1(c.3). To see that $33.2(e_n)$ holds, firstly observe that Lemma 33.1(d.12) and 33.1(d.13) ensure that the statement is meaningful. Its validity follows from Corollary 16(g), since
+ To see that $33.2(d_n)$ holds, firstly observe that Lemma 33.1(d.13) implies that both sides of the equation are well-defined. The equality of the sides follows from Lemma 33.1(c.3). To see that $33.2(e_n)$ holds, firstly observe that Lemma 33.1(d.13) and 33.1(d.14) ensure that the statement is meaningful. Its validity follows from Corollary 16(g), since
  $$
  \sigma_{\Omega_n}\left(\bigcup_{k = 1}^n \sigma_{\mathcal{B}}\left(\tau^{(n)}_k - \tau^{(n)}_{k - 1}\right)\right) = \sigma_{\Omega_n}(\emptyset) = \{\emptyset, \Omega_n\}.
  $$
@@ -906,7 +889,7 @@ d.
  \begin{align}
  P\left(\Omega_n\right) &\overset{\eqref{Sergio}}{=} P\left(\tau_n < \infty\right) \\
  &\overset{33.1(f.1)}{=} P\left(\tau_n^{(n-1)} < \infty\right) \\
- &\overset{33.1(d.12)}{=} P^{(n-1)}\left(\tau_n^{(n-1)} < \infty\right) \\
+ &\overset{33.1(d.13)}{=} P^{(n-1)}\left(\tau_n^{(n-1)} < \infty\right) \\
  &\overset{33.1(c.4)}{=} P^{(n-1)}\left(\tau_n^{(n-1)} - \tau_{n-1}^{(n-1)} < \infty\right) \\
  &\overset{33.2(d_{n-1})}{=} P^{(0)}\left(\tau_1^{(0)} < \infty\right) \\
  &\overset{32(c.2)}{=} P^{(0)}\left(\left\{\tau_1 < \infty\right\}^{(0)}\right) \\
@@ -916,7 +899,7 @@ d.
  \end{align}
  $$
 
- Before proceeding, we stop to point out that, in light of Lemma $33.2(b_{n-1})$, Lemma 32(l.2) implies that $\left(Y^{\overline{n-1}}\right)^{\langle n\rangle}$ is a $\Omega_n/S$-Lévy process w.r.t. $P^{(n)}$, and therefore, in light of Lemma 33.1(d.17) and of Lemma 33.1(d.10), Theorem 30 yields:
+ Before proceeding, we stop to point out that, in light of Lemma $33.2(b_{n-1})$, Lemma 32(l.2) implies that $\left(Y^{\overline{n-1}}\right)^{\langle n\rangle}$ is a $\Omega_n/S$-Lévy process w.r.t. $P^{(n)}$, and therefore, in light of Lemma 33.1(d.18) and of Lemma 33.1(d.11), Theorem 30 yields:
  $$
  \begin{align}
  Y^{\overline{n}}&\text{ is a }\Omega_n/S\text{-Lévy process w.r.t. }P^{(n)}, \tag{2.1}\label{Coletta} \\
@@ -929,7 +912,7 @@ d.
 
  $33.2(b_n)$ is now merely a restatement of \eqref{Coletta}.
 
- To see that $33.2(c_n)$ holds, firstly observe that Lemma 33.1(a.3) together with Lemma 33.1(a.4) imply that the right hand side of the equation is well-defined, whereas Lemma 33.1(d.14) implies that the left-hand side of the equation is well-defined. The equality of the sides follows from \eqref{Adria}, since
+ To see that $33.2(c_n)$ holds, firstly observe that Lemma 33.1(a.3) together with Lemma 33.1(a.4) imply that the right hand side of the equation is well-defined, whereas Lemma 33.1(d.15) implies that the left-hand side of the equation is well-defined. The equality of the sides follows from \eqref{Adria}, since
  $$
  \begin{align}
  \left(P^{(n)}\right)^{\left[\left(Y^{\overline{n-1}}\right)^{\langle n\rangle}\right]}_{\mathcal{R}^*_{\nu^*}}
@@ -940,7 +923,7 @@ d.
  \end{align}
  $$
 
- To see that $33.2(d_n)$ holds, firstly observe that Lemma 33.1(d.12) implies that both sides of the equation are well-defined. To see that the equation's sides are equal, firstly observe that, in light of Lemma 33.1(d.14) and of Corollary 25(c), Corollary 16(d) implies that
+ To see that $33.2(d_n)$ holds, firstly observe that Lemma 33.1(d.13) implies that both sides of the equation are well-defined. To see that the equation's sides are equal, firstly observe that, in light of Lemma 33.1(d.15) and of Corollary 25(c), Corollary 16(d) implies that
  $$
  \forall k \in \mathbb{N}_0,\ \left(P^{(k)}\right)^{\Xi_{\nu^{-1}\left((\gamma,\infty)\right)}\big|_{\mathcal{R}_{\nu^*}} \circ \left[Y^{\overline{k}}\right]}_{\overline{\mathcal{B}}} = \left(\left(P^{(k)}\right)^{\left[Y^{\overline{k}}\right]}_{\mathcal{R}_{\nu^*}^*}\right)^{\Xi_{\nu^{-1}\left((\gamma,\infty)\right)}\big|_{\mathcal{R}_{\nu^*}}}_{\overline{\mathcal{B}}}. \tag{2.5}\label{Lyman}
  $$
@@ -964,7 +947,7 @@ d.
  \end{align}
  $$
 
- We now turn our attention to $33.2(e_n)$. To see that $33.2(e_n)$ holds, firstly observe that Lemma 33.1(d.12) and 33.1(d.13) ensure that the statement is meaningful. We claim that, in order to see its validity, it suffices to show:
+ We now turn our attention to $33.2(e_n)$. To see that $33.2(e_n)$ holds, firstly observe that Lemma 33.1(d.13) and 33.1(d.14) ensure that the statement is meaningful. We claim that, in order to see its validity, it suffices to show:
  $$
  \begin{align}
  \sigma_{\mathcal{B}}\left(\tau^{(n)}_n - \tau^{(n)}_{n - 1}\right) &\perp_{P^{(n)}} \Phi^{\sigma(\nu^*)}_\infty\left(Y^{\overline{n}}\right), \tag{2.7}\label{Ossie} \\
@@ -977,7 +960,7 @@ d.
  $$
  is $P^{(n)}$-independent, which, by Theorem 21(b), implies $33.2(e_n)$.
 
- To see that \eqref{Ossie} holds, firstly observe that Lemma 33.1(d.10) together with Corollary 23(b) imply that $\tau^{(n)}_n - \tau^{(n)}_{n - 1}$ is a $\left(\Phi^{\sigma(\nu^*)}\left(\left(Y^{\overline{n-1}}\right)^{\langle n\rangle}\right)\right)^+$-stopping time. This, in turn, implies that
+ To see that \eqref{Ossie} holds, firstly observe that Lemma 33.1(d.11) together with Corollary 23(b) imply that $\tau^{(n)}_n - \tau^{(n)}_{n - 1}$ is a $\left(\Phi^{\sigma(\nu^*)}\left(\left(Y^{\overline{n-1}}\right)^{\langle n\rangle}\right)\right)^+$-stopping time. This, in turn, implies that
  $$
  \begin{align}
  \sigma_{\mathcal{B}}\left(\tau^{(n)}_n - \tau^{(n)}_{n - 1}\right) &\overset{8(f)}{=} \sigma_{\overline{\mathcal{B}}}\left(\tau^{(n)}_n - \tau^{(n)}_{n - 1}\right) \\
@@ -986,7 +969,7 @@ d.
  $$
  which yields \eqref{Ossie}, by \eqref{Matilda}.
 
- To see that \eqref{Tessa} holds, observe that Lemma 33.1(d.10) implies that
+ To see that \eqref{Tessa} holds, observe that Lemma 33.1(d.11) implies that
  $$
  \sigma_{\mathcal{B}}\left(\tau^{(n)}_n - \tau^{(n)}_{n - 1}\right) \overset{8(f)}{=} \sigma_{\overline{\mathcal{B}}}\left(\tau^{(n)}_n - \tau^{(n)}_{n - 1}\right) \overset{23(c)}{\subseteq} \Phi^{\sigma(\nu^*)}_\infty\left(\left(Y^{\overline{n-1}}\right)^{\langle n\rangle}\right). \tag{2.10}\label{Robbie}
  $$
@@ -1024,7 +1007,7 @@ d.
  P\left(\Omega_\infty\right) \overset{\eqref{Deloras}}{=} P\left(\bigcap_{n = 0}^\infty \Omega_n\right) \overset{33.1(c.2)}{=} \lim_{n \rightarrow \infty} P\left(\Omega_n\right) \overset{33.2(a)}{=} 1.
  $$
 
- b. Let $n \in \mathbb{N}_1$. Firstly note that Lemma 33.1(d.12) ensures both sides of the equation are well-defined. Now,
+ b. Let $n \in \mathbb{N}_1$. Firstly note that Lemma 33.1(d.13) ensures both sides of the equation are well-defined. Now,
  $$
  \begin{align}
  \left(P^{(\infty)}\right)^{\tau^{(\infty)}_n-\tau^{(\infty)}_{n-1}}_{\mathcal{B}} &\overset{16(c)}{=} \left(P^{(\infty)}\right)^{\tau^{(\infty)}_n-\tau^{(\infty)}_{n-1}}_{\overline{\mathcal{B}}}\\
@@ -1039,7 +1022,7 @@ d.
  \end{align}
  $$
 
- c. Firstly note that Lemma 33.1(d.12) ensures that the statement is meaningful. Let $n \in \{2, 3, \dots\}$. Then
+ c. Firstly note that Lemma 33.1(d.13) ensures that the statement is meaningful. Let $n \in \{2, 3, \dots\}$. Then
  $$
  \begin{align}
  \sigma_{\mathcal{B}}\left(\tau^{(\infty)}_n-\tau^{(\infty)}_{n-1}\right) &\overset{33.1(f.2)}{=} \sigma_{\mathcal{B}}\left(\left(\tau^{(n)}_n-\tau^{(n)}_{n-1}\right)^{(\infty)}\right) \\
@@ -1078,38 +1061,7 @@ d.
 
  ***Proof of Lemma 33.4***
 
- a. Set $S := [\gamma, \infty)$. Define
- $$
- f := \nu\circ\!\circ\ \left[Y^{\overline{k-1}}\right]. \tag{4.1}\label{Aline}
- $$
-
- Let $\omega \in \Omega_\infty$. Set
- $$
- T := \left(f(\omega)\right)^{-1}\left((\gamma,\infty)\right). \tag{4.2}\label{Natalie}
- $$
-
- Then
- $$
- \begin{align}
- \tau_k^{(\infty)}(\omega)-\tau_{k-1}^{(\infty)}(\omega) &\overset{32(n.3)}{=}
- \left(\tau_k^{(k-1)}\right)^{(\infty)}(\omega)-\left(\tau_{k-1}^{(k-1)}\right)^{(\infty)}(\omega) \\
- &= \tau_k^{(k-1)}(\omega)-\tau_{k-1}^{(k-1)}(\omega) \\
- &\overset{33.1(d.6)}{=} \left(\Xi_{\nu^{-1}\left((\gamma,\infty)\right)} \circ \left[Y^{\overline{k-1}}\right]\right)(\omega) \\
-  &=\Xi_{\nu^{-1}\left((\gamma,\infty)\right)}\left(\left[Y^{\overline{k-1}}\right](\omega)\right) \\
- &\overset{25(b)}{=}\Xi_{(\gamma,\infty)}\left(\nu\circ\left(\left[Y^{\overline{k-1}}\right](\omega)\right)\right) \\
- &\overset{2(d)}{=}\Xi_{(\gamma,\infty)}\left(\left(\nu\circ\!\circ\ \left[Y^{\overline{k-1}}\right]\right)(\omega)\right) \\
- &\overset{\eqref{Aline}}{=}\Xi_{(\gamma,\infty)}\left(f(\omega)\right) \\
- &\overset{25(a)}{=} \inf\ \left(f(\omega)\right)^{-1}((\gamma,\infty)) \\
- &\overset{\eqref{Natalie}}{=} \inf T \\
- &\overset{14(a)}{\in} f^{-1}(S).
- \end{align}
- $$
- In short, $\tau_k^{(\infty)}(\omega)-\tau_{k-1}^{(\infty)}(\omega) \in f^{-1}(S)$. In other words, $f\left(\tau_k^{(\infty)}(\omega)-\tau_{k-1}^{(\infty)}(\omega)\right) \in S$, i.e.
- $$
- f\left(\tau_k^{(\infty)}(\omega)-\tau_{k-1}^{(\infty)}(\omega)\right) \geq \gamma. \tag{4.3}\label{Nancey}
- $$
-
- So
+ a. Let $k \in \mathbb{N}_1$ and let $\omega \in \Omega_\infty$. Then
  $$
  \begin{align}
  \nu\left(X_{\tau_k^{(\infty)}(\omega)}^{\langle \infty\rangle}(\omega) - X_{\tau_{k-1}^{(\infty)}(\omega)}^{\langle \infty\rangle}(\omega)\right) &\overset{19(e)}{=} \nu\left(\left(X_{\tau_k^{(\infty)}}^{\langle \infty\rangle}\right)(\omega) - \left(X_{\tau_{k-1}^{(\infty)}}^{\langle \infty\rangle}\right)(\omega)\right) \\
@@ -1123,9 +1075,7 @@ d.
  &\overset{32(n.3)}{=} \nu\left(\left(\Theta^{(\Omega_{k-1}, \mathbf{V})}_{\tau_k^{(\infty)}(\omega)-\tau_{k-1}^{(\infty)}(\omega)}(X^{\langle k-1\rangle}, \tau_{k-1}^{(k-1)})\right)(\omega)\right) \\
  &\overset{\eqref{Glenda}}{=} \nu\left(Y^{\overline{k-1}}_{\tau_k^{(\infty)}(\omega)-\tau_{k-1}^{(\infty)}}(\omega)\right) \\
  &\overset{20(o)}{=} \left(\nu\circ\!\circ\ \left[Y^{\overline{k-1}}\right]\right)(\omega)\left(\tau_k^{(\infty)}(\omega)-\tau_{k-1}^{(\infty)}(\omega)\right) \\
- &\overset{2(d)}{=} \left(\nu\circ\left(\left[Y^{\overline{k-1}}\right](\omega)\right)\right)\left(\tau_k^{(\infty)}(\omega)-\tau_{k-1}^{(\infty)}(\omega)\right) \\
- &\overset{\eqref{Aline}}{=} f(\omega)\left(\tau_k^{(\infty)}(\omega)-\tau_{k-1}^{(\infty)}(\omega)\right) \\
- &\overset{\eqref{Nancey}}{\geq} \gamma.
+ &\overset{33.1(d.9)}{\geq} \gamma.
  \end{align}
  $$
 
