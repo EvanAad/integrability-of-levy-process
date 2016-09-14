@@ -91,9 +91,9 @@ b.
 
  9. $\mathcal{F}^{(0)}$ is a $\sigma$-algebra on $\Omega_0$.
 
- 10. $\tau_0^{(0)} = 0$.
+ 10. $\tau_0^{(0)} = 0_{\Omega_0}$.
 
- 11. $X^{\langle 0\rangle}_{\tau_0^{(0)}} = X_0^{(0)} = \mathbf{0}$.
+ 11. $X^{\langle 0\rangle}_{\tau_0^{(0)}} = X_0^{(0)} = \mathbf{0}_{\Omega_0}$.
 
  12. $\tau_0 \leq \tau_1$.
 
@@ -129,11 +129,11 @@ c.
 
  2. For every $m, n\in\overline{\mathbb{N}}_0$ such that $m < n$, $\Omega\supseteq\Omega_m\supseteq\Omega_n$.
 
- 3. For every $n\in\overline{\mathbb{N}}_0$, $\tau_0^{(n)} = 0$.
+ 3. For every $n\in\overline{\mathbb{N}}_0$, $\tau_0^{(n)} = 0_{\Omega_n}$.
 
  4. For every $m\in\mathbb{N}_0$ and every $n\in\overline{\mathbb{N}}_0$, such that $m\leq n$, $\tau_m^{(n)}<\infty$.
 
- 5. For every $n \in \overline{\mathbb{N}}_0$, $X^{\langle n\rangle}_{\tau_0^{(n)}} = \mathbf{0}$.
+ 5. For every $n \in \overline{\mathbb{N}}_0$, $X^{\langle n\rangle}_{\tau_0^{(n)}} = \mathbf{0}_{\Omega_n}$.
 
  6. For all $n \in \overline{\mathbb{N}}_0$ such that $\Omega_n \neq \emptyset$, $\mathcal{F}^{(n)} = \Phi^{\sigma(\nu^*)}_\infty(X^{\langle n\rangle})$.
 
