@@ -926,7 +926,8 @@ e. Let $\mathcal{A}$ be a $\sigma$-algebra on $\Omega$, let $\mu$ be a measure o
  \mathcal{A}\perp_P\mathcal{H} \iff \mathcal{A}'\perp_{P'}\mathcal{H}'.
  $$
 
-f.
+f. 
+
  1. Let $c$ be an arbitrary object. Then $c_\Omega' = c_{\Omega_1}$.
 
  2. Let $\mathbf{V}$ be a vector space, denote $\mathbf{V}$'s field by $\mathbf{F}$, and denote $\mathbf{F}$'s set of scalars by $F$, let $f, g:\Omega\rightarrow V$, and let $a, b\in F$. Then

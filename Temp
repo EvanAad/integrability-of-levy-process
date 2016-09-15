@@ -44,15 +44,85 @@ Let $m \in \mathbb{N}_0$, let $n \in \overline{\mathbb{N}}_0$ be such that $m \l
 
 $$
  \begin{align}
- \nu\left(X^{\langle \infty\rangle}_{\tau_k^{(\infty)}(\omega)}(\omega) - X^{\langle \infty\rangle}_{\tau_{k-1}^{(\infty)}(\omega)}(\omega)\right) &\overset{19(e)}{=} \nu\left(\left(X^{\langle \infty\rangle}_{\tau_k^{(\infty)}}\right)(\omega) - \left(X^{\langle \infty\rangle}_{\tau_{k-1}^{(\infty)}}\right)(\omega)\right) \\
- &\overset{32(n.3)}{=} \nu\left(\left(X^{\langle \infty\rangle}_{\left(\tau_k^{(k)}\right)^{(\infty)}}\right)(\omega) - \left(X^{\langle \infty\rangle}_{\left(\tau_{k-1}^{(k)}\right)^{(\infty)}}\right)(\omega)\right) \\
- &\overset{32(n.6)}{=} \nu\left(\left(\left(X^{\langle k\rangle}\right)^{\langle \infty\rangle}_{\left(\tau_k^{(k)}\right)^{(\infty)}}\right)(\omega) - \left(\left(X^{\langle k\rangle}\right)^{\langle \infty\rangle}_{\left(\tau_{k-1}^{(k)}\right)^{(\infty)}}\right)(\omega)\right) \\
- &\overset{32(k.1)}{=} \nu\left(\left(X^{\langle k\rangle}_{\tau_k^{(k)}}\right)^{(\infty)}(\omega) - \left(X^{\langle k\rangle}_{\tau_{k-1}^{(k)}}\right)^{(\infty)}(\omega)\right) \\
- &= \nu\left(\left(X^{\langle k\rangle}_{\tau_k^{(k)}}\right)(\omega) - \left(X^{\langle k\rangle}_{\tau_{k-1}^{(k)}}\right)(\omega)\right) \\
- &\overset{32(n.3)}{=} \nu\left(X^{\langle k\rangle}_{\tau_k^{(k)}(\omega)}(\omega) - X^{\langle k\rangle}_{\tau_{k-1}^{(k)}(\omega)}(\omega)\right) \\
- &= \nu\left(X^{\langle k\rangle}_{\tau_{k-1}^{(k)}(\omega)+\left(\tau_k^{(k)}(\omega)-\tau_{k-1}^{(k)}(\omega)\right)}(\omega) - X^{\langle k\rangle}_{\tau_{k-1}^{(k)}(\omega)}(\omega)\right) \\
- &\overset{???}{=} \nu\left(\left(Y^{\overline{k-1}}\right)^{\langle k\rangle}_{\tau_k^{(k)}(\omega)-\tau_{k-1}^{(k)}(\omega)}(\omega)\right) \\
- &\overset{20(o)}{=} \left(\nu\circ\!\circ\ \left[\left(Y^{\overline{k-1}}\right)^{\langle k\rangle}\right]\right)(\omega)\left(\tau_k^{(k)}(\omega)-\tau_{k-1}^{(k)}(\omega)\right) \\
- &\overset{33.1(d.9)}{\geq} \gamma.
+ \nu\circ\left(X^{\langle \infty\rangle}_{\tau_k^{(\infty)}} - X^{\langle \infty\rangle}_{\tau_{k-1}^{(\infty)}}\right) &\overset{32(n.3)}{=} \nu\circ\left(X^{\langle \infty\rangle}_{\left(\tau_k^{(k)}\right)^{(\infty)}} - X^{\langle \infty\rangle}_{\left(\tau_{k-1}^{(k)}\right)^{(\infty)}}\right) \\
+ &\overset{32(n.6)}{=} \nu\circ\left(\left(X^{\langle k\rangle}\right)^{\langle \infty\rangle}_{\left(\tau_k^{(k)}\right)^{(\infty)}} - \left(X^{\langle k\rangle}\right)^{\langle \infty\rangle}_{\left(\tau_{k-1}^{(k)}\right)^{(\infty)}}\right) \\
+ &\overset{32(k.1)}{=} \nu\circ\left(\left(X^{\langle k\rangle}_{\tau_k^{(k)}}\right)^{(\infty)} - \left(X^{\langle k\rangle}_{\tau_{k-1}^{(k)}}\right)^{(\infty)}\right) \\
+ &\overset{32(f.2)}{=} \nu\circ\left(\left(X^{\langle k\rangle}_{\tau_k^{(k)}} - X^{\langle k\rangle}_{\tau_{k-1}^{(k)}}\right)^{(\infty)}\right) \\
+ &\overset{32(b.3)}{=} \left(\nu\circ\left(X^{\langle k\rangle}_{\tau_k^{(k)}} - X^{\langle k\rangle}_{\tau_{k-1}^{(k)}}\right)\right)^{(\infty)} \\
+ &= \left(\nu\circ\left(X^{\langle k\rangle}_{\tau_{k-1}^{(k)}+\left(\tau_k^{(k)}-\tau_{k-1}^{(k)}\right)} - X^{\langle k\rangle}_{\tau_{k-1}^{(k)}}\right)\right)^{(\infty)} \\
+ &\overset{???}{=} \left(\nu\circ\left(Y^{\overline{k-1}}\right)^{\langle k\rangle}_{\tau_k^{(k)}-\tau_{k-1}^{(k)}}\right)^{(\infty)} \\
+ &\overset{19(e)}{=} \left(\nu\circ\left(\left(Y^{\overline{k-1}}\right)^{\langle k\rangle} \rhd \left(\tau_k^{(k)}-\tau_{k-1}^{(k)}\right)\right)\right)^{(\infty)} \\
+ &\overset{???}{=} \left(\left(\nu\ltimes\left[\left(Y^{\overline{k-1}}\right)^{\langle k\rangle}\right]\right)\rhd\left(\tau_k^{(k)}-\tau_{k-1}^{(k)}\right)\right)^{(\infty)} \\
+ &\overset{33.1(d.9)}{\geq} \left(\gamma_{\Omega_k}\right)^{(\infty)} \\
+ &\overset{32(f.1)}{=} \gamma_{\Omega_\infty}.
  \end{align}
  $$
+
+ ***
+
+ Let $T, S, R, Q$ be types. Let $g:T\mapsto(S\mapsto R)$, let $h:T\mapsto S$, and let $f:R\mapsto Q$. Then
+$$
+f\circ(g\rhd h) = (f\circ\!\circ\ g)\rhd h.
+$$
+
+***
+
+1. Let $T, S$ be types. We define $\mathrm{pIm}^{T,S}$ to be the pre-image primitive $\mathrm{pIm}^{T,S}:\left(\left(T\mapsto S\right)\times\mathcal{P}S\right)\rightarrow\mathcal{P}T$, which, to every (non-primitive) function $f:T\mapsto S$ and to every $A:\mathcal{P}S$ assigns
+ $$
+ \mathrm{pIm}(f,A) := f^{-1}(A) := \left\{t \in \mathrm{Dom}(f)\ |\!:\ f(t) \in A\right\}.
+ $$
+
+2. Let $T, S, R$ be types. We define $\mathrm{pIm}_2^{T,S}$ to be the primitive $\mathrm{pIm}_2^{T,S}:\left(\left(T\mapsto(S\mapsto R)\right)\times\mathcal{P}R\right)\rightarrow(T\mapsto\mathcal{P}S)$, which, to every $f:T\mapsto(S\mapsto R)$ and to every $A:\mathcal{P}R$ assigns
+ $$
+ \mathrm{pIm}_2(f, A) := \lambda t \in \mathrm{Dom}(f)\mapsto\mathrm{pIm}\left(f(t), A\right).
+ $$
+
+3. Let $T, S, R$ be types. We define $\mathrm{pIm}_2^{T,S}$ to be the primitive $\mathrm{pIm}_2^{T,S}:\left(T\mapsto(S\mapsto R)\right)\rightarrow(T\mapsto\mathcal{P}S)$, which, to every $f:T\mapsto(S\mapsto R)$ assigns
+ $$
+ \mathrm{pIm}_2(f) := \mathrm{pIm}_2(f,\mathrm{set}\langle R\rangle).
+ $$
+
+4. Let $T, S, R$ be types. We define $\mathrm{pIm}_3^{T, S, R}$ to be the primitive $\mathrm{pIm}_3^{T, S, R}:\left(\left(T\mapsto S\right)\times\left(T\mapsto(S\mapsto R)\right)\right)\rightarrow\mathcal{P}T$, which to every $f:T\mapsto S$ and to every $F:T\mapsto(S\mapsto R)$ assigns
+ $$
+ \mathrm{pIm}_3(f,F) := \left\{t \in \mathrm{Dom}(f)\ |\!:\ f(t) \in F(t)\right\}.
+ $$
+
+***
+Let $T, S, R$ be types. Let $f:T\mapsto S$ and let $g:S\mapsto R$. Then
+$$
+\mathrm{Dom}(g\circ f) = \mathrm{Dom}(f)\cap\mathrm{pIm}(f,\mathrm{Dom}(g)).
+$$
+
+***
+
+Let $T, S, R, Q$ be types. Let $g:T\mapsto(S\mapsto R)$, let $h:T\mapsto S$, and let $f:R\mapsto Q$. Then
+$$
+f\circ(g\rhd h) = (f\ltimes g)\rhd h.
+$$
+
+***
+
+Let $T, S, R$ be types. Let $f:T\mapsto(S\mapsto R)$ and let $g:T\mapsto S$. Then for every $A:\mathcal{P}R$,
+ $$
+ \mathrm{pIm}(f\rhd g, R) = \mathrm{pIm}_3\left(g, \mathrm{pIm}_2(f, R)\right).
+ $$
+
+***
+
+Let $T, S, R$ be types. Let $f:T\mapsto(S\mapsto R)$ and let $g:T\mapsto S$. Then
+ $$
+ \mathrm{Dom}(f\rhd g) = \mathrm{pIm}_3(g,\mathrm{pIm}_2(f)).
+ $$
+
+***
+
+$$
+\mathrm{pIm}_2(f\ltimes g) = \mathrm{pIm}_2\left(g, \mathrm{Dom}(f)\right).
+$$
+
+***
+
+Firstly we verify that the two domains are identical.
+$$
+\mathrm{Dom}\left(f\circ(g\rhd h)\right) = \mathrm{Dom}(g\rhd h)\cap\mathrm{pIm}\left(g\rhd h, \mathrm{Dom}(f)\right) = \mathrm{Dom}(g)\cap\mathrm{Dom}(h)\cap\mathrm{pIm}_3\left(h, \mathrm{pIm}_2\left(g,\mathrm{Dom}(f)\right)\right).
+$$
