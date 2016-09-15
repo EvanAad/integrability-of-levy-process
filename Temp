@@ -1,0 +1,21 @@
+For every $m \in \mathbb{N}_0$, and of every $n \in \overline{\mathbb{N}}_0$ such that $m \leq n$,
+$$
+\left(Y^{\overline{m}}_t\right)^{(n)} = X^{\langle n\rangle}_{\tau_m^{(n)}+t} - X^{\langle n\rangle}_{\tau_m^{(n)}}.
+$$
+
+***
+
+$$
+ \begin{align}
+ \nu\left(X^{\langle \infty\rangle}_{\tau_k^{(\infty)}(\omega)}(\omega) - X^{\langle \infty\rangle}_{\tau_{k-1}^{(\infty)}(\omega)}(\omega)\right) &\overset{19(e)}{=} \nu\left(\left(X^{\langle \infty\rangle}_{\tau_k^{(\infty)}}\right)(\omega) - \left(X^{\langle \infty\rangle}_{\tau_{k-1}^{(\infty)}}\right)(\omega)\right) \\
+ &\overset{32(n.3)}{=} \nu\left(\left(X^{\langle \infty\rangle}_{\left(\tau_k^{(k)}\right)^{(\infty)}}\right)(\omega) - \left(X^{\langle \infty\rangle}_{\left(\tau_{k-1}^{(k)}\right)^{(\infty)}}\right)(\omega)\right) \\
+ &\overset{32(n.6)}{=} \nu\left(\left(\left(X^{\langle k\rangle}\right)^{\langle \infty\rangle}_{\left(\tau_k^{(k)}\right)^{(\infty)}}\right)(\omega) - \left(\left(X^{\langle k\rangle}\right)^{\langle \infty\rangle}_{\left(\tau_{k-1}^{(k)}\right)^{(\infty)}}\right)(\omega)\right) \\
+ &\overset{32(k.1)}{=} \nu\left(\left(X^{\langle k\rangle}_{\tau_k^{(k)}}\right)^{(\infty)}(\omega) - \left(X^{\langle k\rangle}_{\tau_{k-1}^{(k)}}\right)^{(\infty)}(\omega)\right) \\
+ &= \nu\left(\left(X^{\langle k\rangle}_{\tau_k^{(k)}}\right)(\omega) - \left(X^{\langle k\rangle}_{\tau_{k-1}^{(k)}}\right)(\omega)\right) \\
+ &\overset{32(n.3)}{=} \nu\left(X^{\langle k\rangle}_{\tau_k^{(k)}(\omega)}(\omega) - X^{\langle k\rangle}_{\tau_{k-1}^{(k)}(\omega)}(\omega)\right) \\
+ &= \nu\left(X^{\langle k\rangle}_{\tau_{k-1}^{(k)}(\omega)+\left(\tau_k^{(k)}(\omega)-\tau_{k-1}^{(k)}(\omega)\right)}(\omega) - X^{\langle k\rangle}_{\tau_{k-1}^{(k)}(\omega)}(\omega)\right) \\
+ &\overset{???}{=} \nu\left(\left(Y^{\overline{k-1}}\right)^{\langle k\rangle}_{\tau_k^{(k)}(\omega)-\tau_{k-1}^{(k)}(\omega)}(\omega)\right) \\
+ &\overset{20(o)}{=} \left(\nu\circ\!\circ\ \left[\left(Y^{\overline{k-1}}\right)^{\langle k\rangle}\right]\right)(\omega)\left(\tau_k^{(k)}(\omega)-\tau_{k-1}^{(k)}(\omega)\right) \\
+ &\overset{33.1(d.9)}{\geq} \gamma.
+ \end{align}
+ $$

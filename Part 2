@@ -1065,14 +1065,14 @@ d.
  $$
  \begin{align}
  \nu\left(X_{\tau_k^{(\infty)}(\omega)}^{\langle \infty\rangle}(\omega) - X_{\tau_{k-1}^{(\infty)}(\omega)}^{\langle \infty\rangle}(\omega)\right) &\overset{19(e)}{=} \nu\left(\left(X_{\tau_k^{(\infty)}}^{\langle \infty\rangle}\right)(\omega) - \left(X_{\tau_{k-1}^{(\infty)}}^{\langle \infty\rangle}\right)(\omega)\right) \\
- &\overset{32(k.1)}{=} \nu\left(\left(X_{\tau_k^{(k-1)}}^{\langle k-1\rangle}\right)^{(\infty)}(\omega) - \left(X_{\tau_{k-1}^{(k-1)}}^{(k-1)}\right)^{(\infty)}(\omega)\right) \\
- &\overset{19(e)}{=} \nu\left(X_{\tau_k^{(k-1)}(\omega)}^{(k-1)}(\omega) - X_{\tau_{k-1}^{(k-1)}(\omega)}^{(k-1)}(\omega)\right) \\
- &\overset{\omega\in\Omega_\infty}{=} \nu\left(X_{\left(\tau_k^{\langle k-1\rangle}\right)^{(\infty)}(\omega)}^{(k-1)}(\omega) - X_{\tau_{k-1}^{(k-1)}(\omega)}^{(k-1)}(\omega)\right) \\
- &\overset{32(n.3)}{=} \nu\left(X_{\tau_k^{(\infty)}(\omega)}^{(k-1)}(\omega) - X_{\tau_{k-1}^{(k-1)}(\omega)}^{(k-1)}(\omega)\right) \\
- &= \nu\left(X_{\tau_{k-1}^{(k-1)}(\omega)+\left(\tau_k^{(\infty)}(\omega)-\tau_{k-1}^{(k-1)}(\omega)\right)}^{(k-1)}(\omega) - X_{\tau_{k-1}^{(k-1)}(\omega)}^{(k-1)}(\omega)\right) \\
- &\overset{19(k)}{=} \nu\left(\left(\Theta^{(\Omega_{k-1}, \mathbf{V})}_{\tau_k^{(\infty)}(\omega)-\tau_{k-1}^{(k-1)}(\omega)}(X^{\langle k-1\rangle}, \tau_{k-1}^{(k-1)})\right)(\omega)\right) \\
- &\overset{\omega\in\Omega_\infty}{=} \nu\left(\left(\Theta^{(\Omega_{k-1}, \mathbf{V})}_{\tau_k^{(\infty)}(\omega)-\left(\tau_{k-1}^{(k-1)}\right)^{(\infty)}(\omega)}(X^{\langle k-1\rangle}, \tau_{k-1}^{(k-1)})\right)(\omega)\right) \\
- &\overset{32(n.3)}{=} \nu\left(\left(\Theta^{(\Omega_{k-1}, \mathbf{V})}_{\tau_k^{(\infty)}(\omega)-\tau_{k-1}^{(\infty)}(\omega)}(X^{\langle k-1\rangle}, \tau_{k-1}^{(k-1)})\right)(\omega)\right) \\
+ &\overset{32(k.1)}{=} \nu\left(\left(X_{\tau_k^{(k-1)}}^{\langle k-1\rangle}\right)^{(\infty)}(\omega) - \left(X^{\langle k-1\rangle}_{\tau_{k-1}^{(k-1)}}\right)^{(\infty)}(\omega)\right) \\
+ &\overset{19(e)}{=} \nu\left(X_{\tau_k^{(k-1)}(\omega)}^{(k-1)}(\omega) - X^{\langle k-1\rangle}_{\tau_{k-1}^{(k-1)}(\omega)}(\omega)\right) \\
+ &\overset{\omega\in\Omega_\infty}{=} \nu\left(X_{\left(\tau_k^{\langle k-1\rangle}\right)^{(\infty)}(\omega)}^{(k-1)}(\omega) - X^{\langle k-1\rangle}_{\tau_{k-1}^{(k-1)}(\omega)}(\omega)\right) \\
+ &\overset{32(n.3)}{=} \nu\left(X^{\langle k-1\rangle}_{\tau_k^{(\infty)}(\omega)}(\omega) - X^{\langle k-1\rangle}_{\tau_{k-1}^{(k-1)}(\omega)}(\omega)\right) \\
+ &= \nu\left(X^{\langle k-1\rangle}_{\tau_{k-1}^{(k-1)}(\omega)+\left(\tau_k^{(\infty)}(\omega)-\tau_{k-1}^{(k-1)}(\omega)\right)}(\omega) - X^{\langle k-1\rangle}_{\tau_{k-1}^{(k-1)}(\omega)}(\omega)\right) \\
+ &\overset{19(k)}{=} \nu\left(\left(\Theta^{(\Omega_{k-1}, \mathbf{V})}_{\tau_k^{(\infty)}(\omega)-\tau_{k-1}^{(k-1)}(\omega)}\left(X^{\langle k-1\rangle}, \tau_{k-1}^{(k-1)}\right)\right)(\omega)\right) \\
+ &\overset{\omega\in\Omega_\infty}{=} \nu\left(\left(\Theta^{(\Omega_{k-1}, \mathbf{V})}_{\tau_k^{(\infty)}(\omega)-\left(\tau_{k-1}^{(k-1)}\right)^{(\infty)}(\omega)}\left(X^{\langle k-1\rangle}, \tau_{k-1}^{(k-1)}\right)\right)(\omega)\right) \\
+ &\overset{32(n.3)}{=} \nu\left(\left(\Theta^{(\Omega_{k-1}, \mathbf{V})}_{\tau_k^{(\infty)}(\omega)-\tau_{k-1}^{(\infty)}(\omega)}\left(X^{\langle k-1\rangle}, \tau_{k-1}^{(k-1)}\right)\right)(\omega)\right) \\
  &\overset{\eqref{Glenda}}{=} \nu\left(Y^{\overline{k-1}}_{\tau_k^{(\infty)}(\omega)-\tau_{k-1}^{(\infty)}}(\omega)\right) \\
  &\overset{20(o)}{=} \left(\nu\circ\!\circ\ \left[Y^{\overline{k-1}}\right]\right)(\omega)\left(\tau_k^{(\infty)}(\omega)-\tau_{k-1}^{(\infty)}(\omega)\right) \\
  &\overset{33.1(d.9)}{\geq} \gamma.
