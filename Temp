@@ -1,7 +1,44 @@
-For every $m \in \mathbb{N}_0$, and of every $n \in \overline{\mathbb{N}}_0$ such that $m \leq n$,
+For every $m \in \mathbb{N}_0$, and for every $n \in \overline{\mathbb{N}}_0$ such that $m \leq n$,
 $$
 \left(Y^{\overline{m}}_t\right)^{(n)} = X^{\langle n\rangle}_{\tau_m^{(n)}+t} - X^{\langle n\rangle}_{\tau_m^{(n)}}.
 $$
+
+***
+
+For every $m \in \mathbb{N}_0$, for every $n \in \overline{\mathbb{N}}_0$ such that $m \leq n$, and for every $\eta:\Omega_n\rightarrow\mathbb{R}_+$,
+$$
+\left(Y^{\overline{m}}\right)^{\langle n\rangle}_\eta = X^{\langle n\rangle}_{\tau_m^{(n)}+\eta} - X^{\langle n\rangle}_{\tau_m^{(n)}}.
+$$
+
+***
+
+Let $m \in \mathbb{N}_0$, let $n \in \overline{\mathbb{N}}_0$ be such that $m \leq n$, let $\eta:\Omega_n\mapsto \mathbb{R}_+$, and let $\omega \in \Omega_n$. Then
+ $$
+ \begin{align}
+ \left(\left(Y^{\overline{m}}\right)^{\langle n\rangle}_\eta\right)(\omega) &= \left(\left[\left(Y^{\overline{m}}\right)^{\langle n\rangle}\right]\rhd\eta\right)(\omega) \\
+ &= \left[\left(Y^{\overline{m}}\right)^{\langle n\rangle}\right](\omega)\left(\eta(\omega)\right) \\
+ &\overset{19(f)}{=} \left(Y^{\overline{m}}\right)^{\langle n\rangle}\left(\eta(\omega)\right)(\omega) \\
+ &\overset{32(i.1)}{=} \left(Y^{\overline{m}}\left(\eta(\omega)\right)\right)^{(n)}(\omega) \\
+ &= Y^{\overline{m}}\left(\eta(\omega)\right)(\omega) \\
+ &\overset{33.1(d.1)}{=} \left(\Theta^{\Omega_m,\mathbf{V}}\left(X^{\langle m\rangle},\tau_m^{(m)}\right)\right)\left(\eta(\omega)\right)(\omega) \\
+ &\overset{19(k)}{=} \Theta^{\Omega_m,\mathbf{V}}_{\eta(\omega)}\left(X^{\langle m\rangle},\tau_m^{(m)}\right)(\omega) \\
+ &\overset{19(k)}{=} \left(X^{\langle m\rangle}_{\tau_m^{(m)} + \eta(\omega)} - X^{\langle m\rangle}_{\tau_m^{(m)}}\right)(\omega) \\
+ &= \left(X^{\langle m\rangle}_{\tau_m^{(m)} + \eta(\omega)}\right)(\omega) - \left(X^{\langle m\rangle}_{\tau_m^{(m)}}\right)(\omega) \\
+ &\overset{19(e)}{=} \left(\left[X^{\langle m\rangle}\right]\rhd\left(\tau_m^{(m)} + \eta(\omega)\right)\right)(\omega) - \left(\left[X^{\langle m\rangle}\right]\rhd\tau_m^{(m)}\right)(\omega) \\
+ &= \left[X^{\langle m\rangle}\right](\omega)\left(\left(\tau_m^{(m)} + \eta(\omega)\right)(\omega)\right) - \left(\left[X^{\langle m\rangle}\right]\rhd\tau_m^{(m)}\right)(\omega) \\
+ &= \left[X^{\langle m\rangle}\right](\omega)\left(\tau_m^{(m)}(\omega) + \eta(\omega)\right) - \left(\left[X^{\langle m\rangle}\right]\rhd\tau_m^{(m)}\right)(\omega) \\
+ &= \left[X^{\langle m\rangle}\right](\omega)\left(\left(\tau_m^{(m)} + \eta\right)(\omega)\right) - \left(\left[X^{\langle m\rangle}\right]\rhd\tau_m^{(m)}\right)(\omega) \\
+ &= \left(\left[X^{\langle m\rangle}\right]\rhd\left(\tau_m^{(m)} + \eta\right)\right)(\omega) - \left(\left[X^{\langle m\rangle}\right]\rhd\tau_m^{(m)}\right)(\omega) \\
+ &\overset{19(e)}{=} \left(X^{\langle m\rangle}_{\tau_m^{(m)} + \eta}\right)(\omega) - \left(X^{\langle m\rangle}_{\tau_m^{(m)}}\right)(\omega) \\
+ &= \left(X^{\langle m\rangle}_{\tau_m^{(m)} + \eta} - X^{\langle m\rangle}_{\tau_m^{(m)}}\right)(\omega) \\
+ &\overset{\omega \in \Omega_n}{=} \left(X^{\langle m\rangle}_{\tau_m^{(m)} + \eta} - X^{\langle m\rangle}_{\tau_m^{(m)}}\right)^{(n)}(\omega) \\
+ &\overset{32(f.2)}{=} \left(\left(X^{\langle m\rangle}_{\tau_m^{(m)} + \eta}\right)^{(n)} - \left(X^{\langle m\rangle}_{\tau_m^{(m)}}\right)^{(n)}\right)(\omega) \\
+ &\overset{32(k.1)}{=} \left(\left(X^{\langle m\rangle}\right)^{\langle n\rangle}_{\left(\tau_m^{(m)} + \eta\right)^{(n)}} - \left(X^{\langle m\rangle}\right)^{\langle n\rangle}_{\left(\tau_m^{(m)}\right)^{(n)}}\right)(\omega) \\
+ &\overset{32(n.6)}{=} \left(X^{\langle n\rangle}_{\left(\tau_m^{(m)} + \eta\right)^{(n)}} - X^{\langle n\rangle}_{\left(\tau_m^{(m)}\right)^{(n)}}\right)(\omega) \\
+ &\overset{32(g.4)}{=} \left(X^{\langle n\rangle}_{\left(\tau_m^{(m)}\right)^{(n)} + \eta^{(n)}} - X^{\langle n\rangle}_{\left(\tau_m^{(m)}\right)^{(n)}}\right)(\omega) \\
+ &\overset{32(n.3)}{=} \left(X^{\langle n\rangle}_{\tau_m^{(n)} + \eta^{(n)}} - X^{\langle n\rangle}_{\tau_m^{(n)}}\right)(\omega).
+ \end{align}
+ $$
 
 ***
 
