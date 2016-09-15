@@ -93,42 +93,60 @@
  f\& g := \wr(f,g).
  $$
 
-19. Let $T, S, R, Q$ be types. We define $\circ\circ^{T,S,R,Q}$ to be the primitive $\circ\!\circ^{T,S,R,Q}:\left(\left(T\mapsto(S\mapsto R)\right)\times\left(R\mapsto Q\right)\right)\rightarrow\left(T\mapsto(S\mapsto Q)\right)$, which, to every $f:T\mapsto(S\mapsto R)$ and to every $g:R\mapsto Q$, assigns
- $$
- \circ\!\circ(f,g) := \lambda t \in \mathrm{Dom}(f) \mapsto g\circ\left(f(t)\right).
- $$
- We write
- $$
- g\circ\!\circ\ f := \circ\!\circ(f,g).
- $$
-
-20. Let $T, S, R$ be types. We define $\pi^{T,S,R}$ to be the primitive $\pi^{T,S,R}:\left(T\times S\mapsto R\right)\rightarrow\left(S\times T\mapsto R\right)$, which, to every (non-primitive) function $f:T\times S\mapsto R$, assigns the function
+19. Let $T, S, R$ be types. We define $\pi^{T,S,R}$ to be the primitive $\pi^{T,S,R}:\left(T\times S\mapsto R\right)\rightarrow\left(S\times T\mapsto R\right)$, which, to every (non-primitive) function $f:T\times S\mapsto R$, assigns the function
  $$
  \pi(f) := f\circ\pi^{S,T}.
  $$
 
-21. Let $T, S, R$ be types. We denote with $\phi^{T,S,R}$ the primitive $\phi^{T,S,R}:\left(T\times S\mapsto R\right) \rightarrow \left(T \mapsto \left(S \mapsto R\right)\right)$, which, to every (non-primitive) function $f:T\times S\mapsto R$, assigns the function
+20. Let $T, S, R$ be types. We denote with $\phi^{T,S,R}$ the primitive $\phi^{T,S,R}:\left(T\times S\mapsto R\right) \rightarrow \left(T \mapsto \left(S \mapsto R\right)\right)$, which, to every (non-primitive) function $f:T\times S\mapsto R$, assigns the function
  $$
  \phi(f) := \lambda t\in\sigma_2\left(\mathrm{Dom}(f)\right)
 \mapsto \lambda s \in \sigma_1\left(t,\mathrm{Dom}(f)\right) \mapsto f(t,s).
  $$
 
-22. Let $T, S, R$ be types. We denote with $\phi_2^{T,S,R}$ the primitive $\phi_2^{T,S,R}:\left(T\times S\mapsto R\right) \rightarrow \left(S \mapsto \left(T \mapsto R\right)\right)$, which, to every (non-primitive) function $f:T\times S\mapsto R$, assigns the function
+21. Let $T, S, R$ be types. We denote with $\phi_2^{T,S,R}$ the primitive $\phi_2^{T,S,R}:\left(T\times S\mapsto R\right) \rightarrow \left(S \mapsto \left(T \mapsto R\right)\right)$, which, to every (non-primitive) function $f:T\times S\mapsto R$, assigns the function
  $$
  \phi_2(f) := \lambda s\in\sigma_1\left(\mathrm{Dom}(f)\right)
 \mapsto \lambda t \in \sigma_2\left(s,\mathrm{Dom}(f)\right) \mapsto f(t,s).
  $$
 
-23. Let $T, S, R$ be types. We denote with $\varphi^{T,S,R}$ the primitive $\varphi^{T,S,R}: \left(T \mapsto \left(S \mapsto R\right)\right) \rightarrow \left(T\times S\mapsto R\right)$, which, to every (non-primitive) function $f:T \mapsto \left(S \mapsto R\right)$, assigns the function
+22. Let $T, S, R$ be types. We denote with $\varphi^{T,S,R}$ the primitive $\varphi^{T,S,R}: \left(T \mapsto \left(S \mapsto R\right)\right) \rightarrow \left(T\times S\mapsto R\right)$, which, to every (non-primitive) function $f:T \mapsto \left(S \mapsto R\right)$, assigns the function
  $$
  \varphi(f) := \lambda (t,s) \in \mathrm{Dom}_2(f) \mapsto f(t)(s).
  $$
 
-24. Let $T, S, R$ be types. We denote with $\rho^{T, S, R}$ the primitive $\rho^{T, S, R}:\left(T\mapsto(S\mapsto R)\right)\rightarrow\left(S\mapsto(T\mapsto R)\right)$, which, to every (non-primitive) function $f:T\mapsto(S\mapsto R)$, assigns
+23. Let $T, S, R$ be types. We denote with $\rho^{T, S, R}$ the primitive $\rho^{T, S, R}:\left(T\mapsto(S\mapsto R)\right)\rightarrow\left(S\mapsto(T\mapsto R)\right)$, which, to every (non-primitive) function $f:T\mapsto(S\mapsto R)$, assigns
  $$
  \rho(f) := \lambda s\in \sigma_1\left(\mathrm{Dom}_2(f)\right) \mapsto \lambda t\in\sigma_2\left(s,\mathrm{Dom}_2(f)\right) \mapsto f(t)(s).
  $$
  We write
  $$
  [f] := \rho(f).
+ $$
+
+24. Let $T, S, R$ be types. We define $\rhd^{T,S,R}$ to be the primitive $\rhd^{T,S,R}:\left(\left(T\mapsto(S\mapsto R)\right)\times\left(T\mapsto S\right)\right)\rightarrow\left(T\mapsto S\right)$, which to every $f:T\mapsto(S\mapsto R)$ and every $g:T\mapsto S$, assigns
+ $$
+ \rhd\!(f,g) := \lambda t \in \mathrm{Dom}(f)\cap\mathrm{Dom}(g)\mapsto f(t)\left(g(t)\right).
+ $$
+ We write
+ $$
+ f\rhd g :=\ \rhd\!(f,g).
+ $$
+
+25. Let $T, S, R, Q$ be types. We define $\ltimes^{T,S,R,Q}$ to be the primitive $\ltimes^{T,S,R,Q}:\left(\left(T\mapsto(S\mapsto R)\right)\times\left(R\mapsto Q\right)\right)\rightarrow\left(T\mapsto(S\mapsto Q)\right)$, which, to every $f:T\mapsto(S\mapsto R)$ and to every $g:R\mapsto Q$, assigns
+ $$
+ \ltimes(f,g) := \lambda t \in \mathrm{Dom}(f) \mapsto g\circ\left(f(t)\right).
+ $$
+ We write
+ $$
+ g\ltimes\ f := \ltimes(f,g).
+ $$
+
+26. Let $T, S, R, Q$ be types. We define $\circ\circ^{T,S,R,Q}$ to be the primitive $\circ\!\circ^{T,S,R,Q}:\left(\left(T\mapsto(S\mapsto R)\right)\times\left(T\mapsto(S\mapsto R)\right)\right)\rightarrow\left(T\mapsto(R\mapsto Q)\right)$, which to every $f:T\mapsto(S\mapsto R)$ and every $g:T\mapsto(R\mapsto Q)$, assigns
+ $$
+ \circ\!\circ\ (f,g) := \lambda t \in \mathrm{Dom}(f)\mapsto g(t)\circ f(t).
+ $$
+ We write
+ $$
+ g\circ\!\circ\ f :=\ \circ\!\circ\ (f,g).
  $$
