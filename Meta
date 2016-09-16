@@ -140,14 +140,14 @@
 
 28. Let $T, S, R$ be types. We denote with $\phi^{T,S,R}$ the primitive $\phi^{T,S,R}:\left(T\times S\mapsto R\right) \rightarrow \left(T \mapsto \left(S \mapsto R\right)\right)$, which, to every (non-primitive) function $f:T\times S\mapsto R$, assigns the function
  $$
- \phi(f) := \lambda t\in\sigma_2\left(\mathrm{Dom}(f)\right)
-\mapsto \lambda s \in \sigma_1\left(t,\mathrm{Dom}(f)\right) \mapsto f(t,s).
+ \phi(f) := \lambda t\in\sigma_1\left(\mathrm{Dom}(f)\right)
+\mapsto \lambda s \in \sigma_2\left(t,\mathrm{Dom}(f)\right) \mapsto f(t,s).
  $$
 
 29. Let $T, S, R$ be types. We denote with $\phi_2^{T,S,R}$ the primitive $\phi_2^{T,S,R}:\left(T\times S\mapsto R\right) \rightarrow \left(S \mapsto \left(T \mapsto R\right)\right)$, which, to every (non-primitive) function $f:T\times S\mapsto R$, assigns the function
  $$
- \phi_2(f) := \lambda s\in\sigma_1\left(\mathrm{Dom}(f)\right)
-\mapsto \lambda t \in \sigma_2\left(s,\mathrm{Dom}(f)\right) \mapsto f(t,s).
+ \phi_2(f) := \lambda s\in\sigma_2\left(\mathrm{Dom}(f)\right)
+\mapsto \lambda t \in \sigma_1\left(s,\mathrm{Dom}(f)\right) \mapsto f(t,s).
  $$
 
 30. Let $T, S, R$ be types. We denote with $\varphi^{T,S,R}$ the primitive $\varphi^{T,S,R}: \left(T \mapsto \left(S \mapsto R\right)\right) \rightarrow \left(T\times S\mapsto R\right)$, which, to every (non-primitive) function $f:T \mapsto \left(S \mapsto R\right)$, assigns the function
