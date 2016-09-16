@@ -13,34 +13,34 @@
  \pi_2^{T,S}(t,s) := s.
  $$
 
-4. Let $T, S$ be types. We denote with $\sigma_1^{T,S}$ the primitive $\sigma_1^{T,S}:\mathcal{P}T\times \mathcal{P}(T\times S)\rightarrow\mathcal{P}S$, which, to every $A \in \mathcal{P}T$ and to every $B \in \mathcal{P}(T\times S)$, assigns
+4. Let $T, S$ be types. We denote with $\sigma_1^{T,S}$ the primitive $\sigma_1^{T,S}:\mathcal{P}S\times \mathcal{P}(T\times S)\rightarrow\mathcal{P}T$, which, to every $A \in \mathcal{P}S$ and to every $B \in \mathcal{P}(T\times S)$, assigns
  $$
- \sigma_1^{T,S}(A,B) := \mathrm{Im}\left(\pi_2^{T,S},B\cap\left(A\times\mathrm{set}\langle S\rangle\right)\right).
+ \sigma_1^{T,S}(A,B) := \mathrm{Im}\left(\pi_1^{T,S},B\cap\left(\mathrm{set}\langle T\rangle\times A\right)\right).
  $$
 
-5. Let $T, S$ be types. We denote with $\sigma_1^{T,S}$ the primitive $\sigma_1^{T,S}:T\times \mathcal{P}(T\times S)\rightarrow\mathcal{P}S$, which, to every $t \in t$ and to every $B \in \mathcal{P}(T\times S)$, assigns
+5. Let $T, S$ be types. We denote with $\sigma_1^{T,S}$ the primitive $\sigma_1^{T,S}:S\times \mathcal{P}(T\times S)\rightarrow\mathcal{P}T$, which, to every $s \in S$ and to every $B \in \mathcal{P}(T\times S)$, assigns
  $$
- \sigma_1^{T,S}(A,B) := \sigma_1\left(\{t\}, B\right).
+ \sigma_1^{T,S}(s,B) := \sigma_1\left(\{s\}, B\right).
  $$
 
 6. Let $T, S$ be types. We denote with $\sigma_1^{T,S}$ the primitive $\sigma_1^{T,S}:\mathcal{P}(T\times S)\rightarrow\mathcal{P}S$, which, to every $B \in \mathcal{P}(T\times S)$, assigns
  $$
- \sigma_1^{T,S}(B) := \sigma_1\left(\mathrm{set}\langle T\rangle, B\right).
+ \sigma_1^{T,S}(B) := \sigma_1\left(\mathrm{set}\langle S\rangle, B\right).
  $$
 
-7. Let $T, S$ be types. We denote with $\sigma_2^{T,S}$ the primitive $\sigma_2^{T,S}:\mathcal{P}S\times \mathcal{P}(T\times S)\rightarrow\mathcal{P}T$, which, to every $A \in \mathcal{P}S$ and to every $B \in \mathcal{P}(T\times S)$, assigns
+7. Let $T, S$ be types. We denote with $\sigma_2^{T,S}$ the primitive $\sigma_2^{T,S}:\mathcal{P}T\times \mathcal{P}(T\times S)\rightarrow\mathcal{P}S$, which, to every $A \in \mathcal{P}T$ and to every $B \in \mathcal{P}(T\times S)$, assigns
  $$
- \sigma_2^{T,S}(A,B) := \mathrm{Im}\left(\pi_1^{T,S},B\cap\left(\mathrm{set}\langle T\rangle\times A\right)\right).
- $$
-
-8. Let $T, S$ be types. We denote with $\sigma_2^{T,S}$ the primitive $\sigma_2^{T,S}:S\times \mathcal{P}(T\times S)\rightarrow\mathcal{P}T$, which, to every $s \in S$ and to every $B \in \mathcal{P}(T\times S)$, assigns
- $$
- \sigma_2^{T,S}(s,B) := \sigma_2\left(\{s\}, B\right).
+ \sigma_2^{T,S}(A,B) := \mathrm{Im}\left(\pi_2^{T,S},B\cap\left(A\times\mathrm{set}\langle S\rangle\right)\right).
  $$
 
-9. Let $T, S$ be types. We denote with $\sigma_1^{T,S}$ the primitive $\sigma_1^{T,S}:\mathcal{P}(T\times S)\rightarrow\mathcal{P}S$, which, to every $B \in \mathcal{P}(T\times S)$, assigns
+8. Let $T, S$ be types. We denote with $\sigma_2^{T,S}$ the primitive $\sigma_2^{T,S}:T\times \mathcal{P}(T\times S)\rightarrow\mathcal{P}S$, which, to every $t \in t$ and to every $B \in \mathcal{P}(T\times S)$, assigns
  $$
- \sigma_2^{T,S}(B) := \sigma_2\left(\mathrm{set}\langle S\rangle, B\right).
+ \sigma_2^{T,S}(A,B) := \sigma_2\left(\{t\}, B\right).
+ $$
+
+9. Let $T, S$ be types. We denote with $\sigma_2^{T,S}$ the primitive $\sigma_2^{T,S}:\mathcal{P}(T\times S)\rightarrow\mathcal{P}S$, which, to every $B \in \mathcal{P}(T\times S)$, assigns
+ $$
+ \sigma_2^{T,S}(B) := \sigma_2\left(\mathrm{set}\langle T\rangle, B\right).
  $$
 
 10. Let $T, S$ be types. We denote with $\mathrm{Const}^{T,S}$ the constant primitive $\mathrm{Const}^{T,S}:S\rightarrow (T\rightarrow S)$, which, to every $s \in S$, assigns the primitive
@@ -75,7 +75,47 @@
  \mathrm{Im}(f) := f\left(\mathrm{Dom}(f)\right)\hspace{1cm} \left(= \left\{f(t)\ :\!|\ t \in \mathrm{Dom}(f)\right\}\right).
  $$
 
-17. Let $T, S$ be types. We define $\wr^{T, S}$ to be the primitive $\wr^{T, S}:\left((T\mapsto S)\times(T\mapsto S)\right)\rightarrow(T\mapsto S)$, which, for every pair of (non-primitive) functions $f, g:T\mapsto S$, assigns
+17. Let $T, S$ be types. We define $\mathrm{pIm}_0^{T,S}$ to be the primitive $\mathrm{pIm}_0^{T,S}:\left(T\mapsto\mathcal{P}S\right)\rightarrow\mathcal{P}T$, which to every $F:T\mapsto\mathcal{P}S$ assigns
+ $$
+ \mathrm{pIm}_0(F) := \left\{t \in \mathrm{Dom}(f)\ |\!:\ f(t) \neq \emptyset\right\}.
+ $$
+
+18. Let $T, S$ be types. We define $\mathrm{pIm}^{T, S}$ to be the primitive $\mathrm{pIm}^{T, S}:\left((T\mapsto S)\times\left(T\mapsto\mathcal{P}S\right)\right)\rightarrow\mathcal{P}T$, which to every $f:T\mapsto S$ and to every $F:T\mapsto\mathcal{P}S$ assigns
+ $$
+ \mathrm{pIm}(f,F) := \left\{t \in \mathrm{Dom}(f)\cap\mathrm{Dom}(F)\ |\!:\ f(t) \in F(t)\right\}.
+ $$
+
+19. Let $T, S$ be types. We define $\mathrm{pIm}^{T,S}$ to be the pre-image primitive $\mathrm{pIm}^{T,S}:\left(\left(T\mapsto S\right)\times\mathcal{P}S\right)\rightarrow\mathcal{P}T$, which, to every (non-primitive) function $f:T\mapsto S$ and to every $A:\mathcal{P}S$ assigns
+ $$
+ \mathrm{pIm}(f,A) := f^{-1}(A) := \mathrm{pIm}\left(f, \mathrm{Const}(A,\mathrm{Dom}(f))\right).
+ $$
+
+20. Let $T, S, R$ be types. We define $\mathrm{pIm}_2^{T,S}$ to be the primitive $\mathrm{pIm}_2^{T,S}:\left(\left(T\mapsto(S\mapsto R)\right)\times\left(T\mapsto\mathcal{P}R\right)\right)\rightarrow(T\mapsto\mathcal{P}S)$, which, to every $f:T\mapsto(S\mapsto R)$ and to every $F:T\mapsto\mathcal{P}R$ assigns
+ $$
+ \mathrm{pIm}_2(f, F) := \lambda t \in \mathrm{Dom}(f)\cap\mathrm{Dom}(F)\mapsto\mathrm{pIm}\left(f(t), F(t)\right).
+ $$
+
+21. Let $T, S, R$ be types. We define $\mathrm{pIm}_2^{T,S}$ to be the primitive $\mathrm{pIm}_2^{T,S}:\left(\left(T\mapsto(S\mapsto R)\right)\times\mathcal{P}R\right)\rightarrow(T\mapsto\mathcal{P}S)$, which, to every $f:T\mapsto(S\mapsto R)$ and to every $A:\mathcal{P}R$ assigns
+ $$
+ \mathrm{pIm}_2(f, A) := \mathrm{pIm}_2\left(f,\mathrm{Const}\left(A,\mathrm{Dom}(f)\right)\right).
+ $$
+
+22. Let $T, S, R$ be types. We define $\mathrm{pIm}_2^{T,S}$ to be the primitive $\mathrm{pIm}_2^{T,S}:\left(T\mapsto(S\mapsto R)\right)\rightarrow(T\mapsto\mathcal{P}S)$, which, to every $f:T\mapsto(S\mapsto R)$ assigns
+ $$
+ \mathrm{pIm}_2(f) := \mathrm{pIm}_2(f,\mathrm{set}\langle R\rangle).
+ $$
+
+23. Let $T, S, R$ be types. We define $\mathrm{pIm}_3^{T, S, R}$ to be the primitive $\mathrm{pIm}_3^{T, S, R}:\left(\left(T\mapsto(S\mapsto R)\right)\times(T\mapsto \mathcal{P}R)\right)\rightarrow\mathcal{P}T$, which to every $f:T\mapsto(S\mapsto R)$ and to every $F:T\mapsto\mathcal{P}R$ assigns
+ $$
+ \mathrm{pIm}_3(f,F) := \mathrm{pIm}_0\left(\mathrm{pIm}_2(f,F)\right).
+ $$
+
+24. Let $T, S, R$ be types. We define $\mathrm{pIm}_3^{T, S, R}$ to be the primitive $\mathrm{pIm}_3^{T, S, R}:\left(\left(T\mapsto(S\mapsto R)\right)\times\mathcal{P}R\right)\rightarrow\mathcal{P}T$, which to every $f:T\mapsto(S\mapsto R)$ and to every $A:\mathcal{P}R$ assigns
+ $$
+ \mathrm{pIm}_3(f,A) := \mathrm{pIm}_3\left(f,\mathrm{Const}\left(A,\mathrm{Dom}(f)\right)\right).
+ $$
+
+25. Let $T, S$ be types. We define $\wr^{T, S}$ to be the primitive $\wr^{T, S}:\left((T\mapsto S)\times(T\mapsto S)\right)\rightarrow(T\mapsto S)$, which, for every pair of (non-primitive) functions $f, g:T\mapsto S$, assigns
  $$
  \wr(f,g) := \lambda t \in \mathrm{Dom}(f)\cup\mathrm{Dom}(g) \mapsto t \in \mathrm{Dom}(f)\ ?\ f(t) : g(t).
  $$
@@ -84,38 +124,38 @@
  f\wr g := \wr(f,g).
  $$
 
-18. Let $T, S$ be types. We define ${T, S}$ to be the primitive $\&^{T, S}:\left((T\mapsto S)\times(T\mapsto S)\right)\rightarrow(T\mapsto S)$, which, for every pair of (non-primitive) functions $f, g:T\mapsto S$, assigns
+26. Let $T, S$ be types. We define ${T, S}$ to be the primitive $\&^{T, S}:\left((T\mapsto S)\times(T\mapsto S)\right)\rightarrow(T\mapsto S)$, which, for every pair of (non-primitive) functions $f, g:T\mapsto S$, assigns
  $$
  \&(f,g) := \lambda t \in \mathrm{Dom}(f)\cap\mathrm{Dom}(g) \mapsto \left(f(t),g(t)\right).
  $$
  We write
  $$
- f\& g := \wr(f,g).
+ f\& g := \&(f,g).
  $$
 
-19. Let $T, S, R$ be types. We define $\pi^{T,S,R}$ to be the primitive $\pi^{T,S,R}:\left(T\times S\mapsto R\right)\rightarrow\left(S\times T\mapsto R\right)$, which, to every (non-primitive) function $f:T\times S\mapsto R$, assigns the function
+27. Let $T, S, R$ be types. We define $\pi^{T,S,R}$ to be the primitive $\pi^{T,S,R}:\left(T\times S\mapsto R\right)\rightarrow\left(S\times T\mapsto R\right)$, which, to every (non-primitive) function $f:T\times S\mapsto R$, assigns the function
  $$
  \pi(f) := f\circ\pi^{S,T}.
  $$
 
-20. Let $T, S, R$ be types. We denote with $\phi^{T,S,R}$ the primitive $\phi^{T,S,R}:\left(T\times S\mapsto R\right) \rightarrow \left(T \mapsto \left(S \mapsto R\right)\right)$, which, to every (non-primitive) function $f:T\times S\mapsto R$, assigns the function
+28. Let $T, S, R$ be types. We denote with $\phi^{T,S,R}$ the primitive $\phi^{T,S,R}:\left(T\times S\mapsto R\right) \rightarrow \left(T \mapsto \left(S \mapsto R\right)\right)$, which, to every (non-primitive) function $f:T\times S\mapsto R$, assigns the function
  $$
  \phi(f) := \lambda t\in\sigma_2\left(\mathrm{Dom}(f)\right)
 \mapsto \lambda s \in \sigma_1\left(t,\mathrm{Dom}(f)\right) \mapsto f(t,s).
  $$
 
-21. Let $T, S, R$ be types. We denote with $\phi_2^{T,S,R}$ the primitive $\phi_2^{T,S,R}:\left(T\times S\mapsto R\right) \rightarrow \left(S \mapsto \left(T \mapsto R\right)\right)$, which, to every (non-primitive) function $f:T\times S\mapsto R$, assigns the function
+29. Let $T, S, R$ be types. We denote with $\phi_2^{T,S,R}$ the primitive $\phi_2^{T,S,R}:\left(T\times S\mapsto R\right) \rightarrow \left(S \mapsto \left(T \mapsto R\right)\right)$, which, to every (non-primitive) function $f:T\times S\mapsto R$, assigns the function
  $$
  \phi_2(f) := \lambda s\in\sigma_1\left(\mathrm{Dom}(f)\right)
 \mapsto \lambda t \in \sigma_2\left(s,\mathrm{Dom}(f)\right) \mapsto f(t,s).
  $$
 
-22. Let $T, S, R$ be types. We denote with $\varphi^{T,S,R}$ the primitive $\varphi^{T,S,R}: \left(T \mapsto \left(S \mapsto R\right)\right) \rightarrow \left(T\times S\mapsto R\right)$, which, to every (non-primitive) function $f:T \mapsto \left(S \mapsto R\right)$, assigns the function
+30. Let $T, S, R$ be types. We denote with $\varphi^{T,S,R}$ the primitive $\varphi^{T,S,R}: \left(T \mapsto \left(S \mapsto R\right)\right) \rightarrow \left(T\times S\mapsto R\right)$, which, to every (non-primitive) function $f:T \mapsto \left(S \mapsto R\right)$, assigns the function
  $$
  \varphi(f) := \lambda (t,s) \in \mathrm{Dom}_2(f) \mapsto f(t)(s).
  $$
 
-23. Let $T, S, R$ be types. We denote with $\rho^{T, S, R}$ the primitive $\rho^{T, S, R}:\left(T\mapsto(S\mapsto R)\right)\rightarrow\left(S\mapsto(T\mapsto R)\right)$, which, to every (non-primitive) function $f:T\mapsto(S\mapsto R)$, assigns
+31. Let $T, S, R$ be types. We denote with $\rho^{T, S, R}$ the primitive $\rho^{T, S, R}:\left(T\mapsto(S\mapsto R)\right)\rightarrow\left(S\mapsto(T\mapsto R)\right)$, which, to every (non-primitive) function $f:T\mapsto(S\mapsto R)$, assigns
  $$
  \rho(f) := \lambda s\in \sigma_1\left(\mathrm{Dom}_2(f)\right) \mapsto \lambda t\in\sigma_2\left(s,\mathrm{Dom}_2(f)\right) \mapsto f(t)(s).
  $$
@@ -124,27 +164,27 @@
  [f] := \rho(f).
  $$
 
-24. Let $T, S, R$ be types. We define $\rhd^{T,S,R}$ to be the primitive $\rhd^{T,S,R}:\left(\left(T\mapsto(S\mapsto R)\right)\times\left(T\mapsto S\right)\right)\rightarrow\left(T\mapsto S\right)$, which to every $f:T\mapsto(S\mapsto R)$ and every $g:T\mapsto S$, assigns
+32. Let $T, S, R$ be types. We define $\rhd^{T,S,R}$ to be the primitive $\rhd^{T,S,R}:\left(\left(T\mapsto(S\mapsto R)\right)\times\left(T\mapsto S\right)\right)\rightarrow\left(T\mapsto S\right)$, which to every $f:T\mapsto(S\mapsto R)$ and every $g:T\mapsto S$, assigns
  $$
- \rhd\!(f,g) := \lambda t \in \mathrm{Dom}(f)\cap\mathrm{Dom}(g)\mapsto f(t)\left(g(t)\right).
+ \rhd\!(f,g) := \lambda t \in \mathrm{pIm}_3\left(g, \mathrm{pIm}_2(f)\right)\mapsto f(t)\left(g(t)\right).
  $$
  We write
  $$
  f\rhd g :=\ \rhd\!(f,g).
  $$
 
-25. Let $T, S, R, Q$ be types. We define $\ltimes^{T,S,R,Q}$ to be the primitive $\ltimes^{T,S,R,Q}:\left(\left(T\mapsto(S\mapsto R)\right)\times\left(R\mapsto Q\right)\right)\rightarrow\left(T\mapsto(S\mapsto Q)\right)$, which, to every $f:T\mapsto(S\mapsto R)$ and to every $g:R\mapsto Q$, assigns
+33. Let $T, S, R, Q$ be types. We define $\ltimes^{T,S,R,Q}$ to be the primitive $\ltimes^{T,S,R,Q}:\left(\left(T\mapsto(S\mapsto R)\right)\times\left(R\mapsto Q\right)\right)\rightarrow\left(T\mapsto(S\mapsto Q)\right)$, which, to every $f:T\mapsto(S\mapsto R)$ and to every $g:R\mapsto Q$, assigns
  $$
- \ltimes(f,g) := \lambda t \in \mathrm{Dom}(f) \mapsto g\circ\left(f(t)\right).
+ \ltimes(f,g) := \lambda t \in \mathrm{pIm}_3\left(f,\mathrm{Dom}(g)\right) \mapsto g\circ\left(f(t)\right).
  $$
  We write
  $$
  g\ltimes\ f := \ltimes(f,g).
  $$
 
-26. Let $T, S, R, Q$ be types. We define $\circ\circ^{T,S,R,Q}$ to be the primitive $\circ\!\circ^{T,S,R,Q}:\left(\left(T\mapsto(S\mapsto R)\right)\times\left(T\mapsto(S\mapsto R)\right)\right)\rightarrow\left(T\mapsto(R\mapsto Q)\right)$, which to every $f:T\mapsto(S\mapsto R)$ and every $g:T\mapsto(R\mapsto Q)$, assigns
+34. Let $T, S, R, Q$ be types. We define $\circ\circ^{T,S,R,Q}$ to be the primitive $\circ\!\circ^{T,S,R,Q}:\left(\left(T\mapsto(S\mapsto R)\right)\times\left(T\mapsto(R\mapsto Q)\right)\right)\rightarrow\left(T\mapsto(S\mapsto Q)\right)$, which to every $f:T\mapsto(S\mapsto R)$ and every $g:T\mapsto(R\mapsto Q)$, assigns
  $$
- \circ\!\circ\ (f,g) := \lambda t \in \mathrm{Dom}(f)\mapsto g(t)\circ f(t).
+ \circ\!\circ\ (f,g) := \lambda t \in \mathrm{pIm}_3\left(f,\mathrm{pIm}_2(g)\right)\mapsto g(t)\circ f(t).
  $$
  We write
  $$
